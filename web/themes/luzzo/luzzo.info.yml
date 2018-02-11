@@ -9,6 +9,7 @@ package: 'Custom'
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
+  top_slider: 'Top Slider'
   header: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'
