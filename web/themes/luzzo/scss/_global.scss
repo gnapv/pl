@@ -1,1 +1,14 @@
-// Global variables.
+// Global css 
+// ----------------------------------------------------------------------------
+
+body {
+  @include font-smoothing();
+}
+
+a {
+  @include transition(all .2s ease-in-out);
+	
+  &:hover {
+    opacity: 1;
+  }
+}

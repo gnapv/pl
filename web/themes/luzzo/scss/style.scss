@@ -10,9 +10,14 @@
 // fonts.
 @import 'fonts';
 
+// mixins
+@import 'mixins/mixins';
+
 // Global.
 @import 'global';
+
 
 // New Pages here:
 
 // New Modules here:
+@import "custom_component/navigation";
