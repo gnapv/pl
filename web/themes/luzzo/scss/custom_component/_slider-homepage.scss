@@ -1,0 +1,48 @@
+/**
+ * slider_homepage.
+ */
+
+
+#slider-home-page{
+	margin: 0;
+	border: none;
+	
+	ul li > .caption-wrapper{
+		position: absolute;
+	    top: 35%;
+	    background-color: rgba(255,255,255,.6);
+	    left: 5%;
+	    padding: 10px;
+
+	    .title{
+	    	font-size: 2em;
+	    	background-color: rgba(255, 255, 255, 0.8);
+    		padding: 10px 10px 0 10px;
+	    }
+
+	    .desc{
+	    	font-size: 1em;
+	    	background-color: rgba(255, 255, 255, 0.8);
+			padding: 0 10px 10px 10px;
+	    }
+	}
+	
+	.flex-control-nav{
+		bottom: 35px;
+		z-index: 35;
+
+			li a{
+				-webkit-transition: all .3s;
+			    width: 15px;
+			    height: 15px;
+			    cursor: pointer;
+			    background-color: rgba(0,0,0,0);
+			    border: 1px solid #fff;
+			    border-radius: 10px;
+			}		
+	}
+	.flex-control-paging li a.flex-active{
+		width: 35px!important;
+	}
+
+}

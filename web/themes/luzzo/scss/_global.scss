@@ -3,6 +3,8 @@
 
 body {
   @include font-smoothing();
+  padding-top: 0!important;
+  margin-top: 0!important;
 }
 
 a {
@@ -11,4 +13,10 @@ a {
   &:hover {
     opacity: 1;
   }
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

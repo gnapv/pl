@@ -10164,18 +10164,27 @@ p:last-child,
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-/* line 8, ../scss/_global.scss */
+/* line 10, ../scss/_global.scss */
 a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 11, ../scss/_global.scss */
+/* line 13, ../scss/_global.scss */
 a:hover {
   opacity: 1;
+}
+
+/* line 18, ../scss/_global.scss */
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /**
@@ -10183,7 +10192,7 @@ a:hover {
  */
 /* line 6, ../scss/custom_component/_navigation.scss */
 .navbar-inverse {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 /* line 9, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header {
@@ -10262,4 +10271,52 @@ footer nav[role="navigation"] ul.nav li a:hover {
 /* line 97, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li:last-child {
   border-right: 0px solid white;
+}
+
+/**
+ * slider_homepage.
+ */
+/* line 6, ../scss/custom_component/_slider-homepage.scss */
+#slider-home-page {
+  margin: 0;
+  border: none;
+}
+/* line 10, ../scss/custom_component/_slider-homepage.scss */
+#slider-home-page ul li > .caption-wrapper {
+  position: absolute;
+  top: 35%;
+  background-color: rgba(255, 255, 255, 0.6);
+  left: 5%;
+  padding: 10px;
+}
+/* line 17, ../scss/custom_component/_slider-homepage.scss */
+#slider-home-page ul li > .caption-wrapper .title {
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 10px 0 10px;
+}
+/* line 23, ../scss/custom_component/_slider-homepage.scss */
+#slider-home-page ul li > .caption-wrapper .desc {
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 10px 10px 10px;
+}
+/* line 30, ../scss/custom_component/_slider-homepage.scss */
+#slider-home-page .flex-control-nav {
+  bottom: 35px;
+  z-index: 35;
+}
+/* line 34, ../scss/custom_component/_slider-homepage.scss */
+#slider-home-page .flex-control-nav li a {
+  -webkit-transition: all .3s;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+/* line 44, ../scss/custom_component/_slider-homepage.scss */
+#slider-home-page .flex-control-paging li a.flex-active {
+  width: 35px !important;
 }

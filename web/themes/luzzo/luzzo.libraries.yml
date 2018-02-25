@@ -1,8 +1,11 @@
 global-styling:
   css:
     theme:
+      libraries/Flexslider/flexslider.css: {}
+      css/animate.css: {}
       css/style.css: {}
   js:
+    libraries/Flexslider/jquery.flexslider-min.js: {}
     js/main.js: {}
   dependencies:
     - core/jquery
