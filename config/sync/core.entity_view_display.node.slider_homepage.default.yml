@@ -1,0 +1,28 @@
+uuid: ba4f7925-b44e-4042-9195-f93ed2086083
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_homepage.field_slider_homepage_items
+    - node.type.slider_homepage
+  module:
+    - field_collection
+    - user
+id: node.slider_homepage.default
+targetEntityType: node
+bundle: slider_homepage
+mode: default
+content:
+  field_slider_homepage_items:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_list
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

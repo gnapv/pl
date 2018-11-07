@@ -1,0 +1,38 @@
+uuid: 6bea04de-df05-4fd9-a0b8-3d228393cbe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slide_homepage
+    - field_collection.field_collection.field_slider_homepage_items
+  module:
+    - image
+id: field_collection_item.field_slider_homepage_items.field_slide_homepage
+field_name: field_slide_homepage
+entity_type: field_collection_item
+bundle: field_slider_homepage_items
+label: 'Slide homepage'
+description: 'Image file for slide'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '3 mb'
+  max_resolution: ''
+  min_resolution: 1700x1132
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

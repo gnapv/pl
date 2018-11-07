@@ -1,0 +1,22 @@
+uuid: b2b1993b-caff-4213-bac6-fb500d135943
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_homepage.field_slider_homepage_items
+    - node.type.slider_homepage
+  module:
+    - user
+id: node.slider_homepage.teaser
+targetEntityType: node
+bundle: slider_homepage
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_slider_homepage_items: true

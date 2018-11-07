@@ -1,0 +1,19 @@
+uuid: 49a4c40b-3a61-4429-a5e4-cc0f8bbdc1f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slider_homepage_descriptio
+    - field_collection.field_collection.field_slider_homepage_items
+id: field_collection_item.field_slider_homepage_items.field_slider_homepage_descriptio
+field_name: field_slider_homepage_descriptio
+entity_type: field_collection_item
+bundle: field_slider_homepage_items
+label: 'Slider HomePage Description'
+description: 'Description for slide'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

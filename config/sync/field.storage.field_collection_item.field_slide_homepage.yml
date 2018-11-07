@@ -1,0 +1,30 @@
+uuid: 8f3e7f2b-76a6-4f9d-9359-dc8bb6ab0ebc
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - file
+    - image
+id: field_collection_item.field_slide_homepage
+field_name: field_slide_homepage
+entity_type: field_collection_item
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

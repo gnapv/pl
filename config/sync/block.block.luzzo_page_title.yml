@@ -1,0 +1,20 @@
+uuid: dba69210-5cd0-4018-bf7f-46b5c2783829
+langcode: en
+status: true
+dependencies:
+  theme:
+    - luzzo
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: luzzo_page_title
+theme: luzzo
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

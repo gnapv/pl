@@ -1,0 +1,17 @@
+uuid: ba1d2713-6f3b-464f-a662-82f1687faabe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Slider HomePage'
+type: slider_homepage
+description: 'Slider for homePage'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

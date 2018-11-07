@@ -1,0 +1,22 @@
+uuid: 462b9c29-0610-492b-b3ae-36d816fa3ca5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - luzzo
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: luzzo_content
+theme: luzzo
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

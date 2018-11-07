@@ -1,0 +1,19 @@
+uuid: 345fc087-4326-4f01-a000-cd68312b8c71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slider_homepage_title
+    - field_collection.field_collection.field_slider_homepage_items
+id: field_collection_item.field_slider_homepage_items.field_slider_homepage_title
+field_name: field_slider_homepage_title
+entity_type: field_collection_item
+bundle: field_slider_homepage_items
+label: 'Slider HomePage Title'
+description: 'Title for captation'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

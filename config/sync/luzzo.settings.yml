@@ -1,0 +1,34 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://localhost/D8/pizzariaLuzzo/web/themes/luzzo/favicon.ico'
+  use_default: 0
+schemas:
+  bootstrap: 8000
+  luzzo: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 0
+  node_user_picture: 1
+logo:
+  path: themes/luzzo/img/logoluzzo.svg
+  url: ''
+  use_default: 0
+navbar_position: fixed-top
+navbar_inverse: 1
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  top_slider: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+table: ''

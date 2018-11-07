@@ -1,0 +1,46 @@
+uuid: 55c4f269-7809-4ecf-aff5-14a4bf3800ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_slider_homepage_items.field_slide_homepage
+    - field.field.field_collection_item.field_slider_homepage_items.field_slider_homepage_descriptio
+    - field.field.field_collection_item.field_slider_homepage_items.field_slider_homepage_title
+    - field_collection.field_collection.field_slider_homepage_items
+    - image.style.flexslider_full
+  module:
+    - svg_image
+id: field_collection_item.field_slider_homepage_items.default
+targetEntityType: field_collection_item
+bundle: field_slider_homepage_items
+mode: default
+content:
+  field_slide_homepage:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: flexslider_full
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_slider_homepage_descriptio:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_slider_homepage_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

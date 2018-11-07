@@ -1,0 +1,30 @@
+uuid: 984a6769-e77c-4ba0-9963-04e7fdf9266d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider_homepage
+  module:
+    - system
+    - views
+  theme:
+    - luzzo
+id: views_block__slider_homepage_block_1
+theme: luzzo
+region: top_slider
+weight: 0
+provider: null
+plugin: 'views_block:slider_homepage-block_1'
+settings:
+  id: 'views_block:slider_homepage-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

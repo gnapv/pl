@@ -1,0 +1,6 @@
+uuid: null
+langcode: en
+status: true
+dependencies: {  }
+id: field_slider_homepage_items
+label: field_slider_homepage_items

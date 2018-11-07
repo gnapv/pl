@@ -23,10 +23,11 @@
         "drupal/core": "~8.4",
         "drupal/ctools": "^3.0",
         "drupal/devel": "~1.2",
+        "drupal/features": "^3.5",
         "drupal/field_collection": "^1.0@alpha",
         "drupal/flexslider": "^2.0@beta",
         "drupal/svg_image": "^1.8",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "^8.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },

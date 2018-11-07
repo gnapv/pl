@@ -1,0 +1,14 @@
+uuid: 92e340bb-7159-40b6-aec5-e257352cfbe5
+name: 'Pizzaria Luzzo'
+mail: ggoncalovieira@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

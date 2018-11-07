@@ -1,0 +1,24 @@
+uuid: b24443c2-b11b-4354-8e4b-c0dbfe9fd9d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.reservas_modal
+  module:
+    - views
+  theme:
+    - luzzo
+id: views_block__reservas_modal_block_1
+theme: luzzo
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:reservas_modal-block_1'
+settings:
+  id: 'views_block:reservas_modal-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
