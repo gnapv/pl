@@ -5,4 +5,12 @@
  * Bootstrap sub-theme.
  *
  * Place your custom PHP code in this file.
+ * Implementar o hookpreprocess_html()
+ * Se precisares de um DEBUG poderoso, podemos cactivar o KINT no browser
  */
+
+/*
+function luzzo_preprocess_html(&$variables){
+	kint($variables);
+}
+*/
