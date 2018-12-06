@@ -5,6 +5,7 @@ body {
   @include font-smoothing();
   padding-top: 0!important;
   margin-top: 0!important;
+  overflow-x: hidden;
 }
 
 a {

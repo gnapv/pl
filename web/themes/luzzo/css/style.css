@@ -16,7 +16,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -10166,25 +10166,77 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding-top: 0 !important;
   margin-top: 0 !important;
+  overflow-x: hidden;
 }
 
-/* line 10, ../scss/_global.scss */
+/* line 11, ../scss/_global.scss */
 a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 13, ../scss/_global.scss */
+/* line 14, ../scss/_global.scss */
 a:hover {
   opacity: 1;
 }
 
-/* line 18, ../scss/_global.scss */
+/* line 19, ../scss/_global.scss */
 .full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/**
+ * page luzzo.
+ */
+/* line 8, ../scss/pages/_luzzo.scss */
+#page-luzzo .full-back {
+  background: url(../img/padrao_azuleijo.jpg);
+}
+/* line 11, ../scss/pages/_luzzo.scss */
+#page-luzzo .field--name-field-ilustra-logo {
+  -webkit-mix-blend-mode: lighten;
+  mix-blend-mode: lighten;
+  margin-top: 140px;
+  margin-bottom: 150px;
+}
+/* line 19, ../scss/pages/_luzzo.scss */
+#page-luzzo #p--2-col-texto-imagem h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #F4D680;
+  letter-spacing: 3.33px;
+}
+/* line 25, ../scss/pages/_luzzo.scss */
+#page-luzzo #p--2-col-texto-imagem hr {
+  border: 1px solid #F4D680;
+}
+/* line 28, ../scss/pages/_luzzo.scss */
+#page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.58px;
+  line-height: 27px;
+}
+/* line 36, ../scss/pages/_luzzo.scss */
+#page-luzzo #p--2-col-texto-imagem img {
+  position: relative;
+  transform: scale(1.2);
+  left: 50px;
+}
+/* line 42, ../scss/pages/_luzzo.scss */
+#page-luzzo #p--2-col-texto-imagem blockquote {
+  font-style: italic;
+  font-size: 36px;
+  color: #F4D680;
+  letter-spacing: 6.42px;
+  line-height: 49px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
 }
 
 /**

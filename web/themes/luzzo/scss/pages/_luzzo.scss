@@ -1,0 +1,55 @@
+/**
+ * page luzzo.
+ */
+
+
+#page-luzzo{
+
+	.full-back{
+		background: url(../img/padrao_azuleijo.jpg);
+	}
+	.field--name-field-ilustra-logo{
+		-webkit-mix-blend-mode: lighten;
+		mix-blend-mode: lighten;
+	    margin-top: 140px;
+	    margin-bottom: 150px;
+	}
+
+	#p--2-col-texto-imagem{
+		h2{
+			font-weight: 700;
+			font-size: 24px;
+			color: #F4D680;
+			letter-spacing: 3.33px;
+		}
+		hr{
+			border: 1px solid #F4D680;
+		}
+		.field--name-field-corpo-texto-luzzo{
+			font-weight: 400;
+			font-size: 20px;
+			color: #FFFFFF;
+			letter-spacing: 0.58px;
+			line-height: 27px;
+		}
+
+		img{
+			position: relative;
+		    transform: scale(1.2);
+		    left: 50px;
+		}
+
+		blockquote{
+			font-style: italic;
+		    font-size: 36px;
+		    color: #F4D680;
+		    letter-spacing: 6.42px;
+		    line-height: 49px;
+		    text-transform: uppercase;
+		    border: none;
+		    text-align: center;
+		}
+
+	}
+
+}
