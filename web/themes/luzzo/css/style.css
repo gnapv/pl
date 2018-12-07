@@ -10271,6 +10271,34 @@ body {
   padding: 25px;
   text-align: center;
 }
+/* line 96, ../scss/pages/_luzzo.scss */
+#page-luzzo #myCarousel-6 {
+  margin-bottom: -25%;
+  padding-bottom: 60px;
+}
+/* line 101, ../scss/pages/_luzzo.scss */
+#page-luzzo #myCarousel-6 .carousel-indicators {
+  left: auto;
+  z-index: 15;
+  width: 20%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  right: 0px;
+  top: 35px;
+}
+/* line 112, ../scss/pages/_luzzo.scss */
+#page-luzzo #myCarousel-6 .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  transition: width .4s;
+}
+/* line 120, ../scss/pages/_luzzo.scss */
+#page-luzzo #myCarousel-6 .carousel-indicators .active {
+  width: 35px !important;
+}
 
 /**
  * Navigation.
