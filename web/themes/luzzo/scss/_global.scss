@@ -1,6 +1,13 @@
 // Global css 
 // ----------------------------------------------------------------------------
 
+html{
+    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased!important;
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+}
+
 body {
   @include font-smoothing();
   padding-top: 0!important;
@@ -8,13 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  @include transition(all .2s ease-in-out);
-	
-  &:hover {
-    opacity: 1;
-  }
-}
+
 
 .full-screen {
   background-size: cover;
