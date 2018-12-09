@@ -5,14 +5,30 @@
 
 #page-luzzo{
 
-	.full-back{
-		background: url(../img/padrao_azuleijo.jpg);
+	.full-back:before {
+	    content: "";
+	    width: 100%;
+	    height: 80%;
+	    background:url(../img/padrao_azuleijo.jpg);
+	    position: absolute;
+	    @media screen and (max-width: $screen-lg) {
+    		height: 75%;
+ 		}
+ 		@media screen and (max-width: $screen-sm) {
+    		height: 85%;
+ 		}
+
 	}
+
+
 	.field--name-field-ilustra-logo{
 		-webkit-mix-blend-mode: lighten;
 		mix-blend-mode: lighten;
 	    margin-top: 140px;
 	    margin-bottom: 150px;
+	   	@media screen and (max-width: $screen-sm) {
+	    margin-bottom: 80px;
+ 		}
 	}
 
 	h2{
@@ -20,10 +36,15 @@
 		font-size: 2.4rem;
 		color: $brand-primary;
 		letter-spacing: 3.33px;
+		@media screen and (max-width: $screen-sm) {
+	    	text-align: center;
+ 		}
 	}
 	hr{
 		border: 1px solid $brand-primary;
 	}
+
+
 
 	#p--2-col-texto-imagem{
 	
@@ -32,7 +53,14 @@
 			font-size: 2rem;
 			color: #FFFFFF;
 			letter-spacing: 0.58px;
-			line-height: 27px;
+			line-height: $global-text-line-height-lg;
+			@media screen and (max-width: $screen-md) {
+				line-height: $global-text-line-height-sm;
+    		    
+ 			}
+ 			@media screen and (max-width: $screen-sm) {
+	    		text-align: center;
+ 			}
 		}
 
 		img{
@@ -40,6 +68,19 @@
 			bottom: 50px;
 		    left: 50px;
 		    transform: scale(1.2);
+		    @media screen and (max-width: $screen-md) {
+		    	transform: scale(1.5);
+    		    
+ 			}
+ 			@media screen and (max-width: $screen-lg) {
+		    	transform: scale(1.2);
+    		    
+ 			}
+ 			@media screen and (max-width: $screen-sm) {
+		   		 bottom: 0;
+		   		transform: scale(1.0);
+	 		}
+
 		}
 
 		blockquote{
@@ -53,6 +94,11 @@
 		    text-transform: uppercase;
 		    border: none;
 		    text-align: center;
+		    @media screen and (max-width: $screen-md) {
+				line-height: 40px;
+				padding: 30px 0;
+    		    
+ 			}
 		}
 
 	}
@@ -63,14 +109,53 @@
 
     	h2{
     		margin-top: 180px;
+    		@media screen and (max-width: $screen-lg) {
+    		    margin-top: 40px;
+ 			}
+ 			@media screen and (max-width: $screen-md) {
+    		    margin-top: 35px;
+ 			}
+ 			@media screen and (max-width: $screen-sm) {
+    		    margin-top: 85px;
+    		    text-align: center;
+ 			}
     	}
+
+    	@media screen and (max-width: $screen-lg) {
+    		 bottom: 55px;
+ 		}
+ 		@media screen and (max-width: $screen-md) {
+    		 bottom: 0;
+    		margin-top: 40px;
+ 		}
+ 		@media screen and (max-width: $screen-md) {
+    		 bottom: 0;
+    		margin-top: 0px;
+ 		}
+ 		@media screen and (max-width: $screen-sm) {
+    		margin-top: -30px;
+ 		}
+ 		img{
+ 			@media screen and (max-width: $screen-sm) {
+	    		max-width: 60%;
+    			margin: 0 auto;
+	 		}
+ 			    
+ 		}
 
 		.field--name-field-texto-luzzo-2, .field--name-field-texto-luzzo-2-1{
 			font-weight: 400;
 			font-size: 2rem;
 			color: #FFFFFF;
 			letter-spacing: 0.58px;
-			line-height: 27px;
+			line-height: $global-text-line-height-lg;
+			@media screen and (max-width: $screen-md) {
+				line-height: $global-text-line-height-sm;
+    		    
+ 			}
+ 			@media screen and (max-width: $screen-sm) {
+		    	text-align: center;
+	 		}
 		}
 
 		blockquote{
@@ -89,14 +174,23 @@
 		    padding: 25px;
 		    text-align: center;
 
+		    @media screen and (max-width: $screen-md) {
+				padding: 21px;
+    		    
+ 			}
+
 		}
 
 	}
 
-	#myCarousel-6{
+	.slider--luzzo{
 
-		margin-bottom: -25%;
-    	padding-bottom: 60px;
+		margin-bottom: 40px;
+		margin-top: 40px;
+
+		@media screen and (max-width: $screen-md) {
+    		margin-top: 60px;    
+ 		}
 
 		.carousel-indicators {
 			left: auto;
@@ -124,5 +218,51 @@
 
 	
 	}
+
+	#p--1-col-center-texto{
+
+		   position: relative;
+		   margin-bottom: 50px;
+
+		   .field--name-field-texto-luzzo-3{
+				font-size: 2rem;
+				color: #212121;
+				letter-spacing: 0.58px;
+				line-height: $global-text-line-height-lg;
+				@media screen and (max-width: $screen-md) {
+					line-height: $global-text-line-height-sm;
+	    		    
+	 			}
+	 			@media screen and (max-width: $screen-sm) {
+			    	text-align: center;
+		 		}
+
+		   }
+		   .saber-mais{
+			    display: block;
+
+		   		font-weight: 700;
+				font-size: 16px;
+				color: #4A4A4A;
+				letter-spacing: 2.66px;
+
+				padding: 5px 6px;
+			    border: 1px solid #000;
+			    margin-top: 20px;
+			    width: 113px;
+			    color: #000;
+			    text-align: center;
+
+			    	@media screen and (max-width: $screen-sm) {
+			    		margin: 0 auto;
+					    top: 30px;
+					    position: relative;
+		 		}
+
+		   }
+
+
+	}
+ 
 
 }

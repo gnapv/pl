@@ -54,12 +54,12 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 <div id="p--2-col-texto-imagem" {{ attributes.addClass(classes) }}>
     
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-7 col-md-7 col-lg-6">
           <h2>{{ content.field_titulo_texto_luzzo }}</h2>
           <hr>
           {{  content.field_corpo_texto_luzzo }}
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-5 col-md-5 col-lg-6">
           {{ content.field_imagem_texto_luzzo }}
           <blockquote>{{ content.field_destaque_texto_luzzo }}</blockquote>
         </div>
