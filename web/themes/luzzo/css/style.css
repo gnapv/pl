@@ -9996,25 +9996,31 @@ p:last-child,
   margin-bottom: 0;
 }
 
-/* line 50, ../scss/_overrides.scss */
+/* line 48, ../scss/_overrides.scss */
+.paragraph > .paragraph__column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 55, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 55, ../scss/_overrides.scss */
+/* line 60, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 61, ../scss/_overrides.scss */
+/* line 66, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 66, ../scss/_overrides.scss */
+/* line 71, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
@@ -10227,10 +10233,13 @@ body {
 }
 /* line 24, ../scss/pages/_luzzo.scss */
 #page-luzzo .field--name-field-ilustra-logo {
+  max-width: 80%;
+  position: relative;
+  margin: 0 auto;
   -webkit-mix-blend-mode: lighten;
   mix-blend-mode: lighten;
   margin-top: 140px;
-  margin-bottom: 150px;
+  margin-bottom: 140px;
 }
 @media screen and (max-width: 768px) {
   /* line 24, ../scss/pages/_luzzo.scss */
@@ -10238,7 +10247,7 @@ body {
     margin-bottom: 80px;
   }
 }
-/* line 34, ../scss/pages/_luzzo.scss */
+/* line 37, ../scss/pages/_luzzo.scss */
 #page-luzzo h2 {
   font-weight: 700;
   font-size: 2.4rem;
@@ -10246,16 +10255,16 @@ body {
   letter-spacing: 3.33px;
 }
 @media screen and (max-width: 768px) {
-  /* line 34, ../scss/pages/_luzzo.scss */
+  /* line 37, ../scss/pages/_luzzo.scss */
   #page-luzzo h2 {
     text-align: center;
   }
 }
-/* line 43, ../scss/pages/_luzzo.scss */
+/* line 46, ../scss/pages/_luzzo.scss */
 #page-luzzo hr {
   border: 1px solid #F4D680;
 }
-/* line 51, ../scss/pages/_luzzo.scss */
+/* line 54, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
   font-weight: 400;
   font-size: 2rem;
@@ -10264,18 +10273,18 @@ body {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 51, ../scss/pages/_luzzo.scss */
+  /* line 54, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 51, ../scss/pages/_luzzo.scss */
+  /* line 54, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
     text-align: center;
   }
 }
-/* line 66, ../scss/pages/_luzzo.scss */
+/* line 69, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem img {
   position: relative;
   bottom: 50px;
@@ -10283,25 +10292,25 @@ body {
   transform: scale(1.2);
 }
 @media screen and (max-width: 992px) {
-  /* line 66, ../scss/pages/_luzzo.scss */
+  /* line 69, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     transform: scale(1.5);
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 66, ../scss/pages/_luzzo.scss */
+  /* line 69, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     transform: scale(1.2);
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 66, ../scss/pages/_luzzo.scss */
+  /* line 69, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     bottom: 0;
     transform: scale(1);
   }
 }
-/* line 86, ../scss/pages/_luzzo.scss */
+/* line 89, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem blockquote {
   position: relative;
   bottom: 50px;
@@ -10315,74 +10324,74 @@ body {
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  /* line 86, ../scss/pages/_luzzo.scss */
+  /* line 89, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem blockquote {
     line-height: 40px;
     padding: 30px 0;
   }
 }
-/* line 106, ../scss/pages/_luzzo.scss */
+/* line 109, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto {
   position: relative;
   bottom: 100px;
 }
-/* line 110, ../scss/pages/_luzzo.scss */
+/* line 113, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto h2 {
   margin-top: 180px;
 }
 @media screen and (max-width: 1200px) {
-  /* line 110, ../scss/pages/_luzzo.scss */
+  /* line 113, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 110, ../scss/pages/_luzzo.scss */
+  /* line 113, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 35px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 110, ../scss/pages/_luzzo.scss */
+  /* line 113, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 85px;
     text-align: center;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 106, ../scss/pages/_luzzo.scss */
+  /* line 109, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 55px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 106, ../scss/pages/_luzzo.scss */
+  /* line 109, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 0;
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 106, ../scss/pages/_luzzo.scss */
+  /* line 109, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 0;
     margin-top: 0px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 106, ../scss/pages/_luzzo.scss */
+  /* line 109, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     margin-top: -30px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 138, ../scss/pages/_luzzo.scss */
+  /* line 141, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto img {
     max-width: 60%;
     margin: 0 auto;
   }
 }
-/* line 146, ../scss/pages/_luzzo.scss */
+/* line 149, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
   font-weight: 400;
   font-size: 2rem;
@@ -10391,18 +10400,18 @@ body {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 146, ../scss/pages/_luzzo.scss */
+  /* line 149, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 146, ../scss/pages/_luzzo.scss */
+  /* line 149, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
     text-align: center;
   }
 }
-/* line 161, ../scss/pages/_luzzo.scss */
+/* line 164, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto blockquote {
   position: absolute;
   max-width: 320px;
@@ -10418,53 +10427,60 @@ body {
   bottom: -50px;
   padding: 25px;
   text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 992px) {
-  /* line 161, ../scss/pages/_luzzo.scss */
+  /* line 164, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto blockquote {
     padding: 21px;
+    max-width: 220px;
   }
 }
-/* line 186, ../scss/pages/_luzzo.scss */
+/* line 189, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo {
   margin-bottom: 40px;
   margin-top: 40px;
 }
+/* line 194, ../scss/pages/_luzzo.scss */
+#page-luzzo .slider--luzzo .carousel-inner {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
 @media screen and (max-width: 992px) {
-  /* line 186, ../scss/pages/_luzzo.scss */
+  /* line 189, ../scss/pages/_luzzo.scss */
   #page-luzzo .slider--luzzo {
     margin-top: 60px;
   }
 }
-/* line 195, ../scss/pages/_luzzo.scss */
+/* line 203, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators {
   left: auto;
   z-index: 15;
-  width: 20%;
-  margin-left: -30%;
   padding-left: 0;
   list-style: none;
   text-align: center;
-  right: 0px;
   top: 35px;
+  text-align: right;
+  float: right;
+  right: 2% !important;
+  left: inherit;
 }
-/* line 206, ../scss/pages/_luzzo.scss */
+/* line 216, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators li {
   width: 20px;
   height: 20px;
   margin: 0 5px;
   transition: width .4s;
 }
-/* line 214, ../scss/pages/_luzzo.scss */
+/* line 224, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators .active {
   width: 35px !important;
 }
-/* line 222, ../scss/pages/_luzzo.scss */
+/* line 232, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto {
   position: relative;
   margin-bottom: 50px;
 }
-/* line 227, ../scss/pages/_luzzo.scss */
+/* line 237, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
   font-size: 2rem;
   color: #212121;
@@ -10472,18 +10488,18 @@ body {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 227, ../scss/pages/_luzzo.scss */
+  /* line 237, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 227, ../scss/pages/_luzzo.scss */
+  /* line 237, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     text-align: center;
   }
 }
-/* line 241, ../scss/pages/_luzzo.scss */
+/* line 251, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .saber-mais {
   display: block;
   font-weight: 700;
@@ -10498,7 +10514,7 @@ body {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 241, ../scss/pages/_luzzo.scss */
+  /* line 251, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .saber-mais {
     margin: 0 auto;
     top: 30px;

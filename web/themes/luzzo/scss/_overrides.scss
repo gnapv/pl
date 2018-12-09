@@ -45,6 +45,11 @@ p:last-child,
   margin-bottom: 0;
 }
 
+.paragraph>.paragraph__column {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 // Help region.
 .region-help {
   > .glyphicon {
