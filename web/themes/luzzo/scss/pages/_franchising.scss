@@ -1,0 +1,108 @@
+/**
+ * page franchising.
+ */
+
+
+#page-franchising{
+
+	.full-back:before {
+	    content: "";
+	    width: 100%;
+	    height: 100%;
+	    background:url(../img/padrao_azuleijo.jpg);
+	    position: absolute;
+	}
+
+	.field--name-field-ilustra-logo{
+	    position: relative;
+	    margin: 0 auto;
+	    max-width: 460px;
+		-webkit-mix-blend-mode: lighten;
+		mix-blend-mode: lighten;
+	    margin-top: 180px;
+	    margin-bottom: -30px;
+	   	@media screen and (max-width: $screen-sm) {
+	    	
+ 		}
+	}
+
+	h1{
+		font-weight: 700;
+		font-size: 10rem;
+		color: #FFFFFF;
+		letter-spacing: -0.1px;
+	    text-align: center;
+
+	}
+	h2{
+			font-weight: 700;
+			font-size: 2.4rem;
+			color: $brand-primary;
+			letter-spacing: 3.33px;
+			text-align: center;
+	}
+
+	.texto-intro{
+		font-size: 1.76rem;
+		color: #FFFFFF;
+		letter-spacing: 0.58px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	hr{
+		border: 1px solid $brand-primary;
+	}
+
+
+
+	#p--1-col-center-svg{
+
+
+		hr{
+			max-width: 60%;
+		}
+
+		img{
+			position: relative;
+    		margin: 0 auto;
+    		margin-top: 60px;
+		}
+	}
+
+	#p--2-col-texto-texto{
+		position: relative;
+    	margin-top: 60px;
+
+    	h2{
+    		text-transform: uppercase;
+    		text-align: left;
+    		margin-top: 0;
+    	}
+
+    	blockquote{
+		    border: none;
+		    background-color: $brand-primary;
+			font-size: 1.7rem;
+			color: #212121;
+			letter-spacing: 0.58px;
+			padding: 35px;    
+ 		}
+
+		.field--name-field-texto-luzzo-2, .field--name-field-corpo-texto-luzzo{
+			font-weight: 400;
+			font-size: 2rem;
+			color: #FFFFFF;
+			letter-spacing: 0.58px;
+			line-height: $global-text-line-height-lg;
+			@media screen and (max-width: $screen-md) {
+				line-height: $global-text-line-height-sm;
+    		    
+ 			}
+ 			@media screen and (max-width: $screen-sm) {
+		    	text-align: center;
+	 		}
+		}
+		
+	}
+}

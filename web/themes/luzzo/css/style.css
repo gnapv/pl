@@ -10523,6 +10523,106 @@ body {
 }
 
 /**
+ * page franchising.
+ */
+/* line 8, ../scss/pages/_franchising.scss */
+#page-franchising .full-back:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../img/padrao_azuleijo.jpg);
+  position: absolute;
+}
+/* line 16, ../scss/pages/_franchising.scss */
+#page-franchising .field--name-field-ilustra-logo {
+  position: relative;
+  margin: 0 auto;
+  max-width: 460px;
+  -webkit-mix-blend-mode: lighten;
+  mix-blend-mode: lighten;
+  margin-top: 180px;
+  margin-bottom: -30px;
+}
+/* line 29, ../scss/pages/_franchising.scss */
+#page-franchising h1 {
+  font-weight: 700;
+  font-size: 10rem;
+  color: #FFFFFF;
+  letter-spacing: -0.1px;
+  text-align: center;
+}
+/* line 37, ../scss/pages/_franchising.scss */
+#page-franchising h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #F4D680;
+  letter-spacing: 3.33px;
+  text-align: center;
+}
+/* line 45, ../scss/pages/_franchising.scss */
+#page-franchising .texto-intro {
+  font-size: 1.76rem;
+  color: #FFFFFF;
+  letter-spacing: 0.58px;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 53, ../scss/pages/_franchising.scss */
+#page-franchising hr {
+  border: 1px solid #F4D680;
+}
+/* line 62, ../scss/pages/_franchising.scss */
+#page-franchising #p--1-col-center-svg hr {
+  max-width: 60%;
+}
+/* line 66, ../scss/pages/_franchising.scss */
+#page-franchising #p--1-col-center-svg img {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+/* line 73, ../scss/pages/_franchising.scss */
+#page-franchising #p--2-col-texto-texto {
+  position: relative;
+  margin-top: 60px;
+}
+/* line 77, ../scss/pages/_franchising.scss */
+#page-franchising #p--2-col-texto-texto h2 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 0;
+}
+/* line 83, ../scss/pages/_franchising.scss */
+#page-franchising #p--2-col-texto-texto blockquote {
+  border: none;
+  background-color: #F4D680;
+  font-size: 1.7rem;
+  color: #212121;
+  letter-spacing: 0.58px;
+  padding: 35px;
+}
+/* line 92, ../scss/pages/_franchising.scss */
+#page-franchising #p--2-col-texto-texto .field--name-field-texto-luzzo-2, #page-franchising #p--2-col-texto-texto .field--name-field-corpo-texto-luzzo {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: 0.58px;
+  line-height: 27px;
+}
+@media screen and (max-width: 992px) {
+  /* line 92, ../scss/pages/_franchising.scss */
+  #page-franchising #p--2-col-texto-texto .field--name-field-texto-luzzo-2, #page-franchising #p--2-col-texto-texto .field--name-field-corpo-texto-luzzo {
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 92, ../scss/pages/_franchising.scss */
+  #page-franchising #p--2-col-texto-texto .field--name-field-texto-luzzo-2, #page-franchising #p--2-col-texto-texto .field--name-field-corpo-texto-luzzo {
+    text-align: center;
+  }
+}
+
+/**
  * Navigation.
  */
 /* line 6, ../scss/custom_component/_navigation.scss */
