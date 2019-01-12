@@ -31,6 +31,7 @@
         "drupal/flexslider": "^2.0@beta",
         "drupal/paragraphs": "^1.5",
         "drupal/svg_image": "^1.8",
+        "drupal/webform": "^5.0",
         "drush/drush": "^8.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

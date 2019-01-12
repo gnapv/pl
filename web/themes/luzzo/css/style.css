@@ -10201,11 +10201,18 @@ body {
   overflow-x: hidden;
 }
 
-/* line 31, ../scss/_global.scss */
+/* line 29, ../scss/_global.scss */
 .full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 35, ../scss/_global.scss */
+  .container {
+    padding: 0px 40px;
+  }
 }
 
 /**
@@ -10530,7 +10537,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
-  background: url(../img/padrao_azuleijo.jpg);
+  background: url(../img/padraoFranc.png);
   position: absolute;
 }
 /* line 16, ../scss/pages/_franchising.scss */
@@ -10543,23 +10550,51 @@ body {
   margin-top: 180px;
   margin-bottom: -30px;
 }
-/* line 29, ../scss/pages/_franchising.scss */
+/* line 27, ../scss/pages/_franchising.scss */
 #page-franchising h1 {
+  position: relative;
   font-weight: 700;
   font-size: 10rem;
   color: #FFFFFF;
   letter-spacing: -0.1px;
   text-align: center;
 }
-/* line 37, ../scss/pages/_franchising.scss */
+@media screen and (max-width: 1200px) {
+  /* line 27, ../scss/pages/_franchising.scss */
+  #page-franchising h1 {
+    left: -20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 27, ../scss/pages/_franchising.scss */
+  #page-franchising h1 {
+    left: -95px;
+    font-size: 10rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 27, ../scss/pages/_franchising.scss */
+  #page-franchising h1 {
+    left: 0;
+    font-size: 6.3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 27, ../scss/pages/_franchising.scss */
+  #page-franchising h1 {
+    font-size: 4.3rem;
+  }
+}
+/* line 52, ../scss/pages/_franchising.scss */
 #page-franchising h2 {
   font-weight: 700;
   font-size: 2.4rem;
   color: #F4D680;
   letter-spacing: 3.33px;
   text-align: center;
+  text-transform: uppercase;
 }
-/* line 45, ../scss/pages/_franchising.scss */
+/* line 61, ../scss/pages/_franchising.scss */
 #page-franchising .texto-intro {
   font-size: 1.76rem;
   color: #FFFFFF;
@@ -10567,32 +10602,45 @@ body {
   line-height: 24px;
   text-align: center;
 }
-/* line 53, ../scss/pages/_franchising.scss */
+/* line 69, ../scss/pages/_franchising.scss */
 #page-franchising hr {
   border: 1px solid #F4D680;
 }
-/* line 62, ../scss/pages/_franchising.scss */
+/* line 78, ../scss/pages/_franchising.scss */
 #page-franchising #p--1-col-center-svg hr {
   max-width: 60%;
 }
-/* line 66, ../scss/pages/_franchising.scss */
+/* line 82, ../scss/pages/_franchising.scss */
 #page-franchising #p--1-col-center-svg img {
   position: relative;
   margin: 0 auto;
   margin-top: 60px;
 }
-/* line 73, ../scss/pages/_franchising.scss */
+/* line 89, ../scss/pages/_franchising.scss */
 #page-franchising #p--2-col-texto-texto {
   position: relative;
   margin-top: 60px;
 }
-/* line 77, ../scss/pages/_franchising.scss */
+@media screen and (max-width: 768px) {
+  /* line 89, ../scss/pages/_franchising.scss */
+  #page-franchising #p--2-col-texto-texto {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+/* line 99, ../scss/pages/_franchising.scss */
 #page-franchising #p--2-col-texto-texto h2 {
   text-transform: uppercase;
   text-align: left;
   margin-top: 0;
 }
-/* line 83, ../scss/pages/_franchising.scss */
+@media screen and (max-width: 768px) {
+  /* line 99, ../scss/pages/_franchising.scss */
+  #page-franchising #p--2-col-texto-texto h2 {
+    text-align: center;
+  }
+}
+/* line 108, ../scss/pages/_franchising.scss */
 #page-franchising #p--2-col-texto-texto blockquote {
   border: none;
   background-color: #F4D680;
@@ -10601,7 +10649,13 @@ body {
   letter-spacing: 0.58px;
   padding: 35px;
 }
-/* line 92, ../scss/pages/_franchising.scss */
+@media screen and (max-width: 768px) {
+  /* line 108, ../scss/pages/_franchising.scss */
+  #page-franchising #p--2-col-texto-texto blockquote {
+    margin-bottom: 60px;
+  }
+}
+/* line 121, ../scss/pages/_franchising.scss */
 #page-franchising #p--2-col-texto-texto .field--name-field-texto-luzzo-2, #page-franchising #p--2-col-texto-texto .field--name-field-corpo-texto-luzzo {
   font-weight: 400;
   font-size: 2rem;
@@ -10610,16 +10664,103 @@ body {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 92, ../scss/pages/_franchising.scss */
+  /* line 121, ../scss/pages/_franchising.scss */
   #page-franchising #p--2-col-texto-texto .field--name-field-texto-luzzo-2, #page-franchising #p--2-col-texto-texto .field--name-field-corpo-texto-luzzo {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 92, ../scss/pages/_franchising.scss */
+  /* line 121, ../scss/pages/_franchising.scss */
   #page-franchising #p--2-col-texto-texto .field--name-field-texto-luzzo-2, #page-franchising #p--2-col-texto-texto .field--name-field-corpo-texto-luzzo {
     text-align: center;
   }
+}
+@media screen and (max-width: 992px) {
+  /* line 136, ../scss/pages/_franchising.scss */
+  #page-franchising #p--2-col-texto-texto .field--name-field-texto-luzzo-2 {
+    margin-top: 18px;
+  }
+}
+/* line 146, ../scss/pages/_franchising.scss */
+#page-franchising .paragraph__column p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.58px;
+  line-height: 27px;
+  text-align: center;
+}
+/* line 157, ../scss/pages/_franchising.scss */
+#page-franchising .form-control {
+  display: block;
+  padding: 19px 15px;
+  font-size: 1.8rem;
+  line-height: 1.42857;
+  color: #808080;
+  background-color: #212121;
+  border: 1px solid #F4D680;
+  border-radius: 0px;
+}
+/* line 168, ../scss/pages/_franchising.scss */
+#page-franchising .form-control .form-tel {
+  padding-left: 55px;
+}
+/* line 174, ../scss/pages/_franchising.scss */
+#page-franchising .form-control:focus {
+  border-color: #F4D680;
+  background-color: #141414;
+  outline: none;
+  box-shadow: none;
+}
+/* line 182, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form label {
+  color: #666;
+}
+/* line 185, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form .allow-dropdown {
+  width: 100%;
+}
+/* line 188, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form .allow-dropdown .flag-container {
+  padding-left: 10px;
+}
+/* line 192, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form #edit-telefone-fran {
+  padding-left: 60px;
+  width: 100%;
+}
+/* line 197, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4A4A4A;
+}
+/* line 200, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4A4A4A;
+}
+/* line 203, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4A4A4A;
+}
+/* line 206, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #4A4A4A;
+}
+/* line 209, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form input::placeholder {
+  color: #4A4A4A;
+}
+/* line 213, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form .webform-button--submit {
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #F4D680;
 }
 
 /**
@@ -10633,19 +10774,34 @@ body {
 .navbar-inverse .navbar-header {
   width: 100%;
 }
-/* line 13, ../scss/custom_component/_navigation.scss */
+/* line 12, ../scss/custom_component/_navigation.scss */
+.navbar-inverse .navbar-header #block-languageswitcher {
+  position: absolute;
+  right: -50px;
+  width: 100px;
+  top: 46vh;
+  background: #111;
+  z-index: 1000;
+}
+/* line 20, ../scss/custom_component/_navigation.scss */
+.navbar-inverse .navbar-header #block-languageswitcher ul {
+  list-style: none;
+  padding-left: 1.1em;
+  padding-top: 5px;
+}
+/* line 29, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav {
   float: right !important;
   margin-top: 42px;
 }
-/* line 18, ../scss/custom_component/_navigation.scss */
+/* line 34, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav > li > a {
   color: white;
   font-size: larger;
   text-transform: uppercase;
   padding: 8px 14px;
 }
-/* line 26, ../scss/custom_component/_navigation.scss */
+/* line 42, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > a:hover,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > a:focus,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .open > a,
@@ -10656,41 +10812,41 @@ body {
   color: white;
   background-color: #4B4B4B;
 }
-/* line 37, ../scss/custom_component/_navigation.scss */
+/* line 53, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .active > a {
   color: white;
   background-color: transparent;
 }
-/* line 42, ../scss/custom_component/_navigation.scss */
+/* line 58, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu {
   background-color: #4B4B4B;
   padding: 0;
   border: 0px solid black;
   border-top: 1px solid #222222;
 }
-/* line 48, ../scss/custom_component/_navigation.scss */
+/* line 64, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li {
   border-bottom: 1px solid #222222;
 }
-/* line 52, ../scss/custom_component/_navigation.scss */
+/* line 68, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a {
   color: white;
   font-size: larger;
   padding: 8px 14px;
   text-transform: uppercase;
 }
-/* line 58, ../scss/custom_component/_navigation.scss */
+/* line 74, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a:hover {
   color: #F4D680;
 }
 
-/* line 77, ../scss/custom_component/_navigation.scss */
+/* line 93, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li {
   display: inline;
   list-style: none;
   border-right: 1px solid white;
 }
-/* line 82, ../scss/custom_component/_navigation.scss */
+/* line 98, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a {
   display: inline-block;
   padding: 0px 20px;
@@ -10698,12 +10854,12 @@ footer nav[role="navigation"] ul.nav li a {
   color: #fff;
   font-size: smaller;
 }
-/* line 90, ../scss/custom_component/_navigation.scss */
+/* line 106, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-/* line 97, ../scss/custom_component/_navigation.scss */
+/* line 113, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li:last-child {
   border-right: 0px solid white;
 }

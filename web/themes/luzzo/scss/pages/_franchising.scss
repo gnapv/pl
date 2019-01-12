@@ -5,104 +5,219 @@
 
 #page-franchising{
 
-	.full-back:before {
-	    content: "";
-	    width: 100%;
-	    height: 100%;
-	    background:url(../img/padrao_azuleijo.jpg);
-	    position: absolute;
-	}
+ 	.full-back:before {
+ 		content: "";
+ 		width: 100%;
+ 		height: 100%;
+ 		background:url(../img/padraoFranc.png);
+ 		position: absolute;
+ 	}
 
-	.field--name-field-ilustra-logo{
-	    position: relative;
-	    margin: 0 auto;
-	    max-width: 460px;
-		-webkit-mix-blend-mode: lighten;
-		mix-blend-mode: lighten;
-	    margin-top: 180px;
-	    margin-bottom: -30px;
-	   	@media screen and (max-width: $screen-sm) {
-	    	
+ 	.field--name-field-ilustra-logo{
+ 		position: relative;
+ 		margin: 0 auto;
+ 		max-width: 460px;
+ 		-webkit-mix-blend-mode: lighten;
+ 		mix-blend-mode: lighten;
+ 		margin-top: 180px;
+ 		margin-bottom: -30px;
+
+ 	}
+
+ 	h1{
+ 		position: relative;
+ 		font-weight: 700;
+ 		font-size: 10rem;
+ 		color: #FFFFFF;
+ 		letter-spacing: -0.1px;
+ 		text-align: center;
+
+ 		@media screen and (max-width: $screen-lg) {
+ 			left: -20px;
  		}
-	}
-
-	h1{
-		font-weight: 700;
-		font-size: 10rem;
-		color: #FFFFFF;
-		letter-spacing: -0.1px;
-	    text-align: center;
-
-	}
-	h2{
-			font-weight: 700;
-			font-size: 2.4rem;
-			color: $brand-primary;
-			letter-spacing: 3.33px;
-			text-align: center;
-	}
-
-	.texto-intro{
-		font-size: 1.76rem;
-		color: #FFFFFF;
-		letter-spacing: 0.58px;
-		line-height: 24px;
-		text-align: center;
-	}
-
-	hr{
-		border: 1px solid $brand-primary;
-	}
-
-
-
-	#p--1-col-center-svg{
-
-
-		hr{
-			max-width: 60%;
-		}
-
-		img{
-			position: relative;
-    		margin: 0 auto;
-    		margin-top: 60px;
-		}
-	}
-
-	#p--2-col-texto-texto{
-		position: relative;
-    	margin-top: 60px;
-
-    	h2{
-    		text-transform: uppercase;
-    		text-align: left;
-    		margin-top: 0;
-    	}
-
-    	blockquote{
-		    border: none;
-		    background-color: $brand-primary;
-			font-size: 1.7rem;
-			color: #212121;
-			letter-spacing: 0.58px;
-			padding: 35px;    
+ 		@media screen and (max-width: $screen-md) {
+ 			left: -95px;
+ 			font-size: 10rem;
+ 		}
+ 		@media screen and (max-width: $screen-sm) {
+ 			left: 0;
+ 			font-size: 6.3rem;
+ 		}
+ 		@media screen and (max-width: $screen-xs) {
+ 			font-size: 4.3rem;
  		}
 
-		.field--name-field-texto-luzzo-2, .field--name-field-corpo-texto-luzzo{
-			font-weight: 400;
-			font-size: 2rem;
-			color: #FFFFFF;
-			letter-spacing: 0.58px;
-			line-height: $global-text-line-height-lg;
-			@media screen and (max-width: $screen-md) {
-				line-height: $global-text-line-height-sm;
-    		    
+ 	}
+
+ 	h2{
+ 		font-weight: 700;
+ 		font-size: 2.4rem;
+ 		color: $brand-primary;
+ 		letter-spacing: 3.33px;
+ 		text-align: center;
+ 		text-transform: uppercase;
+ 	}
+
+ 	.texto-intro{
+ 		font-size: 1.76rem;
+ 		color: #FFFFFF;
+ 		letter-spacing: 0.58px;
+ 		line-height: 24px;
+ 		text-align: center;
+ 	}
+
+ 	hr{
+ 		border: 1px solid $brand-primary;
+ 	}
+
+
+
+ 	#p--1-col-center-svg{
+
+
+ 		hr{
+ 			max-width: 60%;
+ 		}
+
+ 		img{
+ 			position: relative;
+ 			margin: 0 auto;
+ 			margin-top: 60px;
+ 		}
+ 	}
+
+ 	#p--2-col-texto-texto{
+ 		position: relative;
+ 		margin-top: 60px;
+
+ 		@media screen and (max-width: $screen-sm) {
+ 			margin-top: 30px;
+ 			margin-bottom: 60px;
+ 		}	  
+
+
+ 		h2{
+ 			text-transform: uppercase;
+ 			text-align: left;
+ 			margin-top: 0;
+ 			@media screen and (max-width: $screen-sm) {
+ 				text-align: center;
+ 			}
+ 		}
+
+ 		blockquote{
+ 			border: none;
+ 			background-color: $brand-primary;
+ 			font-size: 1.7rem;
+ 			color: #212121;
+ 			letter-spacing: 0.58px;
+ 			padding: 35px;
+
+ 			@media screen and (max-width: $screen-sm) {
+ 				margin-bottom: 60px;
+ 			}	    
+ 		}
+
+ 		.field--name-field-texto-luzzo-2, .field--name-field-corpo-texto-luzzo{
+ 			font-weight: 400;
+ 			font-size: 2rem;
+ 			color: #FFFFFF;
+ 			letter-spacing: 0.58px;
+ 			line-height: $global-text-line-height-lg;
+ 			@media screen and (max-width: $screen-md) {
+ 				line-height: $global-text-line-height-sm;
+
  			}
  			@media screen and (max-width: $screen-sm) {
-		    	text-align: center;
-	 		}
+ 				text-align: center;
+ 			}
+ 		}
+
+ 		.field--name-field-texto-luzzo-2{
+ 			@media screen and (max-width: $screen-md) {
+ 				margin-top: 18px;
+ 			}
+ 		}
+
+ 	}
+
+
+ 	.paragraph__column{
+ 		p{
+ 			font-weight: 400;
+ 			font-size: 20px;
+ 			color: #FFFFFF;
+ 			letter-spacing: 0.58px;
+ 			line-height: 27px;
+ 			text-align: center;
+ 		}
+
+ 	}
+
+ 	.form-control {
+ 		display: block;
+ 		padding: 19px 15px;
+ 		font-size: 1.8rem;
+ 		line-height: 1.42857;
+ 		color: #808080;
+ 		background-color: #212121;
+
+ 		border: 1px solid $brand-primary;
+ 		border-radius: 0px;
+
+ 		.form-tel{
+ 			padding-left: 55px;
+ 		}
+
+
+ 	}
+ 	.form-control:focus {
+ 		border-color: $brand-primary;
+ 		background-color: #141414;
+ 		outline: none;
+ 		box-shadow: none;
+ 	}
+
+ 	.webform-submission-franchising-form{
+ 		label{
+ 			color: #666;
+ 		}
+ 		.allow-dropdown{
+ 			width: 100%;
+
+ 			.flag-container{
+ 				padding-left: 10px;
+ 			}
+ 		}
+ 		#edit-telefone-fran{
+ 			padding-left: 60px;
+ 			width: 100%;
+
+ 		}
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color:#4A4A4A;
 		}
-		
+		::-moz-placeholder { /* Firefox 19+ */
+			color:#4A4A4A;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+			color:#4A4A4A;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+			color:#4A4A4A;
+		}
+		input::placeholder {
+			color:#4A4A4A;
+		}
+
+		.webform-button--submit{
+			width: 100%;
+			text-align: center;
+			border-radius: 0;
+			background-color: transparent;
+			font-size: 2rem;
+			color: $brand-primary;
+		}
 	}
+
 }
