@@ -10789,19 +10789,47 @@ body {
   padding-left: 1.1em;
   padding-top: 5px;
 }
-/* line 29, ../scss/custom_component/_navigation.scss */
+/* line 28, ../scss/custom_component/_navigation.scss */
+.navbar-inverse .navbar-header .logo {
+  margin-left: 20px;
+}
+/* line 33, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav {
   float: right !important;
   margin-top: 42px;
+  margin-right: 20px;
 }
-/* line 34, ../scss/custom_component/_navigation.scss */
-.navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav > li > a {
-  color: white;
-  font-size: larger;
-  text-transform: uppercase;
+/* line 39, ../scss/custom_component/_navigation.scss */
+.navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav > li {
   padding: 8px 14px;
 }
-/* line 42, ../scss/custom_component/_navigation.scss */
+/* line 43, ../scss/custom_component/_navigation.scss */
+.navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav > li > a {
+  color: white;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2.83px;
+  padding: 0 !important;
+}
+/* line 51, ../scss/custom_component/_navigation.scss */
+.navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav > li > a:after {
+  content: "";
+  border-bottom: 14px solid;
+  border-image: url(../img/zig.svg);
+  border-image-slice: 15 1;
+  border-image-repeat: round;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 23px;
+  clip-path: inset(0 100% 0 0);
+  transition: all .3s ease-in;
+}
+/* line 64, ../scss/custom_component/_navigation.scss */
+.navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav > li > a:hover:after {
+  clip-path: inset(0 0% 0 0);
+}
+/* line 69, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > a:hover,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > a:focus,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .open > a,
@@ -10809,44 +10837,43 @@ body {
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .open > a:focus,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .active > a:hover,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .active > a:focus {
-  color: white;
-  background-color: #4B4B4B;
+  color: #F4D680;
 }
-/* line 53, ../scss/custom_component/_navigation.scss */
+/* line 80, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .active > a {
   color: white;
   background-color: transparent;
 }
-/* line 58, ../scss/custom_component/_navigation.scss */
+/* line 85, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu {
   background-color: #4B4B4B;
   padding: 0;
   border: 0px solid black;
   border-top: 1px solid #222222;
 }
-/* line 64, ../scss/custom_component/_navigation.scss */
+/* line 91, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li {
   border-bottom: 1px solid #222222;
 }
-/* line 68, ../scss/custom_component/_navigation.scss */
+/* line 95, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a {
   color: white;
   font-size: larger;
   padding: 8px 14px;
   text-transform: uppercase;
 }
-/* line 74, ../scss/custom_component/_navigation.scss */
+/* line 101, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a:hover {
   color: #F4D680;
 }
 
-/* line 93, ../scss/custom_component/_navigation.scss */
+/* line 120, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li {
   display: inline;
   list-style: none;
   border-right: 1px solid white;
 }
-/* line 98, ../scss/custom_component/_navigation.scss */
+/* line 125, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a {
   display: inline-block;
   padding: 0px 20px;
@@ -10854,12 +10881,12 @@ footer nav[role="navigation"] ul.nav li a {
   color: #fff;
   font-size: smaller;
 }
-/* line 106, ../scss/custom_component/_navigation.scss */
+/* line 133, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-/* line 113, ../scss/custom_component/_navigation.scss */
+/* line 140, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li:last-child {
   border-right: 0px solid white;
 }
@@ -10868,46 +10895,95 @@ footer nav[role="navigation"] ul.nav li:last-child {
  * slider_homepage.
  */
 /* line 6, ../scss/custom_component/_slider-homepage.scss */
-#slider-home-page {
+#flexslider-1 {
   margin: 0;
   border: none;
+  overflow: hidden;
 }
-/* line 10, ../scss/custom_component/_slider-homepage.scss */
-#slider-home-page ul li > .caption-wrapper {
+/* line 11, ../scss/custom_component/_slider-homepage.scss */
+#flexslider-1 ul li > .caption-wrapper {
   position: absolute;
-  top: 35%;
-  background-color: rgba(255, 255, 255, 0.6);
-  left: 5%;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 17, ../scss/custom_component/_slider-homepage.scss */
-#slider-home-page ul li > .caption-wrapper .title {
-  font-size: 2em;
-  background-color: rgba(255, 255, 255, 0.8);
+/* line 20, ../scss/custom_component/_slider-homepage.scss */
+#flexslider-1 ul li > .caption-wrapper .title {
   padding: 10px 10px 0 10px;
+  font-size: 2.8rem;
+  color: #FFFFFF;
+  letter-spacing: 4.66px;
 }
-/* line 23, ../scss/custom_component/_slider-homepage.scss */
-#slider-home-page ul li > .caption-wrapper .desc {
+/* line 27, ../scss/custom_component/_slider-homepage.scss */
+#flexslider-1 ul li > .caption-wrapper .desc {
   font-size: 1em;
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 0 10px 10px 10px;
+  opacity: 0.28;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  letter-spacing: 2.33px;
 }
-/* line 30, ../scss/custom_component/_slider-homepage.scss */
-#slider-home-page .flex-control-nav {
-  bottom: 35px;
+/* line 37, ../scss/custom_component/_slider-homepage.scss */
+#flexslider-1 .flex-control-nav {
+  left: auto;
+  z-index: 15;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  text-align: right;
+  float: right;
+  right: 13% !important;
+  left: inherit;
+  bottom: 45px;
   z-index: 35;
 }
-/* line 34, ../scss/custom_component/_slider-homepage.scss */
-#slider-home-page .flex-control-nav li a {
-  -webkit-transition: all .3s;
-  width: 15px;
-  height: 15px;
+/* line 54, ../scss/custom_component/_slider-homepage.scss */
+#flexslider-1 .flex-control-nav li a {
+  width: 20px;
+  height: 20px;
+  margin: 0;
   cursor: pointer;
   background-color: transparent;
+  color: transparent;
   border: 1px solid #fff;
   border-radius: 10px;
+  transition: width .4s;
 }
-/* line 44, ../scss/custom_component/_slider-homepage.scss */
-#slider-home-page .flex-control-paging li a.flex-active {
+/* line 66, ../scss/custom_component/_slider-homepage.scss */
+#flexslider-1 .flex-control-nav li a.flex-active {
   width: 35px !important;
+  background-color: #fff;
+}
+/* line 75, ../scss/custom_component/_slider-homepage.scss */
+#flexslider-1 .flex-control-paging li a.flex-active {
+  width: 35px !important;
+}
+
+/* line 82, ../scss/custom_component/_slider-homepage.scss */
+#block-views-block-go-down-block-1 .godown {
+  position: absolute;
+  right: 20px;
+  width: 56px;
+  height: 33px;
+  background: url(../img/down_bt.svg);
+  top: -75px;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-animation: downfade 1.5s infinite;
+  animation: downfade 1.5s infinite;
+}
+@keyframes downfade {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 10px);
+    opacity: 0;
+  }
 }

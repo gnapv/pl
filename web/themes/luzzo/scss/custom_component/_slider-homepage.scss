@@ -3,46 +3,110 @@
  */
 
 
-#slider-home-page{
+#flexslider-1{
 	margin: 0;
 	border: none;
+	overflow: hidden;
 	
 	ul li > .caption-wrapper{
 		position: absolute;
-	    top: 35%;
-	    background-color: rgba(255,255,255,.6);
-	    left: 5%;
+		width: 100%;
+	    bottom: 0;
+	    background-color: rgba(0, 0, 0, 0.8);
 	    padding: 10px;
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+
 
 	    .title{
-	    	font-size: 2em;
-	    	background-color: rgba(255, 255, 255, 0.8);
     		padding: 10px 10px 0 10px;
+			font-size: 2.8rem;
+			color: #FFFFFF;
+			letter-spacing: 4.66px;
 	    }
 
 	    .desc{
 	    	font-size: 1em;
-	    	background-color: rgba(255, 255, 255, 0.8);
 			padding: 0 10px 10px 10px;
+			opacity: 0.28;
+			font-size: 1.4rem;
+			color: #FFFFFF;
+			letter-spacing: 2.33px;
 	    }
 	}
 	
 	.flex-control-nav{
-		bottom: 35px;
-		z-index: 35;
+			left: auto;
+		    z-index: 15;
+		    padding-left: 0;
+		    list-style: none;
+		    text-align: center;
+		
 
-			li a{
-				-webkit-transition: all .3s;
-			    width: 15px;
-			    height: 15px;
-			    cursor: pointer;
-			    background-color: rgba(0,0,0,0);
-			    border: 1px solid #fff;
-			    border-radius: 10px;
-			}		
+		    text-align: right;
+		    float: right;
+		    right: 13% !important;
+		    left: inherit;
+
+
+			bottom: 45px;
+			z-index: 35;
+
+		    	li a{
+					width: 20px;
+					height: 20px;
+					margin: 0;
+			    	cursor: pointer;
+			    	background-color: transparent;
+			    	color: transparent;
+			    	border: 1px solid #fff;
+			    	border-radius: 10px;
+
+					transition: width .4s;
+
+					&.flex-active{
+						width: 35px!important;
+			    		background-color: #fff;
+
+
+					}
+				
+				}			
 	}
 	.flex-control-paging li a.flex-active{
 		width: 35px!important;
 	}
 
 }
+
+#block-views-block-go-down-block-1{
+	.godown{
+		position: absolute;
+	    right: 20px;
+	    width: 56px;
+	    height: 33px;
+	    background: url(../img/down_bt.svg);
+	    top: -75px;
+    	z-index: 2;
+    	cursor: pointer;
+    	  -webkit-animation: downfade 1.5s infinite;
+  				  animation: downfade 1.5s infinite;
+	}
+
+	@keyframes downfade {
+	  0% {
+	    transform: translate(0, 0);
+	    opacity: 0;
+	  }
+	  50% {
+	    opacity: 1;
+	  }
+	  100% {
+	    transform: translate(0px, 10px);
+	    opacity: 0;
+	  }
+	}
+
+
+}
+
+

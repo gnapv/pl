@@ -25,18 +25,45 @@
 			    }
 		}
 
+		.logo{
+			margin-left: 20px;
+		}
+
 		#block-luzzo-main-menu {
 			.navbar-nav{
 				  	float: right!important;
 				  	margin-top: 42px;
+				  	margin-right: 20px;
 			}
+
+		   .navbar-nav > li {
+		     padding: 8px 14px;
+		   }
 
 		   .navbar-nav > li > a {
 		     color: white;
-		     font-size: larger;
+		     font-size: 1.7rem;
 		     text-transform: uppercase;
-		     padding: 8px 14px;
+			 letter-spacing: 2.83px;
+			 padding: 0!important;
 		   }
+
+		    .navbar-nav > li > a:after {
+			    content: "";
+			    border-bottom: 14px solid;
+			    border-image: url(../img/zig.svg);
+			    border-image-slice: 15 1;
+			    border-image-repeat: round;
+			    width: 100%;
+			    position: absolute;
+			    left: 0;
+			    top: 23px;
+			    clip-path: inset(0 100% 0 0);
+			    transition: all .3s ease-in;
+			}
+			.navbar-nav > li > a:hover:after {
+			    clip-path: inset(0 0% 0 0);
+			} 
 
 		   .navbar-nav {
 		     li > a:hover,
@@ -46,8 +73,8 @@
 		     .open > a:focus,
 		     .active > a:hover,
 		     .active > a:focus {
-		       color: white;
-		       background-color:$gray-over;
+		       color: $brand-primary;
+		       // background-color:$gray-over;
 		     }
 
 		     .active > a{

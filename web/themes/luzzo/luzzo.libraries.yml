@@ -6,6 +6,7 @@ global-styling:
       css/style.css: {}
   js:
     libraries/Flexslider/jquery.flexslider-min.js: {}
+    libraries/animated-scroll-to.js: {}
     js/main.js: {}
   dependencies:
     - core/jquery
