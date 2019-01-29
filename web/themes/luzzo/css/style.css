@@ -16,7 +16,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700");
 /* line 9, ../bootstrap/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -10764,6 +10764,248 @@ body {
 }
 
 /**
+ * page lojas.
+ */
+/* line 7, ../scss/pages/_lojas.scss */
+#headerlojas .full-back {
+  min-height: 370px;
+}
+/* line 11, ../scss/pages/_lojas.scss */
+#headerlojas .full-back:before {
+  content: "";
+  width: 100%;
+  height: 370px;
+  background: url(../img/padrao_azuleijo.jpg);
+  position: absolute;
+}
+/* line 19, ../scss/pages/_lojas.scss */
+#headerlojas .full-back img {
+  max-width: 420px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-mix-blend-mode: lighten;
+  mix-blend-mode: lighten;
+  margin-top: 180px;
+}
+
+/* line 34, ../scss/pages/_lojas.scss */
+#lojas .container > .row {
+  margin-top: 90px;
+}
+/* line 38, ../scss/pages/_lojas.scss */
+#lojas .full-back-1:before {
+  content: "";
+  width: 100%;
+  background: url(../img/zigZag.png);
+  position: absolute;
+  height: calc(100% - 290px);
+  background-position-y: -120px;
+}
+/* line 48, ../scss/pages/_lojas.scss */
+#lojas .field--name-field-nome {
+  position: relative;
+  font-weight: 300;
+  font-size: 3.6rem;
+  color: #212121;
+  letter-spacing: 10.12px;
+  text-align: center;
+  margin-top: 90px;
+  margin: 0 auto;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 62, ../scss/pages/_lojas.scss */
+#lojas .field--name-field-nome:before, #lojas .field--name-field-nome:after {
+  content: "";
+  border-top: 1px solid #9B9B9B;
+  width: 150px;
+  position: absolute;
+  top: 47%;
+}
+/* line 70, ../scss/pages/_lojas.scss */
+#lojas .field--name-field-nome:before {
+  right: 100%;
+  margin-right: 15px;
+}
+/* line 74, ../scss/pages/_lojas.scss */
+#lojas .field--name-field-nome:after {
+  left: 100%;
+  margin-left: 15px;
+}
+/* line 80, ../scss/pages/_lojas.scss */
+#lojas .field--name-field-des {
+  font-size: 1.8rem;
+  color: #4A4A4A;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* line 88, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row {
+  position: relative;
+  height: 145px;
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: #212121;
+  transition: all .4s ease-out;
+}
+@media screen and (max-width: 768px) {
+  /* line 88, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row {
+    height: 110px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 88, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row {
+    height: 95px;
+  }
+}
+/* line 104, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row .views-field-field-nome a:hover {
+  text-decoration: none;
+}
+/* line 108, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 111, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row:hover .views-field-field-nome a {
+  color: #4A4A4A;
+}
+/* line 115, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
+  background: #F4D680;
+  transform: translateX(290px);
+}
+@media screen and (max-width: 992px) {
+  /* line 115, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
+    transform: translateX(110px);
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 115, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
+    transform: translateX(-130px);
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 115, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
+    transform: translateX(-70px);
+  }
+}
+/* line 129, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
+  transform: translateX(290px);
+}
+@media screen and (max-width: 992px) {
+  /* line 129, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
+    transform: translateX(110px);
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 129, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
+    transform: translateX(-130px);
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 129, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
+    transform: translateX(-70px);
+  }
+}
+/* line 143, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row .views-field-field-imagem-destaque {
+  max-width: 50%;
+}
+@media screen and (max-width: 992px) {
+  /* line 143, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row .views-field-field-imagem-destaque {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 143, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row .views-field-field-imagem-destaque {
+    max-width: 80%;
+  }
+}
+/* line 152, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row .views-field-field-imagem-destaque:before {
+  content: "";
+  width: 100%;
+  height: 145px;
+  background-color: #212121;
+  position: absolute;
+  left: 130px;
+  transition: all .4s ease-out;
+}
+@media screen and (max-width: 480px) {
+  /* line 152, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row .views-field-field-imagem-destaque:before {
+    left: 70px;
+  }
+}
+/* line 167, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row .views-field-field-nome {
+  position: absolute;
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: #F4D680;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  top: 25%;
+  left: 145px;
+  transition: all .4s ease-out;
+}
+@media screen and (max-width: 992px) {
+  /* line 167, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row .views-field-field-nome {
+    font-size: 4.1rem;
+    letter-spacing: 4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 167, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row .views-field-field-nome {
+    font-size: 3.9rem;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 167, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row .views-field-field-nome {
+    left: 85px;
+    font-size: 3.2rem;
+    letter-spacing: 0px;
+  }
+}
+/* line 194, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row .views-field-field-cidade {
+  display: inline;
+  left: 145px;
+  position: absolute;
+  top: 65%;
+  font-size: 1.4rem;
+  color: #9B9B9B;
+  letter-spacing: 2.33px;
+  transition: all .4s ease-out;
+}
+@media screen and (max-width: 480px) {
+  /* line 194, ../scss/pages/_lojas.scss */
+  #lojas .view-lojas .views-row .views-field-field-cidade {
+    left: 85px;
+    letter-spacing: 1px;
+  }
+}
+
+/**
  * Navigation.
  */
 /* line 6, ../scss/custom_component/_navigation.scss */
@@ -10827,9 +11069,10 @@ body {
 }
 /* line 64, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav > li > a:hover:after {
+  -webkit-clip-path: inset(0 0% 0 0);
   clip-path: inset(0 0% 0 0);
 }
-/* line 69, ../scss/custom_component/_navigation.scss */
+/* line 70, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > a:hover,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > a:focus,
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .open > a,
@@ -10839,41 +11082,41 @@ body {
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .active > a:focus {
   color: #F4D680;
 }
-/* line 80, ../scss/custom_component/_navigation.scss */
+/* line 81, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav .active > a {
   color: white;
   background-color: transparent;
 }
-/* line 85, ../scss/custom_component/_navigation.scss */
+/* line 86, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu {
   background-color: #4B4B4B;
   padding: 0;
   border: 0px solid black;
   border-top: 1px solid #222222;
 }
-/* line 91, ../scss/custom_component/_navigation.scss */
+/* line 92, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li {
   border-bottom: 1px solid #222222;
 }
-/* line 95, ../scss/custom_component/_navigation.scss */
+/* line 96, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a {
   color: white;
   font-size: larger;
   padding: 8px 14px;
   text-transform: uppercase;
 }
-/* line 101, ../scss/custom_component/_navigation.scss */
+/* line 102, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a:hover {
   color: #F4D680;
 }
 
-/* line 120, ../scss/custom_component/_navigation.scss */
+/* line 121, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li {
   display: inline;
   list-style: none;
   border-right: 1px solid white;
 }
-/* line 125, ../scss/custom_component/_navigation.scss */
+/* line 126, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a {
   display: inline-block;
   padding: 0px 20px;
@@ -10881,12 +11124,12 @@ footer nav[role="navigation"] ul.nav li a {
   color: #fff;
   font-size: smaller;
 }
-/* line 133, ../scss/custom_component/_navigation.scss */
+/* line 134, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-/* line 140, ../scss/custom_component/_navigation.scss */
+/* line 141, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li:last-child {
   border-right: 0px solid white;
 }
