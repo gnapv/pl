@@ -12,11 +12,34 @@ jQuery(document).ready(function(){
 
 
 function initSliderHome() {
+
+    //
+    //Fix name city
+    //
+
+  if (jQuery('body').hasClass('page-node-type-loja') == true) {
+
+      console.log("TYPE: page-node-type-loja");
+
+      jQuery( "#flexslider-2 .slides li" ).each(function( index ) {
+
+        var thisOne  = jQuery(this);
+        var myDiv1Para =  thisOne.find( ".views-field-field-cidade > .field-content" ).remove();
+        var myDivOnde = thisOne.find('.views-field-field-nome');
+
+        myDiv1Para.appendTo(myDivOnde);
+
+      });
+
+  }
+
+
+
   	//
   	//Fix Height Slider Home
   	//
 
-  	var $item = jQuery('#flexslider-1 .slides li'); 
+  var $item = jQuery('#flexslider-1 .slides li, #flexslider-2 .slides li');
 	var $wHeight = jQuery(window).height();
 	$item.eq(0).addClass('active');
 	$item.height($wHeight); 
@@ -29,6 +52,16 @@ function initSliderHome() {
 	  });
 	  jQuery(this).remove();
 	});
+
+  jQuery('#flexslider-2 .slides li img').each(function() {
+    var $src = jQuery(this).attr('src');
+    jQuery(this).parent().parent().parent().css({
+      'background-image' : 'url(' + $src + ')',
+    });
+    jQuery(this).parent().parent().remove();
+    jQuery(this).parent().remove();
+    jQuery(this).remove();
+  });
 
 	jQuery(window).on('resize', function (){
 	  $wHeight = jQuery(window).height();

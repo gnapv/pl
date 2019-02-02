@@ -1,0 +1,497 @@
+/**
+ * page loja.
+ */
+
+ #flexslider-2{
+
+ 	margin: 0;
+	border: none;
+	overflow: hidden;
+
+	.slides{
+
+		.views-field-field-nome{
+			    position: absolute;
+			    width: 100%;
+			    bottom: 0;
+			    background-color: rgba(0, 0, 0, 0.8);
+			    padding: 0px 0 15px 20px;
+			    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+			    display: block;
+			    height: 118px;
+			    font-weight: 700;
+			    font-size: 6.0rem;
+			    color: #FFFFFF;
+			    letter-spacing: 10px;
+			    line-height: 120px;
+			    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+			    text-transform: uppercase;
+
+			    .field-content{
+			    	display: inline;
+			    }
+			    div:last-child{
+				    font-size: 1.8rem;
+				    color: #9B9B9B;
+				    letter-spacing: 3px;
+				    display: inline;
+			    }
+		}
+	}
+
+	.flex-control-nav{
+
+		left: auto;
+	    z-index: 15;
+	    padding-left: 0;
+	    list-style: none;
+	    text-align: right;
+	    float: right;
+	    bottom: 0;
+	    z-index: 2;
+	    max-width: 200px;
+	    padding-bottom: 45px;
+	    right: 180px;
+
+
+		    	li a{
+					width: 20px;
+					height: 20px;
+					margin: 0;
+			    	cursor: pointer;
+			    	background-color: transparent;
+			    	color: transparent;
+			    	border: 1px solid #fff;
+			    	border-radius: 10px;
+
+					transition: width .4s;
+
+					&.flex-active{
+						width: 35px!important;
+			    		background-color: #fff;
+
+
+					}
+				
+				}			
+	}
+	.flex-control-paging li a.flex-active{
+		width: 35px!important;
+	}
+
+ }
+
+.page-node-type-loja{
+  	.full-back{
+
+ 		min-height: 370px;
+
+ 		&:before {
+		    content: "";
+		    width: 100%;
+		    height: 100%;
+		    background:url(../img/zigZag.png);
+		    position: absolute;
+		}
+	}
+}
+
+#block-nextpreviousblock{
+
+	min-height: 160px;
+	padding: 50px 25px;
+
+	.blogprevious{
+		background: url(../img/left_bt.svg);
+		width: 33px;
+		height: 56px;
+		float: left;
+
+	}
+	.blognext{
+		background: url(../img/right_btt.svg);
+		width: 33px;
+		height: 56px;
+		float: right;
+
+
+	}
+	.close_bt{
+		position: relative;
+		margin: 0 auto;
+		width: 63px;
+		height: 55px;
+
+	}
+	.close_bt a{
+		background: url(../img/close_bt.svg);
+		display: block;
+		width: 63px;
+		height: 55px;
+	}
+	.blogprevious, .blognext, .close_bt a{
+		opacity: .4;
+		transition: opacity .4s ease-in;
+	}
+
+	.blogprevious:hover, .blognext:hover, .close_bt a:hover{
+		opacity: 1!important;
+	}
+	
+	
+
+}
+
+#page-loja-main{
+	.field--name-field-cidade{
+		font-size: 1.8rem;
+		color: #9B9B9B;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+	.field--name-field-nome{
+		position: relative;
+		font-weight: 900;
+		font-size: 36px;
+		color: #4A4A4A;
+		letter-spacing: 10.12px;
+		text-align: center;
+    	text-transform: uppercase;
+    	line-height: 1;
+    	margin: 0 auto;
+    	margin-bottom: 45px;
+	    display: inline-block;
+	    left: 50%;
+	    transform: translateX(-50%);
+
+		&:before,
+		&:after {
+			content: "";
+			border-top: 1px solid #9B9B9B;
+			width: 150px;
+			position: absolute;
+			top: 47%;
+			}
+			&:before {
+			  right: 100%;
+			  margin-right: 15px;
+			}
+			&:after {
+			  left: 100%;
+			  margin-left: 15px;
+			}
+	}
+	.field--name-field-imagem-destaque{
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	}
+	.field--name-field-imagem-destaque img{
+		width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	}
+	.field--name-field-de{
+		font-size: 18px;
+		color: #4A4A4A;
+		letter-spacing: 1.8px;
+		line-height: 27px;
+		margin-top: 35px;
+		text-align: center;
+	}
+
+	.field--name-field-reservar a{
+		display: inline-block;
+	    font-weight: 900;
+	    font-size: 16px;
+	    color: #4A4A4A;
+	    letter-spacing: 2.66px;
+	    text-transform: uppercase;
+	    padding: 8px 20px;
+	    border: 1px solid #4A4A4A;
+	    text-align: center;
+	    position: relative;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    margin: 25px 0;
+	}
+
+
+		.field--item{
+			font-weight: 300;
+			font-size: 20px;
+			color: #4A4A4A;
+			letter-spacing: 0.58px;
+			line-height: 32px;
+		}
+
+
+		.field--name-field-horario-de-funcionamento .field--label, .field--name-field-ta, .field--name-field-reservas-e-encomendas{
+			font-weight: 700;
+			font-size: 24px;
+			color: #212121;
+			letter-spacing: 3.33px;
+			text-transform: uppercase;
+			padding: 15px 0;
+		    border-bottom: 1px solid #9B9B9B;
+		    margin-bottom: 10px;
+		}
+		
+		.field--name-field-tele, .field--name-field-e, .field--name-field-morada-{
+			.field--label{
+				font-weight: 700;
+				font-size: 1.8rem;
+				color: #212121;
+				letter-spacing: 0.58px;
+			}
+			.field--item{
+				font-weight: 300;
+				font-size: 20px;
+				color: #4A4A4A;
+				letter-spacing: 0.58px;
+				line-height: 32px;
+			}
+			a{
+				color: #4A4A4A;
+			}
+			a:hover{
+    			background-color: #F4D680;
+    			text-decoration: none
+			}
+		}
+		.lastr{
+			margin-top: 15px;
+
+			a{
+				width: 41px;
+				height: 41px;
+				display: block;
+    			margin-top: 20px;
+    			float: left;
+    			color: #4A4A4A;
+			}
+			a:hover{
+	
+    			background-color: #F4D680;
+			}
+
+			.field--name-field-social{
+				float: right;
+
+				.ficon{
+					background: url(../img/face_icon.svg);
+				}
+				.iicon{
+					background: url(../img/inst_icon.svg);
+					margin-left: 5px;
+				}
+			}
+
+
+		}
+
+
+	.templ{
+		.field--label{
+
+		}
+		.field--item{
+			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mm{
+
+	.container > .row{
+	   		 margin-top: 90px;
+	}
+
+	.full-back-1:before {
+	 	content: "";
+	    width: 100%;
+	    background: url(../img/zigZag.png);
+	    position: absolute;
+	    height: calc(100% - 290px);
+	    background-position-y: -120px;
+
+	}
+
+	.field--name-field-nome{	
+
+		position: relative;
+	    font-weight: 300;
+	    font-size: 3.6rem;
+	    color: #212121;
+	    letter-spacing: 10.12px;
+	    text-align: center;
+	    margin-top: 90px;
+	    margin: 0 auto;
+	    display: inline-block;
+	    left: 50%;
+	    transform: translateX(-50%);
+
+		&:before,
+		&:after {
+			content: "";
+			border-top: 1px solid #9B9B9B;
+			width: 150px;
+			position: absolute;
+			top: 47%;
+			}
+			&:before {
+			  right: 100%;
+			  margin-right: 15px;
+			}
+			&:after {
+			  left: 100%;
+			  margin-left: 15px;
+			}
+	}
+
+	.field--name-field-des{
+		font-size: 1.8rem;
+		color: #4A4A4A;
+		line-height: 26px;
+		text-align:center;
+		margin-bottom: 40px;
+	}
+
+	.view-lojas .views-row{
+			position: relative;
+		    height: 145px;
+		    width: 100%;
+		    margin-bottom: 15px;
+		    overflow: hidden;
+		    background-color: #212121;
+		    transition: all .4s ease-out;
+
+		    @media screen and (max-width: $screen-sm) {
+	 			height: 110px;
+	 		}
+	 		@media screen and (max-width: $screen-xs) {
+	 			height: 95px;
+			}
+
+		    .views-field-field-nome a:hover{
+		    	text-decoration: none;
+		    }
+
+		    &:hover{
+				box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+		    }
+		    &:hover .views-field-field-nome a{
+		    	color: #4A4A4A;
+		    }
+
+		    &:hover .views-field-field-imagem-destaque:before{
+		    	background: #F4D680;
+		    	transform: translateX(290px);
+		    	@media screen and (max-width: $screen-md) {
+		    		transform: translateX(110px);
+		 		}
+		 		@media screen and (max-width: $screen-sm) {
+		    		transform: translateX(-130px);		
+		 		}
+		 		@media screen and (max-width: $screen-xs) {
+		    		transform: translateX(-70px);		
+			 		
+			 	}
+		    }
+		   	&:hover .views-field-field-nome, &:hover .views-field-field-cidade{
+		    	transform: translateX(290px);
+		    	@media screen and (max-width: $screen-md) {
+		    		transform: translateX(110px);
+		 		}
+		 		@media screen and (max-width: $screen-sm) {
+		    		transform: translateX(-130px);		
+		 		}
+		 		@media screen and (max-width: $screen-xs) {
+		    		transform: translateX(-70px);		
+			 		
+			 	}
+		    }
+
+		    .views-field-field-imagem-destaque{
+		    	max-width: 50%;
+		    	@media screen and (max-width: $screen-md) {
+		    		max-width: 60%;
+		 		}
+		 		@media screen and (max-width: $screen-sm) {
+		    		max-width: 80%;
+		 			
+		 		}
+		    	&:before{
+		    		content: "";
+		    		width: 100%;
+		    		height: 145px;
+		    		background-color: #212121;
+		    		position: absolute;
+		    		left: 130px;
+		    		transition: all .4s ease-out;
+
+		    		@media screen and (max-width: $screen-xs) {
+			 			left: 70px;
+			 		}
+		    	}
+		    }
+
+		    .views-field-field-nome{
+		    	position: absolute;
+				font-weight:700;
+				font-size: 4.8rem;
+				color: #F4D680;
+				letter-spacing: 8px;
+			    text-transform: uppercase;
+			    top: 25%;
+			    left: 145px;
+		    	transition: all .4s ease-out;
+		    	@media screen and (max-width: $screen-md) {
+					font-size: 4.1rem;
+					letter-spacing: 4px;
+		    		
+		 		}
+		 		 @media screen and (max-width: $screen-sm) {
+		    		font-size: 3.9rem;
+					letter-spacing: 1px;
+		 			
+		 		}
+		 		@media screen and (max-width: $screen-xs) {
+			 		left: 85px;
+			 		font-size: 3.2rem;
+					letter-spacing: 0px;
+				}
+
+		    }
+		    .views-field-field-cidade{
+		    	    display: inline;
+			    left: 145px;
+			    position: absolute;
+			    top: 65%;
+
+				font-size: 1.4rem;
+				color: #9B9B9B;
+				letter-spacing: 2.33px;
+		    	transition: all .4s ease-out;
+		    	@media screen and (max-width: $screen-xs) {
+			 		left: 85px;
+					letter-spacing: 1px;
+
+				}
+
+		    }
+	}
+}
