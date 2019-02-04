@@ -92,6 +92,7 @@
 		    height: 100%;
 		    background:url(../img/zigZag.png);
 		    position: absolute;
+		    z-index: -2;
 		}
 	}
 }
@@ -152,7 +153,7 @@
 	.field--name-field-nome{
 		position: relative;
 		font-weight: 900;
-		font-size: 36px;
+		font-size: 3.6rem;
 		color: #4A4A4A;
 		letter-spacing: 10.12px;
 		text-align: center;
@@ -190,7 +191,7 @@
 	    object-fit: cover;
 	}
 	.field--name-field-de{
-		font-size: 18px;
+		font-size: 1.8rem;
 		color: #4A4A4A;
 		letter-spacing: 1.8px;
 		line-height: 27px;
@@ -200,8 +201,9 @@
 
 	.field--name-field-reservar a{
 		display: inline-block;
+		position: relative;
 	    font-weight: 900;
-	    font-size: 16px;
+	    font-size: 1.6rem;
 	    color: #4A4A4A;
 	    letter-spacing: 2.66px;
 	    text-transform: uppercase;
@@ -213,20 +215,38 @@
 	    transform: translateX(-50%);
 	    margin: 25px 0;
 	}
+	.field--name-field-reservar a:before{
+		content: "";
+		position: absolute;
+		left: 0;
+	    top: 0;
+	    z-index: -1;
+		width: 0%;
+		height: 100%;
+		background: #F4D680;
+		transition: width .4s ease-in;
+	}
+	.field--name-field-reservar a:hover{
+		text-decoration: none;
+	}
+	.field--name-field-reservar a:hover:before{
+		width: 100%;
+	}
 
 
+	.field--name-field-horario-de-funcionamento{
 		.field--item{
 			font-weight: 300;
-			font-size: 20px;
+			font-size: 2.0rem;
 			color: #4A4A4A;
 			letter-spacing: 0.58px;
 			line-height: 32px;
 		}
-
+	}
 
 		.field--name-field-horario-de-funcionamento .field--label, .field--name-field-ta, .field--name-field-reservas-e-encomendas{
 			font-weight: 700;
-			font-size: 24px;
+			font-size: 2.4rem;
 			color: #212121;
 			letter-spacing: 3.33px;
 			text-transform: uppercase;
@@ -244,18 +264,37 @@
 			}
 			.field--item{
 				font-weight: 300;
-				font-size: 20px;
+				font-size: 2.0rem;
 				color: #4A4A4A;
 				letter-spacing: 0.58px;
 				line-height: 32px;
 			}
 			a{
+				position: relative;
 				color: #4A4A4A;
 			}
 			a:hover{
-    			background-color: #F4D680;
     			text-decoration: none
 			}
+
+			a:before{
+				content: "";
+				position: absolute;
+				left: 0;
+			    top: 0;
+			    z-index: -1;
+				width: 0%;
+				height: 100%;
+				background: #F4D680;
+				transition: width .4s ease-in;
+			}
+		
+			a:hover:before{
+				width: 100%;
+			}
+
+
+
 		}
 		.lastr{
 			margin-top: 15px;
@@ -277,15 +316,44 @@
 				float: right;
 
 				.ficon{
+					position: relative;
 					background: url(../img/face_icon.svg);
 				}
 				.iicon{
+					position: relative;
 					background: url(../img/inst_icon.svg);
 					margin-left: 5px;
 				}
+
+
+				.ficon:before, .iicon:before{
+					content: "";
+					position: absolute;
+					left: 0;
+				    top: 0;
+				    z-index: -1;
+					width: 100%;
+					height: 100%;
+					background: #F4D680;
+					transition: opacity .4s ease-in;
+					border-radius: 50%;
+					opacity: 0;
+				}
+				.ficon:hover:before, .iicon:hover:before{
+					opacity: 1;
+					
+				}
+
+
 			}
 
 
+		}
+
+		.field--name-field-gps-coordenadas{
+			.location-content{
+				font-size: 1.9rem;
+			}
 		}
 
 
@@ -299,199 +367,3 @@
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#mm{
-
-	.container > .row{
-	   		 margin-top: 90px;
-	}
-
-	.full-back-1:before {
-	 	content: "";
-	    width: 100%;
-	    background: url(../img/zigZag.png);
-	    position: absolute;
-	    height: calc(100% - 290px);
-	    background-position-y: -120px;
-
-	}
-
-	.field--name-field-nome{	
-
-		position: relative;
-	    font-weight: 300;
-	    font-size: 3.6rem;
-	    color: #212121;
-	    letter-spacing: 10.12px;
-	    text-align: center;
-	    margin-top: 90px;
-	    margin: 0 auto;
-	    display: inline-block;
-	    left: 50%;
-	    transform: translateX(-50%);
-
-		&:before,
-		&:after {
-			content: "";
-			border-top: 1px solid #9B9B9B;
-			width: 150px;
-			position: absolute;
-			top: 47%;
-			}
-			&:before {
-			  right: 100%;
-			  margin-right: 15px;
-			}
-			&:after {
-			  left: 100%;
-			  margin-left: 15px;
-			}
-	}
-
-	.field--name-field-des{
-		font-size: 1.8rem;
-		color: #4A4A4A;
-		line-height: 26px;
-		text-align:center;
-		margin-bottom: 40px;
-	}
-
-	.view-lojas .views-row{
-			position: relative;
-		    height: 145px;
-		    width: 100%;
-		    margin-bottom: 15px;
-		    overflow: hidden;
-		    background-color: #212121;
-		    transition: all .4s ease-out;
-
-		    @media screen and (max-width: $screen-sm) {
-	 			height: 110px;
-	 		}
-	 		@media screen and (max-width: $screen-xs) {
-	 			height: 95px;
-			}
-
-		    .views-field-field-nome a:hover{
-		    	text-decoration: none;
-		    }
-
-		    &:hover{
-				box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
-		    }
-		    &:hover .views-field-field-nome a{
-		    	color: #4A4A4A;
-		    }
-
-		    &:hover .views-field-field-imagem-destaque:before{
-		    	background: #F4D680;
-		    	transform: translateX(290px);
-		    	@media screen and (max-width: $screen-md) {
-		    		transform: translateX(110px);
-		 		}
-		 		@media screen and (max-width: $screen-sm) {
-		    		transform: translateX(-130px);		
-		 		}
-		 		@media screen and (max-width: $screen-xs) {
-		    		transform: translateX(-70px);		
-			 		
-			 	}
-		    }
-		   	&:hover .views-field-field-nome, &:hover .views-field-field-cidade{
-		    	transform: translateX(290px);
-		    	@media screen and (max-width: $screen-md) {
-		    		transform: translateX(110px);
-		 		}
-		 		@media screen and (max-width: $screen-sm) {
-		    		transform: translateX(-130px);		
-		 		}
-		 		@media screen and (max-width: $screen-xs) {
-		    		transform: translateX(-70px);		
-			 		
-			 	}
-		    }
-
-		    .views-field-field-imagem-destaque{
-		    	max-width: 50%;
-		    	@media screen and (max-width: $screen-md) {
-		    		max-width: 60%;
-		 		}
-		 		@media screen and (max-width: $screen-sm) {
-		    		max-width: 80%;
-		 			
-		 		}
-		    	&:before{
-		    		content: "";
-		    		width: 100%;
-		    		height: 145px;
-		    		background-color: #212121;
-		    		position: absolute;
-		    		left: 130px;
-		    		transition: all .4s ease-out;
-
-		    		@media screen and (max-width: $screen-xs) {
-			 			left: 70px;
-			 		}
-		    	}
-		    }
-
-		    .views-field-field-nome{
-		    	position: absolute;
-				font-weight:700;
-				font-size: 4.8rem;
-				color: #F4D680;
-				letter-spacing: 8px;
-			    text-transform: uppercase;
-			    top: 25%;
-			    left: 145px;
-		    	transition: all .4s ease-out;
-		    	@media screen and (max-width: $screen-md) {
-					font-size: 4.1rem;
-					letter-spacing: 4px;
-		    		
-		 		}
-		 		 @media screen and (max-width: $screen-sm) {
-		    		font-size: 3.9rem;
-					letter-spacing: 1px;
-		 			
-		 		}
-		 		@media screen and (max-width: $screen-xs) {
-			 		left: 85px;
-			 		font-size: 3.2rem;
-					letter-spacing: 0px;
-				}
-
-		    }
-		    .views-field-field-cidade{
-		    	    display: inline;
-			    left: 145px;
-			    position: absolute;
-			    top: 65%;
-
-				font-size: 1.4rem;
-				color: #9B9B9B;
-				letter-spacing: 2.33px;
-		    	transition: all .4s ease-out;
-		    	@media screen and (max-width: $screen-xs) {
-			 		left: 85px;
-					letter-spacing: 1px;
-
-				}
-
-		    }
-	}
-}

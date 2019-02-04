@@ -12,7 +12,6 @@ jQuery(document).ready(function(){
 
 
 function initSliderHome() {
-
     //
     //Fix name city
     //
@@ -26,7 +25,6 @@ function initSliderHome() {
         var thisOne  = jQuery(this);
         var myDiv1Para =  thisOne.find( ".views-field-field-cidade > .field-content" ).remove();
         var myDivOnde = thisOne.find('.views-field-field-nome');
-
         myDiv1Para.appendTo(myDivOnde);
 
       });
@@ -98,6 +96,20 @@ function initEvents() {
     jQuery( ".godown" ).click(function() {
         animateScrollTo(document.querySelector('.main-container'));
     });
+
+
+        if (jQuery('body').hasClass('page-node-type-luzzo') == true) {
+          jQuery('.menu--main li:nth-child(1)').addClass("active");
+        } else  if (jQuery('body').hasClass('page-node-type-franchising') == true) {
+          jQuery('.menu--main li:nth-child(2)').addClass("active");
+        } else  if (jQuery('body').hasClass('path-lojas') == true) {
+          jQuery('.menu--main li:nth-child(3)').addClass("active");
+        } else  if (jQuery('body').hasClass('page-node-type-loja') == true) {
+          jQuery('.menu--main li:nth-child(3)').addClass("active");
+        } else  if (jQuery('body').hasClass('path-ementa') == true) {
+          jQuery('.menu--main li:nth-child(4)').addClass("active");
+
+        } 
 }
 
 

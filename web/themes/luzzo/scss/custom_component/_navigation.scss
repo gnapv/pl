@@ -58,6 +58,7 @@
 			    position: absolute;
 			    left: 0;
 			    top: 23px;
+			    -webkit-clip-path: inset(0 100% 0 0);
 			    clip-path: inset(0 100% 0 0);
 			    transition: all .3s ease-in;
 			}
@@ -79,9 +80,13 @@
 		     }
 
 		     .active > a{
-		       color: white;
+		       color: $brand-primary;
 		       background-color: transparent;
 		     }
+		     .active > a:after {
+			    -webkit-clip-path: inset(0 0% 0 0);
+			    clip-path: inset(0 0% 0 0);
+			} 
 
 		     li > .dropdown-menu {
 		       background-color: $gray-over;

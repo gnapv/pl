@@ -97,8 +97,16 @@
       <div class="row">
         <div class="col-sm-6 col-md-6">
           {{ content.field_horario_de_funcionamento }}
-          {{ content.field_ta }}
-          {{ content.field_reservas_e_encomendas }}
+
+         {% if content.field_ta.isEmpty() != true %}
+            {{ content.field_ta }}
+         {% endif %}
+
+          {% if content.field_reservas_e_encomendas.isEmpty() != true %}
+              {{ content.field_reservas_e_encomendas }}
+         {% endif %}
+
+          
             <div class="row">
               <div class="col-md-4">
                 {{ content.field_tele }}
