@@ -10179,20 +10179,26 @@ html {
     font-size: 61.5%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1199px) {
   /* line 4, ../scss/_global.scss */
   html {
     font-size: 60.5%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   /* line 4, ../scss/_global.scss */
   html {
     font-size: 58.5%;
   }
 }
+@media screen and (max-width: 767px) {
+  /* line 4, ../scss/_global.scss */
+  html {
+    font-size: 55.5%;
+  }
+}
 
-/* line 22, ../scss/_global.scss */
+/* line 25, ../scss/_global.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10201,7 +10207,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 29, ../scss/_global.scss */
+/* line 32, ../scss/_global.scss */
 .full-screen {
   background-size: cover;
   background-position: center;
@@ -10209,9 +10215,15 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 35, ../scss/_global.scss */
+  /* line 38, ../scss/_global.scss */
   .container {
     padding: 0px 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 38, ../scss/_global.scss */
+  .container {
+    padding: 0px 30px;
   }
 }
 
@@ -11031,32 +11043,84 @@ body {
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
-/* line 30, ../scss/pages/_loja.scss */
+@media screen and (max-width: 991px) {
+  /* line 13, ../scss/pages/_loja.scss */
+  #flexslider-2 .slides .views-field-field-nome {
+    font-size: 5.5rem;
+    letter-spacing: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 13, ../scss/pages/_loja.scss */
+  #flexslider-2 .slides .views-field-field-nome {
+    font-size: 4.7rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  /* line 13, ../scss/pages/_loja.scss */
+  #flexslider-2 .slides .views-field-field-nome {
+    font-size: 3.7rem;
+    letter-spacing: 2px;
+  }
+}
+/* line 45, ../scss/pages/_loja.scss */
 #flexslider-2 .slides .views-field-field-nome .field-content {
   display: inline;
 }
-/* line 33, ../scss/pages/_loja.scss */
+/* line 48, ../scss/pages/_loja.scss */
 #flexslider-2 .slides .views-field-field-nome div:last-child {
   font-size: 1.8rem;
   color: #9B9B9B;
   letter-spacing: 3px;
   display: inline;
+  position: relative;
+  left: -20px;
 }
-/* line 42, ../scss/pages/_loja.scss */
+@media screen and (max-width: 991px) {
+  /* line 48, ../scss/pages/_loja.scss */
+  #flexslider-2 .slides .views-field-field-nome div:last-child {
+    left: -5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 48, ../scss/pages/_loja.scss */
+  #flexslider-2 .slides .views-field-field-nome div:last-child {
+    display: block;
+    text-align: center;
+    top: -160px;
+  }
+}
+@media screen and (max-width: 380px) {
+  /* line 48, ../scss/pages/_loja.scss */
+  #flexslider-2 .slides .views-field-field-nome div:last-child {
+    top: -150px;
+  }
+}
+/* line 72, ../scss/pages/_loja.scss */
 #flexslider-2 .flex-control-nav {
   left: auto;
-  z-index: 15;
   padding-left: 0;
   list-style: none;
   text-align: right;
   float: right;
   bottom: 0;
   z-index: 2;
-  max-width: 200px;
   padding-bottom: 45px;
   right: 180px;
 }
-/* line 57, ../scss/pages/_loja.scss */
+@media screen and (max-width: 1199px) {
+  /* line 72, ../scss/pages/_loja.scss */
+  #flexslider-2 .flex-control-nav {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: none;
+    text-align: center;
+    bottom: 80px;
+  }
+}
+/* line 100, ../scss/pages/_loja.scss */
 #flexslider-2 .flex-control-nav li a {
   width: 20px;
   height: 20px;
@@ -11068,81 +11132,97 @@ body {
   border-radius: 10px;
   transition: width .4s;
 }
-/* line 69, ../scss/pages/_loja.scss */
+/* line 112, ../scss/pages/_loja.scss */
 #flexslider-2 .flex-control-nav li a.flex-active {
   width: 35px !important;
   background-color: #fff;
 }
-/* line 78, ../scss/pages/_loja.scss */
+/* line 121, ../scss/pages/_loja.scss */
 #flexslider-2 .flex-control-paging li a.flex-active {
   width: 35px !important;
 }
 
-/* line 85, ../scss/pages/_loja.scss */
+/* line 128, ../scss/pages/_loja.scss */
 .page-node-type-loja .full-back {
   min-height: 370px;
 }
-/* line 89, ../scss/pages/_loja.scss */
+/* line 132, ../scss/pages/_loja.scss */
 .page-node-type-loja .full-back:before {
   content: "";
   width: 100%;
   height: 100%;
-  background: url(../img/zigZag.png);
+  background: url(../img/zigzag.png);
   position: absolute;
   z-index: -2;
 }
 
-/* line 100, ../scss/pages/_loja.scss */
+/* line 143, ../scss/pages/_loja.scss */
 #block-nextpreviousblock {
   min-height: 160px;
   padding: 50px 25px;
 }
-/* line 105, ../scss/pages/_loja.scss */
+/* line 148, ../scss/pages/_loja.scss */
 #block-nextpreviousblock .blogprevious {
   background: url(../img/left_bt.svg);
   width: 33px;
   height: 56px;
-  float: left;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 290px;
 }
-/* line 112, ../scss/pages/_loja.scss */
+/* line 158, ../scss/pages/_loja.scss */
 #block-nextpreviousblock .blognext {
   background: url(../img/right_btt.svg);
   width: 33px;
   height: 56px;
-  float: right;
+  position: absolute;
+  margin: auto;
+  left: 290px;
+  right: 0;
 }
-/* line 120, ../scss/pages/_loja.scss */
+/* line 168, ../scss/pages/_loja.scss */
 #block-nextpreviousblock .close_bt {
   position: relative;
   margin: 0 auto;
   width: 63px;
   height: 55px;
 }
-/* line 127, ../scss/pages/_loja.scss */
+/* line 175, ../scss/pages/_loja.scss */
 #block-nextpreviousblock .close_bt a {
   background: url(../img/close_bt.svg);
   display: block;
   width: 63px;
   height: 55px;
 }
-/* line 133, ../scss/pages/_loja.scss */
+/* line 181, ../scss/pages/_loja.scss */
 #block-nextpreviousblock .blogprevious, #block-nextpreviousblock .blognext, #block-nextpreviousblock .close_bt a {
   opacity: .4;
   transition: opacity .4s ease-in;
 }
-/* line 138, ../scss/pages/_loja.scss */
+/* line 186, ../scss/pages/_loja.scss */
 #block-nextpreviousblock .blogprevious:hover, #block-nextpreviousblock .blognext:hover, #block-nextpreviousblock .close_bt a:hover {
   opacity: 1 !important;
 }
 
-/* line 147, ../scss/pages/_loja.scss */
+/* line 194, ../scss/pages/_loja.scss */
+#page-loja-main {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 992px) {
+  /* line 194, ../scss/pages/_loja.scss */
+  #page-loja-main {
+    margin-bottom: 10px;
+  }
+}
+/* line 202, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-cidade {
   font-size: 1.8rem;
   color: #9B9B9B;
   letter-spacing: 3px;
   text-align: center;
 }
-/* line 153, ../scss/pages/_loja.scss */
+/* line 208, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-nome {
   position: relative;
   font-weight: 900;
@@ -11158,7 +11238,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 168, ../scss/pages/_loja.scss */
+@media screen and (max-width: 767px) {
+  /* line 208, ../scss/pages/_loja.scss */
+  #page-loja-main .field--name-field-nome {
+    letter-spacing: 3.12px;
+  }
+}
+/* line 228, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-nome:before, #page-loja-main .field--name-field-nome:after {
   content: "";
   border-top: 1px solid #9B9B9B;
@@ -11166,27 +11252,27 @@ body {
   position: absolute;
   top: 47%;
 }
-/* line 176, ../scss/pages/_loja.scss */
+/* line 236, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-nome:before {
   right: 100%;
   margin-right: 15px;
 }
-/* line 180, ../scss/pages/_loja.scss */
+/* line 240, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-nome:after {
   left: 100%;
   margin-left: 15px;
 }
-/* line 185, ../scss/pages/_loja.scss */
+/* line 245, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-imagem-destaque {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 188, ../scss/pages/_loja.scss */
+/* line 248, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-imagem-destaque img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 193, ../scss/pages/_loja.scss */
+/* line 253, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-de {
   font-size: 1.8rem;
   color: #4A4A4A;
@@ -11195,7 +11281,7 @@ body {
   margin-top: 35px;
   text-align: center;
 }
-/* line 202, ../scss/pages/_loja.scss */
+/* line 262, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-reservar a {
   display: inline-block;
   position: relative;
@@ -11212,7 +11298,7 @@ body {
   transform: translateX(-50%);
   margin: 25px 0;
 }
-/* line 218, ../scss/pages/_loja.scss */
+/* line 278, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-reservar a:before {
   content: "";
   position: absolute;
@@ -11224,15 +11310,25 @@ body {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 229, ../scss/pages/_loja.scss */
+/* line 289, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-reservar a:hover {
   text-decoration: none;
 }
-/* line 232, ../scss/pages/_loja.scss */
+/* line 292, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-reservar a:hover:before {
   width: 100%;
 }
-/* line 238, ../scss/pages/_loja.scss */
+/* line 296, ../scss/pages/_loja.scss */
+#page-loja-main .contacts-info {
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  /* line 296, ../scss/pages/_loja.scss */
+  #page-loja-main .contacts-info {
+    text-align: center;
+  }
+}
+/* line 305, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-horario-de-funcionamento .field--item {
   font-weight: 300;
   font-size: 2.0rem;
@@ -11240,7 +11336,7 @@ body {
   letter-spacing: 0.58px;
   line-height: 32px;
 }
-/* line 247, ../scss/pages/_loja.scss */
+/* line 314, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-horario-de-funcionamento .field--label, #page-loja-main .field--name-field-ta, #page-loja-main .field--name-field-reservas-e-encomendas {
   font-weight: 700;
   font-size: 2.4rem;
@@ -11251,14 +11347,14 @@ body {
   border-bottom: 1px solid #9B9B9B;
   margin-bottom: 10px;
 }
-/* line 259, ../scss/pages/_loja.scss */
+/* line 326, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-tele .field--label, #page-loja-main .field--name-field-e .field--label, #page-loja-main .field--name-field-morada- .field--label {
   font-weight: 700;
   font-size: 1.8rem;
   color: #212121;
   letter-spacing: 0.58px;
 }
-/* line 265, ../scss/pages/_loja.scss */
+/* line 332, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-tele .field--item, #page-loja-main .field--name-field-e .field--item, #page-loja-main .field--name-field-morada- .field--item {
   font-weight: 300;
   font-size: 2.0rem;
@@ -11266,16 +11362,16 @@ body {
   letter-spacing: 0.58px;
   line-height: 32px;
 }
-/* line 272, ../scss/pages/_loja.scss */
+/* line 339, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-tele a, #page-loja-main .field--name-field-e a, #page-loja-main .field--name-field-morada- a {
   position: relative;
   color: #4A4A4A;
 }
-/* line 276, ../scss/pages/_loja.scss */
+/* line 343, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-tele a:hover, #page-loja-main .field--name-field-e a:hover, #page-loja-main .field--name-field-morada- a:hover {
   text-decoration: none;
 }
-/* line 280, ../scss/pages/_loja.scss */
+/* line 347, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-tele a:before, #page-loja-main .field--name-field-e a:before, #page-loja-main .field--name-field-morada- a:before {
   content: "";
   position: absolute;
@@ -11287,15 +11383,15 @@ body {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 292, ../scss/pages/_loja.scss */
+/* line 359, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-tele a:hover:before, #page-loja-main .field--name-field-e a:hover:before, #page-loja-main .field--name-field-morada- a:hover:before {
   width: 100%;
 }
-/* line 299, ../scss/pages/_loja.scss */
+/* line 366, ../scss/pages/_loja.scss */
 #page-loja-main .lastr {
   margin-top: 15px;
 }
-/* line 302, ../scss/pages/_loja.scss */
+/* line 369, ../scss/pages/_loja.scss */
 #page-loja-main .lastr a {
   width: 41px;
   height: 41px;
@@ -11304,26 +11400,44 @@ body {
   float: left;
   color: #4A4A4A;
 }
-/* line 310, ../scss/pages/_loja.scss */
+/* line 377, ../scss/pages/_loja.scss */
 #page-loja-main .lastr a:hover {
   background-color: #F4D680;
 }
-/* line 315, ../scss/pages/_loja.scss */
+/* line 382, ../scss/pages/_loja.scss */
 #page-loja-main .lastr .field--name-field-social {
   float: right;
 }
-/* line 318, ../scss/pages/_loja.scss */
+@media screen and (max-width: 992px) {
+  /* line 382, ../scss/pages/_loja.scss */
+  #page-loja-main .lastr .field--name-field-social {
+    position: relative;
+    left: 117px;
+    bottom: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 382, ../scss/pages/_loja.scss */
+  #page-loja-main .lastr .field--name-field-social {
+    left: 50%;
+    float: left;
+    transform: translateX(-50%);
+    bottom: 0;
+    margin-bottom: 30px;
+  }
+}
+/* line 402, ../scss/pages/_loja.scss */
 #page-loja-main .lastr .field--name-field-social .ficon {
   position: relative;
   background: url(../img/face_icon.svg);
 }
-/* line 322, ../scss/pages/_loja.scss */
+/* line 406, ../scss/pages/_loja.scss */
 #page-loja-main .lastr .field--name-field-social .iicon {
   position: relative;
   background: url(../img/inst_icon.svg);
   margin-left: 5px;
 }
-/* line 329, ../scss/pages/_loja.scss */
+/* line 413, ../scss/pages/_loja.scss */
 #page-loja-main .lastr .field--name-field-social .ficon:before, #page-loja-main .lastr .field--name-field-social .iicon:before {
   content: "";
   position: absolute;
@@ -11337,13 +11451,140 @@ body {
   border-radius: 50%;
   opacity: 0;
 }
-/* line 342, ../scss/pages/_loja.scss */
+/* line 426, ../scss/pages/_loja.scss */
 #page-loja-main .lastr .field--name-field-social .ficon:hover:before, #page-loja-main .lastr .field--name-field-social .iicon:hover:before {
   opacity: 1;
 }
-/* line 354, ../scss/pages/_loja.scss */
+/* line 434, ../scss/pages/_loja.scss */
 #page-loja-main .field--name-field-gps-coordenadas .location-content {
   font-size: 1.9rem;
+}
+/* line 437, ../scss/pages/_loja.scss */
+#page-loja-main .field--name-field-gps-coordenadas .geolocation-google-map {
+  margin-top: 15px;
+}
+@media screen and (max-width: 992px) {
+  /* line 437, ../scss/pages/_loja.scss */
+  #page-loja-main .field--name-field-gps-coordenadas .geolocation-google-map {
+    height: 450px !important;
+  }
+}
+
+/* line 457, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 h2 {
+  position: relative;
+  font-weight: 300;
+  font-size: 3.6rem;
+  color: #212121;
+  letter-spacing: 10.12px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  /* line 457, ../scss/pages/_loja.scss */
+  #block-views-block-slider-3-lojas-block-1 h2 {
+    letter-spacing: 3.12px;
+  }
+}
+/* line 477, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 h2:before, #block-views-block-slider-3-lojas-block-1 h2:after {
+  content: "";
+  border-top: 1px solid #9B9B9B;
+  width: 150px;
+  position: absolute;
+  top: 47%;
+}
+/* line 485, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 h2:before {
+  right: 100%;
+  margin-right: 15px;
+}
+/* line 489, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 h2:after {
+  left: 100%;
+  margin-left: 15px;
+}
+/* line 497, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-nome {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: #4A4A4A;
+  letter-spacing: 3.33px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  /* line 497, ../scss/pages/_loja.scss */
+  #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-nome {
+    letter-spacing: 1.33px;
+    margin-top: 15px;
+  }
+}
+/* line 513, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-cidade {
+  font-size: 1.4rem;
+  color: #9B9B9B;
+  letter-spacing: 2.33px;
+  text-align: center;
+}
+/* line 522, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav {
+  display: block;
+}
+/* line 526, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next {
+  background: url(../img/right_btt.svg);
+  width: 33px;
+  height: 56px;
+  float: right;
+  right: -80px !important;
+  display: block !important;
+  transform: translateY(-80%);
+  opacity: .4;
+  transition: opacity .3s ease-in;
+}
+@media screen and (max-width: 768px) {
+  /* line 526, ../scss/pages/_loja.scss */
+  #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next {
+    transform: translateY(-90%);
+  }
+}
+/* line 543, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+/* line 546, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next:before, #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev:before {
+  content: '';
+  text-shadow: none;
+}
+/* line 553, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev {
+  background: url(../img/left_bt.svg);
+  width: 33px;
+  height: 56px;
+  float: left;
+  left: -80px !important;
+  display: block !important;
+  transform: translateY(-80%);
+  opacity: .4;
+  transition: opacity .3s ease-in;
+}
+@media screen and (max-width: 768px) {
+  /* line 553, ../scss/pages/_loja.scss */
+  #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev {
+    transform: translateY(-90%);
+  }
+}
+/* line 573, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next:hover, #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
 }
 
 /**
@@ -11498,11 +11739,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  min-height: 117px;
 }
 /* line 20, ../scss/custom_component/_slider-homepage.scss */
 #flexslider-1 ul li > .caption-wrapper .title {
-  padding: 10px 10px 0 10px;
-  font-size: 2.8rem;
+  padding: 15px 10px 0 10px;
+  font-size: 3rem;
   color: #FFFFFF;
   letter-spacing: 4.66px;
 }
@@ -11511,7 +11753,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 1em;
   padding: 0 10px 10px 10px;
   opacity: 0.28;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #FFFFFF;
   letter-spacing: 2.33px;
 }
@@ -11551,7 +11793,11 @@ footer nav[role="navigation"] ul.nav li:last-child {
   width: 35px !important;
 }
 
-/* line 82, ../scss/custom_component/_slider-homepage.scss */
+/* line 83, ../scss/custom_component/_slider-homepage.scss */
+#block-views-block-go-down-block-1 {
+  position: relative;
+}
+/* line 85, ../scss/custom_component/_slider-homepage.scss */
 #block-views-block-go-down-block-1 .godown {
   position: absolute;
   right: 20px;
@@ -11563,6 +11809,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   cursor: pointer;
   -webkit-animation: downfade 1.5s infinite;
   animation: downfade 1.5s infinite;
+}
+@media screen and (max-width: 767px) {
+  /* line 85, ../scss/custom_component/_slider-homepage.scss */
+  #block-views-block-go-down-block-1 .godown {
+    top: -193px;
+  }
 }
 @keyframes downfade {
   0% {

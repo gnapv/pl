@@ -1,14 +1,89 @@
+var onHome, onLuzzo, onFranc, onLojas, onLoja, onEmenta;
+var classList, finalType;
+
+
+
 jQuery(document).ready(function(){
 
   	console.log("Bem Vindo ao website Luzzo 2018!");
   	console.log("by:gomastudio.net");
 
-  	//slider
-  	initSliderHome();
-  	animateCaptionsHome();
-    initEvents();
+    findType();
 
 });//end Doc
+
+function findType() {
+
+    onHome = false;
+    onLuzzo = false;
+    onFranc = false;
+    onLojas = false;
+    onLoja = false;
+    onEmenta = false;
+    classList = ['path-home','page-node-type-luzzo','page-node-type-franchising','path-lojas','page-node-type-loja','page-node-type-ementa'];
+
+    var classBody = jQuery('body').attr('class').split(' ');
+
+  if (jQuery('body').hasClass(classList[0]) == true) {
+    onHome = true;
+    finalType = "onHome";
+  } else if (jQuery('body').hasClass(classList[1]) == true) {
+    onLuzzo = true;
+    finalType = "onLuzzo";
+  } else if (jQuery('body').hasClass(classList[2]) == true) {
+    onFranc = true;
+    finalType = "onFranc";
+  } else if (jQuery('body').hasClass(classList[3]) == true) {
+    onLojas = true;
+    finalType = "onLojas";
+  } else if (jQuery('body').hasClass(classList[4]) == true) {
+    onLoja = true;
+    finalType = "onLoja";
+  } else if (jQuery('body').hasClass(classList[5]) == true) {
+    onEmenta = true;
+    finalType = "onEmenta";
+  }   
+
+  console.log("TYPE: "+finalType);
+  APPLogic(finalType);
+}
+
+
+function APPLogic(qualType) {
+
+  switch (qualType) {
+    case 'onHome':
+          initSliderHome();
+          animateCaptionsHome();
+          break;
+    case 'onLuzzo':
+          jQuery('.menu--main li:nth-child(1)').addClass("active");
+          break;
+    case 'onFranc':
+          jQuery('.menu--main li:nth-child(2)').addClass("active");
+
+         break;
+    case 'onLojas':
+          jQuery('.menu--main li:nth-child(3)').addClass("active");
+
+         break;
+    case 'onLoja':
+          jQuery('.menu--main li:nth-child(3)').addClass("active");
+
+          initSliderHome();
+         break;
+    case 'onEmenta':
+          jQuery('.menu--main li:nth-child(5)').addClass("active");
+
+         break;
+      
+  }
+
+
+
+    
+    initEvents();
+}
 
 
 function initSliderHome() {
@@ -16,25 +91,19 @@ function initSliderHome() {
     //Fix name city
     //
 
-  if (jQuery('body').hasClass('page-node-type-loja') == true) {
-
-      console.log("TYPE: page-node-type-loja");
-
+  if (onLoja) {
       jQuery( "#flexslider-2 .slides li" ).each(function( index ) {
-
         var thisOne  = jQuery(this);
         var myDiv1Para =  thisOne.find( ".views-field-field-cidade > .field-content" ).remove();
         var myDivOnde = thisOne.find('.views-field-field-nome');
         myDiv1Para.appendTo(myDivOnde);
-
       });
-
   }
 
 
 
   	//
-  	//Fix Height Slider Home
+  	//Fix Height Slider 
   	//
 
   var $item = jQuery('#flexslider-1 .slides li, #flexslider-2 .slides li');
@@ -93,23 +162,76 @@ function animateCaptionsHome() {
 }
 
 function initEvents() {
-    jQuery( ".godown" ).click(function() {
-        animateScrollTo(document.querySelector('.main-container'));
-    });
 
 
-        if (jQuery('body').hasClass('page-node-type-luzzo') == true) {
-          jQuery('.menu--main li:nth-child(1)').addClass("active");
-        } else  if (jQuery('body').hasClass('page-node-type-franchising') == true) {
-          jQuery('.menu--main li:nth-child(2)').addClass("active");
-        } else  if (jQuery('body').hasClass('path-lojas') == true) {
-          jQuery('.menu--main li:nth-child(3)').addClass("active");
-        } else  if (jQuery('body').hasClass('page-node-type-loja') == true) {
-          jQuery('.menu--main li:nth-child(3)').addClass("active");
-        } else  if (jQuery('body').hasClass('path-ementa') == true) {
-          jQuery('.menu--main li:nth-child(4)').addClass("active");
+  switch (finalType) {
+    case 'onHome':
 
-        } 
+          jQuery( ".godown" ).click(function() {
+              // var options = { document.querySelector('.main-container')};
+              var desiredOffset = jQuery('#navbar').height();
+
+            console.log("desiredOffset: "+desiredOffset);
+
+
+              // animateScrollTo(document.querySelector('.main-container'));
+              animateScrollTo(desiredOffset, document.querySelector('.main-container'));
+          });
+
+          break;
+    case 'onLuzzo':
+
+          break;
+    case 'onFranc':
+
+         break;
+    case 'onLojas':
+
+         break;
+    case 'onLoja':
+
+          jQuery( ".godown" ).click(function() {
+              // animateScrollTo(document.querySelector('#block-nextpreviousblock'));
+
+              var Offset = jQuery('#navbar').height();
+              Offset = pos_to_neg(Offset);
+              var options = {offset: Offset};
+
+              console.log("Offset = "+Offset);
+
+              animateScrollTo(document.querySelector('#block-nextpreviousblock'),options);
+          });
+
+         break;
+    case 'onEmenta':
+
+         break;
+      
+  }
+
+
+
+
+        // if (jQuery('body').hasClass('page-node-type-luzzo') == true) {
+        //   jQuery('.menu--main li:nth-child(1)').addClass("active");
+        // } else  if (jQuery('body').hasClass('page-node-type-franchising') == true) {
+        //   jQuery('.menu--main li:nth-child(2)').addClass("active");
+        // } else  if (jQuery('body').hasClass('path-lojas') == true) {
+        //   jQuery('.menu--main li:nth-child(3)').addClass("active");
+        // } else  if (jQuery('body').hasClass('page-node-type-loja') == true) {
+        //   jQuery('.menu--main li:nth-child(3)').addClass("active");
+        // } else  if (jQuery('body').hasClass('path-ementa') == true) {
+        //   jQuery('.menu--main li:nth-child(4)').addClass("active");
+
+        // } 
 }
+
+// UTEIS
+
+function pos_to_neg(num){
+      return -Math.abs(num);
+}
+
+// default options
 
 
