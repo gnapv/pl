@@ -14,3 +14,6 @@ function luzzo_preprocess_html(&$variables){
 	kint($variables);
 }
 */
+
+$language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+define(language, $language);

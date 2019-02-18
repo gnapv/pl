@@ -55,6 +55,9 @@ function APPLogic(qualType) {
     case 'onHome':
           initSliderHome();
           animateCaptionsHome();
+          setTimeout(corrigirModal,300);
+
+          
           break;
     case 'onLuzzo':
           jQuery('.menu--main li:nth-child(1)').addClass("active");
@@ -159,6 +162,33 @@ function animateCaptionsHome() {
       jQuery(this).find(".flex-active-slide").find('.caption-wrapper').addClass("animated slideInUp");
     }
   });
+}
+
+function corrigirModal() {
+
+    //
+    //Fix Modal News Position 
+    //
+
+      jQuery( ".modalajust" ).each(function( index ) {
+        var thisOne  = jQuery(this).remove();
+        var myDivOnde = jQuery( "body" );
+        thisOne.appendTo(myDivOnde);
+      });
+
+
+      var maxHeight = 0;
+      jQuery( "#block-views-block-slider-noticias-block-1 .slides li" ).each(function( index ) {
+
+            console.log("jQuery(this).height(): "+jQuery(this).outerHeight());
+
+         if (jQuery(this).outerHeight() > maxHeight) { 
+          maxHeight = jQuery(this).outerHeight(); 
+        }
+      });
+
+      jQuery( "#block-views-block-slider-noticias-block-1 .slides li" ).height((maxHeight+100));
+
 }
 
 function initEvents() {

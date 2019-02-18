@@ -1,0 +1,229 @@
+/**
+ * noticias.
+ */
+
+
+#block-views-block-slider-noticias-block-1{
+
+	 .full-back:before {
+ 		content: "";
+ 		width: 100%;
+ 		height: 100%;
+ 		background:url(../img/padraoFranc.png);
+ 		position: absolute;
+ 	}
+
+ 	h2{	
+
+		position: relative;
+	    font-weight: 300;
+	    font-size: 3.6rem;
+	    color: #fff;
+	    letter-spacing: 10.12px;
+	    text-align: center;
+	    margin-top: 90px;
+	    margin-bottom: 40px;
+	    display: inline-block;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    text-transform: uppercase;
+
+		&:before,
+		&:after {
+			content: "";
+			border-top: 1px solid #979797;
+			width: 150px;
+			position: absolute;
+			top: 47%;
+			}
+			&:before {
+			  right: 100%;
+			  margin-right: 15px;
+			}
+			&:after {
+			  left: 100%;
+			  margin-left: 15px;
+			}
+	}
+
+	#flexslider-noticias{
+		background: transparent;
+		border: none;
+		margin-bottom: 130px;
+		.flex-control-nav{
+			z-index: 35;
+			bottom: -60px;
+
+		    	li a{
+					width: 20px;
+					height: 20px;
+					margin: 0;
+			    	cursor: pointer;
+			    	background-color: transparent;
+			    	color: transparent;
+			    	border: 1px solid #fff;
+			    	border-radius: 10px;
+
+					transition: width .4s;
+
+					&.flex-active{
+						width: 35px!important;
+			    		background-color: #fff;
+
+
+					}
+				
+				}			
+	}
+	.flex-control-paging li a.flex-active{
+		width: 35px!important;
+	}
+
+		.slides > li{
+			background: #fff;
+			position: relative;
+
+			 .views-field-title{
+
+					font-weight: 700;
+					font-size: 1.6rem;
+					color: #4A4A4A;
+					letter-spacing: 2.66px;
+					line-height: 25px;
+					padding: 12px 10px;
+    				text-align: center;
+	    			text-transform: uppercase;
+
+			}
+
+			.views-field-field-de{
+				font-size: 1.5rem;
+				color: #9B9B9B;
+				letter-spacing: 0.32px;
+				line-height: 20px;
+				text-align: center;
+				padding: 0px 15px;
+
+			}
+
+			.views-field-field-cidade{
+				text-align: center;
+				position: absolute;
+				left: 0;
+			    right: 0;
+			    bottom: 10px;
+			}
+			.views-field-field-cidade .btn{
+				    position: absolute;
+				    border-radius: 0;
+				    background: #fff;
+				    z-index: 10;
+				    display: inline-block;
+				    font-weight: 900;
+				    font-size: 1.6rem;
+				    color: #4A4A4A;
+				    letter-spacing: 2.66px;
+				    text-transform: uppercase;
+				    padding: 8px 20px;
+				    border: 1px solid #4A4A4A;
+				    text-align: center;
+				    left: 50%;
+				    transform: translateX(-50%);
+				    
+				    bottom: 26px;
+		
+			}
+			.views-field-field-cidade .btn:after{
+				content: "";
+				position: absolute;
+				left: 0;
+			    top: 0px;
+			    z-index: -1;
+				width: 0%;
+				height: 100%;
+				background: #F4D680;
+				transition: width .4s ease-in;
+			}
+			.views-field-field-cidade .btn:hover{
+				text-decoration: none;
+			}
+			.views-field-field-cidade .btn:hover:after{
+				width: 100%!important;
+			}
+		}
+	}
+
+}
+
+
+.modal-dialog{
+	transition: transform 1.6s cubic-bezier(.075,.82,.165,1),opacity .3s cubic-bezier(.075,.82,.165,1),-webkit-transform 1.6s cubic-bezier(.075,.82,.165,1);
+    transform-origin: top center;
+    transform: perspective(1000px) rotateX(-90deg);
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    overflow: hidden;
+    opacity: 0;
+
+    @media screen and (max-width: $screen-sm-min) {
+		  width: 450px;
+    	 margin: 30px auto;	    		
+	}
+	@media screen and (max-width: 480px) {
+		  width: 100%;
+    	 margin: 30px auto;	    		
+	}
+}
+.modal.in .modal-dialog {
+	opacity: 1;
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+
+.modal-content{
+	padding: 20px;
+	border-radius: 0;
+
+	.cz{
+		z-index: 1;
+	}
+	.topclose{
+		z-index: 10;
+		top: 6px;
+	    position: absolute;
+	    right: 10px;
+	}
+	h2{
+		font-weight: 900;
+	    font-size: 2.3rem;
+	    color: #4A4A4A;
+	    letter-spacing: 2.66px;
+	    line-height: 32px;
+	    padding: 20px 10px;
+	    text-transform: uppercase;
+
+	    @media screen and (max-width: $screen-sm-min) {
+    		padding: 15px 0;
+			    		
+		 }
+	}
+	p{
+		font-size: 1.6rem;
+	    color: #9B9B9B;
+	    letter-spacing: 0.32px;
+	    line-height: 23px;
+	    @media screen and (max-width: $screen-sm-min) {
+			font-size: 1.7rem;      		
+		 }
+	}
+	.bodydesc{
+		margin-top: 25px;
+
+		@media screen and (max-width: $screen-sm-min) {
+			margin-top: 0px;
+			      		
+		 }
+	}
+}
+
+
