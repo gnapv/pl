@@ -10,6 +10,15 @@
 
 	.slides{
 
+			height: 100vh;
+			overflow: hidden;
+
+		> * {
+			height: 96%!important;
+			position: relative;
+			top: -34%;
+		}
+
 		.views-field-field-nome{
 			    position: absolute;
 			    width: 100%;
@@ -490,6 +499,52 @@
 			  left: 100%;
 			  margin-left: 15px;
 			}
+	}
+
+	.view-slider-3-lojas{
+
+		.view-footer{
+
+			position: relative;
+    		top: -40px;
+
+    		.anome{
+    			border: 1px solid #4A4A4A;
+    			padding: 9px 20px;
+    		}
+
+			 a{
+				display: inline-block;
+				position: relative;
+			    font-weight: 900;
+			    font-size: 1.6rem;
+			    color: #4A4A4A;
+			    letter-spacing: 2.66px;
+			    text-transform: uppercase;
+			    padding: 8px 0px;
+			    text-align: center;
+			    left: 50%;
+			    transform: translateX(-50%);
+			    margin: 25px 0;
+			}
+			a:before{
+				content: "";
+				position: absolute;
+				left: 0;
+			    top: 0;
+			    z-index: -1;
+				width: 0%;
+				height: 100%;
+				background: #F4D680;
+				transition: width .4s ease-in;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+			a:hover:before{
+				width: 100%;
+			}
+		}
 	}
 
 	#flexslider-3-lojas{

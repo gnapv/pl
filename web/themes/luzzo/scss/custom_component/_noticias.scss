@@ -10,6 +10,7 @@
  		width: 100%;
  		height: 100%;
  		background:url(../img/padraoFranc.png);
+ 		background-attachment: fixed;
  		position: absolute;
  	}
 
@@ -112,9 +113,14 @@
 				left: 0;
 			    right: 0;
 			    bottom: 10px;
+
+			    .anome{
+	    			border: 1px solid #4A4A4A;
+	    			padding: 9px 20px;
+	    		}
 			}
 			.views-field-field-cidade .btn{
-				    position: absolute;
+				   
 				    border-radius: 0;
 				    background: #fff;
 				    z-index: 10;
@@ -124,13 +130,11 @@
 				    color: #4A4A4A;
 				    letter-spacing: 2.66px;
 				    text-transform: uppercase;
-				    padding: 8px 20px;
-				    border: 1px solid #4A4A4A;
-				    text-align: center;
-				    left: 50%;
-				    transform: translateX(-50%);
+				    padding: 8px 0px;
+					border:none;
+				    transform: translateX(0%) translateY(-22px);
 				    
-				    bottom: 26px;
+				 
 		
 			}
 			.views-field-field-cidade .btn:after{

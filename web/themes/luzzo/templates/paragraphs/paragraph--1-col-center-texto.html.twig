@@ -158,7 +158,15 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
           {# <a class="saber-mais" href="{{  content.field_sa }}">SABER +</a> #}
           {{  content.field_sa }}
 
-          <a class="saber-mais" href="/franchising">SABER +</a>
+          {% if  constant('language') == 'pt-pt' %}
+            <a class="saber-mais anima-back" href="{{ url('<front>') }}/franchising"><span class="anome">SABER +</span></a>
+          {% elseif constant('language')  == 'en' %}
+            <a class="saber-mais anima-back" href="{{ url('<front>') }}/franchising"><span class="anome">MORE +</span></a>
+          {% elseif constant('language')  == 'es' %}
+            <a class="saber-mais anima-back" href="{{ url('<front>') }}/franchising"><span class="anome">MÁS +</span></a>
+          {% endif %}
+
+
           
         </div>
     </div>

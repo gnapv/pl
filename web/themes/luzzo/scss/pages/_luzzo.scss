@@ -29,6 +29,19 @@
 		mix-blend-mode: lighten;
 	    margin-top: 140px;
 	    margin-bottom: 140px;
+
+	    img{
+			top: -150px;
+		    position: relative;
+		    	@media screen and (max-width: 1080px) {
+					top: -100px;
+		 		}
+		 		 @media screen and (max-width: 892px) {
+					top: -60px;
+		 		}
+
+	    }
+
 	   	@media screen and (max-width: $screen-sm) {
 	    	margin-bottom: 80px;
  		}
@@ -139,6 +152,7 @@
     		margin-top: -30px;
  		}
  		img{
+
  			@media screen and (max-width: $screen-sm) {
 	    		max-width: 60%;
     			margin: 0 auto;
@@ -249,19 +263,8 @@
 
 		   }
 		   .saber-mais{
-			    display: block;
 
-		   		font-weight: 700;
-				font-size: 16px;
-				color: #4A4A4A;
-				letter-spacing: 2.66px;
-
-				padding: 5px 6px;
-			    border: 1px solid #000;
-			    margin-top: 20px;
-			    width: 113px;
-			    color: #000;
-			    text-align: center;
+		   			margin-top: 20px;
 
 			    	@media screen and (max-width: $screen-sm) {
 			    		margin: 0 auto;

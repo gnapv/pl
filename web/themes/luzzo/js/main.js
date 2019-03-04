@@ -56,11 +56,15 @@ function APPLogic(qualType) {
           initSliderHome();
           animateCaptionsHome();
           setTimeout(corrigirModal,300);
-
+          makeHomeParallax();
           
           break;
     case 'onLuzzo':
           jQuery('.menu--main li:nth-child(1)').addClass("active");
+
+          makeLuzzoParallax();
+
+
           break;
     case 'onFranc':
           jQuery('.menu--main li:nth-child(2)').addClass("active");
@@ -69,11 +73,15 @@ function APPLogic(qualType) {
     case 'onLojas':
           jQuery('.menu--main li:nth-child(3)').addClass("active");
 
+
+
          break;
     case 'onLoja':
           jQuery('.menu--main li:nth-child(3)').addClass("active");
 
           initSliderHome();
+          makeLojaParallax();
+
          break;
     case 'onEmenta':
           jQuery('.menu--main li:nth-child(5)').addClass("active");
@@ -86,7 +94,10 @@ function APPLogic(qualType) {
 
     
     initEvents();
+
+
 }
+
 
 
 function initSliderHome() {
@@ -193,6 +204,11 @@ function corrigirModal() {
 
 function initEvents() {
 
+  jQuery( ".navbar-toggle" ).click(function() {
+    jQuery(this).toggleClass("clickMenuBur"); 
+    jQuery('body').toggleClass("modal-open");
+  });
+
 
   switch (finalType) {
     case 'onHome':
@@ -262,6 +278,38 @@ function pos_to_neg(num){
       return -Math.abs(num);
 }
 
-// default options
+
+function makeHomeParallax() {
+  // init controller
+            var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+            // build scenes
+            new ScrollMagic.Scene({triggerElement: "#flexslider-1"})
+                    .setTween("#flexslider-1 .slides > li", {y: "80%", ease: Linear.easeNone})
+                    .addTo(controller);
+
+}
+function makeLuzzoParallax() {
+  // init controller
+            var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+            // build scenes
+            new ScrollMagic.Scene({triggerElement: ".field--name-field-ilustra-logo"})
+                    .setTween(".field--name-field-ilustra-logo img", {y: "80%", ease: Linear.easeNone})
+                    .addTo(controller);
+
+}
+function makeLojaParallax() {
+            var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+            // build scenes
+            new ScrollMagic.Scene({triggerElement: "#flexslider-2"})
+                    .setTween("#flexslider-2 .slides > li", {y: "80%", ease: Linear.easeNone})
+                    .addTo(controller);
+}
+
+
+
+
+
+
+
 
 

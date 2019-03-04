@@ -7,6 +7,17 @@
 	margin: 0;
 	border: none;
 	overflow: hidden;
+
+	.slides{
+			height: 100vh;
+			overflow: hidden;
+	}
+
+	.slides > * {
+		height: 96%!important;
+		position: relative;
+		top: -34%;
+	}
 	
 	ul li > .caption-wrapper{
 		position: absolute;
@@ -50,6 +61,15 @@
 
 			bottom: 45px;
 			z-index: 35;
+
+
+	    		@media screen and (max-width: $screen-md-max) {
+	    			 	left: 50%;
+    					transform: translate(-50%, -50%);
+    					float: none;
+    					text-align: center;
+    					bottom: 120px;
+		 		}
 
 		    	li a{
 					width: 20px;

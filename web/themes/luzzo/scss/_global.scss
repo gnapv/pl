@@ -26,7 +26,10 @@ body {
   @include font-smoothing();
   padding-top: 0!important;
   margin-top: 0!important;
-  overflow-x: hidden;
+}
+
+#fix-over{
+  overflow: hidden;
 }
 
 .full-screen {
@@ -43,6 +46,50 @@ body {
     @media screen and (max-width: 500px) {
           padding: 0px 30px;
     }
+}
+
+a{
+  outline: none!important;
+}
+a:hover,a:active,a:focus{
+  text-decoration: none!important;
+  color: #4A4A4A;
+}
+
+
+
+.anima-back{
+    display: inline-block;
+    position: relative;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #4A4A4A;
+    letter-spacing: 2.66px;
+    text-transform: uppercase;
+    padding: 8px 0px;
+
+    .anome {
+      border: 1px solid #4A4A4A;
+      padding: 9px 20px;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+          top: 0px;
+          z-index: -1;
+        width: 0%;
+        height: 100%;
+        background: #F4D680;
+        transition: width .4s ease-in;
+      }
+      &:hover, &:active{
+        text-decoration: none;
+        color: #4A4A4A!important;
+      }
+      &:hover:after{
+        width: 100%!important;
+      }
 }
 
 // Global vars 

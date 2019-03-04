@@ -62,6 +62,9 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
+
+<div id="fix-over">
+
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
 {#       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
@@ -173,3 +176,5 @@
     </footer>
   {% endblock %}
 {% endif %}
+
+</div>
