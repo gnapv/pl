@@ -12461,3 +12461,45 @@ footer nav[role="navigation"] ul.nav li:last-child {
 #block-views-block-visite-nos-block-1 .views-field-field-morada- {
   font-size: 1.6rem;
 }
+
+/**
+ * testemunhos.
+ */
+/* line 11, ../scss/custom_component/_testemunhos.scss */
+#flexslider-testemunhos .views-field-field-frase blockquote {
+  text-align: center;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: -15px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3.6rem;
+  color: #4A4A4A;
+  letter-spacing: 4.03px;
+}
+/* line 23, ../scss/custom_component/_testemunhos.scss */
+#flexslider-testemunhos .views-field-field-fonte p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #4A4A4A;
+  letter-spacing: 2.57px;
+  line-height: 43px;
+}
+/* line 35, ../scss/custom_component/_testemunhos.scss */
+#flexslider-testemunhos .flex-control-nav li a {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid #4A4A4A;
+  border-radius: 10px;
+  transition: width .4s;
+}
+/* line 47, ../scss/custom_component/_testemunhos.scss */
+#flexslider-testemunhos .flex-control-nav li a.flex-active {
+  width: 35px !important;
+  background-color: #4A4A4A;
+}
