@@ -2,9 +2,25 @@
  * Navigation.
  */
 
+.navbarPeq{
+	background-color: rgba(0, 0, 0, 0.89)!important;
+
+	.logo{
+		img{
+			height: 55px!important;
+		}
+	}
+	.navbar-nav{
+		top: 18px!important;
+	}
+}
+
 
 .navbar-inverse{
-	background-color: rgba(0, 0, 0, 0.89);
+	background-color: rgba(0, 0, 0, 0.4);
+	border: none;
+	transition: background-color .3s ease-in;
+
 
 	.navbar-header{
 		width: 100%;
@@ -27,6 +43,10 @@
 
 		.logo{
 			margin-left: 20px;
+			img{
+				height: 78px;
+				transition: height .4s ease-in;
+			}
 		}
 
 		
@@ -99,8 +119,10 @@
 
 	    #block-luzzo-main-menu {
 			.navbar-nav{
+					position: relative;
 				  	float: right;
-				  	margin-top: 42px;
+				  	top: 42px;
+				  	transition: all .4s ease-in;
 			}
 
 		   .navbar-nav > li {

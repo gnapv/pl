@@ -1,11 +1,12 @@
 var onHome, onLuzzo, onFranc, onLojas, onLoja, onEmenta;
 var classList, finalType;
+var tapaFooter, reservaFooterBt, navbarHeader ;
 
 
 
 jQuery(document).ready(function(){
 
-  	console.log("Bem Vindo ao website Luzzo 2018!");
+  	console.log("Bem Vindo ao website Luzzo 2019!");
   	console.log("by:gomastudio.net");
 
     findType();
@@ -13,6 +14,9 @@ jQuery(document).ready(function(){
 });//end Doc
 
 function findType() {
+    tapaFooter = document.querySelector('.tapa');
+    reservaFooterBt = document.querySelector(".f-reserva");
+    navbarHeader = document.querySelector(".navbar"); 
 
     onHome = false;
     onLuzzo = false;
@@ -210,6 +214,7 @@ function initEvents() {
   });
 
 
+
   switch (finalType) {
     case 'onHome':
 
@@ -257,27 +262,51 @@ function initEvents() {
 
 
 
+    //evento onScroll
+    window.onscroll = function(){
+      verificaScroll();
+    }
+}
 
-        // if (jQuery('body').hasClass('page-node-type-luzzo') == true) {
-        //   jQuery('.menu--main li:nth-child(1)').addClass("active");
-        // } else  if (jQuery('body').hasClass('page-node-type-franchising') == true) {
-        //   jQuery('.menu--main li:nth-child(2)').addClass("active");
-        // } else  if (jQuery('body').hasClass('path-lojas') == true) {
-        //   jQuery('.menu--main li:nth-child(3)').addClass("active");
-        // } else  if (jQuery('body').hasClass('page-node-type-loja') == true) {
-        //   jQuery('.menu--main li:nth-child(3)').addClass("active");
-        // } else  if (jQuery('body').hasClass('path-ementa') == true) {
-        //   jQuery('.menu--main li:nth-child(4)').addClass("active");
+function verificaScroll() {
 
-        // } 
+  
+
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        navbarHeader.classList.add("navbarPeq");
+      } else {
+        navbarHeader.classList.remove("navbarPeq");
+      }
+
+
+
+  if (isInViewport(tapaFooter)) {
+      tapaFooter.classList.add("ani-tapa-footer");
+      TweenMax.to(reservaFooterBt, .8, {opacity:"1", delay:1});
+  }else{
+      tapaFooter.classList.remove("ani-tapa-footer");
+      TweenMax.to(reservaFooterBt, 0, {opacity:"0"});
+  }
+
+
+
 }
 
 // UTEIS
-
 function pos_to_neg(num){
       return -Math.abs(num);
 }
 
+//verifica se está na viewPort
+var isInViewport = function (elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= ((window.innerHeight || document.documentElement.clientHeight)+(bounding.height/1.3) ) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
 
 function makeHomeParallax() {
   // init controller

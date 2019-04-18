@@ -39,14 +39,14 @@
             cursor: pointer;
             background-color: transparent;
             color: transparent;
-            border: 1px solid #4A4A4A;
+            border: 1px solid #e8e8e8;
             border-radius: 10px;
-
+            box-shadow: none;
           transition: width .4s;
 
           &.flex-active{
             width: 35px!important;
-              background-color: #4A4A4A;
+              background-color: #e8e8e8;
 
 
           }

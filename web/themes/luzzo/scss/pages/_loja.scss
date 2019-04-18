@@ -53,6 +53,7 @@
 
 			    .field-content{
 			    	display: inline;
+			    	text-shadow: none;
 			    }
 			    div:last-child{
 				    font-size: 1.8rem;
@@ -115,7 +116,7 @@
 			    	color: transparent;
 			    	border: 1px solid #fff;
 			    	border-radius: 10px;
-
+			    	box-shadow: none;
 					transition: width .4s;
 
 					&.flex-active{
