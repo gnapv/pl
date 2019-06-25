@@ -53,8 +53,12 @@
 			
 			  .navbar-toggle{
 			  		border: none;
+			  		float: none;
 			    	transform: scale(0.7);
 			    	background-color: transparent;
+			    	position: absolute;
+			    	right: 0px;
+			    	bottom: -7px;
 
 			    	&:focus{
 			    		background-color: transparent;
@@ -214,11 +218,12 @@
 			    opacity: 0;
 
 			    display: block!important;
+			    box-shadow: none;
 
 			  	width: 100%;
 				background-color: rgba(0, 0, 0, 0.89);
 			    
-			    top:107px;
+			    top:71px;
 			    height: 100vh!important;;
 			    right: 0;
 			    max-height: 100vh;

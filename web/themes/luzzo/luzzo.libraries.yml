@@ -13,6 +13,7 @@ global-styling:
     js/main.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.once
 
 bootstrap-scripts:
   js:

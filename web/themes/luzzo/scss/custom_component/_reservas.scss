@@ -1,0 +1,437 @@
+/**
+ * reservas.
+ */
+
+#block-views-block-reservas-luzzo-block-1 {
+    .paragraph__column {
+      padding-bottom: 0!important;
+        .btn-modal {
+          display: none;
+        }
+    }
+
+    
+    .modal-dialog{
+        width: 90%;
+        transform: translate(0, 40vh);
+        overflow: visible;
+        max-width: 960px;
+
+        @media screen and (max-width: 1200px) {
+          width: 95%;
+          max-width: 940px;   
+        }
+
+        @media screen and (max-width: 980px) { max-width: 640px; }
+        @media screen and (max-width: 695px) { 
+          width: 90%; 
+          transform: translate(0, 20vh);
+        }
+    }  
+
+    .modal-content{
+          background-color: #EFEBEB;
+          min-height: 150px;
+    }
+
+    .modal-header{
+              position: absolute;
+              top: -80px;
+              width: 100%;
+              border: none;
+              @media screen and (max-width: 418px) { padding: 15px 17px; }
+              @media screen and (max-width: 390px) { padding: 15px 0px; right: 1px; }
+              @media screen and (max-width: 350px) { padding: 15px 17px;  }
+
+
+
+            .modal-title{
+              font-size: 3.6rem;
+              color: #fff;
+              font-weight: 400;
+              padding-right: 80px;
+              @media screen and (max-width: 624px) { 
+                position: relative;
+                bottom: 23px;
+                line-height: 35px;
+              }
+              @media screen and (max-width: 350px) { bottom: 55px;  }
+            }
+
+            .close{
+              background: url(../img/close_bt.svg);
+              display: block;
+              position: relative;
+              bottom: 10px;
+              width: 63px;
+              height: 55px;
+              outline: none;
+              opacity: 1;
+              transition: all .3s ease-out;
+              z-index: 10;
+              &:hover{
+                filter: brightness(2);
+              }
+              span{
+                display: none;
+              }
+            }
+
+    }
+
+    .modal-body{
+            @media screen and (max-width: 1020px) {
+                padding: 15px;
+            }
+            @media screen and (max-width: 465px) {
+                padding: 15px 0px;
+            }
+
+            .select-wrapper {
+              width: auto;
+                 @media screen and (max-width: 695px) { width: 100%; }
+            }
+
+ 
+    }
+    
+    form {
+              position: relative;
+              top: 20px;
+              height: 35px;
+              @media screen and (max-width: 695px) { 
+                top: 0; 
+                height: auto;
+              }
+    }
+              
+              input[name="na_hora_"] {
+                max-width: 122px;
+              }
+
+              input[name="e_somos_"] {
+                max-width: 122px;
+              }
+
+              input[name="em_nome_de_"] {
+                max-width: 120px;
+                    @media screen and (max-width: 980px) {
+                      max-width: 150px;
+                    }
+              }
+
+              input[name="telefone_"] {
+                max-width: 120px;
+              }
+
+              input[name="no_dia_"] {
+                max-width: 163px;
+                @media screen and (max-width: 695px) { max-width: 100%; }
+
+              }
+              
+              input[name="email_de_confirmacao"] {
+                max-width: 200px;
+                @media screen and (max-width: 1030px) {
+                      max-width: 180px;
+                }
+                @media screen and (max-width: 980px) {
+                      max-width: 220px;
+                }
+                
+              }
+
+              input{
+                @media screen and (max-width: 695px) { max-width: 100%!important; }
+              }
+              
+
+              .form-group {
+                display: inline;
+                padding-left: 10px;
+                @media screen and (max-width: 1030px) {
+                      padding-left: 10px;
+                }
+
+                @media screen and (max-width: 695px) {                   
+                    display: block;
+                    width: 100%;
+                    padding-left: 0;
+                }
+
+              }
+
+              .form-group:first-child {
+                position: relative;
+                bottom: 0;
+                padding-left: 0px;
+     
+              }
+
+
+
+              .webform-wizard-pages-links{
+                display: none;
+              }
+            
+              .form-control{
+                border-radius: 0;
+                border: 1px solid #F4D680;
+                display: inline-block;
+                max-width: 180px;
+
+                @media screen and (max-width: 695px) {
+                    max-width: none;
+                    width: 100%;
+                }
+              }
+
+              .webform-button--next{
+                display: block;
+                left: 118px;
+                right: 0;
+                margin: auto;
+                top: calc(100% + 50px);
+                position: absolute;
+                width: 35px;
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 5.0rem;
+                outline: none;
+              }
+
+              .webform-button--previous{
+                display: block;
+                left: 0;
+                right: 148px;
+                margin: auto;
+                top: calc(100% + 50px);
+                position: absolute;
+                width: 35px;
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 5.0rem;
+                outline: none;
+              }
+
+              .webform-progress{
+                position: absolute;
+                font-size: 48px;
+                color: #F4D680;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: calc(100% + 54px);
+
+              }
+
+              .webform-element--title-inline > label{
+                font-weight: 400;
+                font-size: 1.6rem;
+                color: #4A4A4A;
+                @media screen and (max-width: 980px) {
+                  position: absolute;
+                  bottom: 25px;
+                  transform: translateX(10px);
+                }
+                @media screen and (max-width: 695px) {
+                    position: relative;
+                    display: block;
+                    bottom: 0;
+                }
+              
+              }
+              .form-item-no-dia- label{
+                @media screen and (max-width: 980px) { bottom: 30px; }
+                @media screen and (max-width: 695px) { bottom: 0px; } 
+              }
+              .form-item-telefone- label{
+                @media screen and (max-width: 980px) {
+                  bottom: 30px;
+                }
+                @media screen and (max-width: 695px) { bottom: 0; }
+
+              }
+         
+
+              .form-required:after {
+                  display: none;
+
+              }
+              .messages__wrapper{
+                position: absolute;
+                z-index: 100;
+                left: 0;
+                right: 0;
+                margin: auto;
+                max-width: 320px;
+                top: calc(100% + 70px);
+
+                .alert-danger {
+                    background-color: #ffffff;
+                    border-radius: 0;
+                }
+              }
+
+                .js-form-item-observacoes{
+                  float: left;
+                  width: 50%;
+                  @media screen and (max-width: 695px) { 
+                    width: 100%;
+                    float: none;
+                  }
+
+                    label{
+                      position: relative;
+                      bottom: 10px;
+                      @media screen and (max-width: 695px) { bottom: 0; }
+
+                    }
+
+                    .form-textarea-wrapper{
+                      display: inline;
+                      max-width: 300px;
+                      @media screen and (max-width: 695px) { max-width: 100%; }
+
+                      textarea{
+                        max-width: 280px;
+                        @media screen and (max-width: 695px) { max-width: 100%; height: 7rem; }
+
+                      }
+                    }
+                }
+
+                .checkbox{
+                  position: relative;
+                  display: block;
+                  margin: 0;
+                  float: left;
+                  width: 50%;
+
+                  @media screen and (max-width: 695px) { 
+                    width: 100%;
+                    float: none;
+                  }
+                  label{
+                      font-size: 1.4rem;
+                    @media screen and (max-width: 980px) {
+                      bottom: -40px;
+                    }
+                    @media screen and (max-width: 695px) { bottom: 0; }
+
+                  }
+                }
+
+                .submit-reservas {
+                    position: absolute;
+                    display: inline-block;
+                    left: 240px;
+                    right: 0;
+                    margin: auto;
+                    top: calc(100% + 70px);
+                    width: 123px;
+                    height: 38px;
+                    text-transform: uppercase;
+                    border: 1px solid #fff;
+
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    color: #fff;
+                    letter-spacing: 2.66px;
+                    background-color: transparent;
+                    border-radius: 0;
+                    transition: color .4s ease-out;
+                    transition-delay: .3s;
+
+                    @media screen and (max-width: 468px) {
+                      left: 0;
+                      top: calc(100% + 130px);
+                    }
+                }
+
+                .submit-reservas:before{
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                    top: 0;
+                    z-index: -1;
+                  width: 0%;
+                  height: 100%;
+                  background: #F4D680;
+                  transition: width .4s ease-in;
+                }
+                .submit-reservas:hover{
+                  text-decoration: none;
+                  color: #4A4A4A;
+                }
+                .submit-reservas:hover:before{
+                  width: 100%;
+                }
+
+          
+      div[data-webform-key="reservar"] {
+                @media screen and (max-width: 980px) {
+                      position: relative;
+                      top: 10px;
+                }
+                &.form-group {
+                  padding-left: 0px;
+                }
+                &.form-group:first-child {
+                  @media screen and (max-width: 980px) {
+                      bottom: 7px;
+                  }
+                }
+
+                
+
+                 .webform-progress  {
+                    @media screen and (max-width: 468px) { 
+                      margin: unset!important;
+                      right: unset!important;
+                      left: -97px!important;
+                   
+                    }
+                  }
+
+                   .webform-button--previous  {
+                    @media screen and (max-width: 468px) { 
+                     right: unset!important;
+                     left: -15px!important;
+                    }
+                  }
+
+                
+
+                .submit-reservas{
+                  @media screen and (max-width: 468px) { left: 115px;top: calc(100% + 135px);}
+                }
+
+
+              }
+
+              div[data-webform-key="intro"] {
+                   @media screen and (max-width: 980px) {
+                      position: relative;
+                      top: 10px;
+                }
+                &.form-group {
+                  padding-left: 0px;
+                }
+              }
+              div[data-webform-key="page_2"] {
+                  @media screen and (max-width: 980px) {
+                    position: relative;
+                    top: 10px;
+                }
+              }       
+      
+    
+}
+
+.modal-backdrop.in {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}

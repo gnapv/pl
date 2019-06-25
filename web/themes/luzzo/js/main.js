@@ -2,11 +2,26 @@ var onHome, onLuzzo, onFranc, onLojas, onLoja, onEmenta;
 var classList, finalType;
 var tapaFooter, reservaFooterBt, navbarHeader ;
 
+//drupal metodo para inserir jquery com o $ - actualiza com o AJAX
+(function ($, Drupal) {
+  Drupal.behaviors.myModuleBehavior = {
+    attach: function (context, settings) {
+
+
+      $('.webform-progress__summary', context).once('myCustomBehavior').each(function () {
+        // Apply the myCustomBehaviour effect to the elements only once.
+       changeProgressText();
+
+      });
+    }
+  };
+})(jQuery, Drupal);
+
 
 
 jQuery(document).ready(function(){
 
-  	console.log("Bem Vindo ao website Luzzo 2019!");
+  	console.log("Bem Vindo ao website Luzzo!");
   	console.log("by:gomastudio.net");
 
     findType();
@@ -85,6 +100,7 @@ function APPLogic(qualType) {
 
           initSliderHome();
           makeLojaParallax();
+          initModalLoja();
 
          break;
     case 'onEmenta':
@@ -99,9 +115,48 @@ function APPLogic(qualType) {
     
     initEvents();
 
+    initModal();
+
 
 }
 
+function initModal() {
+    jQuery( ".navbar-nav li.last a, .f-reserva a" ).click(function(e) {
+          e.preventDefault();
+           jQuery('#modal-62').modal('show');
+      });
+
+    changeProgressText();
+}
+
+function initModalLoja() {
+    jQuery( ".field--name-field-reservar a" ).click(function(e) {
+          e.preventDefault();
+           jQuery('#modal-62').modal('show');
+      });
+}
+
+function changeProgressText() {
+    var textProgress = jQuery(".webform-progress__summary").text();
+    if (textProgress.length != 3 ) {
+      var _loc1 = textProgress.substring(5, textProgress.length);
+      var _loc2 = _loc1.replace(" of ", "/");
+      jQuery(".webform-progress__summary").text(_loc2);
+
+      var _loc3 = _loc2.substring(0,1);
+
+     
+     
+      if (_loc3 != "3") {
+        jQuery(".webform-progress__summary").html(
+          jQuery(".webform-progress__summary").html().substr(0, jQuery(".webform-progress__summary").html().length-2)
+            + "<span style='color: #fff'>"
+            + jQuery(".webform-progress__summary").html().substr(-2)
+            + "</span>");
+      }
+
+    }
+}
 
 
 function initSliderHome() {
@@ -195,7 +250,7 @@ function corrigirModal() {
       var maxHeight = 0;
       jQuery( "#block-views-block-slider-noticias-block-1 .slides li" ).each(function( index ) {
 
-            console.log("jQuery(this).height(): "+jQuery(this).outerHeight());
+            
 
          if (jQuery(this).outerHeight() > maxHeight) { 
           maxHeight = jQuery(this).outerHeight(); 
@@ -221,11 +276,6 @@ function initEvents() {
           jQuery( ".godown" ).click(function() {
               // var options = { document.querySelector('.main-container')};
               var desiredOffset = jQuery('#navbar').height();
-
-            console.log("desiredOffset: "+desiredOffset);
-
-
-              // animateScrollTo(document.querySelector('.main-container'));
               animateScrollTo(desiredOffset, document.querySelector('.main-container'));
           });
 
@@ -248,8 +298,6 @@ function initEvents() {
               Offset = pos_to_neg(Offset);
               var options = {offset: Offset};
 
-              console.log("Offset = "+Offset);
-
               animateScrollTo(document.querySelector('#block-nextpreviousblock'),options);
           });
 
@@ -266,31 +314,43 @@ function initEvents() {
     window.onscroll = function(){
       verificaScroll();
     }
+    //init MediaQuerys
+    var x = window.matchMedia("(max-width: 768px)");
+    closeNavToPeq(x); // Call listener function at run time
+    x.addListener(closeNavToPeq); // Attach listener function on state changes
+
 }
 
 function verificaScroll() {
 
-  
 
-      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250 || window.innerWidth < 768) {
         navbarHeader.classList.add("navbarPeq");
       } else {
         navbarHeader.classList.remove("navbarPeq");
       }
 
-
-
-  if (isInViewport(tapaFooter)) {
-      tapaFooter.classList.add("ani-tapa-footer");
-      TweenMax.to(reservaFooterBt, .8, {opacity:"1", delay:1});
-  }else{
-      tapaFooter.classList.remove("ani-tapa-footer");
-      TweenMax.to(reservaFooterBt, 0, {opacity:"0"});
-  }
-
-
+      if (isInViewport(tapaFooter)) {
+          tapaFooter.classList.add("ani-tapa-footer");
+          TweenMax.to(reservaFooterBt, .8, {opacity:"1", delay:1});
+      }else{
+          tapaFooter.classList.remove("ani-tapa-footer");
+          TweenMax.to(reservaFooterBt, 0, {opacity:"0"});
+      }
 
 }
+
+// MediaQuerys
+
+function closeNavToPeq(x) {
+  if (x.matches) { // If media query matches - max-width: 768px
+        navbarHeader.classList.add("navbarPeq");
+  } else {
+        navbarHeader.classList.remove("navbarPeq");    
+  }
+}
+
+
 
 // UTEIS
 function pos_to_neg(num){

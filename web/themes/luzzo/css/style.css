@@ -10198,20 +10198,22 @@ html {
   }
 }
 
-/* line 25, ../scss/_global.scss */
+/* line 26, ../scss/_global.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-top: 0 !important;
   margin-top: 0 !important;
+  outline: none !important;
+  padding-right: 0 !important;
 }
 
-/* line 31, ../scss/_global.scss */
+/* line 34, ../scss/_global.scss */
 #fix-over {
   overflow: hidden;
 }
 
-/* line 35, ../scss/_global.scss */
+/* line 38, ../scss/_global.scss */
 .full-screen {
   background-size: cover;
   background-position: center;
@@ -10219,30 +10221,30 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 41, ../scss/_global.scss */
+  /* line 44, ../scss/_global.scss */
   .container {
     padding: 0px 40px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 41, ../scss/_global.scss */
+  /* line 44, ../scss/_global.scss */
   .container {
     padding: 0px 30px;
   }
 }
 
-/* line 51, ../scss/_global.scss */
+/* line 54, ../scss/_global.scss */
 a {
   outline: none !important;
 }
 
-/* line 54, ../scss/_global.scss */
+/* line 57, ../scss/_global.scss */
 a:hover, a:active, a:focus {
   text-decoration: none !important;
   color: #4A4A4A;
 }
 
-/* line 61, ../scss/_global.scss */
+/* line 62, ../scss/_global.scss */
 .anima-back {
   display: inline-block;
   position: relative;
@@ -10253,12 +10255,12 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   padding: 8px 0px;
 }
-/* line 71, ../scss/_global.scss */
+/* line 72, ../scss/_global.scss */
 .anima-back .anome {
   border: 1px solid #4A4A4A;
   padding: 9px 20px;
 }
-/* line 75, ../scss/_global.scss */
+/* line 76, ../scss/_global.scss */
 .anima-back:after {
   content: "";
   position: absolute;
@@ -10270,12 +10272,12 @@ a:hover, a:active, a:focus {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 86, ../scss/_global.scss */
+/* line 87, ../scss/_global.scss */
 .anima-back:hover, .anima-back:active {
   text-decoration: none;
   color: #4A4A4A !important;
 }
-/* line 90, ../scss/_global.scss */
+/* line 91, ../scss/_global.scss */
 .anima-back:hover:after {
   width: 100% !important;
 }
@@ -10851,6 +10853,15 @@ a:hover, a:active, a:focus {
   background-color: transparent;
   font-size: 2rem;
   color: #F4D680;
+}
+/* line 239, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form .webform-confirmation__message h3 {
+  text-align: center;
+  color: #b5be05;
+}
+/* line 244, ../scss/pages/_franchising.scss */
+#page-franchising .webform-submission-franchising-form .webform-confirmation__back {
+  text-align: center;
 }
 
 /**
@@ -11777,62 +11788,66 @@ a:hover, a:active, a:focus {
 /* line 54, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle {
   border: none;
+  float: none;
   transform: scale(0.7);
   background-color: transparent;
+  position: absolute;
+  right: 0px;
+  bottom: -7px;
 }
-/* line 59, ../scss/custom_component/_navigation.scss */
+/* line 63, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle:focus {
   background-color: transparent;
 }
-/* line 67, ../scss/custom_component/_navigation.scss */
+/* line 71, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle.clickMenuBur:hover .icon-bar:nth-of-type(2) {
   transform: translateY(15px) rotate(40deg);
 }
-/* line 68, ../scss/custom_component/_navigation.scss */
+/* line 72, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle.clickMenuBur:hover .icon-bar:nth-of-type(3) {
   opacity: 0;
 }
-/* line 69, ../scss/custom_component/_navigation.scss */
+/* line 73, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle.clickMenuBur:hover .icon-bar:nth-of-type(4) {
   transform: translateY(-15px) rotate(-40deg);
 }
-/* line 74, ../scss/custom_component/_navigation.scss */
+/* line 78, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle.clickMenuBur .icon-bar:nth-of-type(2) {
   -webkit-transform: translateY(15px) rotate(45deg);
   -moz-transform: translateY(15px) rotate(45deg);
   -ms-transform: translateY(15px) rotate(45deg);
   transform: translateY(15px) rotate(45deg);
 }
-/* line 75, ../scss/custom_component/_navigation.scss */
+/* line 79, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle.clickMenuBur .icon-bar:nth-of-type(3) {
   opacity: 0;
 }
-/* line 76, ../scss/custom_component/_navigation.scss */
+/* line 80, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle.clickMenuBur .icon-bar:nth-of-type(4) {
   -webkit-transform: translateY(-15px) rotate(-45deg);
   -moz-transform: translateY(-15px) rotate(-45deg);
   -ms-transform: translateY(-15px) rotate(-45deg);
   transform: translateY(-15px) rotate(-45deg);
 }
-/* line 83, ../scss/custom_component/_navigation.scss */
+/* line 87, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle:hover .icon-bar:nth-of-type(2) {
   -webkit-transform: translateY(4px);
   -moz-transform: translateY(4px);
   -ms-transform: translateY(4px);
   transform: translateY(4px);
 }
-/* line 84, ../scss/custom_component/_navigation.scss */
+/* line 88, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle:hover .icon-bar:nth-of-type(3) {
   opacity: 0;
 }
-/* line 85, ../scss/custom_component/_navigation.scss */
+/* line 89, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .navbar-toggle:hover .icon-bar:nth-of-type(4) {
   -webkit-transform: translateY(-4px);
   -moz-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
   transform: translateY(-4px);
 }
-/* line 89, ../scss/custom_component/_navigation.scss */
+/* line 93, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .icon-bar {
   height: 5px;
   width: 70px;
@@ -11848,48 +11863,48 @@ a:hover, a:active, a:focus {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 104, ../scss/custom_component/_navigation.scss */
+/* line 108, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .icon-bar:nth-of-type(2) {
   -webkit-animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
   -o-animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
   animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
 }
-/* line 105, ../scss/custom_component/_navigation.scss */
+/* line 109, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .icon-bar:nth-of-type(3) {
   -webkit-animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
   -o-animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
   animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
 }
-/* line 106, ../scss/custom_component/_navigation.scss */
+/* line 110, ../scss/custom_component/_navigation.scss */
 .navbar-inverse .navbar-header .icon-bar:nth-of-type(4) {
   -webkit-animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
   -o-animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
   animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
 }
-/* line 114, ../scss/custom_component/_navigation.scss */
+/* line 118, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse {
   position: absolute;
   right: 20px;
   top: -5px;
 }
-/* line 121, ../scss/custom_component/_navigation.scss */
+/* line 125, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav {
   position: relative;
   float: right;
   top: 42px;
   transition: all .4s ease-in;
 }
-/* line 128, ../scss/custom_component/_navigation.scss */
+/* line 132, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav > li {
   padding: 8px 14px;
 }
 @media screen and (max-width: 992px) {
-  /* line 128, ../scss/custom_component/_navigation.scss */
+  /* line 132, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav > li {
     padding: 8px 8px;
   }
 }
-/* line 135, ../scss/custom_component/_navigation.scss */
+/* line 139, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav > li > a {
   color: white;
   font-size: 1.7rem;
@@ -11897,7 +11912,7 @@ a:hover, a:active, a:focus {
   letter-spacing: 2.83px;
   padding: 0 !important;
 }
-/* line 143, ../scss/custom_component/_navigation.scss */
+/* line 147, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav > li > a:after {
   content: "";
   border-bottom: 14px solid;
@@ -11912,12 +11927,12 @@ a:hover, a:active, a:focus {
   clip-path: inset(0 100% 0 0);
   transition: all .3s ease-in;
 }
-/* line 157, ../scss/custom_component/_navigation.scss */
+/* line 161, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav > li > a:hover:after {
   -webkit-clip-path: inset(0 0% 0 0);
   clip-path: inset(0 0% 0 0);
 }
-/* line 163, ../scss/custom_component/_navigation.scss */
+/* line 167, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > a:hover,
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > a:focus,
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .open > a,
@@ -11927,40 +11942,40 @@ a:hover, a:active, a:focus {
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .active > a:focus {
   color: #F4D680;
 }
-/* line 174, ../scss/custom_component/_navigation.scss */
+/* line 178, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .active > a {
   color: #F4D680;
   background-color: transparent;
 }
-/* line 178, ../scss/custom_component/_navigation.scss */
+/* line 182, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .active > a:after {
   -webkit-clip-path: inset(0 0% 0 0);
   clip-path: inset(0 0% 0 0);
 }
-/* line 183, ../scss/custom_component/_navigation.scss */
+/* line 187, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu {
   background-color: #4B4B4B;
   padding: 0;
   border: 0px solid black;
   border-top: 1px solid #222222;
 }
-/* line 189, ../scss/custom_component/_navigation.scss */
+/* line 193, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li {
   border-bottom: 1px solid #222222;
 }
-/* line 193, ../scss/custom_component/_navigation.scss */
+/* line 197, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a {
   color: white;
   font-size: larger;
   padding: 8px 14px;
   text-transform: uppercase;
 }
-/* line 199, ../scss/custom_component/_navigation.scss */
+/* line 203, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a:hover {
   color: #F4D680;
 }
 @media screen and (max-width: 767px) {
-  /* line 114, ../scss/custom_component/_navigation.scss */
+  /* line 118, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse {
     transition: transform 1.6s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 1.6s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform-origin: top center;
@@ -11970,46 +11985,47 @@ a:hover, a:active, a:focus {
     overflow: hidden;
     opacity: 0;
     display: block !important;
+    box-shadow: none;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.89);
-    top: 107px;
+    top: 71px;
     height: 100vh !important;
     right: 0;
     max-height: 100vh;
     border: none;
   }
-  /* line 227, ../scss/custom_component/_navigation.scss */
+  /* line 232, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav {
     text-align: center !important;
     float: none !important;
   }
-  /* line 231, ../scss/custom_component/_navigation.scss */
+  /* line 236, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav li {
     padding: calc(100vh / 30) 8px !important;
   }
-  /* line 233, ../scss/custom_component/_navigation.scss */
+  /* line 238, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav li a {
     display: inline-block !important;
     font-size: 3rem !important;
   }
-  /* line 236, ../scss/custom_component/_navigation.scss */
+  /* line 241, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav li a:after {
     top: 30px !important;
   }
 }
-/* line 248, ../scss/custom_component/_navigation.scss */
+/* line 253, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse.in {
   opacity: 1;
   transform: perspective(1000px) rotateX(0deg);
 }
 
-/* line 266, ../scss/custom_component/_navigation.scss */
+/* line 271, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li {
   display: inline;
   list-style: none;
   border-right: 1px solid white;
 }
-/* line 271, ../scss/custom_component/_navigation.scss */
+/* line 276, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a {
   display: inline-block;
   padding: 0px 20px;
@@ -12017,12 +12033,12 @@ footer nav[role="navigation"] ul.nav li a {
   color: #fff;
   font-size: smaller;
 }
-/* line 279, ../scss/custom_component/_navigation.scss */
+/* line 284, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-/* line 286, ../scss/custom_component/_navigation.scss */
+/* line 291, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li:last-child {
   border-right: 0px solid white;
 }
@@ -12705,4 +12721,541 @@ footer nav[role="navigation"] ul.nav li:last-child {
 .footerPrincipal #block-views-block-footer-block-1 .f-contactos p:last-child {
   font-size: 1.4rem;
   margin-top: 20px;
+}
+
+/**
+ * reservas.
+ */
+/* line 6, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .paragraph__column {
+  padding-bottom: 0 !important;
+}
+/* line 8, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .paragraph__column .btn-modal {
+  display: none;
+}
+/* line 14, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-dialog {
+  width: 90%;
+  transform: translate(0, 40vh);
+  overflow: visible;
+  max-width: 960px;
+}
+@media screen and (max-width: 1200px) {
+  /* line 14, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-dialog {
+    width: 95%;
+    max-width: 940px;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 14, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-dialog {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 695px) {
+  /* line 14, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-dialog {
+    width: 90%;
+    transform: translate(0, 20vh);
+  }
+}
+/* line 32, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-content {
+  background-color: #EFEBEB;
+  min-height: 150px;
+}
+/* line 37, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-header {
+  position: absolute;
+  top: -80px;
+  width: 100%;
+  border: none;
+}
+@media screen and (max-width: 418px) {
+  /* line 37, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-header {
+    padding: 15px 17px;
+  }
+}
+@media screen and (max-width: 390px) {
+  /* line 37, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-header {
+    padding: 15px 0px;
+    right: 1px;
+  }
+}
+@media screen and (max-width: 350px) {
+  /* line 37, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-header {
+    padding: 15px 17px;
+  }
+}
+/* line 48, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: 400;
+  padding-right: 80px;
+}
+@media screen and (max-width: 624px) {
+  /* line 48, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
+    position: relative;
+    bottom: 23px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 350px) {
+  /* line 48, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
+    bottom: 55px;
+  }
+}
+/* line 61, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-header .close {
+  background: url(../img/close_bt.svg);
+  display: block;
+  position: relative;
+  bottom: 10px;
+  width: 63px;
+  height: 55px;
+  outline: none;
+  opacity: 1;
+  transition: all .3s ease-out;
+  z-index: 10;
+}
+/* line 72, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-header .close:hover {
+  filter: brightness(2);
+}
+/* line 75, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-header .close span {
+  display: none;
+}
+@media screen and (max-width: 1020px) {
+  /* line 82, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-body {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 465px) {
+  /* line 82, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-body {
+    padding: 15px 0px;
+  }
+}
+/* line 90, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-body .select-wrapper {
+  width: auto;
+}
+@media screen and (max-width: 695px) {
+  /* line 90, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .modal-body .select-wrapper {
+    width: 100%;
+  }
+}
+/* line 98, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 form {
+  position: relative;
+  top: 20px;
+  height: 35px;
+}
+@media screen and (max-width: 695px) {
+  /* line 98, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 form {
+    top: 0;
+    height: auto;
+  }
+}
+/* line 108, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 input[name="na_hora_"] {
+  max-width: 122px;
+}
+/* line 112, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 input[name="e_somos_"] {
+  max-width: 122px;
+}
+/* line 116, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
+  max-width: 120px;
+}
+@media screen and (max-width: 980px) {
+  /* line 116, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
+    max-width: 150px;
+  }
+}
+/* line 123, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 input[name="telefone_"] {
+  max-width: 120px;
+}
+/* line 127, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 input[name="no_dia_"] {
+  max-width: 163px;
+}
+@media screen and (max-width: 695px) {
+  /* line 127, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 input[name="no_dia_"] {
+    max-width: 100%;
+  }
+}
+/* line 133, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
+  max-width: 200px;
+}
+@media screen and (max-width: 1030px) {
+  /* line 133, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
+    max-width: 180px;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 133, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
+    max-width: 220px;
+  }
+}
+@media screen and (max-width: 695px) {
+  /* line 144, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 input {
+    max-width: 100% !important;
+  }
+}
+/* line 149, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .form-group {
+  display: inline;
+  padding-left: 10px;
+}
+@media screen and (max-width: 1030px) {
+  /* line 149, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-group {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 695px) {
+  /* line 149, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-group {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+/* line 164, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .form-group:first-child {
+  position: relative;
+  bottom: 0;
+  padding-left: 0px;
+}
+/* line 173, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .webform-wizard-pages-links {
+  display: none;
+}
+/* line 177, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .form-control {
+  border-radius: 0;
+  border: 1px solid #F4D680;
+  display: inline-block;
+  max-width: 180px;
+}
+@media screen and (max-width: 695px) {
+  /* line 177, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-control {
+    max-width: none;
+    width: 100%;
+  }
+}
+/* line 189, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .webform-button--next {
+  display: block;
+  left: 118px;
+  right: 0;
+  margin: auto;
+  top: calc(100% + 50px);
+  position: absolute;
+  width: 35px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 5.0rem;
+  outline: none;
+}
+/* line 204, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .webform-button--previous {
+  display: block;
+  left: 0;
+  right: 148px;
+  margin: auto;
+  top: calc(100% + 50px);
+  position: absolute;
+  width: 35px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 5.0rem;
+  outline: none;
+}
+/* line 219, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .webform-progress {
+  position: absolute;
+  font-size: 48px;
+  color: #F4D680;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: calc(100% + 54px);
+}
+/* line 230, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #4A4A4A;
+}
+@media screen and (max-width: 980px) {
+  /* line 230, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
+    position: absolute;
+    bottom: 25px;
+    transform: translateX(10px);
+  }
+}
+@media screen and (max-width: 695px) {
+  /* line 230, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
+    position: relative;
+    display: block;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 246, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 695px) {
+  /* line 246, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
+    bottom: 0px;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 250, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 695px) {
+  /* line 250, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
+    bottom: 0;
+  }
+}
+/* line 259, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .form-required:after {
+  display: none;
+}
+/* line 263, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .messages__wrapper {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 320px;
+  top: calc(100% + 70px);
+}
+/* line 272, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .messages__wrapper .alert-danger {
+  background-color: #ffffff;
+  border-radius: 0;
+}
+/* line 278, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 695px) {
+  /* line 278, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 286, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
+  position: relative;
+  bottom: 10px;
+}
+@media screen and (max-width: 695px) {
+  /* line 286, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
+    bottom: 0;
+  }
+}
+/* line 293, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
+  display: inline;
+  max-width: 300px;
+}
+@media screen and (max-width: 695px) {
+  /* line 293, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
+    max-width: 100%;
+  }
+}
+/* line 298, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
+  max-width: 280px;
+}
+@media screen and (max-width: 695px) {
+  /* line 298, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
+    max-width: 100%;
+    height: 7rem;
+  }
+}
+/* line 306, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .checkbox {
+  position: relative;
+  display: block;
+  margin: 0;
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 695px) {
+  /* line 306, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .checkbox {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 317, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .checkbox label {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 980px) {
+  /* line 317, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .checkbox label {
+    bottom: -40px;
+  }
+}
+@media screen and (max-width: 695px) {
+  /* line 317, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .checkbox label {
+    bottom: 0;
+  }
+}
+/* line 327, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .submit-reservas {
+  position: absolute;
+  display: inline-block;
+  left: 240px;
+  right: 0;
+  margin: auto;
+  top: calc(100% + 70px);
+  width: 123px;
+  height: 38px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 2.66px;
+  background-color: transparent;
+  border-radius: 0;
+  transition: color .4s ease-out;
+  transition-delay: .3s;
+}
+@media screen and (max-width: 468px) {
+  /* line 327, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .submit-reservas {
+    left: 0;
+    top: calc(100% + 130px);
+  }
+}
+/* line 354, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .submit-reservas:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  background: #F4D680;
+  transition: width .4s ease-in;
+}
+/* line 365, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .submit-reservas:hover {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+/* line 369, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .submit-reservas:hover:before {
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  /* line 374, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] {
+    position: relative;
+    top: 10px;
+  }
+}
+/* line 379, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group {
+  padding-left: 0px;
+}
+@media screen and (max-width: 980px) {
+  /* line 382, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group:first-child {
+    bottom: 7px;
+  }
+}
+@media screen and (max-width: 468px) {
+  /* line 390, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-progress {
+    margin: unset !important;
+    right: unset !important;
+    left: -97px !important;
+  }
+}
+@media screen and (max-width: 468px) {
+  /* line 399, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-button--previous {
+    right: unset !important;
+    left: -15px !important;
+  }
+}
+@media screen and (max-width: 468px) {
+  /* line 408, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .submit-reservas {
+    left: 115px;
+    top: calc(100% + 135px);
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 415, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"] {
+    position: relative;
+    top: 10px;
+  }
+}
+/* line 420, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"].form-group {
+  padding-left: 0px;
+}
+@media screen and (max-width: 980px) {
+  /* line 424, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 div[data-webform-key="page_2"] {
+    position: relative;
+    top: 10px;
+  }
+}
+
+/* line 434, ../scss/custom_component/_reservas.scss */
+.modal-backdrop.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }

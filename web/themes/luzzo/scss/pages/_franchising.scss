@@ -233,6 +233,17 @@
 			font-size: 2rem;
 			color: $brand-primary;
 		}
+
+
+		.webform-confirmation__message{
+			h3{
+				text-align: center;
+				color: #b5be05;
+			}
+		}
+		.webform-confirmation__back{
+			text-align: center;
+		}
 	}
 
 }
