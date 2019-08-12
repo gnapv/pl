@@ -1,0 +1,203 @@
+/**
+ * ementa luzzo.
+ */
+
+ .view-ementa{
+
+	 .view-header{
+	 	margin-top: 150px;
+	 	margin-bottom: 140px;
+
+		h1{	
+
+			position: relative;
+		    font-weight: 300;
+		    font-size: 3.6rem;
+		    color: #212121;
+		    letter-spacing: 10.12px;
+		    text-align: center;
+		    display: inline-block;
+		    left: 50%;
+		    transform: translateX(-50%);
+
+			&:before,
+			&:after {
+				content: "";
+				border-top: 1px solid #9B9B9B;
+				width: 150px;
+				position: absolute;
+				top: 47%;
+				}
+				&:before {
+				  right: 100%;
+				  margin-right: 15px;
+				}
+				&:after {
+				  left: 100%;
+				  margin-left: 15px;
+				}
+		}
+
+		p{
+			font-size: 1.8rem;
+			color: #4A4A4A;
+			line-height: 26px;
+			text-align:center;
+			margin-bottom: 40px;
+		}
+	}
+
+	.view-content{
+		position: relative;
+
+		h3{
+			position: relative;
+			font-weight: 900;
+			font-size: 6.4rem;
+			color: #212121;
+			letter-spacing: 1.88px;
+			margin-top: 0;
+    		margin-bottom: 60px;
+    		text-transform: lowercase;
+
+			&:after {
+				content: "";
+			    border-bottom: 30px solid;
+			    border-image: url(../img/zig-branco_.svg);
+			    border-image-slice: 15 1;
+			    border-image-repeat: round;
+			    width: 70%;
+			    position: absolute;
+			    margin-left: 15px;
+			    top: 22px;
+			    transform: scale(1.7);
+			    transform-origin: left;
+			    @media screen and (max-width: 415px) {
+					margin-left: 0;
+					left: 65px;
+					top: -60px;	  		
+				 }
+
+			}
+		}
+
+		.fundo-cat{
+		    min-height: 360px;
+		    background: #F4D680;
+		    position: absolute;
+		    width: 70%;
+		    top: -60px;
+		    z-index: -1;
+		    left: -20%;
+
+
+
+		    @media screen and (max-width: $screen-md-min) {
+		    	width: 85%;
+		  		
+			 }
+
+
+		}
+		.tit-cat{
+			font-weight: 900 ;
+			font-size: 1.3rem;
+			color: #212121;
+			letter-spacing: 1.49px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+		.group-items{
+			margin-bottom: 50px;
+
+			.template-ementa{
+				cursor: pointer;
+				&:hover{
+					h2:before{
+						opacity: 1;
+							
+					}
+
+				}
+			}
+
+
+			@media screen and (min-width: $screen-md-min) {
+				margin-top: 0px;
+				margin-right: -40px;
+	        	margin-left: -40px; 	  		
+			 }
+
+			 > [class^="col-"], > [class^=" col-"] {
+				margin-bottom: 80px;
+		        @media screen and (min-width: $screen-md-min) {
+			        padding-right: 40px;
+			        padding-left: 40px; 	  		
+				 }
+		      }
+
+			.cat{
+				font-weight: 900;
+				font-size: 13px;
+				color: #4A4A4A;
+				letter-spacing: 1.49px;
+				text-transform: uppercase;
+				@media screen and (max-width: $screen-sm-min) {
+				       text-align: center;	  		
+				 }
+
+			}
+
+			.img-container{
+				overflow: hidden;
+				img{
+					margin:0 auto;
+					transition: all .3s ease-in;
+				}
+			}
+			.img-container.active{
+				img{
+						transform: scale(1.1);
+				}
+			}
+			h2{
+				@media screen and (max-width: $screen-sm-min) {
+				       text-align: center;	  		
+				 }
+				&:before{
+					content: url("../img/seta-active.svg");
+					position: absolute;
+					opacity: 0;
+					transform: translate(0px, -3px);
+
+				}
+			}
+
+			a{
+				position: relative;
+				font-weight: 900;
+				font-size: 24px;
+				color: #4A4A4A;
+				letter-spacing: 0.7px;
+				text-transform: uppercase;
+
+
+
+			}
+
+			.des{
+				@media screen and (max-width: $screen-sm-min) {
+				       text-align: center;	  		
+				 }
+				font-size: 16px;
+				color: #9B9B9B;
+				letter-spacing: 0.47px;
+				line-height: 24px;
+			}
+		}
+
+	}
+
+
+}

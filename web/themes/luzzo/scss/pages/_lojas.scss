@@ -5,7 +5,7 @@
  #headerlojas{
 
  	.full-back{
-
+ 		display: none; 	
  		min-height: 370px;
 
  		&:before {
@@ -41,7 +41,7 @@
 	    width: 100%;
 	    background: url(../img/zigZag.png);
 	    position: absolute;
-	    height: calc(100% - 290px);
+	    height: calc(100% - 1000px);
 	    background-position-y: -120px;
 
 	}

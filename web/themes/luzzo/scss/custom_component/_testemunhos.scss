@@ -4,6 +4,25 @@
 
 #flexslider-testemunhos {
 
+  margin-top: 60px;
+
+  &:before{
+     
+    content: "";
+    border-bottom: 30px solid;
+    border-image: url(../img/zig-cinza.svg);
+    border-image-slice: 15 1;
+    border-image-repeat: round;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    transition: all .3s ease-in;
+    right: 0;
+    margin: auto;
+    top: -19px;
+      
+  }
+
       .flex-viewport{
         
       }

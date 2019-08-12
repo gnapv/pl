@@ -39,7 +39,7 @@ function findType() {
     onLojas = false;
     onLoja = false;
     onEmenta = false;
-    classList = ['path-home','page-node-type-luzzo','page-node-type-franchising','path-lojas','page-node-type-loja','page-node-type-ementa'];
+    classList = ['path-home','page-node-type-luzzo','page-node-type-franchising','path-lojas','page-node-type-loja','path-ementa'];
 
     var classBody = jQuery('body').attr('class').split(' ');
 
@@ -104,7 +104,8 @@ function APPLogic(qualType) {
 
          break;
     case 'onEmenta':
-          jQuery('.menu--main li:nth-child(5)').addClass("active");
+          jQuery('.menu--main li:nth-child(4)').addClass("active");
+          fixLinkEmenta();
 
          break;
       
@@ -160,6 +161,8 @@ function changeProgressText() {
 
 
 function initSliderHome() {
+ jQuery( ".navbar-inverse" ).css("background-color","rgba(0, 0, 0, 0.4)");
+
     //
     //Fix name city
     //
@@ -259,6 +262,36 @@ function corrigirModal() {
 
       jQuery( "#block-views-block-slider-noticias-block-1 .slides li" ).height((maxHeight+100));
 
+}
+
+
+function fixLinkEmenta() {
+   var links = jQuery(".template-ementa a").attr("href");
+
+   console.warn("links = "+links);
+
+      jQuery( ".template-ementa" ).mouseover(function() {
+          var tit = jQuery(this).find( "h2 a" );
+         jQuery(this).find( ".img-container" ).addClass("active");
+         var seta = jQuery(this).find( "h2:before" );
+
+         
+
+          
+          TweenMax.to(tit, .3, {color:"#F4D680", left:"20"});
+          TweenMax.to(seta, .3, {opacity:"1", delay:".3"});
+      });
+
+      jQuery( ".template-ementa" ).mouseout(function() {
+          var tit = jQuery(this).find( "h2 a" );
+         jQuery(this).find( ".img-container" ).removeClass("active");
+         var seta = jQuery(this).find( "h2:before" );
+
+
+          TweenMax.to(tit, .3, {color:"#4A4A4A", left:"0px"});
+          TweenMax.to(seta, .1, {opacity:"0", delay:"0"});
+
+      });
 }
 
 function initEvents() {
