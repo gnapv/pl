@@ -11742,7 +11742,7 @@ a:hover, a:active, a:focus {
 }
 
 /**
- * ementa luzzo.
+ * page ementa luzzo.
  */
 /* line 7, ../scss/pages/_ementa.scss */
 .view-ementa .view-header {
@@ -11896,31 +11896,58 @@ a:hover, a:active, a:focus {
 }
 /* line 152, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container {
+  position: relative;
   overflow: hidden;
 }
-/* line 154, ../scss/pages/_ementa.scss */
+/* line 155, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container img {
   margin: 0 auto;
   transition: all .3s ease-in;
 }
 /* line 160, ../scss/pages/_ementa.scss */
+.view-ementa .view-content .group-items .img-container .vegan {
+  position: absolute;
+  background: url(../img/vegan.svg);
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  padding: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 174, ../scss/pages/_ementa.scss */
+.view-ementa .view-content .group-items .img-container .picante {
+  position: absolute;
+  background: url(../img/picas.svg);
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  padding: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 190, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container.active img {
   transform: scale(1.1);
 }
 @media screen and (max-width: 768px) {
-  /* line 164, ../scss/pages/_ementa.scss */
+  /* line 194, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items h2 {
     text-align: center;
   }
 }
-/* line 168, ../scss/pages/_ementa.scss */
+/* line 198, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items h2:before {
   content: url("../img/seta-active.svg");
   position: absolute;
   opacity: 0;
   transform: translate(0px, -3px);
 }
-/* line 177, ../scss/pages/_ementa.scss */
+/* line 207, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items a {
   position: relative;
   font-weight: 900;
@@ -11929,7 +11956,7 @@ a:hover, a:active, a:focus {
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
-/* line 189, ../scss/pages/_ementa.scss */
+/* line 219, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .des {
   font-size: 16px;
   color: #9B9B9B;
@@ -11937,10 +11964,86 @@ a:hover, a:active, a:focus {
   line-height: 24px;
 }
 @media screen and (max-width: 768px) {
-  /* line 189, ../scss/pages/_ementa.scss */
+  /* line 219, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items .des {
     text-align: center;
   }
+}
+
+/**
+ * page ementa luzzo.
+ */
+/* line 237, ../scss/pages/_ementa.scss */
+.no-container {
+  margin-top: 94px;
+}
+/* line 240, ../scss/pages/_ementa.scss */
+.no-container .img-container {
+  min-height: calc(100vh - 94px);
+}
+/* line 242, ../scss/pages/_ementa.scss */
+.no-container .img-container img {
+  height: -webkit-fill-available;
+  object-fit: cover;
+}
+/* line 249, ../scss/pages/_ementa.scss */
+.no-container .extras {
+  min-height: 194px;
+}
+/* line 254, ../scss/pages/_ementa.scss */
+.no-container .cat, .no-container .cat a {
+  margin-top: 100px;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #4A4A4A;
+  letter-spacing: 1.49px;
+  text-transform: uppercase;
+}
+/* line 265, ../scss/pages/_ementa.scss */
+.no-container .vegan {
+  position: absolute;
+  background: url(../img/vegan.svg);
+  background-color: #fff;
+  bottom: 0;
+  left: -10px;
+  width: 43px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 277, ../scss/pages/_ementa.scss */
+.no-container .picante {
+  position: absolute;
+  background: url(../img/picas.svg);
+  background-color: #fff;
+  bottom: 0;
+  left: -10px;
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 290, ../scss/pages/_ementa.scss */
+.no-container h2 {
+  font-weight: 900;
+  font-size: 6rem;
+  color: #212121;
+  letter-spacing: 1.88px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1200px) {
+  /* line 290, ../scss/pages/_ementa.scss */
+  .no-container h2 {
+    font-size: 5rem;
+  }
+}
+/* line 303, ../scss/pages/_ementa.scss */
+.no-container .des {
+  font-size: 2.4rem;
+  color: #9B9B9B;
+  letter-spacing: 0.7px;
+  line-height: 33px;
 }
 
 /**

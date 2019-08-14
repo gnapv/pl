@@ -1,4 +1,4 @@
-var onHome, onLuzzo, onFranc, onLojas, onLoja, onEmenta;
+var onHome, onLuzzo, onFranc, onLojas, onLoja, onEmenta, onEmentaItem;
 var classList, finalType;
 var tapaFooter, reservaFooterBt, navbarHeader ;
 
@@ -39,7 +39,8 @@ function findType() {
     onLojas = false;
     onLoja = false;
     onEmenta = false;
-    classList = ['path-home','page-node-type-luzzo','page-node-type-franchising','path-lojas','page-node-type-loja','path-ementa'];
+    onEmentaItem = false;
+    classList = ['path-home','page-node-type-luzzo','page-node-type-franchising','path-lojas','page-node-type-loja','path-ementa','page-node-type-ementa'];
 
     var classBody = jQuery('body').attr('class').split(' ');
 
@@ -61,7 +62,10 @@ function findType() {
   } else if (jQuery('body').hasClass(classList[5]) == true) {
     onEmenta = true;
     finalType = "onEmenta";
-  }   
+  } else if (jQuery('body').hasClass(classList[6]) == true) {
+    onEmentaItem = true;
+    finalType = "onEmentaItem";
+  }  
 
   console.log("TYPE: "+finalType);
   APPLogic(finalType);
@@ -107,6 +111,11 @@ function APPLogic(qualType) {
           jQuery('.menu--main li:nth-child(4)').addClass("active");
           fixLinkEmenta();
 
+         break;
+    case 'onEmentaItem':
+          jQuery('.menu--main li:nth-child(4)').addClass("active");
+          fixExtrasEmenta();
+            
          break;
       
   }
@@ -266,9 +275,19 @@ function corrigirModal() {
 
 
 function fixLinkEmenta() {
-   var links = jQuery(".template-ementa a").attr("href");
 
-   console.warn("links = "+links);
+    //confirm se e picante e vegan
+     if (jQuery('.vegan').length && jQuery('.picante').length){
+        jQuery('.picante').css("bottom","29px");
+    }
+
+
+
+      jQuery( ".template-ementa" ).click(function() {
+          var link = jQuery(this).find( "h2 a" ).attr("href");
+          window.location.assign(link);
+
+      });
 
       jQuery( ".template-ementa" ).mouseover(function() {
           var tit = jQuery(this).find( "h2 a" );
@@ -292,6 +311,13 @@ function fixLinkEmenta() {
           TweenMax.to(seta, .1, {opacity:"0", delay:"0"});
 
       });
+}
+
+function fixExtrasEmenta() {
+      //confirm se e picante e vegan
+     if (jQuery('.vegan').length && jQuery('.picante').length){
+        jQuery('.picante').css("bottom","-49px");
+    }
 }
 
 function initEvents() {

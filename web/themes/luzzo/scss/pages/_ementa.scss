@@ -1,5 +1,5 @@
 /**
- * ementa luzzo.
+ * page ementa luzzo.
  */
 
  .view-ementa{
@@ -150,10 +150,40 @@
 			}
 
 			.img-container{
+				position: relative;
 				overflow: hidden;
 				img{
 					margin:0 auto;
 					transition: all .3s ease-in;
+				}
+
+				.vegan{
+					position: absolute;
+					background: url(../img/vegan.svg);
+					background-color: #fff;
+				    bottom: 0;
+				    left: 0;
+				    width: 22px;
+				    height: 22px;
+				    padding: 18px;
+				    background-repeat: no-repeat;
+				    background-position: center;
+
+
+				}
+				.picante{
+					position: absolute;
+					background: url(../img/picas.svg);
+					background-color: #fff;
+				    bottom: 0;
+				    left: 0;
+				    width: 22px;
+				    height: 22px;
+				    padding: 18px;
+				    background-repeat: no-repeat;
+				    background-position: center;
+
+
 				}
 			}
 			.img-container.active{
@@ -198,6 +228,94 @@
 		}
 
 	}
-
-
 }
+
+/**
+ * page ementa luzzo.
+ */
+
+ .no-container{
+ 	margin-top: 94px;
+
+ 	.img-container{
+ 		min-height: calc(100vh - 94px);
+ 		img{
+		    height: -webkit-fill-available;
+		    object-fit: cover;
+ 		}
+ 	}
+
+
+ 	.extras{
+ 		min-height: 194px;
+ 	}
+
+
+ 	.cat, .cat a{
+ 		margin-top: 100px;
+		font-weight: 900;
+		font-size: 1.3rem;
+		color: #4A4A4A;
+		letter-spacing: 1.49px;
+		text-transform: uppercase;
+ 	}
+
+
+
+ 				.vegan{
+					position: absolute;
+					background: url(../img/vegan.svg);
+					background-color: #fff;
+				    bottom: 0;
+				    left: -10px;
+				    width: 43px;
+				    height: 42px;
+				    background-repeat: no-repeat;
+				    background-size: cover;
+
+				}
+				.picante{
+					position: absolute;
+					background: url(../img/picas.svg);
+					background-color: #fff;
+		   			 bottom: 0;	
+				    left: -10px;
+				    width: 42px;
+				    height: 42px;
+				    background-repeat: no-repeat;
+				    background-size: cover;
+
+
+				}
+	h2{
+
+		font-weight: 900;
+		font-size: 6rem;
+		color: #212121;
+		letter-spacing: 1.88px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+				@media screen and (max-width: 1200px) {
+					font-size: 5rem;
+				       	  		
+				 }
+	}
+	.des{
+
+		font-size: 2.4rem;
+		color: #9B9B9B;
+		letter-spacing: 0.7px;
+		line-height: 33px;
+	}
+
+
+ }
+
+
+
+
+
+
+
+
+
