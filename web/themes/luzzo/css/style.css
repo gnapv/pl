@@ -10474,13 +10474,13 @@ a:hover, a:active, a:focus {
     margin-top: 0px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 122, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     margin-top: -30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 154, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto img {
     max-width: 60%;
@@ -10576,7 +10576,14 @@ a:hover, a:active, a:focus {
   position: relative;
   margin-bottom: 50px;
 }
-/* line 251, ../scss/pages/_luzzo.scss */
+@media screen and (max-width: 992px) {
+  /* line 246, ../scss/pages/_luzzo.scss */
+  #page-luzzo #p--1-col-center-texto {
+    margin-bottom: 100px;
+    top: 85px;
+  }
+}
+/* line 256, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
   font-size: 2rem;
   color: #212121;
@@ -10584,27 +10591,29 @@ a:hover, a:active, a:focus {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 251, ../scss/pages/_luzzo.scss */
+  /* line 256, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 251, ../scss/pages/_luzzo.scss */
+  /* line 256, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     text-align: center;
   }
 }
-/* line 265, ../scss/pages/_luzzo.scss */
+/* line 270, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .saber-mais {
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 265, ../scss/pages/_luzzo.scss */
+  /* line 270, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .saber-mais {
     margin: 0 auto;
     top: 30px;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -10950,12 +10959,13 @@ a:hover, a:active, a:focus {
 /* line 87, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row {
   position: relative;
-  height: 145px;
+  height: 125px;
   width: 100%;
   margin-bottom: 15px;
   overflow: hidden;
   background-color: #212121;
   transition: all .4s ease-out;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   /* line 87, ../scss/pages/_lojas.scss */
@@ -10969,81 +10979,81 @@ a:hover, a:active, a:focus {
     height: 95px;
   }
 }
-/* line 103, ../scss/pages/_lojas.scss */
+/* line 104, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row .views-field-field-nome a:hover {
   text-decoration: none;
 }
-/* line 107, ../scss/pages/_lojas.scss */
+/* line 108, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row:hover {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 110, ../scss/pages/_lojas.scss */
+/* line 111, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row:hover .views-field-field-nome a {
   color: #4A4A4A;
 }
-/* line 114, ../scss/pages/_lojas.scss */
+/* line 115, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
   background: #F4D680;
   transform: translateX(290px);
 }
 @media screen and (max-width: 992px) {
-  /* line 114, ../scss/pages/_lojas.scss */
+  /* line 115, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
     transform: translateX(110px);
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 114, ../scss/pages/_lojas.scss */
+  /* line 115, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
     transform: translateX(-130px);
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 114, ../scss/pages/_lojas.scss */
+  /* line 115, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row:hover .views-field-field-imagem-destaque:before {
     transform: translateX(-70px);
   }
 }
-/* line 128, ../scss/pages/_lojas.scss */
+/* line 129, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
   transform: translateX(290px);
 }
 @media screen and (max-width: 992px) {
-  /* line 128, ../scss/pages/_lojas.scss */
+  /* line 129, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
     transform: translateX(110px);
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 128, ../scss/pages/_lojas.scss */
+  /* line 129, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
     transform: translateX(-130px);
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 128, ../scss/pages/_lojas.scss */
+  /* line 129, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row:hover .views-field-field-nome, #lojas .view-lojas .views-row:hover .views-field-field-cidade {
     transform: translateX(-70px);
   }
 }
-/* line 144, ../scss/pages/_lojas.scss */
+/* line 145, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row .views-field-field-imagem-destaque {
   transition: all .3s ease-in;
   max-width: 50%;
 }
 @media screen and (max-width: 992px) {
-  /* line 144, ../scss/pages/_lojas.scss */
+  /* line 145, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row .views-field-field-imagem-destaque {
     max-width: 60%;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 144, ../scss/pages/_lojas.scss */
+  /* line 145, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row .views-field-field-imagem-destaque {
     max-width: 80%;
   }
 }
-/* line 154, ../scss/pages/_lojas.scss */
+/* line 155, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row .views-field-field-imagem-destaque:before {
   content: "";
   width: 100%;
@@ -11054,12 +11064,12 @@ a:hover, a:active, a:focus {
   transition: all .4s ease-out;
 }
 @media screen and (max-width: 480px) {
-  /* line 154, ../scss/pages/_lojas.scss */
+  /* line 155, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row .views-field-field-imagem-destaque:before {
     left: 70px;
   }
 }
-/* line 169, ../scss/pages/_lojas.scss */
+/* line 170, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row .views-field-field-nome {
   position: absolute;
   font-weight: 700;
@@ -11067,26 +11077,26 @@ a:hover, a:active, a:focus {
   color: #F4D680;
   letter-spacing: 8px;
   text-transform: uppercase;
-  top: 25%;
+  top: 20%;
   left: 145px;
   transition: all .4s ease-out;
 }
 @media screen and (max-width: 992px) {
-  /* line 169, ../scss/pages/_lojas.scss */
+  /* line 170, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row .views-field-field-nome {
     font-size: 4.1rem;
     letter-spacing: 4px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 169, ../scss/pages/_lojas.scss */
+  /* line 170, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row .views-field-field-nome {
     font-size: 3.9rem;
     letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 169, ../scss/pages/_lojas.scss */
+  /* line 170, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row .views-field-field-nome {
     left: 85px;
     font-size: 3.2rem;
@@ -11094,6 +11104,12 @@ a:hover, a:active, a:focus {
   }
 }
 /* line 196, ../scss/pages/_lojas.scss */
+#lojas .view-lojas .views-row .views-field-field-nome a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 203, ../scss/pages/_lojas.scss */
 #lojas .view-lojas .views-row .views-field-field-cidade {
   display: inline;
   left: 145px;
@@ -11105,7 +11121,7 @@ a:hover, a:active, a:focus {
   transition: all .4s ease-out;
 }
 @media screen and (max-width: 480px) {
-  /* line 196, ../scss/pages/_lojas.scss */
+  /* line 203, ../scss/pages/_lojas.scss */
   #lojas .view-lojas .views-row .views-field-field-cidade {
     left: 85px;
     letter-spacing: 1px;
@@ -11834,7 +11850,7 @@ a:hover, a:active, a:focus {
   z-index: -1;
   left: -20%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   /* line 84, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .fundo-cat {
     width: 85%;
@@ -11861,7 +11877,7 @@ a:hover, a:active, a:focus {
 .view-ementa .view-content .group-items .template-ementa:hover h2:before {
   opacity: 1;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 767px) {
   /* line 111, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items {
     margin-top: 0px;
@@ -11873,7 +11889,7 @@ a:hover, a:active, a:focus {
 .view-ementa .view-content .group-items > [class^="col-"], .view-ementa .view-content .group-items > [class^=" col-"] {
   margin-bottom: 80px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 767px) {
   /* line 132, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items > [class^="col-"], .view-ementa .view-content .group-items > [class^=" col-"] {
     padding-right: 40px;
@@ -11888,7 +11904,7 @@ a:hover, a:active, a:focus {
   letter-spacing: 1.49px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 140, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items .cat {
     text-align: center;
@@ -11899,12 +11915,19 @@ a:hover, a:active, a:focus {
   position: relative;
   overflow: hidden;
 }
-/* line 155, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 152, ../scss/pages/_ementa.scss */
+  .view-ementa .view-content .group-items .img-container {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+/* line 160, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container img {
   margin: 0 auto;
   transition: all .3s ease-in;
 }
-/* line 160, ../scss/pages/_ementa.scss */
+/* line 165, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container .vegan {
   position: absolute;
   background: url(../img/vegan.svg);
@@ -11917,7 +11940,7 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 174, ../scss/pages/_ementa.scss */
+/* line 179, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container .picante {
   position: absolute;
   background: url(../img/picas.svg);
@@ -11930,24 +11953,24 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 190, ../scss/pages/_ementa.scss */
+/* line 195, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container.active img {
   transform: scale(1.1);
 }
-@media screen and (max-width: 768px) {
-  /* line 194, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 199, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items h2 {
     text-align: center;
   }
 }
-/* line 198, ../scss/pages/_ementa.scss */
+/* line 203, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items h2:before {
   content: url("../img/seta-active.svg");
   position: absolute;
   opacity: 0;
   transform: translate(0px, -3px);
 }
-/* line 207, ../scss/pages/_ementa.scss */
+/* line 212, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items a {
   position: relative;
   font-weight: 900;
@@ -11956,41 +11979,88 @@ a:hover, a:active, a:focus {
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
-/* line 219, ../scss/pages/_ementa.scss */
+/* line 224, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .des {
   font-size: 16px;
   color: #9B9B9B;
   letter-spacing: 0.47px;
   line-height: 24px;
 }
-@media screen and (max-width: 768px) {
-  /* line 219, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 224, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items .des {
     text-align: center;
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
 
 /**
- * page ementa luzzo.
+ * page ementa luzzo dentro.
  */
-/* line 237, ../scss/pages/_ementa.scss */
+/* line 244, ../scss/pages/_ementa.scss */
 .no-container {
   margin-top: 94px;
 }
-/* line 240, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 768px) {
+  /* line 244, ../scss/pages/_ementa.scss */
+  .no-container {
+    margin-top: 70px;
+  }
+}
+/* line 250, ../scss/pages/_ementa.scss */
 .no-container .img-container {
   min-height: calc(100vh - 94px);
 }
-/* line 242, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 250, ../scss/pages/_ementa.scss */
+  .no-container .img-container {
+    height: 60vh;
+    min-height: 0;
+  }
+}
+/* line 258, ../scss/pages/_ementa.scss */
 .no-container .img-container img {
   height: -webkit-fill-available;
   object-fit: cover;
 }
-/* line 249, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 264, ../scss/pages/_ementa.scss */
+  .no-container .coluna-2 {
+    padding: 0 40px;
+  }
+}
+/* line 269, ../scss/pages/_ementa.scss */
+.no-container .info {
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  /* line 269, ../scss/pages/_ementa.scss */
+  .no-container .info {
+    text-align: center;
+  }
+}
+/* line 278, ../scss/pages/_ementa.scss */
 .no-container .extras {
   min-height: 194px;
 }
-/* line 254, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 1024px) {
+  /* line 278, ../scss/pages/_ementa.scss */
+  .no-container .extras {
+    min-height: 184px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 278, ../scss/pages/_ementa.scss */
+  .no-container .extras {
+    min-height: 42px;
+    position: absolute;
+    top: -42px;
+    padding: 5px;
+    background: #fff;
+  }
+}
+/* line 294, ../scss/pages/_ementa.scss */
 .no-container .cat, .no-container .cat a {
   margin-top: 100px;
   font-weight: 900;
@@ -11999,7 +12069,14 @@ a:hover, a:active, a:focus {
   letter-spacing: 1.49px;
   text-transform: uppercase;
 }
-/* line 265, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 294, ../scss/pages/_ementa.scss */
+  .no-container .cat, .no-container .cat a {
+    left: 15px;
+    margin-top: 20px;
+  }
+}
+/* line 309, ../scss/pages/_ementa.scss */
 .no-container .vegan {
   position: absolute;
   background: url(../img/vegan.svg);
@@ -12011,7 +12088,14 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 277, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 309, ../scss/pages/_ementa.scss */
+  .no-container .vegan {
+    background-size: 75%;
+    background-position: center;
+  }
+}
+/* line 325, ../scss/pages/_ementa.scss */
 .no-container .picante {
   position: absolute;
   background: url(../img/picas.svg);
@@ -12023,7 +12107,14 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 290, ../scss/pages/_ementa.scss */
+@media screen and (max-width: 767px) {
+  /* line 325, ../scss/pages/_ementa.scss */
+  .no-container .picante {
+    background-size: 75%;
+    background-position: center;
+  }
+}
+/* line 341, ../scss/pages/_ementa.scss */
 .no-container h2 {
   font-weight: 900;
   font-size: 6rem;
@@ -12033,17 +12124,74 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1200px) {
-  /* line 290, ../scss/pages/_ementa.scss */
+  /* line 341, ../scss/pages/_ementa.scss */
   .no-container h2 {
     font-size: 5rem;
   }
 }
-/* line 303, ../scss/pages/_ementa.scss */
+/* line 354, ../scss/pages/_ementa.scss */
 .no-container .des {
   font-size: 2.4rem;
   color: #9B9B9B;
   letter-spacing: 0.7px;
   line-height: 33px;
+}
+
+/* line 366, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa {
+  min-height: 160px;
+  padding: 50px 25px;
+  max-width: 242px;
+}
+@media screen and (max-width: 767px) {
+  /* line 366, ../scss/pages/_ementa.scss */
+  .view-next-prev-ementa {
+    margin: 0 auto;
+  }
+}
+/* line 375, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa .entity-pager-item-prev a {
+  background: url(../img/left_bt.svg);
+  width: 33px;
+  height: 56px;
+  position: absolute;
+  margin: auto;
+  right: 220px;
+  top: 58px;
+}
+/* line 386, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa .entity-pager-item-next a {
+  background: url(../img/right_btt.svg);
+  width: 33px;
+  height: 56px;
+  position: absolute;
+  margin: auto;
+  left: 220px;
+  right: 0;
+  top: 58px;
+}
+/* line 397, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa .entity-pager-item-all {
+  position: relative;
+  margin: 0 auto;
+  width: 63px;
+  height: 55px;
+}
+/* line 404, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa .entity-pager-item-all a {
+  background: url(../img/close_bt.svg);
+  display: block;
+  width: 63px;
+  height: 55px;
+}
+/* line 411, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa .entity-pager-item-prev, .view-next-prev-ementa .entity-pager-item-next, .view-next-prev-ementa .entity-pager-item-all a {
+  opacity: .4;
+  transition: opacity .4s ease-in;
+}
+/* line 416, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa .entity-pager-item-prev:hover, .view-next-prev-ementa .ntity-pager-item-next:hover, .view-next-prev-ementa .entity-pager-item-all a:hover {
+  opacity: 1 !important;
 }
 
 /**
@@ -12958,7 +13106,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     top: 200px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 24, ../scss/custom_component/_footer-pri.scss */
   .footerPrincipal #block-views-block-footer-block-1 .f-reserva {
     top: 420px;
@@ -12974,28 +13122,29 @@ footer nav[role="navigation"] ul.nav li:last-child {
     min-height: 370px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 73, ../scss/custom_component/_footer-pri.scss */
   .footerPrincipal #block-views-block-footer-block-1 .f-img {
     margin-top: 90px;
     padding-left: 0;
+    min-height: 323px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 82, ../scss/custom_component/_footer-pri.scss */
+  /* line 83, ../scss/custom_component/_footer-pri.scss */
   .footerPrincipal #block-views-block-footer-block-1 .f-img img {
     height: 400px;
     object-fit: cover;
   }
 }
-@media screen and (max-width: 768px) {
-  /* line 82, ../scss/custom_component/_footer-pri.scss */
+@media screen and (max-width: 767px) {
+  /* line 83, ../scss/custom_component/_footer-pri.scss */
   .footerPrincipal #block-views-block-footer-block-1 .f-img img {
     height: 300px;
     margin: 0 auto;
   }
 }
-/* line 92, ../scss/custom_component/_footer-pri.scss */
+/* line 93, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .f-img .tapa {
   height: 100%;
   width: 90%;
@@ -13003,51 +13152,51 @@ footer nav[role="navigation"] ul.nav li:last-child {
   position: absolute;
   transition: width .8s ease-in;
 }
-/* line 101, ../scss/custom_component/_footer-pri.scss */
+/* line 102, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .ani-tapa-footer {
   width: 0% !important;
 }
-/* line 105, ../scss/custom_component/_footer-pri.scss */
+/* line 106, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .esq {
   margin-top: 50px;
 }
 @media screen and (max-width: 992px) {
-  /* line 105, ../scss/custom_component/_footer-pri.scss */
+  /* line 106, ../scss/custom_component/_footer-pri.scss */
   .footerPrincipal #block-views-block-footer-block-1 .esq {
     padding-left: 20px;
   }
 }
-@media screen and (max-width: 768px) {
-  /* line 112, ../scss/custom_component/_footer-pri.scss */
+@media screen and (max-width: 767px) {
+  /* line 113, ../scss/custom_component/_footer-pri.scss */
   .footerPrincipal #block-views-block-footer-block-1 .f-logo img {
     margin: 0 auto;
   }
 }
-/* line 118, ../scss/custom_component/_footer-pri.scss */
+/* line 119, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .f-contactos {
   line-height: 29px;
   color: #fff;
   font-size: 1.6rem;
 }
-@media screen and (max-width: 768px) {
-  /* line 118, ../scss/custom_component/_footer-pri.scss */
+@media screen and (max-width: 767px) {
+  /* line 119, ../scss/custom_component/_footer-pri.scss */
   .footerPrincipal #block-views-block-footer-block-1 .f-contactos {
     text-align: center;
   }
 }
-/* line 125, ../scss/custom_component/_footer-pri.scss */
+/* line 126, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .f-contactos a {
   color: #fff;
 }
-/* line 127, ../scss/custom_component/_footer-pri.scss */
+/* line 128, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .f-contactos a:hover {
   color: #F4D680;
 }
-/* line 131, ../scss/custom_component/_footer-pri.scss */
+/* line 132, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .f-contactos p:first-child {
   margin-top: 20px;
 }
-/* line 135, ../scss/custom_component/_footer-pri.scss */
+/* line 136, ../scss/custom_component/_footer-pri.scss */
 .footerPrincipal #block-views-block-footer-block-1 .f-contactos p:last-child {
   font-size: 1.4rem;
   margin-top: 20px;

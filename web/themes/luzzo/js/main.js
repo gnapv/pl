@@ -1,6 +1,7 @@
 var onHome, onLuzzo, onFranc, onLojas, onLoja, onEmenta, onEmentaItem;
 var classList, finalType;
 var tapaFooter, reservaFooterBt, navbarHeader ;
+var currentLink;
 
 //drupal metodo para inserir jquery com o $ - actualiza com o AJAX
 (function ($, Drupal) {
@@ -95,7 +96,7 @@ function APPLogic(qualType) {
          break;
     case 'onLojas':
           jQuery('.menu--main li:nth-child(3)').addClass("active");
-
+          fixLinkLojas();
 
 
          break;
@@ -127,8 +128,13 @@ function APPLogic(qualType) {
 
     initModal();
 
+    //grabALLLinks();
 
 }
+
+
+
+
 
 function initModal() {
     jQuery( ".navbar-nav li.last a, .f-reserva a" ).click(function(e) {
@@ -274,6 +280,16 @@ function corrigirModal() {
 }
 
 
+
+function fixLinkLojas() {
+
+      jQuery( ".view-lojas .views-row" ).click(function() {
+          var link = jQuery(this).find( ".views-field-field-nome a" ).attr("href");
+          window.location.assign(link);
+      });
+}
+
+
 function fixLinkEmenta() {
 
     //confirm se e picante e vegan
@@ -316,8 +332,15 @@ function fixLinkEmenta() {
 function fixExtrasEmenta() {
       //confirm se e picante e vegan
      if (jQuery('.vegan').length && jQuery('.picante').length){
-        jQuery('.picante').css("bottom","-49px");
+        if (window.innerWidth <= 767 || document.documentElement.clientWidth <= 767) {
+          jQuery('.picante').css("left","29px");
+        }else{
+         jQuery('.picante').css("bottom","-49px");
+        }
+    }else{
+
     }
+
 }
 
 function initEvents() {
@@ -333,9 +356,12 @@ function initEvents() {
     case 'onHome':
 
           jQuery( ".godown" ).click(function() {
-              // var options = { document.querySelector('.main-container')};
-              var desiredOffset = jQuery('#navbar').height();
-              animateScrollTo(desiredOffset, document.querySelector('.main-container'));
+  
+                 var Offset = jQuery('#navbar').height();
+              Offset = pos_to_neg(Offset);
+              var options = {offset: Offset};
+
+              animateScrollTo(document.querySelector('#block-views-block-reservas-luzzo-block-1'),options);
           });
 
           break;
@@ -376,14 +402,22 @@ function initEvents() {
     //init MediaQuerys
     var x = window.matchMedia("(max-width: 768px)");
     closeNavToPeq(x); // Call listener function at run time
-    x.addListener(closeNavToPeq); // Attach listener function on state changes
-
+    x.addListener(closeNavToPeq); // Attach listener
 }
+
+
+jQuery(window).on("load", function(){
+    
+      closeLoader();
+
+    
+}); 
+
 
 function verificaScroll() {
 
 
-      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250 || window.innerWidth < 768) {
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250 || window.innerWidth <= 768) {
         navbarHeader.classList.add("navbarPeq");
       } else {
         navbarHeader.classList.remove("navbarPeq");
@@ -397,6 +431,66 @@ function verificaScroll() {
           TweenMax.to(reservaFooterBt, 0, {opacity:"0"});
       }
 
+}
+
+function closeLoader() {
+
+  TweenMax.to("#tempo-loader", .5, {attr:{dur:50}, onComplete:startAnimaClose});
+
+}
+
+function startAnimaClose() {
+
+  //jQuery('body').toggleClass("modal-open");
+  TweenMax.to(".base-3", .4, {opacity:"0", scale:".1"});
+  TweenMax.to(".base-2", .5, {height:"0", delay:.3, ease:SlowMo.ease.config(0.3, 0.4, false)});
+  TweenMax.to(".base-1", .5, {height:"0", delay:.4, ease:SlowMo.ease.config(0.3, 0.5, false), onComplete:removeDisplay});
+  
+}
+
+function removeDisplay() {
+  jQuery('.loader-page').css("display",'none');
+  jQuery('body').toggleClass("modal-open");
+
+  
+}
+
+
+function openLoader() {
+  TweenMax.to("#tempo-loader", 0, {attr:{begin:1, dur:2000}});
+
+  TweenMax.to(".base-1", .8, {height:"100vh", ease:Power4.easeOut});
+  TweenMax.to(".base-2", .8, {height:"100vh", delay:.1, ease:SlowMo.ease.config(0.3, 0.4, false), onComplete:startAnimaOpen});
+  TweenMax.to(".loader-svg", .5, {opacity:"1", delay:.2, scale:"1"});
+ 
+}
+
+function startAnimaOpen() {
+
+    window.location = currentLink;
+  
+}
+
+
+
+function grabALLLinks() {
+  //
+      jQuery( "a" ).click(function(e) {
+          e.preventDefault();
+
+          currentLink = jQuery(this).attr('href');
+
+          if (currentLink.indexOf("http://") != "-1") {
+
+              console.log("currentLink tem HTTP:// = "+currentLink);
+              window.open(currentLink, '_blank');
+             // window.location = currentLink;
+
+          }else{
+              console.log("currentLink = "+currentLink);
+              openLoader();
+          }
+      });
 }
 
 // MediaQuerys

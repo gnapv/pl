@@ -65,7 +65,7 @@
           @media screen and (max-width: $screen-md-min) {
             top: 200px;
           }
-          @media screen and (max-width: $screen-sm-min) {
+          @media screen and (max-width: $screen-xs-max) {
             top: 420px;
           }
       }
@@ -75,16 +75,17 @@
         @media screen and (max-width: $screen-md-min) {
            min-height: 370px;
         }
-        @media screen and (max-width: $screen-sm-min) {
+        @media screen and (max-width: $screen-xs-max) {
            margin-top: 90px;
            padding-left: 0;
+           min-height: 323px;
         }
         img{
           @media screen and (max-width: $screen-md-min) {
                  height: 400px;
                  object-fit: cover;
           }
-          @media screen and (max-width: $screen-sm-min) {
+          @media screen and (max-width: $screen-xs-max) {
                  height: 300px;
                  margin: 0 auto;
           }
@@ -110,7 +111,7 @@
       }
 
       .f-logo img{
-        @media screen and (max-width: $screen-sm-min) {
+        @media screen and (max-width: $screen-xs-max) {
            margin: 0 auto;
         }
       }
@@ -119,7 +120,7 @@
         line-height: 29px;
         color: #fff;
         font-size: 1.6rem;
-        @media screen and (max-width: $screen-sm-min) {
+        @media screen and (max-width: $screen-xs-max) {
            text-align: center;
         }
           a{
