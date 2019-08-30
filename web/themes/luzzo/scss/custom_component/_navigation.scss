@@ -15,6 +15,10 @@
 	}
 }
 
+.my-modal-open{
+	overflow: hidden;
+}
+
 
 .navbar-inverse{
 	background-color: rgba(0, 0, 0, 0.89);
@@ -59,6 +63,10 @@
 			    	position: absolute;
 			    	right: 0px;
 			    	bottom: -7px;
+
+			    	@media screen and (max-width: 600px) {
+			    		transform: scale(0.6);
+			 		}
 
 			    	&:focus{
 			    		background-color: transparent;
@@ -164,6 +172,11 @@
 			} 
 
 		   .navbar-nav {
+
+		   		.last{
+		   			font-weight: 800;
+		   		}
+
 		     li > a:hover,
 		     li > a:focus,
 		     .open > a,
@@ -173,6 +186,10 @@
 		     .active > a:focus {
 		       color: $brand-primary;
 		       // background-color:$gray-over;
+		     }
+
+		     .active {
+				pointer-events: none;
 		     }
 
 		     .active > a{

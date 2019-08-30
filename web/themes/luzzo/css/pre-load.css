@@ -1,7 +1,8 @@
 .loader-page{
-      position:absolute;
+      position:fixed;
     min-height: 100vh;
     min-width:100%;
+    z-index: 100000;
 }
 
 .base-1{
@@ -39,15 +40,15 @@
     height: 150px;
     padding: 3px;
     border-radius: 50%;
-    background: rgb(63,249,220);
-    background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+    background: rgb(244,214,128);
+    background: linear-gradient(0deg, rgba(244,214,128,0.1) 33%, rgba(244,214,128,1) 100%);
     animation: spin .8s linear 0s infinite;
 }
 
 .circle-core {
     width: 100%;
     height: 100%;
-    background-color: #37474f;
+    background-color: #212121;
     border-radius: 50%;
 }
 

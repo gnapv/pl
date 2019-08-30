@@ -31,6 +31,8 @@
         "drupal/field_collection": "^1.0@alpha",
         "drupal/flexslider": "^2.0@beta",
         "drupal/geolocation": "^1.11",
+        "drupal/imageapi_optimize": "^2.0@alpha",
+        "drupal/imageapi_optimize_tinypng": "^1.0@beta",
         "drupal/nextpre": "^2.0",
         "drupal/paragraphs": "^1.5",
         "drupal/pathauto": "^1.3",

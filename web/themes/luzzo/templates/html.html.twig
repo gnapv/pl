@@ -61,7 +61,8 @@
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ file_url('public://pre-load.css') }}">
+    {% set my_base_url = url('<front>')|render|split('/', -1)|join('/') %}
+    <link rel="stylesheet" type="text/css" href="{{ my_base_url }}/themes/luzzo/css/pre-load.css">
 
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">

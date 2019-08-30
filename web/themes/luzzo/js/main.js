@@ -133,9 +133,6 @@ function APPLogic(qualType) {
 }
 
 
-
-
-
 function initModal() {
     jQuery( ".navbar-nav li.last a, .f-reserva a" ).click(function(e) {
           e.preventDefault();
@@ -346,8 +343,8 @@ function fixExtrasEmenta() {
 function initEvents() {
 
   jQuery( ".navbar-toggle" ).click(function() {
-    jQuery(this).toggleClass("clickMenuBur"); 
-    jQuery('body').toggleClass("modal-open");
+    jQuery(this).toggleClass("clickMenuBur");
+    jQuery('body').toggleClass("my-modal-open");
   });
 
 
@@ -407,7 +404,7 @@ function initEvents() {
 
 
 jQuery(window).on("load", function(){
-    
+      startAnimation();
       closeLoader();
 
     
@@ -435,16 +432,20 @@ function verificaScroll() {
 
 function closeLoader() {
 
-  TweenMax.to("#tempo-loader", .5, {attr:{dur:50}, onComplete:startAnimaClose});
-
+  //TweenMax.to("#tempo-loader", .5, {attr:{dur:50}, onComplete:startAnimaClose});
+  startAnimaClose();
 }
 
 function startAnimaClose() {
 
-  //jQuery('body').toggleClass("modal-open");
-  TweenMax.to(".base-3", .4, {opacity:"0", scale:".1"});
-  TweenMax.to(".base-2", .5, {height:"0", delay:.3, ease:SlowMo.ease.config(0.3, 0.4, false)});
-  TweenMax.to(".base-1", .5, {height:"0", delay:.4, ease:SlowMo.ease.config(0.3, 0.5, false), onComplete:removeDisplay});
+  TweenMax.to(".base-3", .5, {opacity:"0", scale:".1"});
+  TweenMax.to(".base-2", .8, {height:"0", delay:.5, ease:SlowMo.ease.config(0.3, 0.4, false)});
+  TweenMax.to(".base-1", .8, {height:"94px", delay:.6, ease:SlowMo.ease.config(0.3, 0.4, false), onComplete:removeDisplay});
+  
+}
+
+function startAnimation() {
+  jQuery('body').addClass("loaded");
   
 }
 
