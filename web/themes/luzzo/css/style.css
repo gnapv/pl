@@ -11893,7 +11893,7 @@ a:hover, a:active, a:focus {
 #block-views-block-slider-3-lojas-block-1 .view-slider-3-lojas .view-footer {
   position: relative;
   top: -40px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 /* line 513, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 .view-slider-3-lojas .view-footer .anome {
@@ -12277,38 +12277,58 @@ a:hover, a:active, a:focus {
   }
 }
 /* line 259, ../scss/pages/_ementa.scss */
+.no-container .img-container picture {
+  display: block;
+  min-height: calc(100vh - 94px);
+}
+@media screen and (max-width: 767px) {
+  /* line 259, ../scss/pages/_ementa.scss */
+  .no-container .img-container picture {
+    height: 60vh;
+    min-height: 0;
+  }
+}
+/* line 269, ../scss/pages/_ementa.scss */
 .no-container .img-container img {
-  height: -webkit-fill-available;
+  min-height: calc(100vh - 94px);
+  width: 100%;
   object-fit: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 265, ../scss/pages/_ementa.scss */
+  /* line 269, ../scss/pages/_ementa.scss */
+  .no-container .img-container img {
+    height: 60vh;
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 281, ../scss/pages/_ementa.scss */
   .no-container .coluna-2 {
     padding: 0 40px;
   }
 }
-/* line 270, ../scss/pages/_ementa.scss */
+/* line 286, ../scss/pages/_ementa.scss */
 .no-container .info {
   text-align: left;
 }
 @media screen and (max-width: 767px) {
-  /* line 270, ../scss/pages/_ementa.scss */
+  /* line 286, ../scss/pages/_ementa.scss */
   .no-container .info {
     text-align: center;
   }
 }
-/* line 279, ../scss/pages/_ementa.scss */
+/* line 295, ../scss/pages/_ementa.scss */
 .no-container .extras {
   min-height: 194px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 279, ../scss/pages/_ementa.scss */
+  /* line 295, ../scss/pages/_ementa.scss */
   .no-container .extras {
     min-height: 184px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 279, ../scss/pages/_ementa.scss */
+  /* line 295, ../scss/pages/_ementa.scss */
   .no-container .extras {
     min-height: 42px;
     position: absolute;
@@ -12317,7 +12337,7 @@ a:hover, a:active, a:focus {
     background: #fff;
   }
 }
-/* line 295, ../scss/pages/_ementa.scss */
+/* line 311, ../scss/pages/_ementa.scss */
 .no-container .cat, .no-container .cat a {
   margin-top: 100px;
   font-weight: 900;
@@ -12327,13 +12347,13 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
-  /* line 295, ../scss/pages/_ementa.scss */
+  /* line 311, ../scss/pages/_ementa.scss */
   .no-container .cat, .no-container .cat a {
     left: 15px;
     margin-top: 20px;
   }
 }
-/* line 310, ../scss/pages/_ementa.scss */
+/* line 326, ../scss/pages/_ementa.scss */
 .no-container .vegan {
   position: absolute;
   background: url(../img/vegan.svg);
@@ -12346,13 +12366,13 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 310, ../scss/pages/_ementa.scss */
+  /* line 326, ../scss/pages/_ementa.scss */
   .no-container .vegan {
     background-size: 75%;
     background-position: center;
   }
 }
-/* line 326, ../scss/pages/_ementa.scss */
+/* line 342, ../scss/pages/_ementa.scss */
 .no-container .picante {
   position: absolute;
   background: url(../img/picas.svg);
@@ -12365,13 +12385,13 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 326, ../scss/pages/_ementa.scss */
+  /* line 342, ../scss/pages/_ementa.scss */
   .no-container .picante {
     background-size: 75%;
     background-position: center;
   }
 }
-/* line 342, ../scss/pages/_ementa.scss */
+/* line 358, ../scss/pages/_ementa.scss */
 .no-container h2 {
   font-weight: 900;
   font-size: 6rem;
@@ -12381,12 +12401,12 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1200px) {
-  /* line 342, ../scss/pages/_ementa.scss */
+  /* line 358, ../scss/pages/_ementa.scss */
   .no-container h2 {
     font-size: 5rem;
   }
 }
-/* line 355, ../scss/pages/_ementa.scss */
+/* line 371, ../scss/pages/_ementa.scss */
 .no-container .des {
   font-size: 2.4rem;
   color: #9B9B9B;
@@ -12394,19 +12414,19 @@ a:hover, a:active, a:focus {
   line-height: 33px;
 }
 
-/* line 367, ../scss/pages/_ementa.scss */
+/* line 383, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa {
   min-height: 160px;
   padding: 50px 25px;
   max-width: 242px;
 }
 @media screen and (max-width: 767px) {
-  /* line 367, ../scss/pages/_ementa.scss */
+  /* line 383, ../scss/pages/_ementa.scss */
   .view-next-prev-ementa {
     margin: 0 auto;
   }
 }
-/* line 376, ../scss/pages/_ementa.scss */
+/* line 392, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev a {
   background: url(../img/left_bt.svg);
   width: 33px;
@@ -12416,7 +12436,7 @@ a:hover, a:active, a:focus {
   right: 220px;
   top: 58px;
 }
-/* line 387, ../scss/pages/_ementa.scss */
+/* line 403, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-next a {
   background: url(../img/right_btt.svg);
   width: 33px;
@@ -12427,26 +12447,26 @@ a:hover, a:active, a:focus {
   right: 0;
   top: 58px;
 }
-/* line 398, ../scss/pages/_ementa.scss */
+/* line 414, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-all {
   position: relative;
   margin: 0 auto;
   width: 63px;
   height: 55px;
 }
-/* line 405, ../scss/pages/_ementa.scss */
+/* line 421, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-all a {
   background: url(../img/close_bt.svg);
   display: block;
   width: 63px;
   height: 55px;
 }
-/* line 412, ../scss/pages/_ementa.scss */
+/* line 428, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev, .view-next-prev-ementa .entity-pager-item-next, .view-next-prev-ementa .entity-pager-item-all a {
   opacity: .4;
   transition: opacity .4s ease-in;
 }
-/* line 417, ../scss/pages/_ementa.scss */
+/* line 433, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev:hover, .view-next-prev-ementa .ntity-pager-item-next:hover, .view-next-prev-ementa .entity-pager-item-all a:hover {
   opacity: 1 !important;
 }
@@ -12965,7 +12985,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
 #block-views-block-slider-noticias-block-1 #flexslider-noticias {
   background: transparent;
   border: none;
-  margin-bottom: 130px;
+  margin-bottom: 170px;
 }
 /* line 54, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .flex-control-nav {
@@ -13722,6 +13742,13 @@ footer nav[role="navigation"] ul.nav li:last-child {
   border: 1px solid #F4D680;
   display: inline-block;
   max-width: 180px;
+  line-height: 20px !important;
+}
+@media screen and (max-width: 768px) {
+  /* line 177, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .form-control {
+    max-width: 122px;
+  }
 }
 @media screen and (max-width: 695px) {
   /* line 177, ../scss/custom_component/_reservas.scss */
@@ -13730,7 +13757,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     width: 100%;
   }
 }
-/* line 189, ../scss/custom_component/_reservas.scss */
+/* line 193, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-button--next {
   display: block;
   left: 118px;
@@ -13745,7 +13772,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 5.0rem;
   outline: none;
 }
-/* line 204, ../scss/custom_component/_reservas.scss */
+/* line 208, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-button--previous {
   display: block;
   left: 0;
@@ -13760,7 +13787,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 5.0rem;
   outline: none;
 }
-/* line 219, ../scss/custom_component/_reservas.scss */
+/* line 223, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-progress {
   position: absolute;
   font-size: 48px;
@@ -13770,14 +13797,14 @@ footer nav[role="navigation"] ul.nav li:last-child {
   margin: auto;
   top: calc(100% + 54px);
 }
-/* line 230, ../scss/custom_component/_reservas.scss */
+/* line 234, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
   font-weight: 400;
   font-size: 1.6rem;
   color: #4A4A4A;
 }
 @media screen and (max-width: 980px) {
-  /* line 230, ../scss/custom_component/_reservas.scss */
+  /* line 234, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
     position: absolute;
     bottom: 25px;
@@ -13785,7 +13812,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 230, ../scss/custom_component/_reservas.scss */
+  /* line 234, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
     position: relative;
     display: block;
@@ -13793,34 +13820,34 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 246, ../scss/custom_component/_reservas.scss */
+  /* line 250, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
     bottom: 30px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 246, ../scss/custom_component/_reservas.scss */
+  /* line 250, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
     bottom: 0px;
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 250, ../scss/custom_component/_reservas.scss */
+  /* line 254, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
     bottom: 30px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 250, ../scss/custom_component/_reservas.scss */
+  /* line 254, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
     bottom: 0;
   }
 }
-/* line 259, ../scss/custom_component/_reservas.scss */
+/* line 263, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-required:after {
   display: none;
 }
-/* line 263, ../scss/custom_component/_reservas.scss */
+/* line 267, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .messages__wrapper {
   position: absolute;
   display: block;
@@ -13831,57 +13858,57 @@ footer nav[role="navigation"] ul.nav li:last-child {
   max-width: 320px;
   top: calc(100% + 70px);
 }
-/* line 273, ../scss/custom_component/_reservas.scss */
+/* line 277, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .messages__wrapper .alert-danger {
   background-color: #ffffff;
   border-radius: 0;
 }
-/* line 279, ../scss/custom_component/_reservas.scss */
+/* line 283, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
   float: left;
   width: 50%;
 }
 @media screen and (max-width: 695px) {
-  /* line 279, ../scss/custom_component/_reservas.scss */
+  /* line 283, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
     width: 100%;
     float: none;
   }
 }
-/* line 287, ../scss/custom_component/_reservas.scss */
+/* line 291, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
   position: relative;
   bottom: 10px;
 }
 @media screen and (max-width: 695px) {
-  /* line 287, ../scss/custom_component/_reservas.scss */
+  /* line 291, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
     bottom: 0;
   }
 }
-/* line 294, ../scss/custom_component/_reservas.scss */
+/* line 298, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
   display: inline;
   max-width: 300px;
 }
 @media screen and (max-width: 695px) {
-  /* line 294, ../scss/custom_component/_reservas.scss */
+  /* line 298, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
     max-width: 100%;
   }
 }
-/* line 299, ../scss/custom_component/_reservas.scss */
+/* line 303, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
   max-width: 280px;
 }
 @media screen and (max-width: 695px) {
-  /* line 299, ../scss/custom_component/_reservas.scss */
+  /* line 303, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
     max-width: 100%;
     height: 7rem;
   }
 }
-/* line 307, ../scss/custom_component/_reservas.scss */
+/* line 311, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .checkbox {
   position: relative;
   display: block;
@@ -13890,29 +13917,29 @@ footer nav[role="navigation"] ul.nav li:last-child {
   width: 50%;
 }
 @media screen and (max-width: 695px) {
-  /* line 307, ../scss/custom_component/_reservas.scss */
+  /* line 311, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox {
     width: 100%;
     float: none;
   }
 }
-/* line 318, ../scss/custom_component/_reservas.scss */
+/* line 322, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .checkbox label {
   font-size: 1.4rem;
 }
 @media screen and (max-width: 980px) {
-  /* line 318, ../scss/custom_component/_reservas.scss */
+  /* line 322, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox label {
     bottom: -40px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 318, ../scss/custom_component/_reservas.scss */
+  /* line 322, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox label {
     bottom: 0;
   }
 }
-/* line 328, ../scss/custom_component/_reservas.scss */
+/* line 332, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas {
   position: absolute;
   display: inline-block;
@@ -13934,13 +13961,13 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition-delay: .3s;
 }
 @media screen and (max-width: 468px) {
-  /* line 328, ../scss/custom_component/_reservas.scss */
+  /* line 332, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .submit-reservas {
     left: 0;
     top: calc(100% + 130px);
   }
 }
-/* line 355, ../scss/custom_component/_reservas.scss */
+/* line 359, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:before {
   content: "";
   position: absolute;
@@ -13952,34 +13979,34 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 366, ../scss/custom_component/_reservas.scss */
+/* line 370, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:hover {
   text-decoration: none;
   color: #4A4A4A;
 }
-/* line 370, ../scss/custom_component/_reservas.scss */
+/* line 374, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:hover:before {
   width: 100%;
 }
 @media screen and (max-width: 980px) {
-  /* line 375, ../scss/custom_component/_reservas.scss */
+  /* line 379, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] {
     position: relative;
     top: 10px;
   }
 }
-/* line 380, ../scss/custom_component/_reservas.scss */
+/* line 384, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group {
   padding-left: 0px;
 }
 @media screen and (max-width: 980px) {
-  /* line 383, ../scss/custom_component/_reservas.scss */
+  /* line 387, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group:first-child {
     bottom: 7px;
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 391, ../scss/custom_component/_reservas.scss */
+  /* line 395, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-progress {
     margin: unset !important;
     right: unset !important;
@@ -13987,39 +14014,39 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 400, ../scss/custom_component/_reservas.scss */
+  /* line 404, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-button--previous {
     right: unset !important;
     left: -15px !important;
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 409, ../scss/custom_component/_reservas.scss */
+  /* line 413, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .submit-reservas {
     left: 115px;
     top: calc(100% + 135px);
   }
 }
 @media screen and (max-width: 980px) {
-  /* line 416, ../scss/custom_component/_reservas.scss */
+  /* line 420, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"] {
     position: relative;
     top: 10px;
   }
 }
-/* line 421, ../scss/custom_component/_reservas.scss */
+/* line 425, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"].form-group {
   padding-left: 0px;
 }
 @media screen and (max-width: 980px) {
-  /* line 425, ../scss/custom_component/_reservas.scss */
+  /* line 429, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="page_2"] {
     position: relative;
     top: 10px;
   }
 }
 
-/* line 435, ../scss/custom_component/_reservas.scss */
+/* line 439, ../scss/custom_component/_reservas.scss */
 .modal-backdrop.in {
   opacity: 0.8;
   filter: alpha(opacity=80);

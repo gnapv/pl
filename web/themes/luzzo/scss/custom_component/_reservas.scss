@@ -179,6 +179,10 @@
                 border: 1px solid #F4D680;
                 display: inline-block;
                 max-width: 180px;
+                line-height: 20px!important;
+                @media screen and (max-width: 768px) {
+                    max-width: 122px;
+                }
 
                 @media screen and (max-width: 695px) {
                     max-width: none;

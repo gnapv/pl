@@ -256,8 +256,24 @@
     		min-height: 0;
 		}
 
+		picture {
+			display: block;
+ 			min-height: calc(100vh - 94px);
+ 			@media screen and (max-width: $screen-xs-max) {
+	 			height: 60vh;
+	    		min-height: 0;
+			}
+
+		}
+
  		img{
-		    height: -webkit-fill-available;
+ 		min-height: calc(100vh - 94px);
+ 		width: 100%;
+ 		 	@media screen and (max-width: $screen-xs-max) {
+	 			height: 60vh;
+	    		min-height: 0;
+			}
+		
 		    object-fit: cover;
  		}
  	}
