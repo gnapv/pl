@@ -12452,6 +12452,15 @@ a:hover, a:active, a:focus {
 }
 
 /**
+ * Simple page Template.
+ */
+/* line 6, ../scss/pages/_simple-page.scss */
+.field--type-text-with-summary {
+  margin-top: 160px;
+  margin-bottom: 120px;
+}
+
+/**
  * Navigation.
  */
 /* line 5, ../scss/custom_component/_navigation.scss */
