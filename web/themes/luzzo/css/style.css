@@ -10209,11 +10209,23 @@ body {
 }
 
 /* line 34, ../scss/_global.scss */
+::selection {
+  background: #F4D680;
+  color: #212121;
+}
+
+/* line 39, ../scss/_global.scss */
+::-moz-selection {
+  background: #F4D680;
+  color: #212121;
+}
+
+/* line 44, ../scss/_global.scss */
 #fix-over {
   overflow: hidden;
 }
 
-/* line 38, ../scss/_global.scss */
+/* line 48, ../scss/_global.scss */
 .full-screen {
   background-size: cover;
   background-position: center;
@@ -10221,35 +10233,58 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 44, ../scss/_global.scss */
+  /* line 54, ../scss/_global.scss */
   .container {
     padding: 0px 40px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 44, ../scss/_global.scss */
+  /* line 54, ../scss/_global.scss */
   .container {
     padding: 0px 30px;
   }
 }
 
-/* line 54, ../scss/_global.scss */
+/* line 64, ../scss/_global.scss */
+.field--type-text-with-summary {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+@media screen and (max-width: 860px) {
+  /* line 64, ../scss/_global.scss */
+  .field--type-text-with-summary {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 64, ../scss/_global.scss */
+  .field--type-text-with-summary {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* line 80, ../scss/_global.scss */
 .messages__wrapper {
   display: none;
 }
 
-/* line 58, ../scss/_global.scss */
+/* line 84, ../scss/_global.scss */
 a {
   outline: none !important;
 }
 
-/* line 61, ../scss/_global.scss */
+/* line 87, ../scss/_global.scss */
 a:hover, a:active, a:focus {
   text-decoration: none !important;
   color: #4A4A4A;
 }
 
-/* line 66, ../scss/_global.scss */
+/* line 92, ../scss/_global.scss */
 .anima-back {
   display: inline-block;
   position: relative;
@@ -10260,12 +10295,12 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   padding: 8px 0px;
 }
-/* line 76, ../scss/_global.scss */
+/* line 102, ../scss/_global.scss */
 .anima-back .anome {
   border: 1px solid #4A4A4A;
   padding: 9px 20px;
 }
-/* line 80, ../scss/_global.scss */
+/* line 106, ../scss/_global.scss */
 .anima-back:after {
   content: "";
   position: absolute;
@@ -10277,61 +10312,61 @@ a:hover, a:active, a:focus {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 91, ../scss/_global.scss */
+/* line 117, ../scss/_global.scss */
 .anima-back:hover, .anima-back:active {
   text-decoration: none;
   color: #4A4A4A !important;
 }
-/* line 95, ../scss/_global.scss */
+/* line 121, ../scss/_global.scss */
 .anima-back:hover:after {
   width: 100% !important;
 }
 
 /* Content animations */
-/* line 106, ../scss/_global.scss */
+/* line 132, ../scss/_global.scss */
 .loaded .logo,
 .loaded .menu li {
   -webkit-animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 112, ../scss/_global.scss */
+/* line 138, ../scss/_global.scss */
 .loaded .logo {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 114, ../scss/_global.scss */
+/* line 140, ../scss/_global.scss */
 .loaded .menu li:nth-child(1) {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 115, ../scss/_global.scss */
+/* line 141, ../scss/_global.scss */
 .loaded .menu li:nth-child(2) {
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
 
-/* line 116, ../scss/_global.scss */
+/* line 142, ../scss/_global.scss */
 .loaded .menu li:nth-child(3) {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 117, ../scss/_global.scss */
+/* line 143, ../scss/_global.scss */
 .loaded .menu li:nth-child(4) {
   -webkit-animation-delay: 0.85s;
   animation-delay: 0.85s;
 }
 
-/* line 118, ../scss/_global.scss */
+/* line 144, ../scss/_global.scss */
 .loaded .menu li:nth-child(5) {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 123, ../scss/_global.scss */
+/* line 149, ../scss/_global.scss */
 .loaded #page-luzzo .field--name-field-ilustra-logo,
 .loaded #page-luzzo h2,
 .loaded #page-luzzo hr,
@@ -10342,31 +10377,31 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 133, ../scss/_global.scss */
+/* line 159, ../scss/_global.scss */
 .loaded #page-luzzo .field--name-field-ilustra-logo {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-/* line 134, ../scss/_global.scss */
+/* line 160, ../scss/_global.scss */
 .loaded #page-luzzo h2 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-/* line 135, ../scss/_global.scss */
+/* line 161, ../scss/_global.scss */
 .loaded #page-luzzo hr {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-/* line 136, ../scss/_global.scss */
+/* line 162, ../scss/_global.scss */
 .loaded #page-luzzo .field--name-field-imagem-texto-luzzo {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-/* line 140, ../scss/_global.scss */
+/* line 166, ../scss/_global.scss */
 .loaded #page-franchising .field--name-field-ilustra-logo,
 .loaded #page-franchising h1,
 .loaded #page-franchising .texto-intro,
@@ -10377,43 +10412,43 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 151, ../scss/_global.scss */
+/* line 177, ../scss/_global.scss */
 .loaded #page-franchising .field--name-field-ilustra-logo {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-/* line 152, ../scss/_global.scss */
+/* line 178, ../scss/_global.scss */
 .loaded #page-franchising h1 {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-/* line 153, ../scss/_global.scss */
+/* line 179, ../scss/_global.scss */
 .loaded #page-franchising .texto-intro {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 154, ../scss/_global.scss */
+/* line 180, ../scss/_global.scss */
 .loaded #page-franchising #p--1-col-center-svg h2 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 155, ../scss/_global.scss */
+/* line 181, ../scss/_global.scss */
 .loaded #page-franchising #p--1-col-center-svg hr {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 156, ../scss/_global.scss */
+/* line 182, ../scss/_global.scss */
 .loaded #page-franchising .field--name-field-imagem-texto-luzzo {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-/* line 160, ../scss/_global.scss */
+/* line 186, ../scss/_global.scss */
 .loaded .view-id-ementa h1,
 .loaded .view-id-ementa p,
 .loaded .view-id-ementa .tit-cat,
@@ -10423,49 +10458,49 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 169, ../scss/_global.scss */
+/* line 195, ../scss/_global.scss */
 .loaded .view-id-ementa h1 {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 170, ../scss/_global.scss */
+/* line 196, ../scss/_global.scss */
 .loaded .view-id-ementa p {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 171, ../scss/_global.scss */
+/* line 197, ../scss/_global.scss */
 .loaded .view-id-ementa .tit-cat {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 172, ../scss/_global.scss */
+/* line 198, ../scss/_global.scss */
 .loaded .view-id-ementa h3 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-/* line 173, ../scss/_global.scss */
+/* line 199, ../scss/_global.scss */
 .loaded .view-id-ementa .group-items div:nth-of-type(1) {
   -webkit-animation-delay: 1.1s;
   animation-delay: 1.1s;
 }
 
-/* line 174, ../scss/_global.scss */
+/* line 200, ../scss/_global.scss */
 .loaded .view-id-ementa .group-items div:nth-of-type(2) {
   -webkit-animation-delay: 1.15s;
   animation-delay: 1.15s;
 }
 
-/* line 175, ../scss/_global.scss */
+/* line 201, ../scss/_global.scss */
 .loaded .view-id-ementa .group-items div:nth-of-type(3) {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
 
-/* line 179, ../scss/_global.scss */
+/* line 205, ../scss/_global.scss */
 .loaded .no-container .img-container,
 .loaded .no-container .extras,
 .loaded .no-container .cat,
@@ -10476,43 +10511,43 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 189, ../scss/_global.scss */
+/* line 215, ../scss/_global.scss */
 .loaded .logo {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 191, ../scss/_global.scss */
+/* line 217, ../scss/_global.scss */
 .loaded .no-container .img-container {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 192, ../scss/_global.scss */
+/* line 218, ../scss/_global.scss */
 .loaded .no-container .extras {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 193, ../scss/_global.scss */
+/* line 219, ../scss/_global.scss */
 .loaded .no-container .cat {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 194, ../scss/_global.scss */
+/* line 220, ../scss/_global.scss */
 .loaded .no-container h2 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-/* line 195, ../scss/_global.scss */
+/* line 221, ../scss/_global.scss */
 .loaded .no-container .des {
   -webkit-animation-delay: 1.1s;
   animation-delay: 1.1s;
 }
 
-/* line 196, ../scss/_global.scss */
+/* line 222, ../scss/_global.scss */
 .loaded .no-container .view-next-prev-ementa {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
@@ -12337,7 +12372,11 @@ a:hover, a:active, a:focus {
     background: #fff;
   }
 }
-/* line 311, ../scss/pages/_ementa.scss */
+/* line 310, ../scss/pages/_ementa.scss */
+.no-container .cat {
+  pointer-events: none;
+}
+/* line 315, ../scss/pages/_ementa.scss */
 .no-container .cat, .no-container .cat a {
   margin-top: 100px;
   font-weight: 900;
@@ -12347,13 +12386,13 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
-  /* line 311, ../scss/pages/_ementa.scss */
+  /* line 315, ../scss/pages/_ementa.scss */
   .no-container .cat, .no-container .cat a {
     left: 15px;
     margin-top: 20px;
   }
 }
-/* line 326, ../scss/pages/_ementa.scss */
+/* line 330, ../scss/pages/_ementa.scss */
 .no-container .vegan {
   position: absolute;
   background: url(../img/vegan.svg);
@@ -12366,13 +12405,13 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 326, ../scss/pages/_ementa.scss */
+  /* line 330, ../scss/pages/_ementa.scss */
   .no-container .vegan {
     background-size: 75%;
     background-position: center;
   }
 }
-/* line 342, ../scss/pages/_ementa.scss */
+/* line 346, ../scss/pages/_ementa.scss */
 .no-container .picante {
   position: absolute;
   background: url(../img/picas.svg);
@@ -12385,13 +12424,13 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 342, ../scss/pages/_ementa.scss */
+  /* line 346, ../scss/pages/_ementa.scss */
   .no-container .picante {
     background-size: 75%;
     background-position: center;
   }
 }
-/* line 358, ../scss/pages/_ementa.scss */
+/* line 362, ../scss/pages/_ementa.scss */
 .no-container h2 {
   font-weight: 900;
   font-size: 6rem;
@@ -12401,12 +12440,12 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1200px) {
-  /* line 358, ../scss/pages/_ementa.scss */
+  /* line 362, ../scss/pages/_ementa.scss */
   .no-container h2 {
     font-size: 5rem;
   }
 }
-/* line 371, ../scss/pages/_ementa.scss */
+/* line 375, ../scss/pages/_ementa.scss */
 .no-container .des {
   font-size: 2.4rem;
   color: #9B9B9B;
@@ -12414,19 +12453,19 @@ a:hover, a:active, a:focus {
   line-height: 33px;
 }
 
-/* line 383, ../scss/pages/_ementa.scss */
+/* line 387, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa {
   min-height: 160px;
   padding: 50px 25px;
   max-width: 242px;
 }
 @media screen and (max-width: 767px) {
-  /* line 383, ../scss/pages/_ementa.scss */
+  /* line 387, ../scss/pages/_ementa.scss */
   .view-next-prev-ementa {
     margin: 0 auto;
   }
 }
-/* line 392, ../scss/pages/_ementa.scss */
+/* line 396, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev a {
   background: url(../img/left_bt.svg);
   width: 33px;
@@ -12436,7 +12475,7 @@ a:hover, a:active, a:focus {
   right: 220px;
   top: 58px;
 }
-/* line 403, ../scss/pages/_ementa.scss */
+/* line 407, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-next a {
   background: url(../img/right_btt.svg);
   width: 33px;
@@ -12447,26 +12486,26 @@ a:hover, a:active, a:focus {
   right: 0;
   top: 58px;
 }
-/* line 414, ../scss/pages/_ementa.scss */
+/* line 418, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-all {
   position: relative;
   margin: 0 auto;
   width: 63px;
   height: 55px;
 }
-/* line 421, ../scss/pages/_ementa.scss */
+/* line 425, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-all a {
   background: url(../img/close_bt.svg);
   display: block;
   width: 63px;
   height: 55px;
 }
-/* line 428, ../scss/pages/_ementa.scss */
+/* line 432, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev, .view-next-prev-ementa .entity-pager-item-next, .view-next-prev-ementa .entity-pager-item-all a {
   opacity: .4;
   transition: opacity .4s ease-in;
 }
-/* line 433, ../scss/pages/_ementa.scss */
+/* line 437, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev:hover, .view-next-prev-ementa .ntity-pager-item-next:hover, .view-next-prev-ementa .entity-pager-item-all a:hover {
   opacity: 1 !important;
 }

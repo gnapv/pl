@@ -22,8 +22,8 @@ var currentLink;
 
 jQuery(document).ready(function(){
 
-  	console.log("Bem Vindo ao website Luzzo!");
-  	console.log("by:gomastudio.net");
+  	//console.log("Bem Vindo ao website Luzzo!");
+  	//console.log("by:gomastudio.net");
 
     findType();
 
@@ -68,7 +68,7 @@ function findType() {
     finalType = "onEmentaItem";
   }  
 
-  console.log("TYPE: "+finalType);
+  //console.log("TYPE: "+finalType);
   APPLogic(finalType);
 }
 
@@ -128,8 +128,14 @@ function APPLogic(qualType) {
 
     initModal();
 
+    antiDragImg();
+
     //grabALLLinks();
 
+}
+
+function antiDragImg() {
+  jQuery('img').attr('draggable','false');
 }
 
 

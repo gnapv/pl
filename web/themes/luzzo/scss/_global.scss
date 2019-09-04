@@ -31,6 +31,16 @@ body {
   padding-right: 0!important;
 }
 
+::selection {
+  background: #F4D680; 
+  color: #212121;
+}
+
+::-moz-selection {
+  background: #F4D680; 
+  color: #212121;
+}
+
 #fix-over{
   overflow: hidden;
 }
@@ -48,6 +58,22 @@ body {
     }
     @media screen and (max-width: 500px) {
           padding: 0px 30px;
+    }
+}
+
+.field--type-text-with-summary{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+      @media screen and (max-width: 860px) {
+           -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+    }
+    @media screen and (max-width: 640px) {
+           -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
     }
 }
 
