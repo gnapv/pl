@@ -15,14 +15,11 @@
         width: 90%;
         transform: translate(0, 40vh);
         overflow: visible;
-        max-width: 960px;
+        max-width: 1020px;
 
-        @media screen and (max-width: 1200px) {
-          width: 95%;
-          max-width: 940px;   
-        }
 
-        @media screen and (max-width: 980px) { max-width: 640px; }
+
+        @media screen and (max-width: 1020px) { max-width: 770px; }
         @media screen and (max-width: 695px) { 
           width: 90%; 
           transform: translate(0, 20vh);
@@ -31,7 +28,8 @@
 
     .modal-content{
           background-color: #EFEBEB;
-          min-height: 150px;
+          min-height: 140px;
+          padding: 0;
     }
 
     .modal-header{
@@ -50,7 +48,7 @@
               color: #fff;
               font-weight: 400;
               padding-right: 80px;
-              @media screen and (max-width: 624px) { 
+              @media screen and (max-width: 650px) { 
                 position: relative;
                 bottom: 23px;
                 line-height: 35px;
@@ -80,12 +78,10 @@
     }
 
     .modal-body{
-            @media screen and (max-width: 1020px) {
-                padding: 15px;
-            }
-            @media screen and (max-width: 465px) {
-                padding: 15px 0px;
-            }
+      padding: 0;
+      padding-top: 30px;
+
+                 @media screen and (max-width: 695px) { padding: 30px; }
 
             .select-wrapper {
               width: auto;
@@ -99,6 +95,7 @@
               position: relative;
               top: 20px;
               height: 35px;
+              text-align: center;
               @media screen and (max-width: 695px) { 
                 top: 0; 
                 height: auto;
@@ -114,14 +111,17 @@
               }
 
               input[name="em_nome_de_"] {
-                max-width: 120px;
-                    @media screen and (max-width: 980px) {
+                max-width: 180px;
+                    @media screen and (max-width: 1040px) {
                       max-width: 150px;
+                    }
+                    @media screen and (max-width: 1020px) {
+                      max-width: 210px;
                     }
               }
 
               input[name="telefone_"] {
-                max-width: 120px;
+                max-width: 125px;
               }
 
               input[name="no_dia_"] {
@@ -132,10 +132,10 @@
               
               input[name="email_de_confirmacao"] {
                 max-width: 200px;
-                @media screen and (max-width: 1030px) {
+                @media screen and (max-width: 1040px) {
                       max-width: 180px;
                 }
-                @media screen and (max-width: 980px) {
+                @media screen and (max-width: 1040px) {
                       max-width: 220px;
                 }
                 
@@ -149,9 +149,6 @@
               .form-group {
                 display: inline;
                 padding-left: 10px;
-                @media screen and (max-width: 1030px) {
-                      padding-left: 10px;
-                }
 
                 @media screen and (max-width: 695px) {                   
                     display: block;
@@ -235,10 +232,12 @@
                 font-weight: 400;
                 font-size: 1.6rem;
                 color: #4A4A4A;
-                @media screen and (max-width: 980px) {
+                @media screen and (max-width: 1020px) {
                   position: absolute;
                   bottom: 25px;
                   transform: translateX(10px);
+                  min-width: 120px;
+                  text-align: left;
                 }
                 @media screen and (max-width: 695px) {
                     position: relative;
@@ -248,11 +247,11 @@
               
               }
               .form-item-no-dia- label{
-                @media screen and (max-width: 980px) { bottom: 30px; }
+                @media screen and (max-width: 1020px) { bottom: 30px; }
                 @media screen and (max-width: 695px) { bottom: 0px; } 
               }
               .form-item-telefone- label{
-                @media screen and (max-width: 980px) {
+                @media screen and (max-width: 1020px) {
                   bottom: 30px;
                 }
                 @media screen and (max-width: 695px) { bottom: 0; }
@@ -283,6 +282,8 @@
                 .js-form-item-observacoes{
                   float: left;
                   width: 50%;
+                  @media screen and (max-width: 1020px) { bottom: 10px!important; }
+
                   @media screen and (max-width: 695px) { 
                     width: 100%;
                     float: none;
@@ -302,6 +303,9 @@
 
                       textarea{
                         max-width: 280px;
+                        @media screen and (max-width: 1020px) { max-width: 220px; }
+                        @media screen and (max-width: 768px) { max-width: 180px; }
+
                         @media screen and (max-width: 695px) { max-width: 100%; height: 7rem; }
 
                       }
@@ -313,16 +317,17 @@
                   display: block;
                   margin: 0;
                   float: left;
-                  width: 50%;
+                  width: 44%;
+                  text-align: left;
 
                   @media screen and (max-width: 695px) { 
                     width: 100%;
                     float: none;
                   }
                   label{
-                      font-size: 1.4rem;
-                    @media screen and (max-width: 980px) {
-                      bottom: -40px;
+                      font-size: 1.3rem;
+                    @media screen and (max-width: 1020px) {
+                      top: -10px;
                     }
                     @media screen and (max-width: 695px) { bottom: 0; }
 
@@ -377,7 +382,7 @@
 
           
       div[data-webform-key="reservar"] {
-                @media screen and (max-width: 980px) {
+                @media screen and (max-width: 1020px) {
                       position: relative;
                       top: 10px;
                 }
@@ -385,7 +390,7 @@
                   padding-left: 0px;
                 }
                 &.form-group:first-child {
-                  @media screen and (max-width: 980px) {
+                  @media screen and (max-width: 1020px) {
                       bottom: 7px;
                   }
                 }
@@ -418,7 +423,7 @@
               }
 
               div[data-webform-key="intro"] {
-                   @media screen and (max-width: 980px) {
+                   @media screen and (max-width: 1020px) {
                       position: relative;
                       top: 10px;
                 }
@@ -427,13 +432,18 @@
                 }
               }
               div[data-webform-key="page_2"] {
-                  @media screen and (max-width: 980px) {
+                  @media screen and (max-width: 1020px) {
                     position: relative;
                     top: 10px;
                 }
               }       
       
     
+}
+
+.webform-confirmation{
+  position: relative;
+  bottom: 30px;
 }
 
 .modal-backdrop.in {

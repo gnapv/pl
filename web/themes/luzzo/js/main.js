@@ -206,6 +206,13 @@ function initSliderHome() {
 	$item.height($wHeight); 
 	$item.addClass('full-screen');
 
+  var $slidesFlex = jQuery('#flexslider-1 .slides, #flexslider-2 .slides');
+  $slidesFlex.height($wHeight);
+
+
+
+
+
 	jQuery('#flexslider-1 .slides li img').each(function() {
 	  var $src = jQuery(this).attr('src');
 	  jQuery(this).parent().css({
@@ -227,7 +234,10 @@ function initSliderHome() {
 	jQuery(window).on('resize', function (){
 	  $wHeight = jQuery(window).height();
 	  $item.height($wHeight);
+    $slidesFlex.height($wHeight);
+
 	});
+  
 }
 
 function animateCaptionsHome() {

@@ -154,14 +154,17 @@
 
 		    .navbar-nav > li > a:after {
 			    content: "";
+			    position: absolute;
+			    left: 0;
+			    top: 23px;
 			    border-bottom: 14px solid;
 			    border-image: url(../img/zig.svg);
 			    border-image-slice: 15 1;
 			    border-image-repeat: round;
+			    border-right: 0;
+			    border-left: 0;
+			    border-top: 0;
 			    width: 100%;
-			    position: absolute;
-			    left: 0;
-			    top: 23px;
 			    -webkit-clip-path: inset(0 100% 0 0);
 			    clip-path: inset(0 100% 0 0);
 			    transition: all .3s ease-in;

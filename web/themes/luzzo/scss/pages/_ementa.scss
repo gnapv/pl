@@ -62,14 +62,18 @@
 
 			&:after {
 				content: "";
-			    border-bottom: 30px solid;
-			    border-image: url(../img/zig-branco_.svg);
-			    border-image-slice: 15 1;
-			    border-image-repeat: round;
-			    width: 70%;
-			    position: absolute;
+				position: absolute;
 			    margin-left: 15px;
 			    top: 22px;
+			    border-bottom: 30px solid;
+			    border-image: url(../img/zig-branco-30.svg);
+			    border-image-slice: 30 2;
+			    border-image-repeat: round;
+			    width: 70%;
+			    border-right: 0;
+			    border-top: 0;
+			    border-left: 0;
+		
 			    transform: scale(1.7);
 			    transform-origin: left;
 			    @media screen and (max-width: 415px) {
@@ -393,14 +397,19 @@
 					 		margin:0 auto;
 					}
 
+	.entity-pager-list {
+		position: relative;
+
+	}
+
 	.entity-pager-item-prev a{
 		background: url(../img/left_bt.svg);
 		width: 33px;
 		height: 56px;
 		position: absolute;
-    margin: auto;
+
     right: 220px;
-    top: 58px;
+    bottom: 0px;
 
 	}
 
@@ -409,10 +418,9 @@
 		width: 33px;
 		height: 56px;
 		position: absolute;
-	    margin: auto;
 	    left: 220px;
 	    right: 0;
-	    top: 58px;
+	    bottom: 0px;
 	}
 
 	.entity-pager-item-all{

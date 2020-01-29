@@ -61,7 +61,7 @@
 				    letter-spacing: 3px;
 				    display: inline;
 				    position: relative;
-    				left: -20px;
+    			
     				  @media screen and (max-width: $screen-sm-max) {
 					    	left: -5px;
 		 			}
@@ -509,7 +509,7 @@
 			position: relative;
     		top: -40px;
     		margin-bottom: 80px;
-
+    		min-width: 200px;
     		.anome{
     			border: 1px solid #4A4A4A;
     			padding: 9px 20px;
@@ -551,6 +551,28 @@
 
 	#flexslider-3-lojas{
 		.slides{
+
+							
+			.views-field-field-imagem-destaque { overflow: hidden; }
+
+			.views-field-field-imagem-destaque img{ transition: all .3s ease-in; }
+			.views-field-field-imagem-destaque:hover img{
+						transform: scale(1.05);
+			}
+
+			.views-field-field-imagem-destaque:hover ~ .views-field-field-nome .field-content{
+						color: #F4D680;
+						transform: translate(13px, 0px);
+
+			}
+
+			.views-field-field-imagem-destaque:hover ~ .views-field-field-nome .field-content:before{
+						opacity: 1;
+						transform: translate(-19px, 0px);
+					
+
+			}
+
 			.views-field-field-nome{
 
 				margin-top: 20px;
@@ -560,12 +582,26 @@
 				letter-spacing: 3.33px;
 				text-transform: uppercase;
 				text-align: center;
-
+				transition: all .3s ease-in;
 				@media screen and (max-width: $screen-sm-max) {
 					letter-spacing: 1.33px;
 					margin-top: 15px;
 
 		 		}
+		 		.field-content{
+				transition: all .3s ease-in;
+
+		 		&:before{
+					content: url("../img/seta-active.svg");
+					position: absolute;
+					opacity: 0;
+					transform: translate(-6px, 0px);
+
+					transition: all .3s ease-in;
+
+
+				}
+				}
 			}
 			.views-field-field-cidade{
 				font-size: 1.4rem;
@@ -595,16 +631,18 @@
 				@media screen and (max-width: $screen-sm) {
 				
 					transform: translateY(-90%);
+					right: -65px!important;
+
 		 		}
 			}
+			
 			.flex-next:hover{
 				opacity: 1
 			}
+
 			.flex-next:before , .flex-prev:before{
 				content: '';
 			    text-shadow: none;
-					
-
 			}
 	
 			.flex-prev{
@@ -612,16 +650,15 @@
 						width: 33px;
 						height: 56px;
 						float: left;
-						left: -80px!important;;
-					
+						left: -80px!important;
 					display: block!important;
 					transform: translateY(-80%);
 					opacity: .4;
 					transition: opacity .3s ease-in;
-				@media screen and (max-width: $screen-sm) {
-			
-					transform: translateY(-90%);
 
+				@media screen and (max-width: $screen-sm) {
+					transform: translateY(-90%);
+					left: -65px!important;
 		 		}
 
 			}

@@ -10613,7 +10613,8 @@ a:hover, a:active, a:focus {
 @media screen and (max-width: 892px) {
   /* line 37, ../scss/pages/_luzzo.scss */
   #page-luzzo .field--name-field-ilustra-logo img {
-    top: -60px;
+    top: 0px;
+    transform: scale(1.5) !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -10622,7 +10623,7 @@ a:hover, a:active, a:focus {
     margin-bottom: 80px;
   }
 }
-/* line 54, ../scss/pages/_luzzo.scss */
+/* line 55, ../scss/pages/_luzzo.scss */
 #page-luzzo h2 {
   font-weight: 700;
   font-size: 2.4rem;
@@ -10630,16 +10631,16 @@ a:hover, a:active, a:focus {
   letter-spacing: 3.33px;
 }
 @media screen and (max-width: 768px) {
-  /* line 54, ../scss/pages/_luzzo.scss */
+  /* line 55, ../scss/pages/_luzzo.scss */
   #page-luzzo h2 {
     text-align: center;
   }
 }
-/* line 63, ../scss/pages/_luzzo.scss */
+/* line 64, ../scss/pages/_luzzo.scss */
 #page-luzzo hr {
   border: 1px solid #F4D680;
 }
-/* line 71, ../scss/pages/_luzzo.scss */
+/* line 72, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
   font-weight: 400;
   font-size: 2rem;
@@ -10648,18 +10649,18 @@ a:hover, a:active, a:focus {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 71, ../scss/pages/_luzzo.scss */
+  /* line 72, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 71, ../scss/pages/_luzzo.scss */
+  /* line 72, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
     text-align: center;
   }
 }
-/* line 86, ../scss/pages/_luzzo.scss */
+/* line 87, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem img {
   position: relative;
   bottom: 50px;
@@ -10667,25 +10668,25 @@ a:hover, a:active, a:focus {
   transform: scale(1.2);
 }
 @media screen and (max-width: 992px) {
-  /* line 86, ../scss/pages/_luzzo.scss */
+  /* line 87, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     transform: scale(1.5);
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 86, ../scss/pages/_luzzo.scss */
+  /* line 87, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     transform: scale(1.2);
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 86, ../scss/pages/_luzzo.scss */
+  /* line 87, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     bottom: 0;
     transform: scale(1);
   }
 }
-/* line 106, ../scss/pages/_luzzo.scss */
+/* line 107, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem blockquote {
   position: relative;
   bottom: 50px;
@@ -10699,74 +10700,74 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  /* line 106, ../scss/pages/_luzzo.scss */
+  /* line 107, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem blockquote {
     line-height: 40px;
     padding: 30px 0;
   }
 }
-/* line 126, ../scss/pages/_luzzo.scss */
+/* line 127, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto {
   position: relative;
   bottom: 100px;
 }
-/* line 130, ../scss/pages/_luzzo.scss */
+/* line 131, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto h2 {
   margin-top: 180px;
 }
 @media screen and (max-width: 1200px) {
-  /* line 130, ../scss/pages/_luzzo.scss */
+  /* line 131, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 130, ../scss/pages/_luzzo.scss */
+  /* line 131, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 35px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 130, ../scss/pages/_luzzo.scss */
+  /* line 131, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 85px;
     text-align: center;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 126, ../scss/pages/_luzzo.scss */
+  /* line 127, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 55px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 126, ../scss/pages/_luzzo.scss */
+  /* line 127, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 0;
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 126, ../scss/pages/_luzzo.scss */
+  /* line 127, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 0;
     margin-top: 0px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 126, ../scss/pages/_luzzo.scss */
+  /* line 127, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     margin-top: -30px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 158, ../scss/pages/_luzzo.scss */
+  /* line 159, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto img {
     max-width: 60%;
     margin: 0 auto;
   }
 }
-/* line 167, ../scss/pages/_luzzo.scss */
+/* line 168, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
   font-weight: 400;
   font-size: 2rem;
@@ -10775,18 +10776,18 @@ a:hover, a:active, a:focus {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 167, ../scss/pages/_luzzo.scss */
+  /* line 168, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 167, ../scss/pages/_luzzo.scss */
+  /* line 168, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
     text-align: center;
   }
 }
-/* line 182, ../scss/pages/_luzzo.scss */
+/* line 183, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto blockquote {
   position: absolute;
   max-width: 320px;
@@ -10805,28 +10806,28 @@ a:hover, a:active, a:focus {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 992px) {
-  /* line 182, ../scss/pages/_luzzo.scss */
+  /* line 183, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto blockquote {
     padding: 21px;
     max-width: 220px;
   }
 }
-/* line 207, ../scss/pages/_luzzo.scss */
+/* line 208, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-/* line 212, ../scss/pages/_luzzo.scss */
+/* line 213, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-inner {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 992px) {
-  /* line 207, ../scss/pages/_luzzo.scss */
+  /* line 208, ../scss/pages/_luzzo.scss */
   #page-luzzo .slider--luzzo {
     margin-top: 60px;
   }
 }
-/* line 221, ../scss/pages/_luzzo.scss */
+/* line 222, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators {
   left: auto;
   z-index: 15;
@@ -10839,30 +10840,30 @@ a:hover, a:active, a:focus {
   right: 2% !important;
   left: inherit;
 }
-/* line 234, ../scss/pages/_luzzo.scss */
+/* line 235, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators li {
   width: 20px;
   height: 20px;
   margin: 0 5px;
   transition: width .4s;
 }
-/* line 242, ../scss/pages/_luzzo.scss */
+/* line 243, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators .active {
   width: 35px !important;
 }
-/* line 250, ../scss/pages/_luzzo.scss */
+/* line 251, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto {
   position: relative;
   margin-bottom: 120px;
 }
 @media screen and (max-width: 992px) {
-  /* line 250, ../scss/pages/_luzzo.scss */
+  /* line 251, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto {
     margin-bottom: 100px;
     top: 85px;
   }
 }
-/* line 260, ../scss/pages/_luzzo.scss */
+/* line 261, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
   font-size: 2rem;
   color: #212121;
@@ -10870,23 +10871,23 @@ a:hover, a:active, a:focus {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 260, ../scss/pages/_luzzo.scss */
+  /* line 261, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 260, ../scss/pages/_luzzo.scss */
+  /* line 261, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     text-align: center;
   }
 }
-/* line 274, ../scss/pages/_luzzo.scss */
+/* line 275, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .saber-mais {
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 274, ../scss/pages/_luzzo.scss */
+  /* line 275, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .saber-mais {
     margin: 0 auto;
     top: 30px;
@@ -10897,7 +10898,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (max-width: 992px) {
-  /* line 290, ../scss/pages/_luzzo.scss */
+  /* line 291, ../scss/pages/_luzzo.scss */
   .page-node-type-luzzo #flexslider-testemunhos {
     margin-top: 100px;
   }
@@ -11201,7 +11202,7 @@ a:hover, a:active, a:focus {
   width: 100%;
   background: url(../img/zigZag.png);
   position: absolute;
-  height: calc(100% - 1000px);
+  height: calc(100% - 985px);
   background-position-y: -120px;
 }
 /* line 51, ../scss/pages/_lojas.scss */
@@ -11490,7 +11491,6 @@ a:hover, a:active, a:focus {
   letter-spacing: 3px;
   display: inline;
   position: relative;
-  left: -20px;
 }
 @media screen and (max-width: 991px) {
   /* line 58, ../scss/pages/_loja.scss */
@@ -11929,6 +11929,7 @@ a:hover, a:active, a:focus {
   position: relative;
   top: -40px;
   margin-bottom: 80px;
+  min-width: 200px;
 }
 /* line 513, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 .view-slider-3-lojas .view-footer .anome {
@@ -11970,7 +11971,29 @@ a:hover, a:active, a:focus {
 #block-views-block-slider-3-lojas-block-1 .view-slider-3-lojas .view-footer a:hover:before {
   width: 100%;
 }
-/* line 554, ../scss/pages/_loja.scss */
+/* line 556, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-imagem-destaque {
+  overflow: hidden;
+}
+/* line 558, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-imagem-destaque img {
+  transition: all .3s ease-in;
+}
+/* line 559, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-imagem-destaque:hover img {
+  transform: scale(1.05);
+}
+/* line 563, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-imagem-destaque:hover ~ .views-field-field-nome .field-content {
+  color: #F4D680;
+  transform: translate(13px, 0px);
+}
+/* line 569, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-imagem-destaque:hover ~ .views-field-field-nome .field-content:before {
+  opacity: 1;
+  transform: translate(-19px, 0px);
+}
+/* line 576, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-nome {
   margin-top: 20px;
   font-weight: 700;
@@ -11979,26 +12002,39 @@ a:hover, a:active, a:focus {
   letter-spacing: 3.33px;
   text-transform: uppercase;
   text-align: center;
+  transition: all .3s ease-in;
 }
 @media screen and (max-width: 991px) {
-  /* line 554, ../scss/pages/_loja.scss */
+  /* line 576, ../scss/pages/_loja.scss */
   #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-nome {
     letter-spacing: 1.33px;
     margin-top: 15px;
   }
 }
-/* line 570, ../scss/pages/_loja.scss */
+/* line 591, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-nome .field-content {
+  transition: all .3s ease-in;
+}
+/* line 594, ../scss/pages/_loja.scss */
+#block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-nome .field-content:before {
+  content: url("../img/seta-active.svg");
+  position: absolute;
+  opacity: 0;
+  transform: translate(-6px, 0px);
+  transition: all .3s ease-in;
+}
+/* line 606, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .slides .views-field-field-cidade {
   font-size: 1.4rem;
   color: #9B9B9B;
   letter-spacing: 2.33px;
   text-align: center;
 }
-/* line 579, ../scss/pages/_loja.scss */
+/* line 615, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav {
   display: block;
 }
-/* line 583, ../scss/pages/_loja.scss */
+/* line 619, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next {
   background: url(../img/right_btt.svg);
   width: 33px;
@@ -12011,21 +12047,22 @@ a:hover, a:active, a:focus {
   transition: opacity .3s ease-in;
 }
 @media screen and (max-width: 768px) {
-  /* line 583, ../scss/pages/_loja.scss */
+  /* line 619, ../scss/pages/_loja.scss */
   #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next {
     transform: translateY(-90%);
+    right: -65px !important;
   }
 }
-/* line 600, ../scss/pages/_loja.scss */
+/* line 639, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next:hover {
   opacity: 1;
 }
-/* line 603, ../scss/pages/_loja.scss */
+/* line 643, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next:before, #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev:before {
   content: '';
   text-shadow: none;
 }
-/* line 610, ../scss/pages/_loja.scss */
+/* line 648, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev {
   background: url(../img/left_bt.svg);
   width: 33px;
@@ -12038,12 +12075,13 @@ a:hover, a:active, a:focus {
   transition: opacity .3s ease-in;
 }
 @media screen and (max-width: 768px) {
-  /* line 610, ../scss/pages/_loja.scss */
+  /* line 648, ../scss/pages/_loja.scss */
   #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev {
     transform: translateY(-90%);
+    left: -65px !important;
   }
 }
-/* line 630, ../scss/pages/_loja.scss */
+/* line 667, ../scss/pages/_loja.scss */
 #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-next:hover, #block-views-block-slider-3-lojas-block-1 #flexslider-3-lojas .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
@@ -12112,14 +12150,17 @@ a:hover, a:active, a:focus {
 /* line 63, ../scss/pages/_ementa.scss */
 .view-ementa .view-content h3:after {
   content: "";
-  border-bottom: 30px solid;
-  border-image: url(../img/zig-branco_.svg);
-  border-image-slice: 15 1;
-  border-image-repeat: round;
-  width: 70%;
   position: absolute;
   margin-left: 15px;
   top: 22px;
+  border-bottom: 30px solid;
+  border-image: url(../img/zig-branco-30.svg);
+  border-image-slice: 30 2;
+  border-image-repeat: round;
+  width: 70%;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
   transform: scale(1.7);
   transform-origin: left;
 }
@@ -12131,7 +12172,7 @@ a:hover, a:active, a:focus {
     top: -60px;
   }
 }
-/* line 84, ../scss/pages/_ementa.scss */
+/* line 88, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .fundo-cat {
   min-height: 360px;
   background: #F4D680;
@@ -12142,12 +12183,12 @@ a:hover, a:active, a:focus {
   left: -20%;
 }
 @media screen and (max-width: 767px) {
-  /* line 84, ../scss/pages/_ementa.scss */
+  /* line 88, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .fundo-cat {
     width: 85%;
   }
 }
-/* line 102, ../scss/pages/_ementa.scss */
+/* line 106, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .tit-cat {
   font-weight: 900;
   font-size: 1.3rem;
@@ -12156,38 +12197,38 @@ a:hover, a:active, a:focus {
   margin-bottom: 0;
   text-transform: uppercase;
 }
-/* line 111, ../scss/pages/_ementa.scss */
+/* line 115, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items {
   margin-bottom: 50px;
 }
-/* line 114, ../scss/pages/_ementa.scss */
+/* line 118, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .template-ementa {
   cursor: pointer;
 }
-/* line 117, ../scss/pages/_ementa.scss */
+/* line 121, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .template-ementa:hover h2:before {
   opacity: 1;
 }
 @media screen and (min-width: 767px) {
-  /* line 111, ../scss/pages/_ementa.scss */
+  /* line 115, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items {
     margin-top: 0px;
     margin-right: -40px;
     margin-left: -40px;
   }
 }
-/* line 132, ../scss/pages/_ementa.scss */
+/* line 136, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items > [class^="col-"], .view-ementa .view-content .group-items > [class^=" col-"] {
   margin-bottom: 80px;
 }
 @media screen and (min-width: 767px) {
-  /* line 132, ../scss/pages/_ementa.scss */
+  /* line 136, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items > [class^="col-"], .view-ementa .view-content .group-items > [class^=" col-"] {
     padding-right: 40px;
     padding-left: 40px;
   }
 }
-/* line 140, ../scss/pages/_ementa.scss */
+/* line 144, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .cat {
   font-weight: 900;
   font-size: 13px;
@@ -12196,29 +12237,29 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
-  /* line 140, ../scss/pages/_ementa.scss */
+  /* line 144, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items .cat {
     text-align: center;
   }
 }
-/* line 152, ../scss/pages/_ementa.scss */
+/* line 156, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container {
   position: relative;
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  /* line 152, ../scss/pages/_ementa.scss */
+  /* line 156, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items .img-container {
     max-width: 360px;
     margin: 0 auto;
   }
 }
-/* line 160, ../scss/pages/_ementa.scss */
+/* line 164, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container img {
   margin: 0 auto;
   transition: all .3s ease-in;
 }
-/* line 165, ../scss/pages/_ementa.scss */
+/* line 169, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container .vegan {
   position: absolute;
   background: url(../img/vegan.svg);
@@ -12231,7 +12272,7 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 179, ../scss/pages/_ementa.scss */
+/* line 183, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container .picante {
   position: absolute;
   background: url(../img/picas.svg);
@@ -12244,24 +12285,24 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 195, ../scss/pages/_ementa.scss */
+/* line 199, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .img-container.active img {
   transform: scale(1.1);
 }
 @media screen and (max-width: 767px) {
-  /* line 199, ../scss/pages/_ementa.scss */
+  /* line 203, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items h2 {
     text-align: center;
   }
 }
-/* line 203, ../scss/pages/_ementa.scss */
+/* line 207, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items h2:before {
   content: url("../img/seta-active.svg");
   position: absolute;
   opacity: 0;
   transform: translate(0px, -3px);
 }
-/* line 212, ../scss/pages/_ementa.scss */
+/* line 216, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items a {
   position: relative;
   font-weight: 900;
@@ -12270,7 +12311,7 @@ a:hover, a:active, a:focus {
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
-/* line 224, ../scss/pages/_ementa.scss */
+/* line 228, ../scss/pages/_ementa.scss */
 .view-ementa .view-content .group-items .des {
   font-size: 16px;
   color: #9B9B9B;
@@ -12278,7 +12319,7 @@ a:hover, a:active, a:focus {
   line-height: 24px;
 }
 @media screen and (max-width: 767px) {
-  /* line 224, ../scss/pages/_ementa.scss */
+  /* line 228, ../scss/pages/_ementa.scss */
   .view-ementa .view-content .group-items .des {
     text-align: center;
     max-width: 360px;
@@ -12289,81 +12330,81 @@ a:hover, a:active, a:focus {
 /**
  * page ementa luzzo dentro.
  */
-/* line 244, ../scss/pages/_ementa.scss */
+/* line 248, ../scss/pages/_ementa.scss */
 .no-container {
   margin-top: 94px;
   margin-bottom: 120px;
 }
 @media screen and (max-width: 768px) {
-  /* line 244, ../scss/pages/_ementa.scss */
+  /* line 248, ../scss/pages/_ementa.scss */
   .no-container {
     margin-top: 70px;
   }
 }
-/* line 251, ../scss/pages/_ementa.scss */
+/* line 255, ../scss/pages/_ementa.scss */
 .no-container .img-container {
   min-height: calc(100vh - 94px);
 }
 @media screen and (max-width: 767px) {
-  /* line 251, ../scss/pages/_ementa.scss */
+  /* line 255, ../scss/pages/_ementa.scss */
   .no-container .img-container {
     height: 60vh;
     min-height: 0;
   }
 }
-/* line 259, ../scss/pages/_ementa.scss */
+/* line 263, ../scss/pages/_ementa.scss */
 .no-container .img-container picture {
   display: block;
   min-height: calc(100vh - 94px);
 }
 @media screen and (max-width: 767px) {
-  /* line 259, ../scss/pages/_ementa.scss */
+  /* line 263, ../scss/pages/_ementa.scss */
   .no-container .img-container picture {
     height: 60vh;
     min-height: 0;
   }
 }
-/* line 269, ../scss/pages/_ementa.scss */
+/* line 273, ../scss/pages/_ementa.scss */
 .no-container .img-container img {
   min-height: calc(100vh - 94px);
   width: 100%;
   object-fit: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 269, ../scss/pages/_ementa.scss */
+  /* line 273, ../scss/pages/_ementa.scss */
   .no-container .img-container img {
     height: 60vh;
     min-height: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 281, ../scss/pages/_ementa.scss */
+  /* line 285, ../scss/pages/_ementa.scss */
   .no-container .coluna-2 {
     padding: 0 40px;
   }
 }
-/* line 286, ../scss/pages/_ementa.scss */
+/* line 290, ../scss/pages/_ementa.scss */
 .no-container .info {
   text-align: left;
 }
 @media screen and (max-width: 767px) {
-  /* line 286, ../scss/pages/_ementa.scss */
+  /* line 290, ../scss/pages/_ementa.scss */
   .no-container .info {
     text-align: center;
   }
 }
-/* line 295, ../scss/pages/_ementa.scss */
+/* line 299, ../scss/pages/_ementa.scss */
 .no-container .extras {
   min-height: 194px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 295, ../scss/pages/_ementa.scss */
+  /* line 299, ../scss/pages/_ementa.scss */
   .no-container .extras {
     min-height: 184px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 295, ../scss/pages/_ementa.scss */
+  /* line 299, ../scss/pages/_ementa.scss */
   .no-container .extras {
     min-height: 42px;
     position: absolute;
@@ -12372,11 +12413,11 @@ a:hover, a:active, a:focus {
     background: #fff;
   }
 }
-/* line 310, ../scss/pages/_ementa.scss */
+/* line 314, ../scss/pages/_ementa.scss */
 .no-container .cat {
   pointer-events: none;
 }
-/* line 315, ../scss/pages/_ementa.scss */
+/* line 319, ../scss/pages/_ementa.scss */
 .no-container .cat, .no-container .cat a {
   margin-top: 100px;
   font-weight: 900;
@@ -12386,13 +12427,13 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
-  /* line 315, ../scss/pages/_ementa.scss */
+  /* line 319, ../scss/pages/_ementa.scss */
   .no-container .cat, .no-container .cat a {
     left: 15px;
     margin-top: 20px;
   }
 }
-/* line 330, ../scss/pages/_ementa.scss */
+/* line 334, ../scss/pages/_ementa.scss */
 .no-container .vegan {
   position: absolute;
   background: url(../img/vegan.svg);
@@ -12405,13 +12446,13 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 330, ../scss/pages/_ementa.scss */
+  /* line 334, ../scss/pages/_ementa.scss */
   .no-container .vegan {
     background-size: 75%;
     background-position: center;
   }
 }
-/* line 346, ../scss/pages/_ementa.scss */
+/* line 350, ../scss/pages/_ementa.scss */
 .no-container .picante {
   position: absolute;
   background: url(../img/picas.svg);
@@ -12424,13 +12465,13 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
-  /* line 346, ../scss/pages/_ementa.scss */
+  /* line 350, ../scss/pages/_ementa.scss */
   .no-container .picante {
     background-size: 75%;
     background-position: center;
   }
 }
-/* line 362, ../scss/pages/_ementa.scss */
+/* line 366, ../scss/pages/_ementa.scss */
 .no-container h2 {
   font-weight: 900;
   font-size: 6rem;
@@ -12440,12 +12481,12 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1200px) {
-  /* line 362, ../scss/pages/_ementa.scss */
+  /* line 366, ../scss/pages/_ementa.scss */
   .no-container h2 {
     font-size: 5rem;
   }
 }
-/* line 375, ../scss/pages/_ementa.scss */
+/* line 379, ../scss/pages/_ementa.scss */
 .no-container .des {
   font-size: 2.4rem;
   color: #9B9B9B;
@@ -12453,59 +12494,61 @@ a:hover, a:active, a:focus {
   line-height: 33px;
 }
 
-/* line 387, ../scss/pages/_ementa.scss */
+/* line 391, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa {
   min-height: 160px;
   padding: 50px 25px;
   max-width: 242px;
 }
 @media screen and (max-width: 767px) {
-  /* line 387, ../scss/pages/_ementa.scss */
+  /* line 391, ../scss/pages/_ementa.scss */
   .view-next-prev-ementa {
     margin: 0 auto;
   }
 }
-/* line 396, ../scss/pages/_ementa.scss */
+/* line 400, ../scss/pages/_ementa.scss */
+.view-next-prev-ementa .entity-pager-list {
+  position: relative;
+}
+/* line 405, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev a {
   background: url(../img/left_bt.svg);
   width: 33px;
   height: 56px;
   position: absolute;
-  margin: auto;
   right: 220px;
-  top: 58px;
+  bottom: 0px;
 }
-/* line 407, ../scss/pages/_ementa.scss */
+/* line 416, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-next a {
   background: url(../img/right_btt.svg);
   width: 33px;
   height: 56px;
   position: absolute;
-  margin: auto;
   left: 220px;
   right: 0;
-  top: 58px;
+  bottom: 0px;
 }
-/* line 418, ../scss/pages/_ementa.scss */
+/* line 426, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-all {
   position: relative;
   margin: 0 auto;
   width: 63px;
   height: 55px;
 }
-/* line 425, ../scss/pages/_ementa.scss */
+/* line 433, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-all a {
   background: url(../img/close_bt.svg);
   display: block;
   width: 63px;
   height: 55px;
 }
-/* line 432, ../scss/pages/_ementa.scss */
+/* line 440, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev, .view-next-prev-ementa .entity-pager-item-next, .view-next-prev-ementa .entity-pager-item-all a {
   opacity: .4;
   transition: opacity .4s ease-in;
 }
-/* line 437, ../scss/pages/_ementa.scss */
+/* line 445, ../scss/pages/_ementa.scss */
 .view-next-prev-ementa .entity-pager-item-prev:hover, .view-next-prev-ementa .ntity-pager-item-next:hover, .view-next-prev-ementa .entity-pager-item-all a:hover {
   opacity: 1 !important;
 }
@@ -12710,28 +12753,31 @@ a:hover, a:active, a:focus {
 /* line 155, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav > li > a:after {
   content: "";
+  position: absolute;
+  left: 0;
+  top: 23px;
   border-bottom: 14px solid;
   border-image: url(../img/zig.svg);
   border-image-slice: 15 1;
   border-image-repeat: round;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 23px;
   -webkit-clip-path: inset(0 100% 0 0);
   clip-path: inset(0 100% 0 0);
   transition: all .3s ease-in;
 }
-/* line 169, ../scss/custom_component/_navigation.scss */
+/* line 172, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav > li > a:hover:after {
   -webkit-clip-path: inset(0 0% 0 0);
   clip-path: inset(0 0% 0 0);
 }
-/* line 176, ../scss/custom_component/_navigation.scss */
+/* line 179, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .last {
   font-weight: 800;
 }
-/* line 180, ../scss/custom_component/_navigation.scss */
+/* line 183, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > a:hover,
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > a:focus,
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .open > a,
@@ -12741,39 +12787,39 @@ a:hover, a:active, a:focus {
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .active > a:focus {
   color: #F4D680;
 }
-/* line 191, ../scss/custom_component/_navigation.scss */
+/* line 194, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .active {
   pointer-events: none;
 }
-/* line 195, ../scss/custom_component/_navigation.scss */
+/* line 198, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .active > a {
   color: #F4D680;
   background-color: transparent;
 }
-/* line 199, ../scss/custom_component/_navigation.scss */
+/* line 202, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav .active > a:after {
   -webkit-clip-path: inset(0 0% 0 0);
   clip-path: inset(0 0% 0 0);
 }
-/* line 204, ../scss/custom_component/_navigation.scss */
+/* line 207, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu {
   background-color: #4B4B4B;
   padding: 0;
   border: 0px solid black;
   border-top: 1px solid #222222;
 }
-/* line 210, ../scss/custom_component/_navigation.scss */
+/* line 213, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li {
   border-bottom: 1px solid #222222;
 }
-/* line 214, ../scss/custom_component/_navigation.scss */
+/* line 217, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a {
   color: white;
   font-size: larger;
   padding: 8px 14px;
   text-transform: uppercase;
 }
-/* line 220, ../scss/custom_component/_navigation.scss */
+/* line 223, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse #block-luzzo-main-menu .navbar-nav li > .dropdown-menu li > a:hover {
   color: #F4D680;
 }
@@ -12797,38 +12843,38 @@ a:hover, a:active, a:focus {
     max-height: 100vh;
     border: none;
   }
-  /* line 249, ../scss/custom_component/_navigation.scss */
+  /* line 252, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav {
     text-align: center !important;
     float: none !important;
   }
-  /* line 253, ../scss/custom_component/_navigation.scss */
+  /* line 256, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav li {
     padding: calc(100vh / 30) 8px !important;
   }
-  /* line 255, ../scss/custom_component/_navigation.scss */
+  /* line 258, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav li a {
     display: inline-block !important;
     font-size: 3rem !important;
   }
-  /* line 258, ../scss/custom_component/_navigation.scss */
+  /* line 261, ../scss/custom_component/_navigation.scss */
   .navbar-inverse #navbar-collapse .navbar-nav li a:after {
     top: 30px !important;
   }
 }
-/* line 270, ../scss/custom_component/_navigation.scss */
+/* line 273, ../scss/custom_component/_navigation.scss */
 .navbar-inverse #navbar-collapse.in {
   opacity: 1;
   transform: perspective(1000px) rotateX(0deg);
 }
 
-/* line 288, ../scss/custom_component/_navigation.scss */
+/* line 291, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li {
   display: inline;
   list-style: none;
   border-right: 1px solid white;
 }
-/* line 293, ../scss/custom_component/_navigation.scss */
+/* line 296, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a {
   display: inline-block;
   padding: 0px 20px;
@@ -12836,12 +12882,12 @@ footer nav[role="navigation"] ul.nav li a {
   color: #fff;
   font-size: smaller;
 }
-/* line 301, ../scss/custom_component/_navigation.scss */
+/* line 304, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-/* line 308, ../scss/custom_component/_navigation.scss */
+/* line 311, ../scss/custom_component/_navigation.scss */
 footer nav[role="navigation"] ul.nav li:last-child {
   border-right: 0px solid white;
 }
@@ -13056,16 +13102,22 @@ footer nav[role="navigation"] ul.nav li:last-child {
   width: 35px !important;
   background-color: #fff;
 }
-/* line 85, ../scss/custom_component/_noticias.scss */
+@media screen and (max-width: 768px) {
+  /* line 61, ../scss/custom_component/_noticias.scss */
+  #block-views-block-slider-noticias-block-1 #flexslider-noticias .flex-control-nav li {
+    display: none;
+  }
+}
+/* line 89, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .flex-control-paging li a.flex-active {
   width: 35px !important;
 }
-/* line 89, ../scss/custom_component/_noticias.scss */
+/* line 93, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li {
   background: #fff;
   position: relative;
 }
-/* line 93, ../scss/custom_component/_noticias.scss */
+/* line 97, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-title {
   font-weight: 700;
   font-size: 1.6rem;
@@ -13076,7 +13128,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 106, ../scss/custom_component/_noticias.scss */
+/* line 110, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-field-de {
   font-size: 1.5rem;
   color: #9B9B9B;
@@ -13085,7 +13137,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-align: center;
   padding: 0px 15px;
 }
-/* line 116, ../scss/custom_component/_noticias.scss */
+/* line 120, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-field-cidade {
   text-align: center;
   position: absolute;
@@ -13093,12 +13145,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   right: 0;
   bottom: 10px;
 }
-/* line 123, ../scss/custom_component/_noticias.scss */
+/* line 127, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-field-cidade .anome {
   border: 1px solid #4A4A4A;
   padding: 9px 20px;
 }
-/* line 128, ../scss/custom_component/_noticias.scss */
+/* line 132, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-field-cidade .btn {
   border-radius: 0;
   background: #fff;
@@ -13113,7 +13165,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   border: none;
   transform: translateX(0%) translateY(-22px);
 }
-/* line 146, ../scss/custom_component/_noticias.scss */
+/* line 150, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-field-cidade .btn:after {
   content: "";
   position: absolute;
@@ -13125,16 +13177,16 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 157, ../scss/custom_component/_noticias.scss */
+/* line 161, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-field-cidade .btn:hover {
   text-decoration: none;
 }
-/* line 160, ../scss/custom_component/_noticias.scss */
+/* line 164, ../scss/custom_component/_noticias.scss */
 #block-views-block-slider-noticias-block-1 #flexslider-noticias .slides > li .views-field-field-cidade .btn:hover:after {
   width: 100% !important;
 }
 
-/* line 169, ../scss/custom_component/_noticias.scss */
+/* line 173, ../scss/custom_component/_noticias.scss */
 .modal-dialog {
   transition: transform 1.6s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 1.6s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform-origin: top center;
@@ -13147,47 +13199,47 @@ footer nav[role="navigation"] ul.nav li:last-child {
   width: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 169, ../scss/custom_component/_noticias.scss */
+  /* line 173, ../scss/custom_component/_noticias.scss */
   .modal-dialog {
     width: 450px;
     margin: 30px auto;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 169, ../scss/custom_component/_noticias.scss */
+  /* line 173, ../scss/custom_component/_noticias.scss */
   .modal-dialog {
     width: 100%;
     margin: 30px auto;
   }
 }
 
-/* line 189, ../scss/custom_component/_noticias.scss */
+/* line 193, ../scss/custom_component/_noticias.scss */
 .modal.in .modal-dialog {
   opacity: 1;
   transform: perspective(1000px) rotateX(0deg);
 }
 
-/* line 195, ../scss/custom_component/_noticias.scss */
+/* line 199, ../scss/custom_component/_noticias.scss */
 .modal-content {
   padding: 20px;
   border-radius: 0;
 }
-/* line 199, ../scss/custom_component/_noticias.scss */
+/* line 203, ../scss/custom_component/_noticias.scss */
 .modal-content .modal-body {
   padding-bottom: 30px;
 }
-/* line 203, ../scss/custom_component/_noticias.scss */
+/* line 207, ../scss/custom_component/_noticias.scss */
 .modal-content .cz {
   z-index: 1;
 }
-/* line 206, ../scss/custom_component/_noticias.scss */
+/* line 210, ../scss/custom_component/_noticias.scss */
 .modal-content .topclose {
   z-index: 10;
   top: 6px;
   position: absolute;
   right: 10px;
 }
-/* line 212, ../scss/custom_component/_noticias.scss */
+/* line 216, ../scss/custom_component/_noticias.scss */
 .modal-content h2 {
   font-weight: 900;
   font-size: 2.3rem;
@@ -13198,12 +13250,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
-  /* line 212, ../scss/custom_component/_noticias.scss */
+  /* line 216, ../scss/custom_component/_noticias.scss */
   .modal-content h2 {
     padding: 15px 0;
   }
 }
-/* line 226, ../scss/custom_component/_noticias.scss */
+/* line 230, ../scss/custom_component/_noticias.scss */
 .modal-content p {
   font-size: 1.6rem;
   color: #9B9B9B;
@@ -13211,17 +13263,17 @@ footer nav[role="navigation"] ul.nav li:last-child {
   line-height: 23px;
 }
 @media screen and (max-width: 768px) {
-  /* line 226, ../scss/custom_component/_noticias.scss */
+  /* line 230, ../scss/custom_component/_noticias.scss */
   .modal-content p {
     font-size: 1.7rem;
   }
 }
-/* line 235, ../scss/custom_component/_noticias.scss */
+/* line 239, ../scss/custom_component/_noticias.scss */
 .modal-content .bodydesc {
   margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
-  /* line 235, ../scss/custom_component/_noticias.scss */
+  /* line 239, ../scss/custom_component/_noticias.scss */
   .modal-content .bodydesc {
     margin-top: 0px;
   }
@@ -13232,9 +13284,16 @@ footer nav[role="navigation"] ul.nav li:last-child {
  */
 /* line 6, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 {
-  margin-top: 0px;
+  margin-top: 113px;
+  transition: margin-top .3s ease-in;
 }
-/* line 10, ../scss/custom_component/_visite.scss */
+@media screen and (max-width: 768px) {
+  /* line 6, ../scss/custom_component/_visite.scss */
+  #block-views-block-visite-nos-block-1 {
+    margin-top: 90px;
+  }
+}
+/* line 16, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .view-header {
   font-size: 1.8rem;
   color: #4A4A4A;
@@ -13242,7 +13301,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-align: center;
   margin-bottom: 60px;
 }
-/* line 18, ../scss/custom_component/_visite.scss */
+/* line 24, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 > h2 {
   position: relative;
   font-weight: 300;
@@ -13259,12 +13318,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transform: translateX(-50%);
 }
 @media screen and (max-width: 767px) {
-  /* line 18, ../scss/custom_component/_visite.scss */
+  /* line 24, ../scss/custom_component/_visite.scss */
   #block-views-block-visite-nos-block-1 > h2 {
     letter-spacing: 3.12px;
   }
 }
-/* line 38, ../scss/custom_component/_visite.scss */
+/* line 44, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 > h2:before, #block-views-block-visite-nos-block-1 > h2:after {
   content: "";
   border-top: 1px solid #9B9B9B;
@@ -13272,34 +13331,34 @@ footer nav[role="navigation"] ul.nav li:last-child {
   position: absolute;
   top: 47%;
 }
-/* line 46, ../scss/custom_component/_visite.scss */
+/* line 52, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 > h2:before {
   right: 100%;
   margin-right: 15px;
 }
-/* line 50, ../scss/custom_component/_visite.scss */
+/* line 56, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 > h2:after {
   left: 100%;
   margin-left: 15px;
 }
-/* line 55, ../scss/custom_component/_visite.scss */
+/* line 61, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .location-title {
   margin: 0;
 }
-/* line 59, ../scss/custom_component/_visite.scss */
+/* line 65, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 {
   margin-top: 10px;
 }
-/* line 61, ../scss/custom_component/_visite.scss */
+/* line 67, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 a {
   position: relative;
   color: #4A4A4A;
 }
-/* line 65, ../scss/custom_component/_visite.scss */
+/* line 71, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 a:hover {
   text-decoration: none;
 }
-/* line 69, ../scss/custom_component/_visite.scss */
+/* line 75, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 a:before {
   content: "";
   position: absolute;
@@ -13311,11 +13370,11 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 81, ../scss/custom_component/_visite.scss */
+/* line 87, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 a:hover:before {
   width: 100%;
 }
-/* line 85, ../scss/custom_component/_visite.scss */
+/* line 91, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-field-morada- {
   font-size: 1.6rem;
 }
@@ -13330,19 +13389,22 @@ footer nav[role="navigation"] ul.nav li:last-child {
 /* line 10, ../scss/custom_component/_testemunhos.scss */
 #flexslider-testemunhos:before {
   content: "";
-  border-bottom: 30px solid;
-  border-image: url(../img/zig-cinza.svg);
-  border-image-slice: 15 1;
-  border-image-repeat: round;
-  width: 70%;
   position: absolute;
   left: 0;
-  transition: all .3s ease-in;
-  right: 0;
-  margin: auto;
   top: -19px;
+  right: 0;
+  border-bottom: 30px solid;
+  border-image: url(../img/zig-cinza-30.svg);
+  border-image-slice: 30 1;
+  border-image-repeat: round;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  width: 70%;
+  margin: auto;
+  transition: all .3s ease-in;
 }
-/* line 31, ../scss/custom_component/_testemunhos.scss */
+/* line 35, ../scss/custom_component/_testemunhos.scss */
 #flexslider-testemunhos .views-field-field-frase blockquote {
   text-align: center;
   margin: 0;
@@ -13354,7 +13416,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   color: #4A4A4A;
   letter-spacing: 4.03px;
 }
-/* line 43, ../scss/custom_component/_testemunhos.scss */
+/* line 47, ../scss/custom_component/_testemunhos.scss */
 #flexslider-testemunhos .views-field-field-fonte p {
   text-align: center;
   font-weight: 300;
@@ -13363,7 +13425,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   letter-spacing: 2.57px;
   line-height: 43px;
 }
-/* line 55, ../scss/custom_component/_testemunhos.scss */
+/* line 59, ../scss/custom_component/_testemunhos.scss */
 #flexslider-testemunhos .flex-control-nav li a {
   width: 20px;
   height: 20px;
@@ -13376,7 +13438,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   box-shadow: none;
   transition: width .4s;
 }
-/* line 67, ../scss/custom_component/_testemunhos.scss */
+/* line 71, ../scss/custom_component/_testemunhos.scss */
 #flexslider-testemunhos .flex-control-nav li a.flex-active {
   width: 35px !important;
   background-color: #e8e8e8;
@@ -13576,19 +13638,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   width: 90%;
   transform: translate(0, 40vh);
   overflow: visible;
-  max-width: 960px;
+  max-width: 1020px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1020px) {
   /* line 14, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-dialog {
-    width: 95%;
-    max-width: 940px;
-  }
-}
-@media screen and (max-width: 980px) {
-  /* line 14, ../scss/custom_component/_reservas.scss */
-  #block-views-block-reservas-luzzo-block-1 .modal-dialog {
-    max-width: 640px;
+    max-width: 770px;
   }
 }
 @media screen and (max-width: 695px) {
@@ -13598,12 +13653,13 @@ footer nav[role="navigation"] ul.nav li:last-child {
     transform: translate(0, 20vh);
   }
 }
-/* line 32, ../scss/custom_component/_reservas.scss */
+/* line 29, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-content {
   background-color: #EFEBEB;
-  min-height: 150px;
+  min-height: 140px;
+  padding: 0;
 }
-/* line 37, ../scss/custom_component/_reservas.scss */
+/* line 35, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header {
   position: absolute;
   top: -80px;
@@ -13611,33 +13667,33 @@ footer nav[role="navigation"] ul.nav li:last-child {
   border: none;
 }
 @media screen and (max-width: 418px) {
-  /* line 37, ../scss/custom_component/_reservas.scss */
+  /* line 35, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header {
     padding: 15px 17px;
   }
 }
 @media screen and (max-width: 390px) {
-  /* line 37, ../scss/custom_component/_reservas.scss */
+  /* line 35, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header {
     padding: 15px 0px;
     right: 1px;
   }
 }
 @media screen and (max-width: 350px) {
-  /* line 37, ../scss/custom_component/_reservas.scss */
+  /* line 35, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header {
     padding: 15px 17px;
   }
 }
-/* line 48, ../scss/custom_component/_reservas.scss */
+/* line 46, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
   font-size: 3.6rem;
   color: #fff;
   font-weight: 400;
   padding-right: 80px;
 }
-@media screen and (max-width: 624px) {
-  /* line 48, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 650px) {
+  /* line 46, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
     position: relative;
     bottom: 23px;
@@ -13645,12 +13701,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 350px) {
-  /* line 48, ../scss/custom_component/_reservas.scss */
+  /* line 46, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
     bottom: 55px;
   }
 }
-/* line 61, ../scss/custom_component/_reservas.scss */
+/* line 59, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .close {
   background: url(../img/close_bt.svg);
   display: block;
@@ -13663,70 +13719,76 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition: all .3s ease-out;
   z-index: 10;
 }
-/* line 72, ../scss/custom_component/_reservas.scss */
+/* line 70, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .close:hover {
   filter: brightness(2);
 }
-/* line 75, ../scss/custom_component/_reservas.scss */
+/* line 73, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .close span {
   display: none;
 }
-@media screen and (max-width: 1020px) {
-  /* line 82, ../scss/custom_component/_reservas.scss */
+/* line 80, ../scss/custom_component/_reservas.scss */
+#block-views-block-reservas-luzzo-block-1 .modal-body {
+  padding: 0;
+  padding-top: 30px;
+}
+@media screen and (max-width: 695px) {
+  /* line 80, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-body {
-    padding: 15px;
+    padding: 30px;
   }
 }
-@media screen and (max-width: 465px) {
-  /* line 82, ../scss/custom_component/_reservas.scss */
-  #block-views-block-reservas-luzzo-block-1 .modal-body {
-    padding: 15px 0px;
-  }
-}
-/* line 90, ../scss/custom_component/_reservas.scss */
+/* line 86, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-body .select-wrapper {
   width: auto;
 }
 @media screen and (max-width: 695px) {
-  /* line 90, ../scss/custom_component/_reservas.scss */
+  /* line 86, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-body .select-wrapper {
     width: 100%;
   }
 }
-/* line 98, ../scss/custom_component/_reservas.scss */
+/* line 94, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 form {
   position: relative;
   top: 20px;
   height: 35px;
+  text-align: center;
 }
 @media screen and (max-width: 695px) {
-  /* line 98, ../scss/custom_component/_reservas.scss */
+  /* line 94, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 form {
     top: 0;
     height: auto;
   }
 }
-/* line 108, ../scss/custom_component/_reservas.scss */
+/* line 105, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="na_hora_"] {
   max-width: 122px;
 }
-/* line 112, ../scss/custom_component/_reservas.scss */
+/* line 109, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="e_somos_"] {
   max-width: 122px;
 }
-/* line 116, ../scss/custom_component/_reservas.scss */
+/* line 113, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
-  max-width: 120px;
+  max-width: 180px;
 }
-@media screen and (max-width: 980px) {
-  /* line 116, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1040px) {
+  /* line 113, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
     max-width: 150px;
   }
 }
+@media screen and (max-width: 1020px) {
+  /* line 113, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
+    max-width: 210px;
+  }
+}
 /* line 123, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="telefone_"] {
-  max-width: 120px;
+  max-width: 125px;
 }
 /* line 127, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="no_dia_"] {
@@ -13742,13 +13804,13 @@ footer nav[role="navigation"] ul.nav li:last-child {
 #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
   max-width: 200px;
 }
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1040px) {
   /* line 133, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
     max-width: 180px;
   }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1040px) {
   /* line 133, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
     max-width: 220px;
@@ -13765,12 +13827,6 @@ footer nav[role="navigation"] ul.nav li:last-child {
   display: inline;
   padding-left: 10px;
 }
-@media screen and (max-width: 1030px) {
-  /* line 149, ../scss/custom_component/_reservas.scss */
-  #block-views-block-reservas-luzzo-block-1 .form-group {
-    padding-left: 10px;
-  }
-}
 @media screen and (max-width: 695px) {
   /* line 149, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-group {
@@ -13779,17 +13835,17 @@ footer nav[role="navigation"] ul.nav li:last-child {
     padding-left: 0;
   }
 }
-/* line 164, ../scss/custom_component/_reservas.scss */
+/* line 161, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-group:first-child {
   position: relative;
   bottom: 0;
   padding-left: 0px;
 }
-/* line 173, ../scss/custom_component/_reservas.scss */
+/* line 170, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-wizard-pages-links {
   display: none;
 }
-/* line 177, ../scss/custom_component/_reservas.scss */
+/* line 174, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-control {
   border-radius: 0;
   border: 1px solid #F4D680;
@@ -13798,19 +13854,19 @@ footer nav[role="navigation"] ul.nav li:last-child {
   line-height: 20px !important;
 }
 @media screen and (max-width: 768px) {
-  /* line 177, ../scss/custom_component/_reservas.scss */
+  /* line 174, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-control {
     max-width: 122px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 177, ../scss/custom_component/_reservas.scss */
+  /* line 174, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-control {
     max-width: none;
     width: 100%;
   }
 }
-/* line 193, ../scss/custom_component/_reservas.scss */
+/* line 190, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-button--next {
   display: block;
   left: 118px;
@@ -13825,7 +13881,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 5.0rem;
   outline: none;
 }
-/* line 208, ../scss/custom_component/_reservas.scss */
+/* line 205, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-button--previous {
   display: block;
   left: 0;
@@ -13840,7 +13896,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 5.0rem;
   outline: none;
 }
-/* line 223, ../scss/custom_component/_reservas.scss */
+/* line 220, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-progress {
   position: absolute;
   font-size: 48px;
@@ -13850,57 +13906,59 @@ footer nav[role="navigation"] ul.nav li:last-child {
   margin: auto;
   top: calc(100% + 54px);
 }
-/* line 234, ../scss/custom_component/_reservas.scss */
+/* line 231, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
   font-weight: 400;
   font-size: 1.6rem;
   color: #4A4A4A;
 }
-@media screen and (max-width: 980px) {
-  /* line 234, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 231, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
     position: absolute;
     bottom: 25px;
     transform: translateX(10px);
+    min-width: 120px;
+    text-align: left;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 234, ../scss/custom_component/_reservas.scss */
+  /* line 231, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
     position: relative;
     display: block;
     bottom: 0;
   }
 }
-@media screen and (max-width: 980px) {
-  /* line 250, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 249, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
     bottom: 30px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 250, ../scss/custom_component/_reservas.scss */
+  /* line 249, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
     bottom: 0px;
   }
 }
-@media screen and (max-width: 980px) {
-  /* line 254, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 253, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
     bottom: 30px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 254, ../scss/custom_component/_reservas.scss */
+  /* line 253, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
     bottom: 0;
   }
 }
-/* line 263, ../scss/custom_component/_reservas.scss */
+/* line 262, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-required:after {
   display: none;
 }
-/* line 267, ../scss/custom_component/_reservas.scss */
+/* line 266, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .messages__wrapper {
   position: absolute;
   display: block;
@@ -13911,88 +13969,107 @@ footer nav[role="navigation"] ul.nav li:last-child {
   max-width: 320px;
   top: calc(100% + 70px);
 }
-/* line 277, ../scss/custom_component/_reservas.scss */
+/* line 276, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .messages__wrapper .alert-danger {
   background-color: #ffffff;
   border-radius: 0;
 }
-/* line 283, ../scss/custom_component/_reservas.scss */
+/* line 282, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
   float: left;
   width: 50%;
 }
+@media screen and (max-width: 1020px) {
+  /* line 282, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
+    bottom: 10px !important;
+  }
+}
 @media screen and (max-width: 695px) {
-  /* line 283, ../scss/custom_component/_reservas.scss */
+  /* line 282, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
     width: 100%;
     float: none;
   }
 }
-/* line 291, ../scss/custom_component/_reservas.scss */
+/* line 292, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
   position: relative;
   bottom: 10px;
 }
 @media screen and (max-width: 695px) {
-  /* line 291, ../scss/custom_component/_reservas.scss */
+  /* line 292, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
     bottom: 0;
   }
 }
-/* line 298, ../scss/custom_component/_reservas.scss */
+/* line 299, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
   display: inline;
   max-width: 300px;
 }
 @media screen and (max-width: 695px) {
-  /* line 298, ../scss/custom_component/_reservas.scss */
+  /* line 299, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
     max-width: 100%;
   }
 }
-/* line 303, ../scss/custom_component/_reservas.scss */
+/* line 304, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
   max-width: 280px;
 }
+@media screen and (max-width: 1020px) {
+  /* line 304, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
+    max-width: 220px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 304, ../scss/custom_component/_reservas.scss */
+  #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
+    max-width: 180px;
+  }
+}
 @media screen and (max-width: 695px) {
-  /* line 303, ../scss/custom_component/_reservas.scss */
+  /* line 304, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
     max-width: 100%;
     height: 7rem;
   }
 }
-/* line 311, ../scss/custom_component/_reservas.scss */
+/* line 315, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .checkbox {
   position: relative;
   display: block;
   margin: 0;
   float: left;
-  width: 50%;
+  width: 44%;
+  text-align: left;
 }
 @media screen and (max-width: 695px) {
-  /* line 311, ../scss/custom_component/_reservas.scss */
+  /* line 315, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox {
     width: 100%;
     float: none;
   }
 }
-/* line 322, ../scss/custom_component/_reservas.scss */
+/* line 327, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .checkbox label {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
-@media screen and (max-width: 980px) {
-  /* line 322, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 327, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox label {
-    bottom: -40px;
+    top: -10px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 322, ../scss/custom_component/_reservas.scss */
+  /* line 327, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox label {
     bottom: 0;
   }
 }
-/* line 332, ../scss/custom_component/_reservas.scss */
+/* line 337, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas {
   position: absolute;
   display: inline-block;
@@ -14014,13 +14091,13 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition-delay: .3s;
 }
 @media screen and (max-width: 468px) {
-  /* line 332, ../scss/custom_component/_reservas.scss */
+  /* line 337, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .submit-reservas {
     left: 0;
     top: calc(100% + 130px);
   }
 }
-/* line 359, ../scss/custom_component/_reservas.scss */
+/* line 364, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:before {
   content: "";
   position: absolute;
@@ -14032,34 +14109,34 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 370, ../scss/custom_component/_reservas.scss */
+/* line 375, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:hover {
   text-decoration: none;
   color: #4A4A4A;
 }
-/* line 374, ../scss/custom_component/_reservas.scss */
+/* line 379, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:hover:before {
   width: 100%;
 }
-@media screen and (max-width: 980px) {
-  /* line 379, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 384, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] {
     position: relative;
     top: 10px;
   }
 }
-/* line 384, ../scss/custom_component/_reservas.scss */
+/* line 389, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group {
   padding-left: 0px;
 }
-@media screen and (max-width: 980px) {
-  /* line 387, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 392, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group:first-child {
     bottom: 7px;
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 395, ../scss/custom_component/_reservas.scss */
+  /* line 400, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-progress {
     margin: unset !important;
     right: unset !important;
@@ -14067,39 +14144,45 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 404, ../scss/custom_component/_reservas.scss */
+  /* line 409, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-button--previous {
     right: unset !important;
     left: -15px !important;
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 413, ../scss/custom_component/_reservas.scss */
+  /* line 418, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .submit-reservas {
     left: 115px;
     top: calc(100% + 135px);
   }
 }
-@media screen and (max-width: 980px) {
-  /* line 420, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 425, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"] {
     position: relative;
     top: 10px;
   }
 }
-/* line 425, ../scss/custom_component/_reservas.scss */
+/* line 430, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"].form-group {
   padding-left: 0px;
 }
-@media screen and (max-width: 980px) {
-  /* line 429, ../scss/custom_component/_reservas.scss */
+@media screen and (max-width: 1020px) {
+  /* line 434, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="page_2"] {
     position: relative;
     top: 10px;
   }
 }
 
-/* line 439, ../scss/custom_component/_reservas.scss */
+/* line 444, ../scss/custom_component/_reservas.scss */
+.webform-confirmation {
+  position: relative;
+  bottom: 30px;
+}
+
+/* line 449, ../scss/custom_component/_reservas.scss */
 .modal-backdrop.in {
   opacity: 0.8;
   filter: alpha(opacity=80);

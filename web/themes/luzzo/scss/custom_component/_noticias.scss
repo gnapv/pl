@@ -58,7 +58,7 @@
 			z-index: 35;
 			bottom: -65px;
 
-		    	li {
+		    li {
 		    		line-height: 0;
 		    	  a{
 					width: 20px;
@@ -75,13 +75,17 @@
 					&.flex-active{
 						width: 35px!important;
 			    		background-color: #fff;
-
-
 					}
-				 }
+				}
+
+			@media screen and (max-width: $screen-sm) {
+					display: none;
+		 	}
 				
-				}			
+		}
+
 	}
+
 	.flex-control-paging li a.flex-active{
 		width: 35px!important;
 	}
