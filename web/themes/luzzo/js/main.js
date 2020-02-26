@@ -41,11 +41,11 @@ function findType() {
     onLoja = false;
     onEmenta = false;
     onEmentaItem = false;
-    classList = ['path-home','page-node-type-luzzo','page-node-type-franchising','path-lojas','page-node-type-loja','path-ementa','page-node-type-ementa'];
+    classList = ['path-home','page-node-type-luzzo','page-node-type-franchising','path-lojas','page-node-type-loja','path-ementa','page-node-type-ementa','path-frontpage'];
 
     var classBody = jQuery('body').attr('class').split(' ');
 
-  if (jQuery('body').hasClass(classList[0]) == true) {
+  if (jQuery('body').hasClass(classList[0]) == true || jQuery('body').hasClass(classList[7]) == true) {
     onHome = true;
     finalType = "onHome";
   } else if (jQuery('body').hasClass(classList[1]) == true) {
