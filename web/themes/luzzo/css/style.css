@@ -10269,22 +10269,29 @@ body {
 }
 
 /* line 80, ../scss/_global.scss */
+.path-user .user-login-form {
+  margin: 130px 0;
+  padding: 0 60px;
+  max-width: 400px;
+}
+
+/* line 86, ../scss/_global.scss */
 .messages__wrapper {
   display: none;
 }
 
-/* line 84, ../scss/_global.scss */
+/* line 90, ../scss/_global.scss */
 a {
   outline: none !important;
 }
 
-/* line 87, ../scss/_global.scss */
+/* line 93, ../scss/_global.scss */
 a:hover, a:active, a:focus {
   text-decoration: none !important;
   color: #4A4A4A;
 }
 
-/* line 92, ../scss/_global.scss */
+/* line 98, ../scss/_global.scss */
 .anima-back {
   display: inline-block;
   position: relative;
@@ -10295,12 +10302,12 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   padding: 8px 0px;
 }
-/* line 102, ../scss/_global.scss */
+/* line 108, ../scss/_global.scss */
 .anima-back .anome {
   border: 1px solid #4A4A4A;
   padding: 9px 20px;
 }
-/* line 106, ../scss/_global.scss */
+/* line 112, ../scss/_global.scss */
 .anima-back:after {
   content: "";
   position: absolute;
@@ -10312,61 +10319,61 @@ a:hover, a:active, a:focus {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 117, ../scss/_global.scss */
+/* line 123, ../scss/_global.scss */
 .anima-back:hover, .anima-back:active {
   text-decoration: none;
   color: #4A4A4A !important;
 }
-/* line 121, ../scss/_global.scss */
+/* line 127, ../scss/_global.scss */
 .anima-back:hover:after {
   width: 100% !important;
 }
 
 /* Content animations */
-/* line 132, ../scss/_global.scss */
+/* line 138, ../scss/_global.scss */
 .loaded .logo,
 .loaded .menu li {
   -webkit-animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 138, ../scss/_global.scss */
+/* line 144, ../scss/_global.scss */
 .loaded .logo {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 140, ../scss/_global.scss */
+/* line 146, ../scss/_global.scss */
 .loaded .menu li:nth-child(1) {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 141, ../scss/_global.scss */
+/* line 147, ../scss/_global.scss */
 .loaded .menu li:nth-child(2) {
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
 
-/* line 142, ../scss/_global.scss */
+/* line 148, ../scss/_global.scss */
 .loaded .menu li:nth-child(3) {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 143, ../scss/_global.scss */
+/* line 149, ../scss/_global.scss */
 .loaded .menu li:nth-child(4) {
   -webkit-animation-delay: 0.85s;
   animation-delay: 0.85s;
 }
 
-/* line 144, ../scss/_global.scss */
+/* line 150, ../scss/_global.scss */
 .loaded .menu li:nth-child(5) {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 149, ../scss/_global.scss */
+/* line 155, ../scss/_global.scss */
 .loaded #page-luzzo .field--name-field-ilustra-logo,
 .loaded #page-luzzo h2,
 .loaded #page-luzzo hr,
@@ -10377,31 +10384,31 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 159, ../scss/_global.scss */
+/* line 165, ../scss/_global.scss */
 .loaded #page-luzzo .field--name-field-ilustra-logo {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-/* line 160, ../scss/_global.scss */
+/* line 166, ../scss/_global.scss */
 .loaded #page-luzzo h2 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-/* line 161, ../scss/_global.scss */
+/* line 167, ../scss/_global.scss */
 .loaded #page-luzzo hr {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-/* line 162, ../scss/_global.scss */
+/* line 168, ../scss/_global.scss */
 .loaded #page-luzzo .field--name-field-imagem-texto-luzzo {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-/* line 166, ../scss/_global.scss */
+/* line 172, ../scss/_global.scss */
 .loaded #page-franchising .field--name-field-ilustra-logo,
 .loaded #page-franchising h1,
 .loaded #page-franchising .texto-intro,
@@ -10412,43 +10419,43 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 177, ../scss/_global.scss */
+/* line 183, ../scss/_global.scss */
 .loaded #page-franchising .field--name-field-ilustra-logo {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-/* line 178, ../scss/_global.scss */
+/* line 184, ../scss/_global.scss */
 .loaded #page-franchising h1 {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-/* line 179, ../scss/_global.scss */
+/* line 185, ../scss/_global.scss */
 .loaded #page-franchising .texto-intro {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 180, ../scss/_global.scss */
+/* line 186, ../scss/_global.scss */
 .loaded #page-franchising #p--1-col-center-svg h2 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 181, ../scss/_global.scss */
+/* line 187, ../scss/_global.scss */
 .loaded #page-franchising #p--1-col-center-svg hr {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 182, ../scss/_global.scss */
+/* line 188, ../scss/_global.scss */
 .loaded #page-franchising .field--name-field-imagem-texto-luzzo {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-/* line 186, ../scss/_global.scss */
+/* line 192, ../scss/_global.scss */
 .loaded .view-id-ementa h1,
 .loaded .view-id-ementa p,
 .loaded .view-id-ementa .tit-cat,
@@ -10458,49 +10465,49 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 195, ../scss/_global.scss */
+/* line 201, ../scss/_global.scss */
 .loaded .view-id-ementa h1 {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 196, ../scss/_global.scss */
+/* line 202, ../scss/_global.scss */
 .loaded .view-id-ementa p {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 197, ../scss/_global.scss */
+/* line 203, ../scss/_global.scss */
 .loaded .view-id-ementa .tit-cat {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 198, ../scss/_global.scss */
+/* line 204, ../scss/_global.scss */
 .loaded .view-id-ementa h3 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-/* line 199, ../scss/_global.scss */
+/* line 205, ../scss/_global.scss */
 .loaded .view-id-ementa .group-items div:nth-of-type(1) {
   -webkit-animation-delay: 1.1s;
   animation-delay: 1.1s;
 }
 
-/* line 200, ../scss/_global.scss */
+/* line 206, ../scss/_global.scss */
 .loaded .view-id-ementa .group-items div:nth-of-type(2) {
   -webkit-animation-delay: 1.15s;
   animation-delay: 1.15s;
 }
 
-/* line 201, ../scss/_global.scss */
+/* line 207, ../scss/_global.scss */
 .loaded .view-id-ementa .group-items div:nth-of-type(3) {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
 
-/* line 205, ../scss/_global.scss */
+/* line 211, ../scss/_global.scss */
 .loaded .no-container .img-container,
 .loaded .no-container .extras,
 .loaded .no-container .cat,
@@ -10511,43 +10518,43 @@ a:hover, a:active, a:focus {
   animation: animLoadedContent 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
-/* line 215, ../scss/_global.scss */
+/* line 221, ../scss/_global.scss */
 .loaded .logo {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 217, ../scss/_global.scss */
+/* line 223, ../scss/_global.scss */
 .loaded .no-container .img-container {
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-/* line 218, ../scss/_global.scss */
+/* line 224, ../scss/_global.scss */
 .loaded .no-container .extras {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 219, ../scss/_global.scss */
+/* line 225, ../scss/_global.scss */
 .loaded .no-container .cat {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-/* line 220, ../scss/_global.scss */
+/* line 226, ../scss/_global.scss */
 .loaded .no-container h2 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-/* line 221, ../scss/_global.scss */
+/* line 227, ../scss/_global.scss */
 .loaded .no-container .des {
   -webkit-animation-delay: 1.1s;
   animation-delay: 1.1s;
 }
 
-/* line 222, ../scss/_global.scss */
+/* line 228, ../scss/_global.scss */
 .loaded .no-container .view-next-prev-ementa {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
@@ -13213,33 +13220,53 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 
-/* line 193, ../scss/custom_component/_noticias.scss */
+/* line 194, ../scss/custom_component/_noticias.scss */
 .modal.in .modal-dialog {
   opacity: 1;
   transform: perspective(1000px) rotateX(0deg);
 }
 
-/* line 199, ../scss/custom_component/_noticias.scss */
+/* line 200, ../scss/custom_component/_noticias.scss */
 .modal-content {
   padding: 20px;
   border-radius: 0;
 }
-/* line 203, ../scss/custom_component/_noticias.scss */
+/* line 204, ../scss/custom_component/_noticias.scss */
 .modal-content .modal-body {
   padding-bottom: 30px;
 }
-/* line 207, ../scss/custom_component/_noticias.scss */
+/* line 208, ../scss/custom_component/_noticias.scss */
 .modal-content .cz {
   z-index: 1;
 }
-/* line 210, ../scss/custom_component/_noticias.scss */
+/* line 212, ../scss/custom_component/_noticias.scss */
 .modal-content .topclose {
   z-index: 10;
-  top: 6px;
+  top: 8px;
   position: absolute;
   right: 10px;
 }
-/* line 216, ../scss/custom_component/_noticias.scss */
+@media screen and (max-width: 768px) {
+  /* line 212, ../scss/custom_component/_noticias.scss */
+  .modal-content .topclose {
+    top: -17px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 223, ../scss/custom_component/_noticias.scss */
+  .modal-content .close {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 229, ../scss/custom_component/_noticias.scss */
+  .modal-content .modal-footer .ui-dialog-titlebar-close {
+    position: relative;
+    right: -30px;
+  }
+}
+/* line 236, ../scss/custom_component/_noticias.scss */
 .modal-content h2 {
   font-weight: 900;
   font-size: 2.3rem;
@@ -13250,12 +13277,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
-  /* line 216, ../scss/custom_component/_noticias.scss */
+  /* line 236, ../scss/custom_component/_noticias.scss */
   .modal-content h2 {
     padding: 15px 0;
   }
 }
-/* line 230, ../scss/custom_component/_noticias.scss */
+/* line 250, ../scss/custom_component/_noticias.scss */
 .modal-content p {
   font-size: 1.6rem;
   color: #9B9B9B;
@@ -13263,17 +13290,17 @@ footer nav[role="navigation"] ul.nav li:last-child {
   line-height: 23px;
 }
 @media screen and (max-width: 768px) {
-  /* line 230, ../scss/custom_component/_noticias.scss */
+  /* line 250, ../scss/custom_component/_noticias.scss */
   .modal-content p {
     font-size: 1.7rem;
   }
 }
-/* line 239, ../scss/custom_component/_noticias.scss */
+/* line 259, ../scss/custom_component/_noticias.scss */
 .modal-content .bodydesc {
   margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
-  /* line 239, ../scss/custom_component/_noticias.scss */
+  /* line 259, ../scss/custom_component/_noticias.scss */
   .modal-content .bodydesc {
     margin-top: 0px;
   }
