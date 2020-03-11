@@ -10596,7 +10596,13 @@ a:hover, a:active, a:focus {
     height: 85%;
   }
 }
-/* line 28, ../scss/pages/_luzzo.scss */
+@media screen and (max-width: 420px) {
+  /* line 12, ../scss/pages/_luzzo.scss */
+  #page-luzzo .full-back:before {
+    height: 84%;
+  }
+}
+/* line 31, ../scss/pages/_luzzo.scss */
 #page-luzzo .field--name-field-ilustra-logo {
   max-width: 70%;
   position: relative;
@@ -10606,31 +10612,31 @@ a:hover, a:active, a:focus {
   margin-top: 140px;
   margin-bottom: 140px;
 }
-/* line 37, ../scss/pages/_luzzo.scss */
+/* line 40, ../scss/pages/_luzzo.scss */
 #page-luzzo .field--name-field-ilustra-logo img {
   top: -150px;
   position: relative;
 }
 @media screen and (max-width: 1080px) {
-  /* line 37, ../scss/pages/_luzzo.scss */
+  /* line 40, ../scss/pages/_luzzo.scss */
   #page-luzzo .field--name-field-ilustra-logo img {
     top: -100px;
   }
 }
 @media screen and (max-width: 892px) {
-  /* line 37, ../scss/pages/_luzzo.scss */
+  /* line 40, ../scss/pages/_luzzo.scss */
   #page-luzzo .field--name-field-ilustra-logo img {
     top: 0px;
     transform: scale(1.5) !important;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 28, ../scss/pages/_luzzo.scss */
+  /* line 31, ../scss/pages/_luzzo.scss */
   #page-luzzo .field--name-field-ilustra-logo {
     margin-bottom: 80px;
   }
 }
-/* line 55, ../scss/pages/_luzzo.scss */
+/* line 58, ../scss/pages/_luzzo.scss */
 #page-luzzo h2 {
   font-weight: 700;
   font-size: 2.4rem;
@@ -10638,16 +10644,16 @@ a:hover, a:active, a:focus {
   letter-spacing: 3.33px;
 }
 @media screen and (max-width: 768px) {
-  /* line 55, ../scss/pages/_luzzo.scss */
+  /* line 58, ../scss/pages/_luzzo.scss */
   #page-luzzo h2 {
     text-align: center;
   }
 }
-/* line 64, ../scss/pages/_luzzo.scss */
+/* line 67, ../scss/pages/_luzzo.scss */
 #page-luzzo hr {
   border: 1px solid #F4D680;
 }
-/* line 72, ../scss/pages/_luzzo.scss */
+/* line 75, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
   font-weight: 400;
   font-size: 2rem;
@@ -10656,18 +10662,18 @@ a:hover, a:active, a:focus {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 72, ../scss/pages/_luzzo.scss */
+  /* line 75, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 72, ../scss/pages/_luzzo.scss */
+  /* line 75, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem .field--name-field-corpo-texto-luzzo {
     text-align: center;
   }
 }
-/* line 87, ../scss/pages/_luzzo.scss */
+/* line 90, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem img {
   position: relative;
   bottom: 50px;
@@ -10675,25 +10681,25 @@ a:hover, a:active, a:focus {
   transform: scale(1.2);
 }
 @media screen and (max-width: 992px) {
-  /* line 87, ../scss/pages/_luzzo.scss */
+  /* line 90, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     transform: scale(1.5);
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 87, ../scss/pages/_luzzo.scss */
+  /* line 90, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     transform: scale(1.2);
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 87, ../scss/pages/_luzzo.scss */
+  /* line 90, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem img {
     bottom: 0;
     transform: scale(1);
   }
 }
-/* line 107, ../scss/pages/_luzzo.scss */
+/* line 110, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-texto-imagem blockquote {
   position: relative;
   bottom: 50px;
@@ -10707,74 +10713,74 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  /* line 107, ../scss/pages/_luzzo.scss */
+  /* line 110, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-texto-imagem blockquote {
     line-height: 40px;
     padding: 30px 0;
   }
 }
-/* line 127, ../scss/pages/_luzzo.scss */
+/* line 130, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto {
   position: relative;
   bottom: 100px;
 }
-/* line 131, ../scss/pages/_luzzo.scss */
+/* line 134, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto h2 {
   margin-top: 180px;
 }
 @media screen and (max-width: 1200px) {
-  /* line 131, ../scss/pages/_luzzo.scss */
+  /* line 134, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 131, ../scss/pages/_luzzo.scss */
+  /* line 134, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 35px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 131, ../scss/pages/_luzzo.scss */
+  /* line 134, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto h2 {
     margin-top: 85px;
     text-align: center;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 127, ../scss/pages/_luzzo.scss */
+  /* line 130, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 55px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 127, ../scss/pages/_luzzo.scss */
+  /* line 130, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 0;
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 127, ../scss/pages/_luzzo.scss */
+  /* line 130, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     bottom: 0;
     margin-top: 0px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 127, ../scss/pages/_luzzo.scss */
+  /* line 130, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto {
     margin-top: -30px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 159, ../scss/pages/_luzzo.scss */
+  /* line 162, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto img {
     max-width: 60%;
     margin: 0 auto;
   }
 }
-/* line 168, ../scss/pages/_luzzo.scss */
+/* line 171, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
   font-weight: 400;
   font-size: 2rem;
@@ -10783,18 +10789,18 @@ a:hover, a:active, a:focus {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 168, ../scss/pages/_luzzo.scss */
+  /* line 171, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 168, ../scss/pages/_luzzo.scss */
+  /* line 171, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2, #page-luzzo #p--2-col-imagem-texto .field--name-field-texto-luzzo-2-1 {
     text-align: center;
   }
 }
-/* line 183, ../scss/pages/_luzzo.scss */
+/* line 186, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--2-col-imagem-texto blockquote {
   position: absolute;
   max-width: 320px;
@@ -10813,28 +10819,28 @@ a:hover, a:active, a:focus {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 992px) {
-  /* line 183, ../scss/pages/_luzzo.scss */
+  /* line 186, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--2-col-imagem-texto blockquote {
     padding: 21px;
     max-width: 220px;
   }
 }
-/* line 208, ../scss/pages/_luzzo.scss */
+/* line 211, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-/* line 213, ../scss/pages/_luzzo.scss */
+/* line 216, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-inner {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 992px) {
-  /* line 208, ../scss/pages/_luzzo.scss */
+  /* line 211, ../scss/pages/_luzzo.scss */
   #page-luzzo .slider--luzzo {
     margin-top: 60px;
   }
 }
-/* line 222, ../scss/pages/_luzzo.scss */
+/* line 225, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators {
   left: auto;
   z-index: 15;
@@ -10847,30 +10853,30 @@ a:hover, a:active, a:focus {
   right: 2% !important;
   left: inherit;
 }
-/* line 235, ../scss/pages/_luzzo.scss */
+/* line 238, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators li {
   width: 20px;
   height: 20px;
   margin: 0 5px;
   transition: width .4s;
 }
-/* line 243, ../scss/pages/_luzzo.scss */
+/* line 246, ../scss/pages/_luzzo.scss */
 #page-luzzo .slider--luzzo .carousel-indicators .active {
   width: 35px !important;
 }
-/* line 251, ../scss/pages/_luzzo.scss */
+/* line 254, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto {
   position: relative;
   margin-bottom: 120px;
 }
 @media screen and (max-width: 992px) {
-  /* line 251, ../scss/pages/_luzzo.scss */
+  /* line 254, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto {
     margin-bottom: 100px;
     top: 85px;
   }
 }
-/* line 261, ../scss/pages/_luzzo.scss */
+/* line 264, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
   font-size: 2rem;
   color: #212121;
@@ -10878,23 +10884,23 @@ a:hover, a:active, a:focus {
   line-height: 27px;
 }
 @media screen and (max-width: 992px) {
-  /* line 261, ../scss/pages/_luzzo.scss */
+  /* line 264, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     line-height: 25px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 261, ../scss/pages/_luzzo.scss */
+  /* line 264, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .field--name-field-texto-luzzo-3 {
     text-align: center;
   }
 }
-/* line 275, ../scss/pages/_luzzo.scss */
+/* line 278, ../scss/pages/_luzzo.scss */
 #page-luzzo #p--1-col-center-texto .saber-mais {
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 275, ../scss/pages/_luzzo.scss */
+  /* line 278, ../scss/pages/_luzzo.scss */
   #page-luzzo #p--1-col-center-texto .saber-mais {
     margin: 0 auto;
     top: 30px;
@@ -10905,7 +10911,7 @@ a:hover, a:active, a:focus {
 }
 
 @media screen and (max-width: 992px) {
-  /* line 291, ../scss/pages/_luzzo.scss */
+  /* line 294, ../scss/pages/_luzzo.scss */
   .page-node-type-luzzo #flexslider-testemunhos {
     margin-top: 100px;
   }
@@ -11207,7 +11213,7 @@ a:hover, a:active, a:focus {
 #lojas .full-back-1:before {
   content: "";
   width: 100%;
-  background: url(../img/zigZag.png);
+  background: url(../img/zigzag.png);
   position: absolute;
   height: calc(100% - 985px);
   background-position-y: -120px;
@@ -12339,7 +12345,7 @@ a:hover, a:active, a:focus {
  */
 /* line 248, ../scss/pages/_ementa.scss */
 .no-container {
-  margin-top: 94px;
+  margin-top: 93px;
   margin-bottom: 120px;
 }
 @media screen and (max-width: 768px) {
@@ -13380,12 +13386,13 @@ footer nav[role="navigation"] ul.nav li:last-child {
 #block-views-block-visite-nos-block-1 .views-field-title h2 a {
   position: relative;
   color: #4A4A4A;
+  text-decoration: underline;
 }
-/* line 71, ../scss/custom_component/_visite.scss */
+/* line 72, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 a:hover {
   text-decoration: none;
 }
-/* line 75, ../scss/custom_component/_visite.scss */
+/* line 76, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 a:before {
   content: "";
   position: absolute;
@@ -13397,11 +13404,11 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 87, ../scss/custom_component/_visite.scss */
+/* line 88, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-title h2 a:hover:before {
   width: 100%;
 }
-/* line 91, ../scss/custom_component/_visite.scss */
+/* line 92, ../scss/custom_component/_visite.scss */
 #block-views-block-visite-nos-block-1 .views-field-field-morada- {
   font-size: 1.6rem;
 }
