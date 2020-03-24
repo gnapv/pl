@@ -147,8 +147,55 @@
 
  }
 
-#my-footer {
+.projectos {
+
+    position: absolute;
+    bottom: 10px;
+    right: -630px;
+    z-index: 100;
+    width: 450px;
+
+    @media screen and (max-width: 1400px) {
+      right: -530px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      right: -500px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      right: -462px;
+      width: 400px;
+    }
+
+    @media screen  and (max-width: 1030px) {
+      right: -432px; 
+    }
+
+    @media screen and (max-width: 992px) {
+      right: -375px;
+    }
+    @media screen and (max-width: 768px) {
+          right: 18px;
+    left: 0;
+    margin: auto;
+    bottom: -400px;
+    }
+
+        @media screen and (max-width: 450px) {
+          width: 330px;
+          left: -16px;
+          right: 16px;
 
 
 
+    }
+            @media screen and (max-width: 350px) {
+          width: 285px;
+          left: -10px;
+
+
+    }
 }
+
+
