@@ -128,11 +128,61 @@ function APPLogic(qualType) {
 
     initModal();
 
+    initModalNews();
+
     antiDragImg();
+
+
 
     //grabALLLinks();
 
+    //apanhar o URL
+    confirmaURL();
+
 }
+
+
+//////////////////////////////////////////////////////////////////
+
+function confirmaURL() {
+  let finalPath = window.location.href;
+  abrePorDefeitoPag(finalPath);
+}
+
+function abrePorDefeitoPag(qualModal) {
+  //confirmar a path para ver se vale a pena carregar o modal
+  if (qualModal.indexOf("#") !== -1) {
+    let myPath = qualModal.split("#");
+    let finalIDPathPag = myPath[myPath.length-1];
+    //console.log("finalIDPathPag = ",finalIDPathPag);
+
+    agoraPath = myPath[0];
+
+    if (finalIDPathPag === "reservas") {
+      let reservasBtn = document.querySelector('.menu--main .last a');
+      //setTimeout(function(){ showModalPorDefeito(reservasBtn); }, 3000);
+      setTimeout(function(){ jQuery('#modal-62').modal('show'); }, 4000);
+      
+    }else if (finalIDPathPag === "encomendar") {
+
+    }else if (finalIDPathPag.indexOf('noticia') !== -1 ) {
+      let numId = finalIDPathPag.match(/\d+/g);
+      setTimeout(function(){ showModalPorDefeito(numId); }, 4000);
+    }
+  }
+}
+
+function showModalPorDefeito(qualBtn) {
+  //retirar a not da path, para simular o click e por de novo
+  window.history.pushState("","",`${agoraPath}`);
+  let bt = document.querySelector('[data-notid="'+qualBtn+'"]');
+  //activar o Btn
+  bt.click();
+}
+
+
+//////////////////////////////////////////////////////////////////
+
 
 function antiDragImg() {
   jQuery('img').attr('draggable','false');
@@ -143,7 +193,14 @@ function initModal() {
     jQuery( ".navbar-nav li.last a, .f-reserva a" ).click(function(e) {
           e.preventDefault();
            jQuery('#modal-62').modal('show');
+           meteURLModal("reservas");
       });
+
+            //close
+            jQuery('#modal-62').on('hidden.bs.modal', function () {
+              //console.log("Fecha Modal");
+              removeURLModal();
+            });
 
     changeProgressText();
 }
@@ -152,27 +209,47 @@ function initModalLoja() {
     jQuery( ".field--name-field-reservar a" ).click(function(e) {
           e.preventDefault();
            jQuery('#modal-62').modal('show');
+           meteURLModal("reservas");
+      });
+
+      //close
+      jQuery('#modal-62').on('hidden.bs.modal', function () {
+        //console.log("Fecha Modal");
+        removeURLModal();
       });
 }
+
+var agoraPath = null;
+
+
+function meteURLModal(qual) {
+
+  agoraPath = window.location.href;
+  if (agoraPath.indexOf("reservas") === -1 || agoraPath.indexOf("noticia") === -1) {
+    window.history.pushState("","",`${agoraPath}#${qual}`);
+  } 
+}
+function removeURLModal() { 
+  window.history.pushState("","",`${agoraPath}`);
+}
+
+
 
 function changeProgressText() {
     var textProgress = jQuery(".webform-progress__summary").text();
     if (textProgress.length != 3 ) {
-      var _loc1 = textProgress.substring(5, textProgress.length);
-      var _loc2 = _loc1.replace(" of ", "/");
+     // var _loc1 = textProgress.substring(5, textProgress.length);
+     // var _loc2 = _loc1.replace(" of ", "/");
+      var _loc2 = textProgress.replace(" of ", "/");
       jQuery(".webform-progress__summary").text(_loc2);
-
-      var _loc3 = _loc2.substring(0,1);
-
-     
-     
-      if (_loc3 != "3") {
-        jQuery(".webform-progress__summary").html(
-          jQuery(".webform-progress__summary").html().substr(0, jQuery(".webform-progress__summary").html().length-2)
-            + "<span style='color: #fff'>"
-            + jQuery(".webform-progress__summary").html().substr(-2)
-            + "</span>");
-      }
+      //var _loc3 = _loc2.substring(0,1);
+    //   if (_loc3 != "3") {
+    //     jQuery(".webform-progress__summary").html(
+    //       jQuery(".webform-progress__summary").html().substr(0, jQuery(".webform-progress__summary").html().length-2)
+    //         + "<span style='color: #fff'>"
+    //         + jQuery(".webform-progress__summary").html().substr(-2)
+    //         + "</span>");
+    //   }
 
     }
 }
@@ -281,8 +358,6 @@ function corrigirModal() {
       var maxHeight = 0;
       jQuery( "#block-views-block-slider-noticias-block-1 .slides li" ).each(function( index ) {
 
-            
-
          if (jQuery(this).outerHeight() > maxHeight) { 
           maxHeight = jQuery(this).outerHeight(); 
         }
@@ -292,7 +367,41 @@ function corrigirModal() {
 
 }
 
+function initModalNews() {
 
+  var dataTarget = null;
+
+      jQuery( ".btn-sabermais-noticias" ).click(function(e) {
+         //
+          e.preventDefault();
+        
+          let notID =  this.getAttribute("data-notid");
+          dataTarget =  this.getAttribute("data-target");
+
+          //console.log('dataTarget == ',dataTarget);
+         
+         
+          // jQuery(dataTarget).modal('hide');
+          jQuery(dataTarget).modal('show');
+          meteURLModal("noticia-"+notID);
+
+          //close
+          jQuery(dataTarget).on('hidden.bs.modal', function () {
+           // console.log("Fecha Modal news");
+            removeURLModal();
+          });
+
+          //cancelar o comportamento default do button em jquery
+          return false;
+      });
+
+
+}
+
+
+
+
+///////////////////////
 
 function fixLinkLojas() {
 
@@ -358,9 +467,13 @@ function fixExtrasEmenta() {
 
 function initEvents() {
 
+  var onMenuMobile = false;
+
   jQuery( ".navbar-toggle" ).click(function() {
     jQuery(this).toggleClass("clickMenuBur");
     jQuery('body').toggleClass("my-modal-open");
+    jQuery('#block-languageswitcher').toggleClass("mobile-open");
+    
   });
 
 
@@ -499,12 +612,12 @@ function grabALLLinks() {
 
           if (currentLink.indexOf("http://") != "-1") {
 
-              console.log("currentLink tem HTTP:// = "+currentLink);
+              //console.log("currentLink tem HTTP:// = "+currentLink);
               window.open(currentLink, '_blank');
              // window.location = currentLink;
 
           }else{
-              console.log("currentLink = "+currentLink);
+              //console.log("currentLink = "+currentLink);
               openLoader();
           }
       });

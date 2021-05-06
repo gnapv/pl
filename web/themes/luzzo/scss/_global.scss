@@ -8,6 +8,9 @@ html{
     font-size: 62.5%;
 
 
+     @media screen and (max-width: 1299px) {
+      font-size: 62.5%;
+     }
     @media screen and (max-width: $screen-lg-min) {
      font-size: 61.5%;
 
@@ -21,6 +24,12 @@ html{
     @media screen and (max-width: $screen-xs-max) {
       font-size: 55.5%;
     }
+
+    @media screen and (min-width:1300px) {
+      font-size: 64.5%;
+ 
+     }
+
 }
 
 body {
@@ -242,3 +251,101 @@ a:hover,a:active,a:focus{
 $global-text-line-height-lg: 27px !default;
 $global-text-line-height-md: 26px !default;
 $global-text-line-height-sm: 25px !default;
+
+// Cookie Management CSS vars 
+// ----------------------------------------------------------------------------
+
+body #cookiesjsr {
+  --default-margin: 1.25em;
+  --font-size-reset: 1.4rem;
+  
+  --btn-font-color: #FFF;
+  --btn-border-color: #FFF;
+  --btn-bg-color: $gray-over;
+  --btn-prime-font-color: $gray-over;
+  --btn-prime-border-color: #FFF;
+  --btn-prime-bg-color: #FFF;
+  --btn-inv-font-color: $gray-over;
+  --btn-inv-border-color: $gray-over;
+  --btn-inv-bg-color: #FFF;
+  --btn-prime-inv-font-color: #FFF;
+  --btn-prime-inv-border-color: $gray-over;
+  --btn-prime-inv-bg-color: $gray-over;
+  
+  --link-list-font-color: #FFF;
+  --link-list-separator-color: #FFF;
+  
+  --banner-logo-offset: 100px;
+  --banner-bg-color: $gray-over;
+  --banner-font-color: #FFF;
+  
+  --layer-header-height: 3.5em;
+  --layer-header-bg-color: #fff;
+  --layer-header-font-color: $gray-over;
+  --layer-body-bg-color: #FFF;
+  --layer-tab-bg-color: #FFF;
+  --layer-tab-font-color: $gray-over;
+  --layer-tab-active-bg-color: $gray-over;
+  --layer-tab-active-font-color: #FFF;
+  --layer-bg-dark: $gray-over;
+  --layer-font-light: #FFF;
+  --layer-font-dark: $gray-over;
+  --layer-border-color: #e4e5e6;
+  --layer-footer-bg-color: #FFF;
+  --layer-footer-font-color: $gray-over;
+  --layer-footer-height: 4.5em;
+  
+  --switch-border-color: #e4e5e6;
+  --switch-handle-color: #FFF;
+  --switch-bg-off: #FFF;
+  --switch-bg-on: #00AA00;
+  --switch-width: 45px;
+  --switch-height: 20px;
+  --switch-always-on-font-color: #00AA00;
+  --switch-always-on-bg-color: #FFF;
+
+  .cookiesjsr-layer--title {
+    font-weight: 800;
+    font-size: 2.3rem;
+  }
+
+  .cookiesjsr-service-group--tab, 
+  .cookiesjsr-service-group--content,
+  .cookiesjsr-btn { outline: none; }
+
+  .cookiesjsr-service-group--tab:hover { background-color: #F4D680; }
+
+  .cookiesjsr-service-group.active .cookiesjsr-service-group--tab { pointer-events: none; }
+
+  .cookiesjsr-links a:hover{ color: #F4D680; }
+
+  .cookiesjsr-btn.invert:first-child:hover { background-color: #F4D680; transform: scale(1); }
+  .cookiesjsr-btn.invert.important:hover{
+    color: #F4D680;
+    transform: scale(1);
+  }
+
+  .cookiesjsr-layer--close {
+    opacity: .2;
+  }
+  .cookiesjsr-layer--close:hover {
+    opacity: .7;
+  }
+
+  .cookiesjsr-btn {
+    font-weight: 800;
+  }
+
+  .cookiesjsr-banner--action {
+    padding: 0 25px 0 10px;
+  }
+
+  .cookiesjsr-banner--action .cookiesjsr-btn:first-child:hover{
+    color: #F4D680;
+    transform: scale(1);
+  }
+  .cookiesjsr-banner--action .cookiesjsr-btn.important:hover {
+    background-color: #F4D680; transform: scale(1);
+  }
+
+}

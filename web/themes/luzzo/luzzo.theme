@@ -17,3 +17,15 @@ function luzzo_preprocess_html(&$variables){
 
 $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
 define(language, $language);
+
+/**
+ * Use language code for language switcher.
+ *
+ * Implements hook_preprocess_HOOK().
+ * Apanhar vars do Drupal para alterar o resultado final no block
+ * e possivel passar vars para o TWIG
+ */
+
+function luzzo_preprocess_links__language_block(&$variables) {
+    $variables['links']['en']['link']['#title'] = 'EN';
+}

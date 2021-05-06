@@ -35,7 +35,31 @@
 			    width: 100px;
 			    top: 46vh;
 			    background: #111;
-			    z-index: 1000;
+				z-index: 1000;
+
+				transition: all .3s ease-in;
+				transition-delay: 0s;
+
+				@media screen and (max-width: 767px) {
+					opacity: 0;
+    				pointer-events: none;
+					right: 38px;
+					width: 45px;
+					top: 69px;
+					transform: scale(1.2);
+					transition-delay: 0s;
+				}
+
+				&.mobile-open {
+					opacity: 1;
+					pointer-events: visible;
+					transition-delay: .7s;
+				}
+				
+				.language-link.is-active {
+					pointer-events: none;
+					opacity: .4;
+				}
 
 			    ul{
 				    list-style: none;
