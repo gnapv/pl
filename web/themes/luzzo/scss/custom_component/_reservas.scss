@@ -2,6 +2,9 @@
  * reservas.
  */
 
+
+
+
 #block-views-block-reservas-luzzo-block-1 {
     .paragraph__column {
       padding-bottom: 0!important;
@@ -189,7 +192,7 @@
 
               .webform-button--next{
                 display: block;
-                left: 118px;
+                left: 145px;
                 right: 0;
                 margin: auto;
                 top: calc(100% + 50px);
@@ -205,7 +208,7 @@
               .webform-button--previous{
                 display: block;
                 left: 0;
-                right: 148px;
+                right: 178px;
                 margin: auto;
                 top: calc(100% + 50px);
                 position: absolute;
@@ -337,7 +340,7 @@
                 .submit-reservas {
                     position: absolute;
                     display: inline-block;
-                    left: 240px;
+                    left: 270px;
                     right: 0;
                     margin: auto;
                     top: calc(100% + 70px);
@@ -354,6 +357,13 @@
                     border-radius: 0;
                     transition: color .4s ease-out;
                     transition-delay: .3s;
+
+                    &:active:focus{
+                      background-color: #F4D680;
+                      border-color: unset;
+                      outline: 5px auto #333;
+                      outline-offset: 3px;
+                    }
 
                     @media screen and (max-width: 468px) {
                       left: 0;
@@ -449,4 +459,172 @@
 .modal-backdrop.in {
     opacity: 0.8;
     filter: alpha(opacity=80);
+}
+
+
+/**
+ * encomendas.
+ */
+
+
+#block-encomendas {
+  position: absolute;
+  z-index: 997;
+  right: 10px;
+  top: 200px;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+  &:hover {
+    transform: scale(1.09);
+  }
+ }
+
+ #modal-122 {
+
+      .modal-dialog {
+        max-width: 800px;
+      }
+
+      #edit-metodo-de-entrega--2 {
+        @media screen and (max-width: 695px) {
+          width: 100%;
+          display: block !important;
+        }
+        label {
+          @media screen and (max-width: 695px) {
+            display: block !important;
+          }
+      
+        }
+      }
+
+      .webform-options-display-buttons .webform-options-display-buttons-wrapper {
+        @media screen and (max-width: 695px) {
+          display: block;
+          margin: 5px 0;
+        }
+
+      }
+
+
+ }
+
+ #webform-submission-encomendar-add-form--2, .form-encomendar-geral {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+
+  .webform-element--title-inline > label{
+
+    @media screen and (max-width: 1020px) {
+      position: initial !important;
+      transform: translateX(0px) !important;
+      min-width: unset !important;
+    }
+    @media screen and (max-width: 695px) {
+        position: relative !important;
+        display: block !important;
+        bottom: 0 !important;
+        text-align: center !important;
+        margin-bottom: 6px !important;
+    }
+  
+  }
+
+
+  .metodo-entrega{
+    position: relative;
+    bottom: 6px;
+    left: 20px;
+    display: flex!important;
+    flex-flow: row wrap;
+    align-items: center;
+
+    @media screen and (max-width: 695px) {
+      flex-flow: column wrap;
+      align-items: center;
+      bottom: 0;
+      margin: 0;
+      left: 0;
+    }
+  }
+
+  label {
+    display: inline !important;
+    padding-right: 0.5em;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #4A4A4A;
+  }
+
+
+  .submit-encomendar {
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    top: calc(100% + 70px);
+    height: 38px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 2.66px;
+    background-color: transparent;
+    border-radius: 0;
+    transition: color .4s ease-out;
+    transition-delay: .3s;
+
+    outline: none;
+
+    &:active:focus{
+      background-color: #F4D680;
+      border-color: unset;
+      outline: 5px auto #333;
+      outline-offset: 3px;
+    }
+
+    @media screen and (max-width: 468px) {
+
+      // top: calc(100% + 130px);
+    }
+  }
+
+  .submit-encomendar:before{
+    content: "";
+    position: absolute;
+    left: 0;
+      top: 0;
+      z-index: -1;
+    width: 0%;
+    height: 100%;
+    background: #F4D680;
+    transition: width .4s ease-in;
+  }
+  .submit-encomendar:hover{
+    text-decoration: none;
+    color: #4A4A4A;
+  }
+  .submit-encomendar:hover:before{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+ .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
+  color: #000;
+  border-color: #F4D680;
+  background-color: #F4D680;
+}
+
+#webform-computed-link_para_take_away-wrapper, #webform-computed-link_para_take_delivery-wrapper {
+  display: none;
 }

@@ -9,9 +9,10 @@ var currentLink;
     attach: function (context, settings) {
 
 
-      $('.webform-progress__summary', context).once('myCustomBehavior').each(function () {
+      $('#modal-62 .webform-progress__summary', context).once('myCustomBehavior').each(function () {
         // Apply the myCustomBehaviour effect to the elements only once.
        changeProgressText();
+       //console.warn("vem do metodo com AJAX");
 
       });
     }
@@ -23,7 +24,14 @@ var currentLink;
 jQuery(document).ready(function(){
 
   	//console.log("Bem Vindo ao website Luzzo!");
-  	//console.log("by:gomastudio.net");
+  	console.log(" ");
+  	console.log(" ");
+
+    console.log("  %cby:%cGoMaStudio.net %c %c %c", "border-left:10px solid #de4b3a; background: #444; color: #eb7f3b; padding: 10px; border-radius:0px", "color: orange; background: #444; color: #fff; padding:10px 10px 10px 0; border-right:10px solid #2a9a88; border-radius:0px; ", "background: #444; border-left:5px solid #e4683a; padding:10px;  border-radius:20px", "border-left:5px solid #e24e3b; padding:10px;background: #444;", "border-left:5px solid #e4683a; padding:10px;background: #444; border-radius:20px");
+
+  	console.log(" ");
+  	console.log(" ");
+
 
     findType();
 
@@ -81,6 +89,7 @@ function APPLogic(qualType) {
           animateCaptionsHome();
           setTimeout(corrigirModal,300);
           makeHomeParallax();
+          initEncomendar();
           
           break;
     case 'onLuzzo':
@@ -106,6 +115,7 @@ function APPLogic(qualType) {
           initSliderHome();
           makeLojaParallax();
           initModalLoja();
+          initEncomendar();
 
          break;
     case 'onEmenta':
@@ -159,11 +169,12 @@ function abrePorDefeitoPag(qualModal) {
     agoraPath = myPath[0];
 
     if (finalIDPathPag === "reservas") {
-      let reservasBtn = document.querySelector('.menu--main .last a');
+      //let reservasBtn = document.querySelector('.menu--main .last a');
       //setTimeout(function(){ showModalPorDefeito(reservasBtn); }, 3000);
       setTimeout(function(){ jQuery('#modal-62').modal('show'); }, 4000);
       
     }else if (finalIDPathPag === "encomendar") {
+      setTimeout(function(){ jQuery('#modal-122').modal('show'); }, 4000);
 
     }else if (finalIDPathPag.indexOf('noticia') !== -1 ) {
       let numId = finalIDPathPag.match(/\d+/g);
@@ -202,7 +213,7 @@ function initModal() {
               removeURLModal();
             });
 
-    changeProgressText();
+     changeProgressText();
 }
 
 function initModalLoja() {
@@ -237,11 +248,21 @@ function removeURLModal() {
 
 function changeProgressText() {
     var textProgress = jQuery(".webform-progress__summary").text();
-    if (textProgress.length != 3 ) {
+
+
+    if (textProgress.length != 3 && textProgress.length < 25) {
      // var _loc1 = textProgress.substring(5, textProgress.length);
      // var _loc2 = _loc1.replace(" of ", "/");
-      var _loc2 = textProgress.replace(" of ", "/");
-      jQuery(".webform-progress__summary").text(_loc2);
+
+    //console.log("textProgress = ",textProgress);
+
+      //var _loc2 = textProgress.replace(" of ", "/");
+
+    //console.log("_loc2 = ",_loc2);
+
+      //jQuery(".webform-progress__summary").text(_loc2);
+
+
       //var _loc3 = _loc2.substring(0,1);
     //   if (_loc3 != "3") {
     //     jQuery(".webform-progress__summary").html(
@@ -252,6 +273,144 @@ function changeProgressText() {
     //   }
 
     }
+}
+
+function initEncomendar() {
+
+  jQuery( "#block-encomendas" ).click(function(e) {
+    //e.preventDefault();
+     jQuery('#modal-122').modal('show');
+     meteURLModal("encomendar");
+  });
+
+  //close
+  jQuery('#modal-122').on('hidden.bs.modal', function () {
+    //console.log("Fecha Modal");
+    removeURLModal();
+  });
+
+  jQuery('.webform-options-display-buttons-label').click(function(e) {
+    //e.preventDefault();
+    jQuery('.webform-options-display-buttons-label').css("border-color","#ccc");
+    jQuery('.webform-options-display-buttons-label').css("box-shadow","unset");
+
+
+  });
+
+  jQuery( "select" ).change(function() {
+    // Check input( $( this ).val() ) for validity here
+    jQuery('.form-item-na-luzzo').removeClass("has-error");
+
+  });
+
+
+  jQuery('#form-encomendar-all-pages').submit(function( event ) {
+    //console.log('Form encomendar submitted to JS :)');
+    event.preventDefault();
+    var FormEncomendar = document.getElementById("form-encomendar-all-pages");
+    //var FormEncomendar = event.target;
+   // console.log("Form.full_name.value = " + FormEncomendar.metodo_de_entrega.value);
+
+    // metodo_de_entrega
+    // na_luzzo
+    // link_para_take_away
+    // link_para_take_delivery
+
+    if (FormEncomendar.na_luzzo.value.length == 0 || FormEncomendar.metodo_de_entrega.value.length == 0) {
+
+
+          //console.log("Campos obrigatórios devem ser preenchidos!");
+          if (FormEncomendar.na_luzzo.value.length == 0) {
+            jQuery('.form-item-na-luzzo').addClass("has-error");
+            FormEncomendar.na_luzzo.focus();
+
+          }
+          if (FormEncomendar.metodo_de_entrega.value.length == 0) {
+            // jQuery('.form-item-na-luzzo').removeClass("has-error");
+            // jQuery('.webform-options-display-buttons-label').css("border-color","#a94442");
+            jQuery('.webform-options-display-buttons-label').css("box-shadow","inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 6px #ce8483");
+            // FormEncomendar.metodo_de_entrega.focus();
+          }
+
+
+                 
+          
+
+
+
+      //console.log("Campos obrigatórios devem ser preenchidos!");
+      //FormEncomendar.na_luzzo.focus();
+
+    } else if (FormEncomendar.metodo_de_entrega.value === "take-away") {
+      let currentLink = FormEncomendar.link_para_take_away.value;
+      let primTel = currentLink.split("");
+
+      let finalTelLink = 'tel:+351'+currentLink.replace(/\s+/g, '');
+      FormEncomendar.reset();
+      jQuery('#modal-122').modal('hide');
+      removeURLModal();
+      window.open(finalTelLink, '_self');
+      //console.log("finalTelLink = "+finalTelLink);
+
+
+    }else if (FormEncomendar.metodo_de_entrega.value === "domicilio") {
+      let currentLink = FormEncomendar.link_para_take_delivery.value;
+      FormEncomendar.reset();
+      jQuery('#modal-122').modal('hide');
+      removeURLModal();
+      window.open(currentLink, '_blank');
+    }
+
+  });
+
+  jQuery('#webform-submission-encomendar-node-9-add-form--2').submit(function( event ) {
+    //console.log('Form encomendar submitted to JS :)');
+    event.preventDefault();
+    var FormEncomendar = document.getElementById("webform-submission-encomendar-node-9-add-form--2");
+    //console.log("Form.full_name.value = " + FormEncomendar.metodo_de_entrega.value);
+
+    // metodo_de_entrega
+    // na_luzzo
+    // link_para_take_away
+    // link_para_take_delivery
+
+    if (FormEncomendar.na_luzzo.value.length == 0 || FormEncomendar.metodo_de_entrega.value.length == 0) {
+
+      console.log("FormEncomendar.na_luzzo.value.length = ",FormEncomendar.na_luzzo.value.length);
+
+      //console.log("Campos obrigatórios devem ser preenchidos!");
+      if (FormEncomendar.na_luzzo.value.length == 0) {
+        // jQuery('.select-wrapper:after').css("color","#a94442");
+        jQuery('.form-item-na-luzzo').addClass("has-error");
+        console.log("form-item-na-luzzo == has-error");
+        //FormEncomendar.na_luzzo.focus();
+
+      }else if (FormEncomendar.metodo_de_entrega.value.length == 0) {
+        jQuery('.form-item-na-luzzo').removeClass("has-error");
+
+        // jQuery('.select-wrapper:after').css("color","#F4D680");
+        
+      }
+    
+      
+
+    } else if (FormEncomendar.metodo_de_entrega.value === "take-away") {
+      let currentLink = FormEncomendar.link_para_take_away.value;
+      jQuery('#modal-122').modal('hide');
+      removeURLModal();
+      window.open(currentLink, '_blank');
+
+
+    }else if (FormEncomendar.metodo_de_entrega.value === "domicilio") {
+      let currentLink = FormEncomendar.link_para_take_delivery.value;
+      jQuery('#modal-122').modal('hide');
+      removeURLModal();
+      window.open(currentLink, '_blank');
+    }
+
+  });
+
+
 }
 
 
