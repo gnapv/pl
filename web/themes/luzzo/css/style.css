@@ -14452,40 +14452,46 @@ footer nav[role="navigation"] ul.nav li:last-child {
 #block-encomendas:hover {
   transform: scale(1.09);
 }
+@media screen and (max-width: 550px) {
+  /* line 470, ../scss/custom_component/_reservas.scss */
+  #block-encomendas {
+    top: 140px;
+  }
+}
 
-/* line 484, ../scss/custom_component/_reservas.scss */
+/* line 489, ../scss/custom_component/_reservas.scss */
 #modal-122 .modal-dialog {
   max-width: 800px;
 }
 @media screen and (max-width: 695px) {
-  /* line 488, ../scss/custom_component/_reservas.scss */
+  /* line 493, ../scss/custom_component/_reservas.scss */
   #modal-122 #edit-metodo-de-entrega--2 {
     width: 100%;
     display: block !important;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 493, ../scss/custom_component/_reservas.scss */
+  /* line 498, ../scss/custom_component/_reservas.scss */
   #modal-122 #edit-metodo-de-entrega--2 label {
     display: block !important;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 501, ../scss/custom_component/_reservas.scss */
+  /* line 506, ../scss/custom_component/_reservas.scss */
   #modal-122 .webform-options-display-buttons .webform-options-display-buttons-wrapper {
     display: block;
     margin: 5px 0;
   }
 }
 
-/* line 512, ../scss/custom_component/_reservas.scss */
+/* line 517, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2, .form-encomendar-geral {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 @media screen and (max-width: 1020px) {
-  /* line 518, ../scss/custom_component/_reservas.scss */
+  /* line 523, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .webform-element--title-inline > label, .form-encomendar-geral .webform-element--title-inline > label {
     position: initial !important;
     transform: translateX(0px) !important;
@@ -14493,7 +14499,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 518, ../scss/custom_component/_reservas.scss */
+  /* line 523, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .webform-element--title-inline > label, .form-encomendar-geral .webform-element--title-inline > label {
     position: relative !important;
     display: block !important;
@@ -14502,7 +14508,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     margin-bottom: 6px !important;
   }
 }
-/* line 536, ../scss/custom_component/_reservas.scss */
+/* line 541, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .metodo-entrega, .form-encomendar-geral .metodo-entrega {
   position: relative;
   bottom: 6px;
@@ -14512,7 +14518,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   align-items: center;
 }
 @media screen and (max-width: 695px) {
-  /* line 536, ../scss/custom_component/_reservas.scss */
+  /* line 541, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .metodo-entrega, .form-encomendar-geral .metodo-entrega {
     flex-flow: column wrap;
     align-items: center;
@@ -14521,7 +14527,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     left: 0;
   }
 }
-/* line 553, ../scss/custom_component/_reservas.scss */
+/* line 558, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 label, .form-encomendar-geral label {
   display: inline !important;
   padding-right: 0.5em;
@@ -14529,7 +14535,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 1.6rem;
   color: #4A4A4A;
 }
-/* line 562, ../scss/custom_component/_reservas.scss */
+/* line 567, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar, .form-encomendar-geral .submit-encomendar {
   position: absolute;
   display: inline-block;
@@ -14550,14 +14556,14 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition-delay: .3s;
   outline: none;
 }
-/* line 584, ../scss/custom_component/_reservas.scss */
+/* line 589, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:active:focus, .form-encomendar-geral .submit-encomendar:active:focus {
   background-color: #F4D680;
   border-color: unset;
   outline: 5px auto #333;
   outline-offset: 3px;
 }
-/* line 597, ../scss/custom_component/_reservas.scss */
+/* line 602, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:before, .form-encomendar-geral .submit-encomendar:before {
   content: "";
   position: absolute;
@@ -14569,24 +14575,24 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 608, ../scss/custom_component/_reservas.scss */
+/* line 613, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:hover, .form-encomendar-geral .submit-encomendar:hover {
   text-decoration: none;
   color: #4A4A4A;
 }
-/* line 612, ../scss/custom_component/_reservas.scss */
+/* line 617, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:hover:before, .form-encomendar-geral .submit-encomendar:hover:before {
   width: 100%;
 }
 
-/* line 622, ../scss/custom_component/_reservas.scss */
+/* line 627, ../scss/custom_component/_reservas.scss */
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
   color: #000;
   border-color: #F4D680;
   background-color: #F4D680;
 }
 
-/* line 628, ../scss/custom_component/_reservas.scss */
+/* line 633, ../scss/custom_component/_reservas.scss */
 #webform-computed-link_para_take_away-wrapper, #webform-computed-link_para_take_delivery-wrapper {
   display: none;
 }

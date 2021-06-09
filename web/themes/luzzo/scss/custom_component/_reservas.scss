@@ -477,6 +477,11 @@
   &:hover {
     transform: scale(1.09);
   }
+  @media screen and (max-width: 550px) {
+    top: 140px;
+    
+  }
+
  }
 
  #modal-122 {
