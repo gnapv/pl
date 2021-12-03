@@ -180,6 +180,8 @@ function abrePorDefeitoPag(qualModal) {
       let numId = finalIDPathPag.match(/\d+/g);
       setTimeout(function(){ showModalPorDefeito(numId); }, 4000);
     }
+  }else {
+    setTimeout(function(){ jQuery("#modal-intro-destaque-1").modal('show'); }, 4000); 
   }
 }
 

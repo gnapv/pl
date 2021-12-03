@@ -13866,15 +13866,76 @@ footer nav[role="navigation"] ul.nav li:last-child {
 /**
  * reservas.
  */
-/* line 9, ../scss/custom_component/_reservas.scss */
+/* line 5, ../scss/custom_component/_reservas.scss */
+#block-modalintrodestaque {
+  display: none;
+}
+
+/* line 10, ../scss/custom_component/_reservas.scss */
+#modal-intro-destaque-1 .modal-dialog {
+  max-width: 750px;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 18, ../scss/custom_component/_reservas.scss */
+  #modal-intro-destaque-1 .modal-content {
+    padding-top: 40px;
+  }
+}
+/* line 24, ../scss/custom_component/_reservas.scss */
+#modal-intro-destaque-1 .col-sm-6:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  /* line 24, ../scss/custom_component/_reservas.scss */
+  #modal-intro-destaque-1 .col-sm-6:nth-child(2) {
+    min-height: 115px;
+  }
+}
+/* line 36, ../scss/custom_component/_reservas.scss */
+#modal-intro-destaque-1 h1 {
+  align-self: center;
+  font-size: 26px;
+  font-weight: 900;
+}
+/* line 41, ../scss/custom_component/_reservas.scss */
+#modal-intro-destaque-1 p {
+  line-height: 18px;
+  color: #000;
+}
+/* line 46, ../scss/custom_component/_reservas.scss */
+#modal-intro-destaque-1 a {
+  border: none;
+  background: #5d7a54;
+  color: #fff;
+  padding: 13px 20px 15px 15px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  border-bottom-right-radius: 18px;
+  transition: background .2s ease-in;
+}
+/* line 56, ../scss/custom_component/_reservas.scss */
+#modal-intro-destaque-1 a:hover {
+  background: #af7d5e;
+}
+
+/* line 65, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .paragraph__column {
   padding-bottom: 0 !important;
 }
-/* line 11, ../scss/custom_component/_reservas.scss */
+/* line 67, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .paragraph__column .btn-modal {
   display: none;
 }
-/* line 17, ../scss/custom_component/_reservas.scss */
+/* line 73, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-dialog {
   width: 90%;
   transform: translate(0, 40vh);
@@ -13882,25 +13943,25 @@ footer nav[role="navigation"] ul.nav li:last-child {
   max-width: 1020px;
 }
 @media screen and (max-width: 1020px) {
-  /* line 17, ../scss/custom_component/_reservas.scss */
+  /* line 73, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-dialog {
     max-width: 770px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 17, ../scss/custom_component/_reservas.scss */
+  /* line 73, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-dialog {
     width: 90%;
     transform: translate(0, 20vh);
   }
 }
-/* line 32, ../scss/custom_component/_reservas.scss */
+/* line 88, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-content {
   background-color: #EFEBEB;
   min-height: 140px;
   padding: 0;
 }
-/* line 38, ../scss/custom_component/_reservas.scss */
+/* line 94, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header {
   position: absolute;
   top: -80px;
@@ -13908,25 +13969,25 @@ footer nav[role="navigation"] ul.nav li:last-child {
   border: none;
 }
 @media screen and (max-width: 418px) {
-  /* line 38, ../scss/custom_component/_reservas.scss */
+  /* line 94, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header {
     padding: 15px 17px;
   }
 }
 @media screen and (max-width: 390px) {
-  /* line 38, ../scss/custom_component/_reservas.scss */
+  /* line 94, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header {
     padding: 15px 0px;
     right: 1px;
   }
 }
 @media screen and (max-width: 350px) {
-  /* line 38, ../scss/custom_component/_reservas.scss */
+  /* line 94, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header {
     padding: 15px 17px;
   }
 }
-/* line 49, ../scss/custom_component/_reservas.scss */
+/* line 105, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
   font-size: 3.6rem;
   color: #fff;
@@ -13934,7 +13995,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   padding-right: 80px;
 }
 @media screen and (max-width: 650px) {
-  /* line 49, ../scss/custom_component/_reservas.scss */
+  /* line 105, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
     position: relative;
     bottom: 23px;
@@ -13942,12 +14003,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 350px) {
-  /* line 49, ../scss/custom_component/_reservas.scss */
+  /* line 105, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-header .modal-title {
     bottom: 55px;
   }
 }
-/* line 62, ../scss/custom_component/_reservas.scss */
+/* line 118, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .close {
   background: url(../img/close_bt.svg);
   display: block;
@@ -13960,36 +14021,36 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition: all .3s ease-out;
   z-index: 10;
 }
-/* line 73, ../scss/custom_component/_reservas.scss */
+/* line 129, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .close:hover {
   filter: brightness(2);
 }
-/* line 76, ../scss/custom_component/_reservas.scss */
+/* line 132, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-header .close span {
   display: none;
 }
-/* line 83, ../scss/custom_component/_reservas.scss */
+/* line 139, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-body {
   padding: 0;
   padding-top: 30px;
 }
 @media screen and (max-width: 695px) {
-  /* line 83, ../scss/custom_component/_reservas.scss */
+  /* line 139, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-body {
     padding: 30px;
   }
 }
-/* line 89, ../scss/custom_component/_reservas.scss */
+/* line 145, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .modal-body .select-wrapper {
   width: auto;
 }
 @media screen and (max-width: 695px) {
-  /* line 89, ../scss/custom_component/_reservas.scss */
+  /* line 145, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .modal-body .select-wrapper {
     width: 100%;
   }
 }
-/* line 97, ../scss/custom_component/_reservas.scss */
+/* line 153, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 form {
   position: relative;
   top: 20px;
@@ -13997,96 +14058,96 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-align: center;
 }
 @media screen and (max-width: 695px) {
-  /* line 97, ../scss/custom_component/_reservas.scss */
+  /* line 153, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 form {
     top: 0;
     height: auto;
   }
 }
-/* line 108, ../scss/custom_component/_reservas.scss */
+/* line 164, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="na_hora_"] {
   max-width: 122px;
 }
-/* line 112, ../scss/custom_component/_reservas.scss */
+/* line 168, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="e_somos_"] {
   max-width: 122px;
 }
-/* line 116, ../scss/custom_component/_reservas.scss */
+/* line 172, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
   max-width: 180px;
 }
 @media screen and (max-width: 1040px) {
-  /* line 116, ../scss/custom_component/_reservas.scss */
+  /* line 172, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
     max-width: 150px;
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 116, ../scss/custom_component/_reservas.scss */
+  /* line 172, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="em_nome_de_"] {
     max-width: 210px;
   }
 }
-/* line 126, ../scss/custom_component/_reservas.scss */
+/* line 182, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="telefone_"] {
   max-width: 125px;
 }
-/* line 130, ../scss/custom_component/_reservas.scss */
+/* line 186, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="no_dia_"] {
   max-width: 163px;
 }
 @media screen and (max-width: 695px) {
-  /* line 130, ../scss/custom_component/_reservas.scss */
+  /* line 186, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="no_dia_"] {
     max-width: 100%;
   }
 }
-/* line 136, ../scss/custom_component/_reservas.scss */
+/* line 192, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
   max-width: 200px;
 }
 @media screen and (max-width: 1040px) {
-  /* line 136, ../scss/custom_component/_reservas.scss */
+  /* line 192, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
     max-width: 180px;
   }
 }
 @media screen and (max-width: 1040px) {
-  /* line 136, ../scss/custom_component/_reservas.scss */
+  /* line 192, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input[name="email_de_confirmacao"] {
     max-width: 220px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 147, ../scss/custom_component/_reservas.scss */
+  /* line 203, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 input {
     max-width: 100% !important;
   }
 }
-/* line 152, ../scss/custom_component/_reservas.scss */
+/* line 208, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-group {
   display: inline;
   padding-left: 10px;
 }
 @media screen and (max-width: 695px) {
-  /* line 152, ../scss/custom_component/_reservas.scss */
+  /* line 208, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-group {
     display: block;
     width: 100%;
     padding-left: 0;
   }
 }
-/* line 164, ../scss/custom_component/_reservas.scss */
+/* line 220, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-group:first-child {
   position: relative;
   bottom: 0;
   padding-left: 0px;
 }
-/* line 173, ../scss/custom_component/_reservas.scss */
+/* line 229, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-wizard-pages-links {
   display: none;
 }
-/* line 177, ../scss/custom_component/_reservas.scss */
+/* line 233, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-control {
   border-radius: 0;
   border: 1px solid #F4D680;
@@ -14095,19 +14156,19 @@ footer nav[role="navigation"] ul.nav li:last-child {
   line-height: 20px !important;
 }
 @media screen and (max-width: 768px) {
-  /* line 177, ../scss/custom_component/_reservas.scss */
+  /* line 233, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-control {
     max-width: 122px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 177, ../scss/custom_component/_reservas.scss */
+  /* line 233, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-control {
     max-width: none;
     width: 100%;
   }
 }
-/* line 193, ../scss/custom_component/_reservas.scss */
+/* line 249, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-button--next {
   display: block;
   left: 145px;
@@ -14122,7 +14183,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 5.0rem;
   outline: none;
 }
-/* line 208, ../scss/custom_component/_reservas.scss */
+/* line 264, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-button--previous {
   display: block;
   left: 0;
@@ -14137,7 +14198,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 5.0rem;
   outline: none;
 }
-/* line 223, ../scss/custom_component/_reservas.scss */
+/* line 279, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-progress {
   position: absolute;
   font-size: 48px;
@@ -14147,14 +14208,14 @@ footer nav[role="navigation"] ul.nav li:last-child {
   margin: auto;
   top: calc(100% + 54px);
 }
-/* line 234, ../scss/custom_component/_reservas.scss */
+/* line 290, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
   font-weight: 400;
   font-size: 1.6rem;
   color: #4A4A4A;
 }
 @media screen and (max-width: 1020px) {
-  /* line 234, ../scss/custom_component/_reservas.scss */
+  /* line 290, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
     position: absolute;
     bottom: 25px;
@@ -14164,7 +14225,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 234, ../scss/custom_component/_reservas.scss */
+  /* line 290, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .webform-element--title-inline > label {
     position: relative;
     display: block;
@@ -14172,34 +14233,34 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 252, ../scss/custom_component/_reservas.scss */
+  /* line 308, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
     bottom: 30px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 252, ../scss/custom_component/_reservas.scss */
+  /* line 308, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-no-dia- label {
     bottom: 0px;
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 256, ../scss/custom_component/_reservas.scss */
+  /* line 312, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
     bottom: 30px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 256, ../scss/custom_component/_reservas.scss */
+  /* line 312, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .form-item-telefone- label {
     bottom: 0;
   }
 }
-/* line 265, ../scss/custom_component/_reservas.scss */
+/* line 321, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .form-required:after {
   display: none;
 }
-/* line 269, ../scss/custom_component/_reservas.scss */
+/* line 325, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .messages__wrapper {
   position: absolute;
   display: block;
@@ -14210,75 +14271,75 @@ footer nav[role="navigation"] ul.nav li:last-child {
   max-width: 320px;
   top: calc(100% + 70px);
 }
-/* line 279, ../scss/custom_component/_reservas.scss */
+/* line 335, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .messages__wrapper .alert-danger {
   background-color: #ffffff;
   border-radius: 0;
 }
-/* line 285, ../scss/custom_component/_reservas.scss */
+/* line 341, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
   float: left;
   width: 50%;
 }
 @media screen and (max-width: 1020px) {
-  /* line 285, ../scss/custom_component/_reservas.scss */
+  /* line 341, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
     bottom: 10px !important;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 285, ../scss/custom_component/_reservas.scss */
+  /* line 341, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes {
     width: 100%;
     float: none;
   }
 }
-/* line 295, ../scss/custom_component/_reservas.scss */
+/* line 351, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
   position: relative;
   bottom: 10px;
 }
 @media screen and (max-width: 695px) {
-  /* line 295, ../scss/custom_component/_reservas.scss */
+  /* line 351, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes label {
     bottom: 0;
   }
 }
-/* line 302, ../scss/custom_component/_reservas.scss */
+/* line 358, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
   display: inline;
   max-width: 300px;
 }
 @media screen and (max-width: 695px) {
-  /* line 302, ../scss/custom_component/_reservas.scss */
+  /* line 358, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper {
     max-width: 100%;
   }
 }
-/* line 307, ../scss/custom_component/_reservas.scss */
+/* line 363, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
   max-width: 280px;
 }
 @media screen and (max-width: 1020px) {
-  /* line 307, ../scss/custom_component/_reservas.scss */
+  /* line 363, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
     max-width: 220px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 307, ../scss/custom_component/_reservas.scss */
+  /* line 363, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
     max-width: 180px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 307, ../scss/custom_component/_reservas.scss */
+  /* line 363, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .js-form-item-observacoes .form-textarea-wrapper textarea {
     max-width: 100%;
     height: 7rem;
   }
 }
-/* line 318, ../scss/custom_component/_reservas.scss */
+/* line 374, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .checkbox {
   position: relative;
   display: block;
@@ -14288,29 +14349,29 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-align: left;
 }
 @media screen and (max-width: 695px) {
-  /* line 318, ../scss/custom_component/_reservas.scss */
+  /* line 374, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox {
     width: 100%;
     float: none;
   }
 }
-/* line 330, ../scss/custom_component/_reservas.scss */
+/* line 386, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .checkbox label {
   font-size: 1.3rem;
 }
 @media screen and (max-width: 1020px) {
-  /* line 330, ../scss/custom_component/_reservas.scss */
+  /* line 386, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox label {
     top: -10px;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 330, ../scss/custom_component/_reservas.scss */
+  /* line 386, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .checkbox label {
     bottom: 0;
   }
 }
-/* line 340, ../scss/custom_component/_reservas.scss */
+/* line 396, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas {
   position: absolute;
   display: inline-block;
@@ -14331,7 +14392,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition: color .4s ease-out;
   transition-delay: .3s;
 }
-/* line 361, ../scss/custom_component/_reservas.scss */
+/* line 417, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:active:focus {
   background-color: #F4D680;
   border-color: unset;
@@ -14339,13 +14400,13 @@ footer nav[role="navigation"] ul.nav li:last-child {
   outline-offset: 3px;
 }
 @media screen and (max-width: 468px) {
-  /* line 340, ../scss/custom_component/_reservas.scss */
+  /* line 396, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 .submit-reservas {
     left: 0;
     top: calc(100% + 130px);
   }
 }
-/* line 374, ../scss/custom_component/_reservas.scss */
+/* line 430, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:before {
   content: "";
   position: absolute;
@@ -14357,34 +14418,34 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 385, ../scss/custom_component/_reservas.scss */
+/* line 441, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:hover {
   text-decoration: none;
   color: #4A4A4A;
 }
-/* line 389, ../scss/custom_component/_reservas.scss */
+/* line 445, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 .submit-reservas:hover:before {
   width: 100%;
 }
 @media screen and (max-width: 1020px) {
-  /* line 394, ../scss/custom_component/_reservas.scss */
+  /* line 450, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] {
     position: relative;
     top: 10px;
   }
 }
-/* line 399, ../scss/custom_component/_reservas.scss */
+/* line 455, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group {
   padding-left: 0px;
 }
 @media screen and (max-width: 1020px) {
-  /* line 402, ../scss/custom_component/_reservas.scss */
+  /* line 458, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"].form-group:first-child {
     bottom: 7px;
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 410, ../scss/custom_component/_reservas.scss */
+  /* line 466, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-progress {
     margin: unset !important;
     right: unset !important;
@@ -14392,45 +14453,45 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 419, ../scss/custom_component/_reservas.scss */
+  /* line 475, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .webform-button--previous {
     right: unset !important;
     left: -15px !important;
   }
 }
 @media screen and (max-width: 468px) {
-  /* line 428, ../scss/custom_component/_reservas.scss */
+  /* line 484, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="reservar"] .submit-reservas {
     left: 115px;
     top: calc(100% + 135px);
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 435, ../scss/custom_component/_reservas.scss */
+  /* line 491, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"] {
     position: relative;
     top: 10px;
   }
 }
-/* line 440, ../scss/custom_component/_reservas.scss */
+/* line 496, ../scss/custom_component/_reservas.scss */
 #block-views-block-reservas-luzzo-block-1 div[data-webform-key="intro"].form-group {
   padding-left: 0px;
 }
 @media screen and (max-width: 1020px) {
-  /* line 444, ../scss/custom_component/_reservas.scss */
+  /* line 500, ../scss/custom_component/_reservas.scss */
   #block-views-block-reservas-luzzo-block-1 div[data-webform-key="page_2"] {
     position: relative;
     top: 10px;
   }
 }
 
-/* line 454, ../scss/custom_component/_reservas.scss */
+/* line 510, ../scss/custom_component/_reservas.scss */
 .webform-confirmation {
   position: relative;
   bottom: 30px;
 }
 
-/* line 459, ../scss/custom_component/_reservas.scss */
+/* line 515, ../scss/custom_component/_reservas.scss */
 .modal-backdrop.in {
   opacity: 0.8;
   filter: alpha(opacity=80);
@@ -14439,7 +14500,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
 /**
  * encomendas.
  */
-/* line 470, ../scss/custom_component/_reservas.scss */
+/* line 526, ../scss/custom_component/_reservas.scss */
 #block-encomendas {
   position: absolute;
   z-index: 997;
@@ -14448,50 +14509,50 @@ footer nav[role="navigation"] ul.nav li:last-child {
   cursor: pointer;
   transition: transform .2s ease-out;
 }
-/* line 477, ../scss/custom_component/_reservas.scss */
+/* line 533, ../scss/custom_component/_reservas.scss */
 #block-encomendas:hover {
   transform: scale(1.09);
 }
 @media screen and (max-width: 550px) {
-  /* line 470, ../scss/custom_component/_reservas.scss */
+  /* line 526, ../scss/custom_component/_reservas.scss */
   #block-encomendas {
     top: 140px;
   }
 }
 
-/* line 489, ../scss/custom_component/_reservas.scss */
+/* line 545, ../scss/custom_component/_reservas.scss */
 #modal-122 .modal-dialog {
   max-width: 800px;
 }
 @media screen and (max-width: 695px) {
-  /* line 493, ../scss/custom_component/_reservas.scss */
+  /* line 549, ../scss/custom_component/_reservas.scss */
   #modal-122 #edit-metodo-de-entrega--2 {
     width: 100%;
     display: block !important;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 498, ../scss/custom_component/_reservas.scss */
+  /* line 554, ../scss/custom_component/_reservas.scss */
   #modal-122 #edit-metodo-de-entrega--2 label {
     display: block !important;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 506, ../scss/custom_component/_reservas.scss */
+  /* line 562, ../scss/custom_component/_reservas.scss */
   #modal-122 .webform-options-display-buttons .webform-options-display-buttons-wrapper {
     display: block;
     margin: 5px 0;
   }
 }
 
-/* line 517, ../scss/custom_component/_reservas.scss */
+/* line 573, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2, .form-encomendar-geral {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 @media screen and (max-width: 1020px) {
-  /* line 523, ../scss/custom_component/_reservas.scss */
+  /* line 579, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .webform-element--title-inline > label, .form-encomendar-geral .webform-element--title-inline > label {
     position: initial !important;
     transform: translateX(0px) !important;
@@ -14499,7 +14560,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 523, ../scss/custom_component/_reservas.scss */
+  /* line 579, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .webform-element--title-inline > label, .form-encomendar-geral .webform-element--title-inline > label {
     position: relative !important;
     display: block !important;
@@ -14508,7 +14569,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     margin-bottom: 6px !important;
   }
 }
-/* line 541, ../scss/custom_component/_reservas.scss */
+/* line 597, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .metodo-entrega, .form-encomendar-geral .metodo-entrega {
   position: relative;
   bottom: 6px;
@@ -14518,7 +14579,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   align-items: center;
 }
 @media screen and (max-width: 695px) {
-  /* line 541, ../scss/custom_component/_reservas.scss */
+  /* line 597, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .metodo-entrega, .form-encomendar-geral .metodo-entrega {
     flex-flow: column wrap;
     align-items: center;
@@ -14527,7 +14588,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     left: 0;
   }
 }
-/* line 558, ../scss/custom_component/_reservas.scss */
+/* line 614, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 label, .form-encomendar-geral label {
   display: inline !important;
   padding-right: 0.5em;
@@ -14535,7 +14596,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 1.6rem;
   color: #4A4A4A;
 }
-/* line 567, ../scss/custom_component/_reservas.scss */
+/* line 623, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar, .form-encomendar-geral .submit-encomendar {
   position: absolute;
   display: inline-block;
@@ -14556,14 +14617,14 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition-delay: .3s;
   outline: none;
 }
-/* line 589, ../scss/custom_component/_reservas.scss */
+/* line 645, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:active:focus, .form-encomendar-geral .submit-encomendar:active:focus {
   background-color: #F4D680;
   border-color: unset;
   outline: 5px auto #333;
   outline-offset: 3px;
 }
-/* line 602, ../scss/custom_component/_reservas.scss */
+/* line 658, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:before, .form-encomendar-geral .submit-encomendar:before {
   content: "";
   position: absolute;
@@ -14575,24 +14636,24 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 613, ../scss/custom_component/_reservas.scss */
+/* line 669, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:hover, .form-encomendar-geral .submit-encomendar:hover {
   text-decoration: none;
   color: #4A4A4A;
 }
-/* line 617, ../scss/custom_component/_reservas.scss */
+/* line 673, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:hover:before, .form-encomendar-geral .submit-encomendar:hover:before {
   width: 100%;
 }
 
-/* line 627, ../scss/custom_component/_reservas.scss */
+/* line 683, ../scss/custom_component/_reservas.scss */
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
   color: #000;
   border-color: #F4D680;
   background-color: #F4D680;
 }
 
-/* line 633, ../scss/custom_component/_reservas.scss */
+/* line 689, ../scss/custom_component/_reservas.scss */
 #webform-computed-link_para_take_away-wrapper, #webform-computed-link_para_take_delivery-wrapper {
   display: none;
 }
