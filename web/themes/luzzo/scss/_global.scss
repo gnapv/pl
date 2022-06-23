@@ -262,38 +262,38 @@ body #cookiesjsr {
   
   --btn-font-color: #FFF;
   --btn-border-color: #FFF;
-  --btn-bg-color: $gray-over;
-  --btn-prime-font-color: $gray-over;
+  --btn-bg-color: #{$gray-over};
+  --btn-prime-font-color: #{$gray-over};
   --btn-prime-border-color: #FFF;
   --btn-prime-bg-color: #FFF;
-  --btn-inv-font-color: $gray-over;
-  --btn-inv-border-color: $gray-over;
+  --btn-inv-font-color: #{$gray-over};
+  --btn-inv-border-color: #{$gray-over};
   --btn-inv-bg-color: #FFF;
   --btn-prime-inv-font-color: #FFF;
-  --btn-prime-inv-border-color: $gray-over;
-  --btn-prime-inv-bg-color: $gray-over;
+  --btn-prime-inv-border-color: #{$gray-over};
+  --btn-prime-inv-bg-color: #{$gray-over};
   
   --link-list-font-color: #FFF;
   --link-list-separator-color: #FFF;
   
   --banner-logo-offset: 100px;
-  --banner-bg-color: $gray-over;
+  --banner-bg-color: #{$gray-over};
   --banner-font-color: #FFF;
   
   --layer-header-height: 3.5em;
   --layer-header-bg-color: #fff;
-  --layer-header-font-color: $gray-over;
+  --layer-header-font-color: #{$gray-over};
   --layer-body-bg-color: #FFF;
   --layer-tab-bg-color: #FFF;
-  --layer-tab-font-color: $gray-over;
-  --layer-tab-active-bg-color: $gray-over;
+  --layer-tab-font-color: #{$gray-over};
+  --layer-tab-active-bg-color: #{$gray-over};
   --layer-tab-active-font-color: #FFF;
-  --layer-bg-dark: $gray-over;
+  --layer-bg-dark: #{$gray-over};
   --layer-font-light: #FFF;
-  --layer-font-dark: $gray-over;
+  --layer-font-dark: #{$gray-over};
   --layer-border-color: #e4e5e6;
   --layer-footer-bg-color: #FFF;
-  --layer-footer-font-color: $gray-over;
+  --layer-footer-font-color: #{$gray-over};
   --layer-footer-height: 4.5em;
   
   --switch-border-color: #e4e5e6;
@@ -349,4 +349,84 @@ body #cookiesjsr {
     background-color: #F4D680; transform: scale(1);
   }
 
+}
+
+
+/*  Bootstrap Clearfix */
+
+/*  Tablet  */
+@media (min-width:767px){
+
+  /* Column clear fix */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1){
+    clear: none;
+  }
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+
+/*  Medium Desktop  */
+@media (min-width:992px){
+
+  /* Column clear fix */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: none;
+  }
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+
+/*  Large Desktop  */
+@media (min-width:1200px){
+
+  /* Column clear fix */
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1){
+    clear: none;
+  }
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1){
+    clear: left;
+  }
 }

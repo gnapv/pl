@@ -16,7 +16,12 @@ function luzzo_preprocess_html(&$variables){
 */
 
 $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
-define(language, $language);
+define('language', $language);
+
+function luzzo_preprocess_node(&$variables) {
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
+}
 
 /**
  * Use language code for language switcher.

@@ -540,11 +540,16 @@
 
  }
 
+ .modal-body {
+  overflow: visible !important;
+}
+
  #modal-122 {
 
       .modal-dialog {
         max-width: 800px;
       }
+
 
       #edit-metodo-de-entrega--2 {
         @media screen and (max-width: 695px) {

@@ -201,6 +201,10 @@
 	padding: 20px;
 	border-radius: 0;
 
+	.modal-title {
+		white-space: normal !important;
+	}
+
 	.modal-body{
 		padding-bottom: 30px;
 	}
@@ -225,6 +229,14 @@
 				font-size: 28px;    		
 		 }
 	}
+
+	.modal-footer {
+		position: relative;
+		.ui-dialog-titlebar-close {
+			top: 80%;
+		}
+	}
+
 
 	.modal-footer .ui-dialog-titlebar-close{
 		@media screen and (max-width: $screen-sm-min) {

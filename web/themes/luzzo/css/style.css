@@ -10691,6 +10691,85 @@ body #cookiesjsr .cookiesjsr-banner--action .cookiesjsr-btn.important:hover {
   transform: scale(1);
 }
 
+/*  Bootstrap Clearfix */
+/*  Tablet  */
+@media (min-width: 767px) {
+  /* Column clear fix */
+  /* line 361, ../scss/_global.scss */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1) {
+    clear: none;
+  }
+
+  /* line 373, ../scss/_global.scss */
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1) {
+    clear: left;
+  }
+}
+/*  Medium Desktop  */
+@media (min-width: 992px) {
+  /* Column clear fix */
+  /* line 387, ../scss/_global.scss */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1) {
+    clear: none;
+  }
+
+  /* line 399, ../scss/_global.scss */
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1) {
+    clear: left;
+  }
+}
+/*  Large Desktop  */
+@media (min-width: 1200px) {
+  /* Column clear fix */
+  /* line 413, ../scss/_global.scss */
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1),
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1) {
+    clear: none;
+  }
+
+  /* line 425, ../scss/_global.scss */
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1) {
+    clear: left;
+  }
+}
 /**
  * page luzzo.
  */
@@ -11548,6 +11627,11 @@ body #cookiesjsr .cookiesjsr-banner--action .cookiesjsr-btn.important:hover {
     left: 85px;
     letter-spacing: 1px;
   }
+}
+
+/* line 231, ../scss/pages/_lojas.scss */
+.cluster div {
+  top: 38px;
 }
 
 /**
@@ -13381,14 +13465,18 @@ footer nav[role="navigation"] ul.nav li:last-child {
   border-radius: 0;
 }
 /* line 204, ../scss/custom_component/_noticias.scss */
+.modal-content .modal-title {
+  white-space: normal !important;
+}
+/* line 208, ../scss/custom_component/_noticias.scss */
 .modal-content .modal-body {
   padding-bottom: 30px;
 }
-/* line 208, ../scss/custom_component/_noticias.scss */
+/* line 212, ../scss/custom_component/_noticias.scss */
 .modal-content .cz {
   z-index: 1;
 }
-/* line 212, ../scss/custom_component/_noticias.scss */
+/* line 216, ../scss/custom_component/_noticias.scss */
 .modal-content .topclose {
   z-index: 10;
   top: 8px;
@@ -13396,26 +13484,34 @@ footer nav[role="navigation"] ul.nav li:last-child {
   right: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 212, ../scss/custom_component/_noticias.scss */
+  /* line 216, ../scss/custom_component/_noticias.scss */
   .modal-content .topclose {
     top: -17px;
     right: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 223, ../scss/custom_component/_noticias.scss */
+  /* line 227, ../scss/custom_component/_noticias.scss */
   .modal-content .close {
     font-size: 28px;
   }
 }
+/* line 233, ../scss/custom_component/_noticias.scss */
+.modal-content .modal-footer {
+  position: relative;
+}
+/* line 235, ../scss/custom_component/_noticias.scss */
+.modal-content .modal-footer .ui-dialog-titlebar-close {
+  top: 80%;
+}
 @media screen and (max-width: 768px) {
-  /* line 229, ../scss/custom_component/_noticias.scss */
+  /* line 241, ../scss/custom_component/_noticias.scss */
   .modal-content .modal-footer .ui-dialog-titlebar-close {
     position: relative;
     right: -30px;
   }
 }
-/* line 236, ../scss/custom_component/_noticias.scss */
+/* line 248, ../scss/custom_component/_noticias.scss */
 .modal-content h2 {
   font-weight: 900;
   font-size: 2.3rem;
@@ -13426,12 +13522,12 @@ footer nav[role="navigation"] ul.nav li:last-child {
   text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
-  /* line 236, ../scss/custom_component/_noticias.scss */
+  /* line 248, ../scss/custom_component/_noticias.scss */
   .modal-content h2 {
     padding: 15px 0;
   }
 }
-/* line 250, ../scss/custom_component/_noticias.scss */
+/* line 262, ../scss/custom_component/_noticias.scss */
 .modal-content p {
   font-size: 1.6rem;
   color: #9B9B9B;
@@ -13439,17 +13535,17 @@ footer nav[role="navigation"] ul.nav li:last-child {
   line-height: 23px;
 }
 @media screen and (max-width: 768px) {
-  /* line 250, ../scss/custom_component/_noticias.scss */
+  /* line 262, ../scss/custom_component/_noticias.scss */
   .modal-content p {
     font-size: 1.7rem;
   }
 }
-/* line 259, ../scss/custom_component/_noticias.scss */
+/* line 271, ../scss/custom_component/_noticias.scss */
 .modal-content .bodydesc {
   margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
-  /* line 259, ../scss/custom_component/_noticias.scss */
+  /* line 271, ../scss/custom_component/_noticias.scss */
   .modal-content .bodydesc {
     margin-top: 0px;
   }
@@ -14520,39 +14616,44 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 
-/* line 545, ../scss/custom_component/_reservas.scss */
+/* line 543, ../scss/custom_component/_reservas.scss */
+.modal-body {
+  overflow: visible !important;
+}
+
+/* line 549, ../scss/custom_component/_reservas.scss */
 #modal-122 .modal-dialog {
   max-width: 800px;
 }
 @media screen and (max-width: 695px) {
-  /* line 549, ../scss/custom_component/_reservas.scss */
+  /* line 554, ../scss/custom_component/_reservas.scss */
   #modal-122 #edit-metodo-de-entrega--2 {
     width: 100%;
     display: block !important;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 554, ../scss/custom_component/_reservas.scss */
+  /* line 559, ../scss/custom_component/_reservas.scss */
   #modal-122 #edit-metodo-de-entrega--2 label {
     display: block !important;
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 562, ../scss/custom_component/_reservas.scss */
+  /* line 567, ../scss/custom_component/_reservas.scss */
   #modal-122 .webform-options-display-buttons .webform-options-display-buttons-wrapper {
     display: block;
     margin: 5px 0;
   }
 }
 
-/* line 573, ../scss/custom_component/_reservas.scss */
+/* line 578, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2, .form-encomendar-geral {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 @media screen and (max-width: 1020px) {
-  /* line 579, ../scss/custom_component/_reservas.scss */
+  /* line 584, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .webform-element--title-inline > label, .form-encomendar-geral .webform-element--title-inline > label {
     position: initial !important;
     transform: translateX(0px) !important;
@@ -14560,7 +14661,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   }
 }
 @media screen and (max-width: 695px) {
-  /* line 579, ../scss/custom_component/_reservas.scss */
+  /* line 584, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .webform-element--title-inline > label, .form-encomendar-geral .webform-element--title-inline > label {
     position: relative !important;
     display: block !important;
@@ -14569,7 +14670,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     margin-bottom: 6px !important;
   }
 }
-/* line 597, ../scss/custom_component/_reservas.scss */
+/* line 602, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .metodo-entrega, .form-encomendar-geral .metodo-entrega {
   position: relative;
   bottom: 6px;
@@ -14579,7 +14680,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   align-items: center;
 }
 @media screen and (max-width: 695px) {
-  /* line 597, ../scss/custom_component/_reservas.scss */
+  /* line 602, ../scss/custom_component/_reservas.scss */
   #webform-submission-encomendar-add-form--2 .metodo-entrega, .form-encomendar-geral .metodo-entrega {
     flex-flow: column wrap;
     align-items: center;
@@ -14588,7 +14689,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
     left: 0;
   }
 }
-/* line 614, ../scss/custom_component/_reservas.scss */
+/* line 619, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 label, .form-encomendar-geral label {
   display: inline !important;
   padding-right: 0.5em;
@@ -14596,7 +14697,7 @@ footer nav[role="navigation"] ul.nav li:last-child {
   font-size: 1.6rem;
   color: #4A4A4A;
 }
-/* line 623, ../scss/custom_component/_reservas.scss */
+/* line 628, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar, .form-encomendar-geral .submit-encomendar {
   position: absolute;
   display: inline-block;
@@ -14617,14 +14718,14 @@ footer nav[role="navigation"] ul.nav li:last-child {
   transition-delay: .3s;
   outline: none;
 }
-/* line 645, ../scss/custom_component/_reservas.scss */
+/* line 650, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:active:focus, .form-encomendar-geral .submit-encomendar:active:focus {
   background-color: #F4D680;
   border-color: unset;
   outline: 5px auto #333;
   outline-offset: 3px;
 }
-/* line 658, ../scss/custom_component/_reservas.scss */
+/* line 663, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:before, .form-encomendar-geral .submit-encomendar:before {
   content: "";
   position: absolute;
@@ -14636,24 +14737,24 @@ footer nav[role="navigation"] ul.nav li:last-child {
   background: #F4D680;
   transition: width .4s ease-in;
 }
-/* line 669, ../scss/custom_component/_reservas.scss */
+/* line 674, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:hover, .form-encomendar-geral .submit-encomendar:hover {
   text-decoration: none;
   color: #4A4A4A;
 }
-/* line 673, ../scss/custom_component/_reservas.scss */
+/* line 678, ../scss/custom_component/_reservas.scss */
 #webform-submission-encomendar-add-form--2 .submit-encomendar:hover:before, .form-encomendar-geral .submit-encomendar:hover:before {
   width: 100%;
 }
 
-/* line 683, ../scss/custom_component/_reservas.scss */
+/* line 688, ../scss/custom_component/_reservas.scss */
 .webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
   color: #000;
   border-color: #F4D680;
   background-color: #F4D680;
 }
 
-/* line 689, ../scss/custom_component/_reservas.scss */
+/* line 694, ../scss/custom_component/_reservas.scss */
 #webform-computed-link_para_take_away-wrapper, #webform-computed-link_para_take_delivery-wrapper {
   display: none;
 }
