@@ -59,8 +59,6 @@
    }
  }
 
-
-
 #block-views-block-reservas-luzzo-block-1 {
     .paragraph__column {
       padding-bottom: 0!important;
@@ -68,8 +66,6 @@
           display: none;
         }
     }
-
-    
     .modal-dialog{
         width: 90%;
         transform: translate(0, 40vh);
@@ -97,7 +93,7 @@
               width: 100%;
               border: none;
               @media screen and (max-width: 418px) { padding: 15px 17px; }
-              @media screen and (max-width: 390px) { padding: 15px 0px; right: 1px; }
+              @media screen and (max-width: 390px) { padding: 15px 10px; right: 1px; }
               @media screen and (max-width: 350px) { padding: 15px 17px;  }
 
 
@@ -693,4 +689,72 @@
 
 #webform-computed-link_para_take_away-wrapper, #webform-computed-link_para_take_delivery-wrapper {
   display: none;
+}
+
+
+
+
+
+
+
+/*  Novas Reservas  */
+
+#modal-62 .modal-dialog {
+  transform: translate(0, 60px) !important;
+}
+
+#webform-computed-link_para_iframe-wrapper, #edit-actions--14 {
+display:none!important;
+}
+
+
+#modal-62 .modal-header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+#modal-62 .modal-body {
+    min-height: 120px;
+}
+#modal-62 .modal-footer {
+   display: flex!important;
+background-color:#fff;
+}
+
+#modal-62 .control-label {
+font-size:1.9rem!important;;
+margin-right:10px
+}
+
+#modal-62 select {
+font-size:1.7rem!important;;
+}
+
+
+@media (max-width:650px){
+  #modal-62 .modal-header .close {
+    left: 0px;
+  }
+  #modal-62 .modal-header .modal-title {
+    padding-right: 10px!important;
+  }
+}
+
+@media (max-width:600px){
+  #modal-62 .modal-dialog {
+    width: 100% !important;
+  }
+}
+
+@media (max-width:500px){
+  #modal-62 .modal-footer, #modal-62 .modal-footer {
+    padding:0;
+  }
+}
+
+@media (max-width:350px){
+  #modal-62 .modal-header .modal-title {
+    bottom: 55px;
+  }
 }

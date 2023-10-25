@@ -4,20 +4,20 @@ var tapaFooter, reservaFooterBt, navbarHeader ;
 var currentLink;
 
 //drupal metodo para inserir jquery com o $ - actualiza com o AJAX
-(function ($, Drupal) {
-  Drupal.behaviors.myModuleBehavior = {
-    attach: function (context, settings) {
+// (function ($, Drupal) {
+//   Drupal.behaviors.myModuleBehavior = {
+//     attach: function (context, settings) {
 
 
-      $('#modal-62 .webform-progress__summary', context).once('myCustomBehavior').each(function () {
-        // Apply the myCustomBehaviour effect to the elements only once.
-       changeProgressText();
-       //console.warn("vem do metodo com AJAX");
+//       $('#modal-62 .webform-progress__summary', context).once('myCustomBehavior').each(function () {
+//         // Apply the myCustomBehaviour effect to the elements only once.
+//        //changeProgressText();
+//        //console.warn("vem do metodo com AJAX");
 
-      });
-    }
-  };
-})(jQuery, Drupal);
+//       });
+//     }
+//   };
+// })(jQuery, Drupal);
 
 
 
@@ -202,6 +202,53 @@ function antiDragImg() {
 }
 
 
+
+const callTheFork = () =>{
+
+  const carregaFork = document.querySelector('#modal-62 .modal-footer');
+  var FormEncomendar = document.getElementById("form-reservar-thefork");
+  let currentLink = FormEncomendar.link_para_iframe.value;
+  //console.log("currentLink.link_para_iframe = "+currentLink);
+  if (currentLink.charAt(0) === '[' ) {
+    carregaFork.innerHTML = '';
+  }else{
+    const newIframe = `<iframe allowfullscreen="" id="widget" src="${currentLink}" style="width: 100%; height: calc(100vh - 250px); border: none; display: block;"></iframe>`;
+    carregaFork.innerHTML = newIframe;
+  }
+
+  // jQuery('html').css('cursor','auto');
+  const spinner = document.querySelector('.spinner');
+  if (spinner) {
+    spinner.parentNode.removeChild(spinner);
+  }
+
+}
+
+const putLoading = (where) =>{
+  
+  const carregaLoading = document.querySelector(where);
+  //console.log('carregaLoading -- ',carregaLoading);
+  const htmlSpinner = `<div class="spinner">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <div class="bar4"></div>
+                        <div class="bar5"></div>
+                        <div class="bar6"></div>
+                        <div class="bar7"></div>
+                        <div class="bar8"></div>
+                        <div class="bar9"></div>
+                        <div class="bar10"></div>
+                        <div class="bar11"></div>
+                        <div class="bar12"></div>
+                      </div>`
+
+                      carregaLoading.innerHTML += htmlSpinner;
+
+}
+
+
+
 function initModal() {
     jQuery( ".navbar-nav li.last a, .f-reserva a" ).click(function(e) {
           e.preventDefault();
@@ -215,7 +262,63 @@ function initModal() {
               removeURLModal();
             });
 
-     changeProgressText();
+     //changeProgressText();
+
+     jQuery( "#edit-escolha-a-sua-luzzo--2" ).change(function() {
+      // Check input( $( this ).val() ) for validity here
+      // console.log("$( this ).val() -- ",jQuery( this ).val());
+      const carregaFork = document.querySelector('#modal-62 .modal-footer');
+
+
+      carregaFork.innerHTML = '';
+
+      putLoading('#modal-62 .modal-footer');
+
+
+      // jQuery('html').css('cursor','progress');
+      setTimeout(()=>{(callTheFork())},2000);
+    });
+
+     jQuery('#form-reservar-thefork').submit(function( event ) {
+      //console.log('Form encomendar submitted to JS :)');
+      event.preventDefault();
+      var FormEncomendar = document.getElementById("form-reservar-thefork");
+      //var FormEncomendar = event.target;
+     // console.log("Form.full_name.value = " + FormEncomendar.metodo_de_entrega.value);
+  
+
+  
+      if (FormEncomendar.na_luzzo.value.length == 0) {
+  
+            //console.log("Campos obrigatórios devem ser preenchidos!");
+            if (FormEncomendar.na_luzzo.value.length == 0) {
+              jQuery('.form-item-na-luzzo').addClass("has-error");
+              FormEncomendar.na_luzzo.focus();
+            }
+  
+      } else {
+
+        let currentLink = FormEncomendar.link_para_take_away.value;
+        //console.log("currentLink.link_para_take_away = "+currentLink);
+
+
+        // let primTel = currentLink.split("");
+  
+        // let finalTelLink = 'tel:+351'+currentLink.replace(/\s+/g, '');
+        // FormEncomendar.reset();
+        // jQuery('#modal-122').modal('hide');
+        // removeURLModal();
+        // window.open(finalTelLink, '_self');
+        //console.log("finalTelLink = "+finalTelLink);
+  
+  
+      }
+  
+    });
+
+
+     
+
 }
 
 function initModalLoja() {
@@ -378,13 +481,13 @@ function initEncomendar() {
 
     if (FormEncomendar.na_luzzo.value.length == 0 || FormEncomendar.metodo_de_entrega.value.length == 0) {
 
-      console.log("FormEncomendar.na_luzzo.value.length = ",FormEncomendar.na_luzzo.value.length);
+      //console.log("FormEncomendar.na_luzzo.value.length = ",FormEncomendar.na_luzzo.value.length);
 
       //console.log("Campos obrigatórios devem ser preenchidos!");
       if (FormEncomendar.na_luzzo.value.length == 0) {
         // jQuery('.select-wrapper:after').css("color","#a94442");
         jQuery('.form-item-na-luzzo').addClass("has-error");
-        console.log("form-item-na-luzzo == has-error");
+        //console.log("form-item-na-luzzo == has-error");
         //FormEncomendar.na_luzzo.focus();
 
       }else if (FormEncomendar.metodo_de_entrega.value.length == 0) {
@@ -695,9 +798,7 @@ function initEvents() {
 
 jQuery(window).on("load", function(){
       startAnimation();
-      closeLoader();
-
-    
+      closeLoader(); 
 }); 
 
 
@@ -838,11 +939,81 @@ function makeLojaParallax() {
                     .addTo(controller);
 }
 
+// veio do Drupal...
+
+globalThis.myFbq = null;
+let touNoMobileMenu = false;
+const navBatToogle = document.querySelector('.navbar-toggle');
+const reservIcon = document.querySelector('#block-encomendas');
+const reservesBtn = document.querySelector('#navbar-collapse .last a');
+
+const mainNav = document.querySelector('#block-luzzo-main-menu');
 
 
 
 
+// Create a condition that targets viewports at least 768px wide
+const mediaQuery = window.matchMedia('(max-width: 767px)');
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    // Then log the following message to the console
+    console.log('Media Query Matched!');
+    
+    // Move stuff
+    mainNav.append(reservIcon);
+    
+    reservIcon.addEventListener('click',(evt)=>{navBatToogle.click();})
+    reservesBtn.addEventListener('click',(evt)=>{navBatToogle.click();})
+    navBatToogle.addEventListener('click',(evt)=>{
+  
+  if(!touNoMobileMenu){
+      setTimeout(() =>{reservIcon.style.display="block";reservIcon.style.zIndex="1060"},1700);
+      touNoMobileMenu = true;
+
+  }else{
+    reservIcon.style.display="none";
+     touNoMobileMenu = false;
+  }
+  })
+    
+    
+    
+  }
+}
+// Register event listener
+//mediaQuery.addListener(handleTabletChange);
+// Initial check
+handleTabletChange(mediaQuery);
 
 
 
+document.addEventListener('cookiesjsrUserConsent', function (event) {
+    //console.log("USER CONSENT!!! -- services --",event.detail.services);
+    var service = (typeof event.detail.services === 'object') ? event.detail.services : {};
+    if (typeof service['facebook_pixel'] !== 'undefined' && service['facebook_pixel']) {
+      // Manipulate DOM to reanimate your third-party integration. data-cookies-js-id="fb_pixel"
+       // console.log("Passa no facebook_pixel services --",service['facebook_pixel']);
+          
+      if(myFbq !== null){
+             myFbq('consent', 'grant');
+             //console.log("myFbq('consent', 'grant')");
+             //console.log("myFbq = ",myFbq);
+                setTimeout(()=>{
+                  
+                fbq !== null ? fbq('consent', 'grant'): null;
+       
+              },1000)
 
+      }
+
+      
+    } else if(service['facebook_pixel'] === false){
+       if(myFbq !== null){
+              myFbq('consent', 'revoke');
+             //console.log("myFbq('consent', 'revoke')");
+      }
+        //myinitTracking();
+    }
+      
+  });
